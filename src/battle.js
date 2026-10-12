@@ -12,10 +12,12 @@ function makeFighter(id,team,x,y){
   return {id:def.id,team,def,x,y,px:x,py:y,vx:0,vy:0,hp:def.hp,maxHp:def.hp,mp:100,maxMp:100,speed:def.speed,radius:def.radius,facing:team==='player'?0:Math.PI,anim:'idle',animTime:0,animLock:0,animDuration:0,animHitAt:null,pose:null,dodgeRecovery:0,dodgeGuard:null,action:null,castRoot:0,castLock:0,invul:0,hurt:0,stun:0,burn:0,burnTick:.7,slow:0,boost:0,haste:0,hasteMultiplier:1.5,weakened:0,cleanseGuard:0,ignite:null,attackBoost:0,attackMultiplier:1,fainted:false,shield:0,shieldTime:0,moving:false,dash:null,basicTimer:team==='enemy'?.7:0,basicWindup:null,cooldowns:Object.fromEntries(Object.entries(def.moves).map(([key,m])=>[key,m.initialCooldown||0]))};
 }
 export class Battle {
-  constructor({random=Math.random,playerId='pikachu',enemyId='typhlosion',playerTeam,enemyTeam,playerSpecial='haste',enemySpecial='haste',difficulty='standard'}={}){
-    this.random=random;this.options={playerId,enemyId,playerTeam:teamIds(playerTeam||[playerId],'pikachu'),enemyTeam:teamIds(enemyTeam||[enemyId],'typhlosion'),playerSpecial:findTrainerSkill(playerSpecial).id,enemySpecial:findTrainerSkill(enemySpecial).id,difficulty:DIFFICULTIES[difficulty]?difficulty:'standard'};this.reset();
+  constructor({random=Math.random,playerId='pikachu',enemyId='typhlosion',playerTeam,enemyTeam,playerSpecial='haste',enemySpecial='haste',difficulty='standard',mode='cpu'}={}){
+    this.random=random;this.options={mode:mode==='pvp'?'pvp':'cpu',playerId,enemyId,playerTeam:teamIds(playerTeam||[playerId],'pikachu'),enemyTeam:teamIds(enemyTeam||[enemyId],'typhlosion'),playerSpecial:findTrainerSkill(playerSpecial).id,enemySpecial:findTrainerSkill(enemySpecial).id,difficulty:DIFFICULTIES[difficulty]?difficulty:'standard'};this.reset();
   }
   get autoAttack(){return true;}
+  isCPU(f){return this.options.mode!=='pvp'&&f.team==='enemy';}
+  inputFor(f){return this.options.mode==='pvp'?(this.inputs?.[f.team]||{x:0,y:0}):this.input;}
   get playerTeam(){return this.teams.player;}
   get enemyTeam(){return this.teams.enemy;}
   get moves(){return this.movesFor(this.player);}
@@ -32,12 +34,14 @@ export class Battle {
     if(!DIFFICULTIES[next.difficulty])next.difficulty='standard';this.options=next;this.reset();
   }
   reset(){
+    this.networkSignature=null;
     this.state='ready';this.time=0;this.countdown=0;this.hitStop=0;this.lastStepDt=0;this.previousState=null;
+    this.pendingSwitch={player:0,enemy:0};this.inputs={player:{x:0,y:0},enemy:{x:0,y:0}};
     this.activeIndices={player:0,enemy:0};this.utilityCooldowns={player:{s:0,d:0},enemy:{s:0,d:0}};this.switchCooldowns={player:0,enemy:0};this.switchReason=null;this.transition=null;
     this.teams={};
     for(const side of ['player','enemy']){
       this.teams[side]=this.options[side+'Team'].map((id,index)=>{
-        const f=makeFighter(id,side,side==='player'?360:914,side==='player'?414:374);f.index=index;
+        const f=makeFighter(id,side,side==='player'?360:914,side==='player'?414:374);f.index=index;if(this.options.mode==='pvp')f.basicTimer=0;
         const shared=this.utilityCooldowns[side];
         for(const key of ['s','d'])Object.defineProperty(f.cooldowns,key,{enumerable:true,configurable:true,get:()=>shared[key],set:value=>{shared[key]=Math.max(0,Number(value)||0);}});
         return f;
@@ -46,6 +50,7 @@ export class Battle {
     this.player=this.teams.player[0];this.enemy=this.teams.enemy[0];this.cooldowns=this.player.cooldowns;
     this.projectiles=[];this.hazards=[];this.windups=[];this.tasks=[];this.events=[];
     this.stats={damageDealt:0,damageTaken:0,movesUsed:0,hitsLanded:0,basicsFired:0,basicHits:0,dodges:0,avoidedDamage:0,trackingBreaks:0,knockouts:0,losses:0,switches:0};
+    this.rivalStats={...this.stats};
     this.masterAI={history:[],observed:null,nextSample:0,seen:new WeakMap(),threats:[],dodgeUntil:0,wasDodging:false};
     this.enraged=false;this.input={x:0,y:0};this.aiDecision=.75;this.aiDodgeTimer=1.5;this.aiComboTimer=0;this.groupId=0;this.hitGroups=new Map();this.lastHint=-10;this.emit('reset');
   }
@@ -65,6 +70,11 @@ export class Battle {
     if(this.state!=='switching'||!Number.isInteger(index)||index===this.activeIndices.player||!this.teams.player[index]||this.teams.player[index].hp<=0)return false;
     const forced=this.switchReason==='fainted';this.sendOut('player',index,forced);this.state='playing';this.switchReason=null;this.input={x:0,y:0};return true;
   }
+  switchFor(team,index){
+    const f=this.source(team),forced=f.hp<=0;
+    if(this.options.mode!=='pvp'||this.state!=='playing'||!Number.isInteger(index)||index===this.activeIndices[team]||!this.teams[team][index]||this.teams[team][index].hp<=0||(!forced&&this.switchCooldowns[team]>0))return false;
+    this.sendOut(team,index,forced);this.pendingSwitch[team]=0;return true;
+  }
   sendOut(team,index,forced=false){
     const outgoing=this.source(team),incoming=this.teams[team][index],fromIndex=this.activeIndices[team],position={x:outgoing.x,y:outgoing.y};
     this.clearOutgoing(outgoing);this.activeIndices[team]=index;this[team]=incoming;this.place(incoming,position.x,position.y);
@@ -72,14 +82,16 @@ export class Battle {
     this.animate(incoming,'idle',.35);this.hitStop=0;this.lastStepDt=0;this.switchCooldowns[team]=8;
     if(team==='player'){this.cooldowns=incoming.cooldowns;if(!forced)this.stats.switches++;}
     else {this.masterAI={history:[],observed:null,nextSample:0,seen:new WeakMap(),threats:[],dodgeUntil:0,wasDodging:false};this.aiDecision=.7;this.aiDodgeTimer=1.5;this.aiComboTimer=.4;this.enraged=incoming.hp/incoming.maxHp<.32;}
+    if(team==='enemy'&&!forced)this.rivalStats.switches++;
     this.emit('switch',{team,fromId:outgoing.id,toId:incoming.id,fromIndex,index,x:incoming.x,y:incoming.y,forced});
   }
   faint(f){
     if(f.fainted)return;f.fainted=true;f.hp=0;this.clearOutgoing(f);f.stun=0;f.burn=0;f.ignite=null;f.shield=0;this.animate(f,'faint',99);
-    if(f.team==='enemy')this.stats.knockouts++;else this.stats.losses++;
+    if(f.team==='enemy'){this.stats.knockouts++;this.rivalStats.losses++;}else{this.stats.losses++;this.rivalStats.knockouts++;}
     const living=this.teams[f.team].filter(member=>member.hp>0);this.emit('faint',{team:f.team,index:f.index,id:f.id,name:f.def.ko,x:f.x,y:f.y,remaining:living.length});
     if(!living.length){this.finish(f.team==='enemy');return;}
     if(f!==this.source(f.team))return;
+    if(this.options.mode==='pvp'){this.pendingSwitch[f.team]=8;this.emit('partyOpen',{team:f.team,forced:true});return;}
     this.hitStop=0;this.lastStepDt=0;this.input={x:0,y:0};
     if(f.team==='player'){this.state='switching';this.switchReason='fainted';this.emit('partyOpen',{forced:true});}
     else {this.state='transition';this.transition={remaining:1.1,index:living[0].index};}
@@ -96,10 +108,10 @@ export class Battle {
   target(team){return team==='player'?this.enemy:this.player;}
   place(f,x,y){f.x=clamp(x,BOUNDS.left+f.radius,BOUNDS.right-f.radius);f.y=clamp(y,BOUNDS.top+f.radius,BOUNDS.bottom-f.radius);}
   hint(text){if(this.time-this.lastHint>.8){this.lastHint=this.time;this.emit('hint',{text});}}
-  projectileSpeed(f,speed){return speed*(f.team==='enemy'?this.difficulty.projectileSpeed:1);}
+  projectileSpeed(f,speed){return speed*(this.isCPU(f)?this.difficulty.projectileSpeed:1);}
   projectileFlight(f,speed,aim=this.target(f.team)){return clamp(distance(f,aim)/Math.max(1,this.projectileSpeed(f,speed)),.12,1.5);}
   commitEnemyAction(f,kind,key,windup,{sequence=0,flight=0,aim=null}={}){
-    if(f.team!=='enemy')return;
+    if(!this.isCPU(f))return;
     const attackEnd=windup+sequence+flight;
     f.action={kind,key,aim:aim?{...aim}:null,elapsed:0,windup,attackEnd,duration:attackEnd+this.difficulty.recovery};
   }
@@ -114,33 +126,33 @@ export class Battle {
     if(count){if(f.team==='player')this.stats.trackingBreaks+=count;this.emit('trackingBreak',{team:f.team,x:f.x,y:f.y,count,color:'#9ee8ff'});}
   }
   tryBasic(f){
-    if(this.state!=='playing'||f.hp<=0||f.stun>0||(f.team==='enemy'&&f.action)||f.dash||f.dodgeRecovery>0||f.castRoot>0||f.castLock>0||f.basicWindup||f.basicTimer>0)return false;
+    if(this.state!=='playing'||f.hp<=0||f.stun>0||(this.isCPU(f)&&f.action)||f.dash||f.dodgeRecovery>0||f.castRoot>0||f.castLock>0||f.basicWindup||f.basicTimer>0)return false;
     const target=this.target(f.team),basic=f.def.basic;
     if(distance(f,target)>basic.range)return false;
-    const windup=f.team==='enemy'?Math.max(basic.windup,this.difficulty.basicWindup):basic.windup;
-    const aim=f.team==='enemy'?this.aim(f,{speed:basic.projectileSpeed||600}):{x:target.x,y:target.y};
+    const windup=this.isCPU(f)?Math.max(basic.windup,this.difficulty.basicWindup):basic.windup;
+    const aim=this.isCPU(f)?this.aim(f,{speed:basic.projectileSpeed||600}):{x:target.x,y:target.y};
     f.facing=Math.atan2(aim.y-f.y,aim.x-f.x);f.basicWindup={startedAt:this.time,time:windup,duration:windup,aim,trackingBroken:false};
     this.animate(f,basic.melee?'attack':'shoot',windup+.24,windup);this.pose(f,'windup',windup,f.facing,.7);
-    if(f.team==='enemy'){
+    if(this.isCPU(f)){
       this.commitEnemyAction(f,'basic','basic',windup,{flight:basic.melee?0:this.projectileFlight(f,basic.projectileSpeed,aim),aim});
       this.windups.push({createdAt:this.time,type:basic.melee?'melee':'aim',basic:true,team:f.team,element:basic.element,color:basic.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y,angle:f.facing,length:distance(f,aim),range:basic.range,radius:basic.range,life:windup,maxLife:windup});
     }
     this.emit('basicWindup',{team:f.team,x:f.x,y:f.y,angle:f.facing,duration:windup,color:basic.color,element:basic.element||f.def.type});return true;
   }
   fireBasic(f){
-    const t=this.target(f.team),m=f.def.basic,pending=f.basicWindup,aim=f.team==='enemy'?(pending?.aim||{x:t.x,y:t.y}):t;f.basicWindup=null;f.animTime=Math.max(f.animTime,pending?.duration||m.windup);
+    const t=this.target(f.team),m=f.def.basic,pending=f.basicWindup,aim=this.isCPU(f)||pending?.trackingBroken?(pending?.aim||{x:t.x,y:t.y}):t;f.basicWindup=null;f.animTime=Math.max(f.animTime,pending?.duration||m.windup);
     // Enemy aim is committed during the visible wind-up. D breaks tracking instead of merely delaying a hit.
     if(t.hp<=0||distance(f,t)>m.range+38){f.basicTimer=.12;return;}
-    f.basicTimer=m.cooldown*(f.team==='enemy'?(this.enraged?.88:1):1);
+    f.basicTimer=m.cooldown*(this.isCPU(f)?(this.enraged?.88:1):1);
     f.facing=Math.atan2(aim.y-f.y,aim.x-f.x);this.pose(f,'strike',.2,f.facing,m.melee?1.2:.8);
     this.emit('basic',{team:f.team,id:f.id,name:m.name,element:m.element,color:m.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y,melee:m.melee||false});
-    if(f.team==='player')this.stats.basicsFired++;
+    if(f.team==='player')this.stats.basicsFired++;else this.rivalStats.basicsFired++;
     if(m.melee){this.damage(t,m.damage,f.team,{basic:true,element:m.element,color:m.color});this.emit('slash',{team:f.team,element:m.element,color:m.color,x:f.x,y:f.y,angle:f.facing,r:m.range*.8,basic:true});}
-    else{const dir=unit(aim.x-f.x,aim.y-f.y);this.addProjectile({type:'basic',element:m.element,color:m.color,x:f.x+dir.x*22,y:f.y+dir.y*22,dir,speed:this.projectileSpeed(f,m.projectileSpeed),damage:m.damage,team:f.team,radius:7,life:1.8,homing:pending?.trackingBroken?0:(f.team==='enemy'?this.difficulty.basicHoming:15),trackingBroken:pending?.trackingBroken||false,basic:true});}
+    else{const dir=unit(aim.x-f.x,aim.y-f.y);this.addProjectile({type:'basic',element:m.element,color:m.color,x:f.x+dir.x*22,y:f.y+dir.y*22,dir,speed:this.projectileSpeed(f,m.projectileSpeed),damage:m.damage,team:f.team,radius:7,life:1.8,homing:pending?.trackingBroken?0:(this.isCPU(f)?this.difficulty.basicHoming:15),trackingBroken:pending?.trackingBroken||false,basic:true});}
   }
   cast(key){return this.castFor(this.player,key);}
   castFor(f,key,{ai=false,direction=null}={}){
-    ai=ai||f.team==='enemy';
+    ai=this.options.mode==='pvp'?false:(ai||f.team==='enemy');
     const m=key==='s'?this.getTrainerSkill(f.team):f.def.moves[key],target=this.target(f.team);if(!m||this.state!=='playing'||f!==this.source(f.team)||f.hp<=0||(f.stun>0&&!['dodge','cleanse'].includes(m.kind))||(ai&&f.action))return false;
     if(f.cooldowns[key]>.01){if(!ai)this.hint(key==='r'?`궁극기 충전 중 · ${Math.ceil(f.cooldowns[key])}초`:`${m.ko} 재사용 대기 중`);return false;}
     if(f.mp<m.cost){if(!ai)this.hint('에너지가 부족합니다. 잠깐 회복하세요.');return false;}
@@ -149,7 +161,7 @@ export class Battle {
     if(m.trainer&&m.range&&distance(f,target)>m.range){if(!ai)this.hint('상대가 스킬 사거리 밖에 있습니다.');return false;}
     const aim=this.aim(f,m),angle=Math.atan2(aim.y-f.y,aim.x-f.x),dir={x:Math.cos(angle),y:Math.sin(angle)};
     f.cooldowns[key]=m.cooldown*(ai&&['q','w','e'].includes(key)?this.difficulty.skillRate:1);f.mp-=m.cost;f.castLock=key==='r'?.55:.23;f.basicWindup=null;
-    if(f.team==='player')this.stats.movesUsed++;
+    if(f.team==='player')this.stats.movesUsed++;else this.rivalStats.movesUsed++;
     f.facing=angle;this.animate(f,m.animation||'shoot',key==='r'?1:.42,key==='r'?.55:.15);this.pose(f,'cast',key==='r'?.65:.3,angle,key==='r'?1.5:1);
     this.emit('cast',{team:f.team,key,id:f.id,name:m.name,ko:m.ko,kind:m.kind,ultimate:key==='r',damage:m.damage||0,element:m.element||f.def.type,color:m.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y});
     if(ai)this.emit('enemyCast',{name:m.name,ko:m.ko,color:m.color,x:f.x,y:f.y});
@@ -163,7 +175,7 @@ export class Battle {
       return true;
     }
     if(m.kind==='dodge'){
-      const movement=this.input.x||this.input.y,evade=ai?(direction?unit(direction.x,direction.y):unit(f.x-target.x,f.y-target.y)):(movement?unit(this.input.x,this.input.y):unit(f.x-target.x,f.y-target.y));
+      const control=this.inputFor(f),movement=control.x||control.y,evade=direction?unit(direction.x,direction.y):ai?unit(f.x-target.x,f.y-target.y):(movement?unit(control.x,control.y):unit(f.x-target.x,f.y-target.y));
       f.basicWindup=null;f.castRoot=0;f.castLock=.08;f.dodgeRecovery=0;f.stun=0;f.hurt=0;this.breakTracking(f);f.facing=Math.atan2(evade.y,evade.x);
       this.hitStop=0;f.invul=Math.max(f.invul,m.invulEnd);f.dodgeGuard={time:m.invulEnd,evaded:false};
       // Evasion cancels uncommitted attacks, but never erases already released projectiles.
@@ -177,7 +189,7 @@ export class Battle {
     if(m.kind==='boost'){f.attackBoost=m.duration||5;f.attackMultiplier=m.attackMultiplier||1.4;if(ai)this.commitEnemyAction(f,m.kind,key,.2);this.emit('boost',{team:f.team,x:f.x,y:f.y,color:m.color,name:m.ko,duration:f.attackBoost});return true;}
     if(m.kind==='dash'){
       let d=direction?unit(direction.x,direction.y):dir;
-      if(!ai&&(this.input.x||this.input.y))d=unit(this.input.x,this.input.y);
+      if(!ai&&(this.inputFor(f).x||this.inputFor(f).y))d=unit(this.inputFor(f).x,this.inputFor(f).y);
       const dashDelay=ai?this.difficulty.meleeWindup:0;f.castRoot=dashDelay;if(ai){this.animate(f,m.animation||'charge',dashDelay+.25,dashDelay);this.commitEnemyAction(f,m.kind,key,dashDelay,{sequence:m.distance/m.dashSpeed,aim});}
       if(ai)this.windups.push({createdAt:this.time,type:'dash',team:f.team,element:m.element,color:m.color,x:f.x,y:f.y,endX:clamp(f.x+d.x*m.distance,150,1130),endY:clamp(f.y+d.y*m.distance,236,552),life:dashDelay,maxLife:dashDelay});
       this.schedule(dashDelay,'dash',{team:f.team,m,dx:d.x,dy:d.y});return true;
@@ -234,7 +246,7 @@ export class Battle {
     else if(m.kind==='ignite'){target.ignite={remaining:m.duration,tick:.5,ticks:8,damage:m.damage/8,team:f.team};}
     this.emit('trainer',{team:f.team,id:m.id,name:m.ko,color:m.color,x:f.x,y:f.y,targetX:target.x,targetY:target.y});return true;
   }
-  aim(f,m){if(f.team==='enemy'&&this.options.difficulty==='master'&&this.masterAI.observed)return this.masterAim(m);const target=this.target(f.team);let lead=0;if(f.team==='enemy'){const timing=this.difficulty,speed=this.projectileSpeed(f,m.speed||650),warning=m.kind==='field'?timing.fieldWindup:['storm','beam','nova'].includes(m.kind)?timing.ultimateWindup:['dash','slash','pulse'].includes(m.kind)?timing.meleeWindup:m.kind?timing.reaction:timing.basicWindup;lead=clamp((warning*.65+distance(f,target)/Math.max(1,speed)*.55)*timing.lead,0,1.0);if(['storm','field','nova'].includes(m.kind))lead=warning*.8*timing.lead;}
+  aim(f,m){if(this.isCPU(f)&&this.options.difficulty==='master'&&this.masterAI.observed)return this.masterAim(m);const target=this.target(f.team);let lead=0;if(this.isCPU(f)){const timing=this.difficulty,speed=this.projectileSpeed(f,m.speed||650),warning=m.kind==='field'?timing.fieldWindup:['storm','beam','nova'].includes(m.kind)?timing.ultimateWindup:['dash','slash','pulse'].includes(m.kind)?timing.meleeWindup:m.kind?timing.reaction:timing.basicWindup;lead=clamp((warning*.65+distance(f,target)/Math.max(1,speed)*.55)*timing.lead,0,1.0);if(['storm','field','nova'].includes(m.kind))lead=warning*.8*timing.lead;}
     return {x:clamp(target.x+target.vx*lead,BOUNDS.left+target.radius,BOUNDS.right-target.radius),y:clamp(target.y+target.vy*lead,BOUNDS.top+target.radius,BOUNDS.bottom-target.radius)};
   }
   addProjectile({type='orb',element='normal',color, x,y,dir,speed,damage,team,radius=11,life=1.8,homing=0,basic=false,burn=0,slow=0,group=null,maxHits=1,trackingBroken=false}){
@@ -270,20 +282,23 @@ export class Battle {
       if(who.dodgeGuard&&!periodic){if(who.team==='player'){this.stats.avoidedDamage+=Math.round(amount);if(!who.dodgeGuard.evaded)this.stats.dodges++;}if(!who.dodgeGuard.evaded)this.emit('evade',{team:who.team,x:who.x,y:who.y,amount,kind:'dodge',color:'#b2efff'});who.dodgeGuard.evaded=true;}
       return false;
     }
-    const source=this.source(team);amount=Math.max(0,Math.round(amount*(fixed?1:(team==='enemy'?this.difficulty.damage:1)*(source.attackBoost>0?source.attackMultiplier:1)*(source.weakened>0?.65:1))));
+    const source=this.source(team);amount=Math.max(0,Math.round(amount*(fixed?1:(this.isCPU(this.source(team))?this.difficulty.damage:1)*(source.attackBoost>0?source.attackMultiplier:1)*(source.weakened>0?.65:1))));
     const absorbed=Math.min(who.shield,amount);who.shield-=absorbed;const dealt=Math.min(who.hp,amount-absorbed);who.hp=Math.max(0,who.hp-dealt);
     who.hurt=periodic?.04:.13;if(who.cleanseGuard<=0){who.stun=Math.max(who.stun,stun);if(burn>0&&who.burn<=0)who.burnTick=.7;who.burn=Math.max(who.burn,burn);who.slow=Math.max(who.slow,slow);}
     // Hit flashes do not grant free immunity. Only mobility abilities grant invulnerability.
     const attacker=this.source(team),hitAngle=Math.atan2(who.y-attacker.y,who.x-attacker.x);
-    if(!periodic){this.hitStop=Math.max(this.hitStop,basic?.028:amount>=100?.062:.042);this.pose(who,'recoil',basic?.14:.22,hitAngle,basic?.65:amount>=100?1.6:1);if(who.castRoot<=0&&!who.basicWindup&&!who.dash)this.animate(who,'hurt',.18,.025);}
+    if(!periodic){if(this.options.mode!=='pvp')this.hitStop=Math.max(this.hitStop,basic?.028:amount>=100?.062:.042);this.pose(who,'recoil',basic?.14:.22,hitAngle,basic?.65:amount>=100?1.6:1);if(who.castRoot<=0&&!who.basicWindup&&!who.dash)this.animate(who,'hurt',.18,.025);}
     if(team==='player'){this.stats.damageDealt+=dealt;this.stats.hitsLanded++;if(basic)this.stats.basicHits++;}else this.stats.damageTaken+=dealt;
+    if(team==='enemy'){this.rivalStats.damageDealt+=dealt;this.rivalStats.hitsLanded++;if(basic)this.rivalStats.basicHits++;}else this.rivalStats.damageTaken+=dealt;
     this.emit('hit',{x:who.x,y:who.y,amount:dealt||absorbed,absorbed,team,critical:amount>=75,basic,periodic,victimTeam:who.team,angle:hitAngle,element,color:color||ELEMENTS[element]?.color});
     if(lifesteal){const source=this.source(team),gain=Math.min(source.maxHp-source.hp,Math.round(dealt*lifesteal));source.hp+=gain;if(gain)this.emit('heal',{x:source.x,y:source.y,value:gain});}
     if(who.hp<=0)this.faint(who);return true;
   }
-  finish(won){this.state=won?'won':'lost';this.hitStop=0;this.switchReason=null;this.transition=null;for(const f of [...this.teams.player,...this.teams.enemy]){f.hurt=0;f.invul=0;f.action=null;f.dodgeGuard=null;f.stun=0;f.burn=0;f.slow=0;f.boost=0;f.haste=0;f.weakened=0;f.cleanseGuard=0;f.ignite=null;f.attackBoost=0;f.shield=0;f.dash=null;f.pose=null;f.dodgeRecovery=0;f.moving=false;f.basicWindup=null;this.animate(f,f.hp<=0?'faint':'idle',99);}this.projectiles=[];this.hazards=[];this.windups=[];this.tasks=[];this.emit('end',{won,stats:{...this.stats},time:this.time});}
-  update(dt,input={x:0,y:0}){
+  finish(won){this.pendingSwitch={player:0,enemy:0};this.state=won?'won':'lost';this.hitStop=0;this.switchReason=null;this.transition=null;for(const f of [...this.teams.player,...this.teams.enemy]){f.hurt=0;f.invul=0;f.action=null;f.dodgeGuard=null;f.stun=0;f.burn=0;f.slow=0;f.boost=0;f.haste=0;f.weakened=0;f.cleanseGuard=0;f.ignite=null;f.attackBoost=0;f.shield=0;f.dash=null;f.pose=null;f.dodgeRecovery=0;f.moving=false;f.basicWindup=null;this.animate(f,f.hp<=0?'faint':'idle',99);}this.projectiles=[];this.hazards=[];this.windups=[];this.tasks=[];this.emit('end',{won,stats:{...this.stats},rivalStats:{...this.rivalStats},time:this.time});}
+  update(dt,input={x:0,y:0},enemyInput={x:0,y:0}){
     dt=clamp(dt,0,.05);this.lastStepDt=0;this.input={x:input.x||0,y:input.y||0};
+    this.inputs={player:this.input,enemy:{x:enemyInput.x||0,y:enemyInput.y||0}};
+    if(this.options.mode==='pvp'&&this.state==='playing')for(const side of ['player','enemy']){if(this.pendingSwitch[side]>0){this.pendingSwitch[side]-=dt;if(this.pendingSwitch[side]<=0){const next=this.teams[side].findIndex(f=>f.hp>0);if(next>=0)this.switchFor(side,next);}}}
     if(this.state==='paused')return;
     if(this.state==='switching'){if(this.switchReason==='fainted')this.player.animTime+=dt;return;}
     if(this.state==='transition'){
@@ -321,16 +336,20 @@ export class Battle {
     const p=this.player,e=this.enemy,moving=this.input.x||this.input.y;
     // Basic attacks are always automatic and never take over or slow the player's movement.
     if(p.dash)this.moveDash(p,dt,e);
-    else if(p.stun===0&&p.castRoot===0&&p.dodgeRecovery===0){
+    else if(p.hp>0&&p.stun===0&&p.castRoot===0&&p.dodgeRecovery===0){
       if(moving)this.move(p,unit(this.input.x,this.input.y),dt);
     }
     if(p.basicWindup)p.facing=Math.atan2(e.y-p.y,e.x-p.x);
     p.vx=p.vx*.35+(p.x-p.px)/Math.max(.001,dt)*.65;p.vy=p.vy*.35+(p.y-p.py)/Math.max(.001,dt)*.65;
-    this.updateAI(dt);
+    if(this.options.mode==='pvp'){
+      const control=this.inputs.enemy;
+      if(e.dash)this.moveDash(e,dt,p);else if(e.hp>0&&e.stun===0&&e.castRoot===0&&e.dodgeRecovery===0&&(control.x||control.y))this.move(e,unit(control.x,control.y),dt);
+      if(e.basicWindup)e.facing=Math.atan2(p.y-e.y,p.x-e.x);
+    }else this.updateAI(dt);
     e.vx=e.vx*.35+(e.x-e.px)/Math.max(.001,dt)*.65;e.vy=e.vy*.35+(e.y-e.py)/Math.max(.001,dt)*.65;
     const sep=distance(p,e),min=p.radius+e.radius;
-    if(sep<min&&!p.dash&&!e.dash){const n=sep<.001?{x:-1,y:0}:unit(p.x-e.x,p.y-e.y);this.place(p,p.x+n.x*(min-sep)*.55,p.y+n.y*(min-sep)*.55);this.place(e,e.x-n.x*(min-sep)*.45,e.y-n.y*(min-sep)*.45);}
-    this.tryBasic(p);
+    if(sep<min&&p.hp>0&&e.hp>0&&!p.dash&&!e.dash){const n=sep<.001?{x:-1,y:0}:unit(p.x-e.x,p.y-e.y);this.place(p,p.x+n.x*(min-sep)*(this.options.mode==='pvp'?.5:.55),p.y+n.y*(min-sep)*(this.options.mode==='pvp'?.5:.55));this.place(e,e.x-n.x*(min-sep)*(this.options.mode==='pvp'?.5:.45),e.y-n.y*(min-sep)*(this.options.mode==='pvp'?.5:.45));}
+    this.tryBasic(p);if(this.options.mode==='pvp')this.tryBasic(e);
     for(const f of [p,e]){
       if(f.basicWindup){if(f.stun>0){f.basicWindup=null;this.windups=this.windups.filter(w=>!(w.team===f.team&&w.basic));}else if(f.basicWindup.startedAt!==this.time){f.basicWindup.time-=dt;if(f.basicWindup.time<=.000001)this.fireBasic(f);}}
       if(f.animLock<=0&&!f.dash){const anim=f.moving?'walk':'idle';if(f.anim!==anim){f.anim=anim;f.animTime=0;}}

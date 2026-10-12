@@ -1,17 +1,24 @@
 {
   "name": "pokemon-arena",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "private": true,
   "type": "module",
-  "description": "Pokémon 6v6 action fan game with click-to-draft parties, real cries, five difficulties, and elemental combat feedback",
+  "description": "Pokémon 6v6 action fan game with solo battles and authoritative room-code multiplayer",
   "scripts": {
     "dev": "node server.mjs",
     "start": "node server.mjs",
     "test": "node --test test/*.test.js",
     "build": "node scripts/build.mjs",
-    "preview": "node scripts/preview.mjs"
+    "preview": "node scripts/preview.mjs",
+    "dev:multiplayer": "wrangler dev --port 8787",
+    "test:multiplayer": "node scripts/test-multiplayer.mjs",
+    "deploy:multiplayer": "wrangler deploy"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "wrangler": "^4.149.0",
+    "ws": "^8.22.0"
   }
 }

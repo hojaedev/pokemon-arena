@@ -158,7 +158,7 @@ export class Renderer {
     for(const e of this.effects)if(e.type==='name')this.drawEffect(e);
     for(const n of this.numbers){const progress=1-n.life/n.maxLife;c.save();c.globalAlpha=Math.min(1,n.life*3);label(c,n.value,n.x,n.y-progress*38,n.color,n.critical?24:18);c.restore();}
     const enemy=b.enemy;if(enemy?.hp>0&&enemy.action&&b.state==='playing'&&!(enemy.stun>0))this.drawEnemyAction(enemy,fighterHeight(enemy));
-    if(b.state==='countdown'){const text=b.countdown>1.5?'3':b.countdown>.7?'2':'1';c.save();c.fillStyle='#182d4650';circle(c,640,330,48);c.fill();label(c,text,640,330,'#fff4cd',54);c.restore();}
+    if(b.state==='countdown'){const text=b.options.mode==='pvp'?String(Math.max(1,Math.ceil(b.countdown))):b.countdown>1.5?'3':b.countdown>.7?'2':'1';c.save();c.fillStyle='#182d4650';circle(c,640,330,48);c.fill();label(c,text,640,330,'#fff4cd',54);c.restore();}
     if(this.flash>0&&!this.reducedMotion){c.fillStyle=`rgba(236,225,255,${Math.min(.22,this.flash*1.8)})`;c.fillRect(0,0,1280,720);}c.restore();
   }
   drawFighterStatus(f){

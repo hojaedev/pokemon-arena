@@ -11,7 +11,7 @@ test('static production build contains the game, real sprites, music, credits an
   for(const file of ['index.html','src/app.js','src/roster.js','src/style.css','assets/pokemon/pikachu/portrait/Normal.png','assets/pokemon/pikachu/animations.json','assets/audio/pokemon-hgss-battle-champion.mp3','assets/audio/music-credits.json','assets/sprite-credits.json','robots.txt']){
     assert.ok(statSync(resolve(root,'dist',file)).size>0,`missing ${file}`);
   }
-  for(const file of ['.git','.env','.vercel','server.mjs','test','scripts','README.md','AGENTS.md'])assert.equal(existsSync(resolve(root,'dist',file)),false,`private build leak: ${file}`);
+  for(const file of ['.git','.env','.vercel','server.mjs','server','wrangler.jsonc','.wrangler','package-lock.json','test','scripts','README.md','AGENTS.md'])assert.equal(existsSync(resolve(root,'dist',file)),false,`private build leak: ${file}`);
   assert.equal(readFileSync(resolve(root,'dist/src/roster.js'),'utf8'),readFileSync(resolve(root,'src/roster.js'),'utf8'));
 });
 test('Vercel uses the isolated static build and marks the fan game noindex',()=>{
