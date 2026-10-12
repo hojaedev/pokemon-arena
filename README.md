@@ -1,5 +1,9 @@
 # 은빛산 포켓몬 배틀 · 6 vs 6
 
+**플레이:** https://pokemon-arena-rosy.vercel.app · **저장소:** [songyh1996/pokemon-arena](https://github.com/songyh1996/pokemon-arena) (private)
+
+Vercel Hobby의 정적 배포입니다. `main` 브랜치에 푸시하면 자동으로 다시 배포됩니다. 게임 URL은 공개 접근 가능하며, 저장소만 비공개입니다.
+
 1·2세대 인기 포켓몬 **50마리**, 각 팀 **6마리**로 즐기는 실시간 로컬 팬 게임입니다. 한 번에 양쪽 한 마리씩 싸우며, **P**로 파트너를 교체합니다. Pokémon Battlegrounds의 *RED vs GOLD*에서 영감을 받았습니다.
 
 ## 실행
