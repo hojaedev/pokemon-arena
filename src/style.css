@@ -246,6 +246,7 @@ summary{cursor:pointer;touch-action:manipulation}summary:focus-visible{outline:3
 .online-badge[data-quality="good"]{background:#174a32;color:#b8f3cc}.online-badge[data-quality="fair"]{background:#604b10;color:#ffe59a}.online-badge[data-quality="bad"]{background:#6e2428;color:#ffd2d0}.online-badge::before{content:'●';font-size:7px;margin-right:4px}
 .selector .play-modes button{background:#1b3445;color:#dce9f1;border-color:#536e80}.selector .play-modes button[aria-pressed="true"]{background:#245c60;border-color:#89b6a7;color:#fffdf4}
 .selector .online-panel{background:#192f40;border-color:#486676;color:#dce9f1}.selector .online-panel button{background:#244858;border-color:#577c88;color:#f3f8ef}.selector .online-panel button:hover:not(:disabled){background:#326174}.selector .online-connect input{background:#102535;border-color:#577485;color:#e8f2f7}.selector .online-connect input::placeholder,.selector .online-or{color:#aec1ca}.selector .online-panel p{color:#c4d8d8}.selector .online-room strong{color:#f5da8a}
+.selector .online-panel button:disabled{opacity:1;background:#192f40;color:#afc1cb;border-color:#425d6d}.selector .online-connect input::placeholder{opacity:1}
 @media(min-width:1000px) and (min-height:700px){
   .game-shell.selecting .selector{grid-template-rows:auto auto auto auto minmax(140px,1fr) auto auto;overflow-y:auto}
   .game-shell.selecting .selector:has(.online-panel:not([hidden])){grid-template-rows:auto auto auto auto auto minmax(140px,1fr) auto auto}
