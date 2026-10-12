@@ -1,0 +1,745 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0094",
+    "name": "Gengar",
+    "slug": "gengar"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0094",
+    "metadata": "/assets/pokemon/gengar/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/gengar/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/gengar/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "fc8b85ba9fb6267f6c7e8737154aa2058c6edfacb476f45055ab93e3dd209385"
+    },
+    "rawCredits": "/assets/pokemon/gengar/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 256,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        40,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      "durationsMs": [
+        667,
+        67,
+        50,
+        50,
+        50,
+        50,
+        50,
+        67
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/gengar/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "b361da86327436f28508f8b0bb1c5cc59807cc75d1e586ab19f218f7db175169",
+        "offsets": "03ceb51d32034231a35ed508a9689a52932acb559663e4b9a1beff333b4dab2e",
+        "shadow": "64951f780de7ad608869385a015f1cd2ae765f43e2f87a2f1f59016203282c3c"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/gengar/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "be39dae12dae3715a3328628c4c6bc542fc9805d483e877d420d8dac31279a0d",
+        "offsets": "f01fef6e4eca535262b4bf470a312905deb30249b1dbb36b609edb50b49e2ad6",
+        "shadow": "1ec150c932f208ce21ceccbfc72b21ef85a17cd42133734ce2a2e0638c49eed7"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "b2596f947660df1ea04a2b96768d06944ec61908a12d1c42b8d2a88d307259e2",
+        "offsets": "7cd4fcdee9dee1a32098233eb2d43056bb9dce1d0ac830862c5f4759c0f6dd53",
+        "shadow": "67ebcb0aee6e808cc5d8c7ae6a011663e1234947b228148f980129e94f3a65eb"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "74e2457a2e7429a8417fc46ff39c48fae7fa04f2a19d01533cf4f5db8969e49a",
+        "offsets": "6e7d6b1f21749a43b02af97cc65c5eb9eb46f40dc117571f6194c4f3e2ca6b62",
+        "shadow": "df7815c9541ff2a2416b89ee31260fb0bb23e9f9c037457468f59cf976f1d0bb"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 672,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "ec5a691407e63d6f415584b5a59acd29bf4458b2ecddcf2571f3d4b1eef897bb",
+        "offsets": "d334bbb113f702e2128aaa5f008b62e63484c4645a8c94155d7c24b6a080bb81",
+        "shadow": "9e61a1c2a753fe0b9f7299e260c87c7ec30d7290f399a4e0637d74c381b29905"
+      },
+      "hitFrame": 6,
+      "returnFrame": 10
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "80a78671aec2d40e14d220ed92ac37a7f8a12c0c9293e149636c2e212e9425ea",
+        "offsets": "a5848ad0e460c73b9580932e9bff310f5c91aa9116763d937aab212e1d818651",
+        "shadow": "76f0e73624ac0f22d1e8b4650ee44b84abdf60f068d78914a74682cf73236bf1"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "e79dfe328b520c3ae7d41ce928695d1b78904f7a92de6101ef4c61fe8e9f8fdf",
+        "offsets": "1256ce0a45461abe208079d099ff9fc2d1c02eac3217054732bf62bc682bf146",
+        "shadow": "02a8a04bc37cfb0e22bf03c487fd2a8006e216e659b77bede7df4a3f560c7f14"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 6
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "52e5df42d6b851343cdbc9dbae42386c791062e9e98186474daa7f647f7b95aa",
+        "offsets": "86aa18ad0aa5feda5ffc7e43b838030dcfd8493e56800dafe991c07a71fc21c3",
+        "shadow": "269c21eac13bbd401c92d60d5b907d3e446000839828f93ef34d0312984342d5"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "e1d3c9271a1d4ca3139f901d07d149e9e870d6f8589df92f577375c870c78079",
+        "offsets": "1b80a21a4f755d82c093a0162807f34c858b5f8568932b1a35e47da3f60f2cee",
+        "shadow": "b220be381ebf62c21990bdb06071cec65ce1eb621e8867e4e175c341aa02f3ca"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "b0f63b0556fa13ea768f1bc6d0b3d21e8bb7ca76632eafe0d7fc1c09abb36324",
+        "offsets": "ac282a0c57232dda91d18a9f027f00094632bd2187b8b4ba7366ab45049df086",
+        "shadow": "92cc70998f4cb954b44c730295501d7a5b03d6e66de57f7894968d7930d57722"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "daffa2fb584dda45d6db7b399bb187f56371404792994a4ce30b46f2e54be594",
+        "offsets": "0cbc9a5bf118d84ea40366c4fc21ac6a15f9b0f67cf87c2dadafff3be57d5a7a",
+        "shadow": "a69d4c436d7890cd1d5b77d420d95b53a786e144fd545aeb2219d6810b4947fd"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "d76088a212234303e97ce5b7a517b811b50df19b05ffd02d39ffefa00f3a5425",
+        "offsets": "b104791f0634135c17780b03daf88199375c3b70d2b34ce6895be869db63fcd3",
+        "shadow": "ba4479486af5d5a167d1bca9a422f2bcbca139e2801ea53ce05cc3c02adeb747"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gengar/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/gengar/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/gengar/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "2b7c7a538a03520e3d3803653ee0cd6c887732818cf460e26acc9c14d847d14b",
+        "offsets": "ec6c39545ce51f0f8aa70e3b265c8d1df91bfbf62d6c376a6e5f40e7e8416c3d",
+        "shadow": "e604125e71049af5590a17ece1006186dc0e59e62eca0b2084315a2287cdf7ce"
+      }
+    }
+  }
+}

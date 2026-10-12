@@ -1,0 +1,751 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0059",
+    "name": "Arcanine",
+    "slug": "arcanine"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0059",
+    "metadata": "/assets/pokemon/arcanine/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/arcanine/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/arcanine/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "ca862c03cc8a13cdf649fdd9f0dcaf118b0d408153b18c8628072dc7ce0f8370"
+    },
+    "rawCredits": "/assets/pokemon/arcanine/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 1,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 40,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8
+      ],
+      "durationsMs": [
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/arcanine/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "c0adf6e40d44a363f2742667be42d8c1e4d900304bb8bba2d9e85e55289a0a22",
+        "offsets": "fd6f46fb7a834a73832741b83d3703a51ef82261b443fb22122768058de428d2",
+        "shadow": "875ebb5f2f91af0fa064e77b60580c851b43742d3467a7ac3932e7b935a1d4f1"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/arcanine/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "334750447c22099cf87fc6cf7804f4490bb47f87581c5134a05c0998aeb4537e",
+        "offsets": "037c9ff9f9349f34fde8f76a5f644ccb20832d245d0c40f18e5b25d46195774d",
+        "shadow": "0843ac7aa314a5a302a0c1998ceb6f73720007a70ca7d3e0684e86d5e608f0c3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "92a8d3b4c19ea58a8f650d720e4a1dff3164e6adab1fb52d9f59a276834dd5b8",
+        "offsets": "eac27c513ba1e7343996949deda0e99ee5426ad36239a1cc4dfc12a603dce10f",
+        "shadow": "73faa53a1a192fa0300f05140d3e3753c274a392bd3fc116367f3015a46a062d"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "f54455e4e6c34b128abee8dcd85003d272e4371aec0a7017a5c44dc3dfa8070a",
+        "offsets": "16ad1563a34a4964429a770551617dbbad03a01849153ea3675c7504a34842a2",
+        "shadow": "c598a4c3fc9b723e5936bd5ed74086c34af796aa188d84466b4472b3fb8eb99c"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "17b08ccb09a424c21235a39ad432b30aadf653e83683d5439dd4c58814e69ea7",
+        "offsets": "9b2f3cb2daf0a22d677a5fe3c4a2ba631c3222b05903fa0ecdbec058e5e8f3eb",
+        "shadow": "92a9a6cb4b0cc8a8bd04dcb5bb83d08f4e368cc7b98d2f8e8718f1f272a910ae"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "f54455e4e6c34b128abee8dcd85003d272e4371aec0a7017a5c44dc3dfa8070a",
+        "offsets": "16ad1563a34a4964429a770551617dbbad03a01849153ea3675c7504a34842a2",
+        "shadow": "c598a4c3fc9b723e5936bd5ed74086c34af796aa188d84466b4472b3fb8eb99c"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "quickstrike": {
+      "name": "QuickStrike",
+      "index": 2,
+      "frameWidth": 120,
+      "frameHeight": 136,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1560,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/QuickStrike-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/QuickStrike-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/QuickStrike-Shadow.png",
+      "sha256": {
+        "image": "30426a1f039883c72057fda902a9c31780c757de62b935b573e0b6698bf79e3e",
+        "offsets": "8204aa62029b56a04ba10bc1797f44b9beecd83d2c2265f72147b46a6ce9e39e",
+        "shadow": "379ccf28d0ef2b260be5107f9b72f52326dab05b2ea8f3efbba7e7cf55dcd867"
+      },
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 520,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Rumble-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Rumble-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Rumble-Shadow.png",
+      "sha256": {
+        "image": "fd7f3db91ceac116095076999f06be7a3744adfbab2cd9863ea0cf7c8275d1f1",
+        "offsets": "922968c404233207c93eb00211ebc903e6aa4047ca9a4d2c4e33b73c868500e5",
+        "shadow": "9dcb915a387e2d1d6be62d0e3f63bbc47d80b65f7e7c9e06b255e814076cc1a7"
+      },
+      "copyOf": "Rumble",
+      "sourceAnimation": "Rumble",
+      "hitFrame": 4,
+      "returnFrame": 9
+    },
+    "rumble": {
+      "name": "Rumble",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 520,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Rumble-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Rumble-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Rumble-Shadow.png",
+      "sha256": {
+        "image": "fd7f3db91ceac116095076999f06be7a3744adfbab2cd9863ea0cf7c8275d1f1",
+        "offsets": "922968c404233207c93eb00211ebc903e6aa4047ca9a4d2c4e33b73c868500e5",
+        "shadow": "9dcb915a387e2d1d6be62d0e3f63bbc47d80b65f7e7c9e06b255e814076cc1a7"
+      },
+      "hitFrame": 4,
+      "returnFrame": 9
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 96,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "fcb997eb0584eec22262f6bd5d9c25633a3003750dd579dd4626c173533ddc8c",
+        "offsets": "6642b47ef83d52262a991026aabacfae5206ad0c07baa1c572a83d6361e55b22",
+        "shadow": "95c7e2d487073513340d86b7ac59d4bf477a8d47e18a98b065f4d864fd0d0075"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "1c62fb0bb7cf489608cc9ac2d199698c9b156f3a41c4f41c08b9776d1ca89bb3",
+        "offsets": "ad64c0fac3e8dde1579b3d1e0255d58baa7dafa9cfc8ee3a3dcf29ee9b9c2afa",
+        "shadow": "fdd13e686bad6f5ea44b9d861357e7e45ac0d175d1c376869c9d458219e211aa"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "e721647c8213ef613258542011132b1bbb9c9017b80817e9ea6d5f817378115a",
+        "offsets": "ade4f4d416f7670a851b880609e1b58fac91934c03a0dd60af68044efdabb19d",
+        "shadow": "1d7f457d1d4907215524178d32d73df60b605ff9534fd5261491e73573e5eb34"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/arcanine/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/arcanine/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/arcanine/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "aa6f93bd0f4ab4a135fd8a34453d0ab23fbf3519cfe735b4a56eb28dfec6a227",
+        "offsets": "e75b30daf7af9c42ad35e841b034e613d1fcf31d53b74e29cf91d37041c3f801",
+        "shadow": "400806340f23dd13c226c3f67622be131c488391d23f6c8f4c14ae89e3531c73"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

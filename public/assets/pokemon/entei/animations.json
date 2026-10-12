@@ -1,0 +1,778 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0244",
+    "name": "Entei",
+    "slug": "entei"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0244",
+    "metadata": "/assets/pokemon/entei/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/entei/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/entei/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "22ccd16f30ace9b4c0ef1bc95c78a04cad73d5f73bfd3f856cb3bec39e8ae6a4"
+    },
+    "rawCredits": "/assets/pokemon/entei/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 672,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        60,
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        10
+      ],
+      "durationsMs": [
+        1000,
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/entei/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "ad961a2b960bedbf2a608964e75f1fb7ce03eb3c2e6498984dca6297115713e6",
+        "offsets": "e93d071e120ff4e363fd3afabad7d0de73dbb966f2045ec9edc485eb72557c37",
+        "shadow": "8308a87c05c5feee9f1690b5e286cd09dd3accde53cda76411afec0948deeb52"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        10,
+        12,
+        10,
+        12
+      ],
+      "durationsMs": [
+        167,
+        200,
+        167,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/entei/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "d6f29d53347ecd09eb59908dec1e36df1c3a72ae821641d8692da9d7e8e51182",
+        "offsets": "fdda2e3c392d0557ef8575a02478c12e22b8428e290011ac33ad647ccd56ffa1",
+        "shadow": "53efc4b85c7013c48c68378b735ddffcc81d0f8598f2d4a7d23fbf8dc4d86f72"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        3,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        50,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "2f7da739b957d35a7f602c60c691f6b344ba531be1f5b55cc3050c2ef69daead",
+        "offsets": "72cf712a60764f390154dbbee19cc8be398bbd7a245f4aaba7a359f9b2f96bbb",
+        "shadow": "95d0eaae1f284fbae86086fb37ef429b3fa0398c815a94536707bdf6f51f3ddc"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "4ecf76d8a065646827e9780b0b53204399ef1ee6a31e1da62764c7db9018aa8c",
+        "offsets": "549b2d8ab407043dc989ba35c887097f55c846730883eb5c850aff670efc96f5",
+        "shadow": "4973734d088ad25a7f3a2fe09949b183bc8ba0bc0cfc627e93ef21675f194521"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 728,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "4c5ce94c42866cd0780439d185f36ea9bdd7dc57f41347f6bd3b8612010d22ba",
+        "offsets": "1521506e8674afe76a023ecd61fc9bac04648e9ce4964d31bfcf7501a39a89f0",
+        "shadow": "a95962551cb323ed5ae454e28e21de930c5e78643f1b1e5b58b196ca6eab79a1"
+      },
+      "hitFrame": 4,
+      "returnFrame": 8
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "4ecf76d8a065646827e9780b0b53204399ef1ee6a31e1da62764c7db9018aa8c",
+        "offsets": "549b2d8ab407043dc989ba35c887097f55c846730883eb5c850aff670efc96f5",
+        "shadow": "4973734d088ad25a7f3a2fe09949b183bc8ba0bc0cfc627e93ef21675f194521"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        3,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        50,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "2f7da739b957d35a7f602c60c691f6b344ba531be1f5b55cc3050c2ef69daead",
+        "offsets": "72cf712a60764f390154dbbee19cc8be398bbd7a245f4aaba7a359f9b2f96bbb",
+        "shadow": "95d0eaae1f284fbae86086fb37ef429b3fa0398c815a94536707bdf6f51f3ddc"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "rumble": {
+      "name": "Rumble",
+      "index": 4,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 672,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/SpAttack-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/SpAttack-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/SpAttack-Shadow.png",
+      "sha256": {
+        "image": "bdb2eb12ba87b3413371c54daefc9b9c9ec126cfdb55e947c39794d3de461762",
+        "offsets": "0d7046a395677c1c99231bcaa8e23bdb80f1c072b8632de0883c4ae052aa5231",
+        "shadow": "b2f710e3d07185e933f09a776a8db14f888db8e1e7c7c2c0f1e60df191c95c2f"
+      },
+      "copyOf": "SpAttack",
+      "sourceAnimation": "SpAttack",
+      "hitFrame": 3,
+      "returnFrame": 12
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 672,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/SpAttack-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/SpAttack-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/SpAttack-Shadow.png",
+      "sha256": {
+        "image": "bdb2eb12ba87b3413371c54daefc9b9c9ec126cfdb55e947c39794d3de461762",
+        "offsets": "0d7046a395677c1c99231bcaa8e23bdb80f1c072b8632de0883c4ae052aa5231",
+        "shadow": "b2f710e3d07185e933f09a776a8db14f888db8e1e7c7c2c0f1e60df191c95c2f"
+      },
+      "hitFrame": 3,
+      "returnFrame": 12
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "81629783e4b3d67984510ebd2099f856c5b98aa6bdc973cbe8b4245a7e1b4384",
+        "offsets": "bd2cd9827f32c16a49083baff0de6304bfe17715698ca2bc67f5a4a37d62c206",
+        "shadow": "5a49dd0ab45721ee2161d0291ea7ae02d830353f0c0352cef06a1a263d8eb6dd"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "85c661144e4f58712d632af0b2680286db7da88772a13e2cfc8f87c0d63ec11e",
+        "offsets": "ab7b9dd27236889f94b7aa5e4405624656e8924b12997b42d9479b5dc3ecbe9e",
+        "shadow": "9d3afbc9187e43f234d6ed4bd1e1b21257c883f1e87d872d7d843a05d1402661"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "4856339106f2f23eab1e4b21f902b65cca697ced711cbd49c2f464d14a2f88e4",
+        "offsets": "80f2af72e68def3c491dbf579a3d6eb694e1a2e0512b3129b602622fe8590c31",
+        "shadow": "1d7f457d1d4907215524178d32d73df60b605ff9534fd5261491e73573e5eb34"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/entei/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/entei/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/entei/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "0b293ea4a0dc36835ea75575af76c79855f2aabe04d40411592b596eab6fe3a9",
+        "offsets": "6663fe394714d25cdf6791839a3fff104e550998e72567071015e8108a7308b6",
+        "shadow": "90b40e54a62aff579b6d17b41bc726bab37c28df7ef82ebb8a4f56d9041c0333"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

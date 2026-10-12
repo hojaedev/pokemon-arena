@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0160",
+    "name": "Feraligatr",
+    "slug": "feraligatr"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0160",
+    "metadata": "/assets/pokemon/feraligatr/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/feraligatr/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/feraligatr/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "a34f659246d18d71be4a4e1fae4f7f75a2d3797dc8eeaa5f53ec7c8eb418e555"
+    },
+    "rawCredits": "/assets/pokemon/feraligatr/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        36,
+        2,
+        4,
+        2,
+        2,
+        16
+      ],
+      "durationsMs": [
+        600,
+        33,
+        67,
+        33,
+        33,
+        267
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/feraligatr/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "0de49226cd123d8ef3d6a141487cda9f07ff40a5a07f5f0029e6212039cb2cda",
+        "offsets": "80959236551f8e10189e0cf254b5cf83ec9614e948f495f5032d29e9a5559fc1",
+        "shadow": "9b8ac64a8539e9770055aa7078289ab355e5695a599ce371c731114dca24e6de"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/feraligatr/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "413da3e3c92678723723d5e1fe0ad9df77dadb96d940563b0a44b4cb6a84373d",
+        "offsets": "f9d0a8bc6bada2b65ab5d2f175b1fd232e5ba184c530919e1c3de0c21ec9134c",
+        "shadow": "0843ac7aa314a5a302a0c1998ceb6f73720007a70ca7d3e0684e86d5e608f0c3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 864,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "d25a5ac9c02fcc67cf043c245453e399de423ad7708bfc38eb5dd9340dc3f772",
+        "offsets": "bec27a0d5220b167f2f7130946cec9d91f5f9688a499f7bf02807f082aa5be79",
+        "shadow": "0799fdd052aa49bdd1e94de52d3a36d07572e8d5a0705911206de4afc109533b"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "0f4ae882b4099045d92495e6f56392ac20d0dc6d0b72c754a99f495a8d5738e8",
+        "offsets": "258554cc6cc0721e14b70a680156fa24dc737f6079f4f3bc4aaa2737b3dd17ca",
+        "shadow": "db7d3db4e87983e7d724483082216d1420e2c793fda34cedf6420eb36144d721"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 528,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "9d489966fe401ccb90a08016f8d4e0ec64f168fa54713ccaf66b4b498cc0d9ab",
+        "offsets": "aa4711f54355e689d6011b238e64828ad4cddc5456606baa77a89310b8388781",
+        "shadow": "b08752a4a39ca410c233ed1233232ea6a4d34e4f3338f7d83b8bf736ace35d6c"
+      },
+      "hitFrame": 1,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "0f4ae882b4099045d92495e6f56392ac20d0dc6d0b72c754a99f495a8d5738e8",
+        "offsets": "258554cc6cc0721e14b70a680156fa24dc737f6079f4f3bc4aaa2737b3dd17ca",
+        "shadow": "db7d3db4e87983e7d724483082216d1420e2c793fda34cedf6420eb36144d721"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "b1ca518497fda32dfcfa7a60e9696e86d3d7c2aa622a4f68df4de420d6e2b550",
+        "offsets": "40dc9bc5b047b48d1570ffb3872d381c154eb720931de0f320c1aedd07c1907c",
+        "shadow": "c01b9b6879f3ad5bb1eadc3c295fe92062102f522653eca347fb0d4b2dad8622"
+      },
+      "rushFrame": 1,
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "30198588c007b489a92fd02d799cfb03eb6486b4e4b891891edfc8b6aba6e159",
+        "offsets": "0aed0381be5b99b3816358ac64cb483b79add18f76175647df98158568a11b7b",
+        "shadow": "f91fed8e48c7b801b0c158228a61e93e876ba8abfd3e5c518afbea74ed0cd983"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "95f4c7fd90ea0fe4fa459efefb1e79246ce4f68c5ca324b838c16e7b609583c7",
+        "offsets": "a3ee5f0c19292b01feec010422fdf8b679fa3763602b36be995f4742bb6d1a23",
+        "shadow": "aabc1e3439d7dacb79fe8095444b95c98d16bbdf476a8ff6c655c5068e5868f4"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "5aac784c8db7e1b90407b248161bab1f9d011d622a985fd23ac16d205f90a6ab",
+        "offsets": "ea9e8958fdf93001febdbed12e87d3abbc8fb8b948176905bf1577541bdac127",
+        "shadow": "20bdf21c5f9d99efed82fb5ba95e22d0e91eb0f43b205e2369fe8a2ec6233915"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "037a061092fdcc5034c9ac95a48c5dd54f5c3d4057fd64ecfaea2279dcda76b6",
+        "offsets": "492c8ad7c60e59a46ea725508a68afb081c4604e25dea19b960ea184ef43d6e3",
+        "shadow": "1d7f457d1d4907215524178d32d73df60b605ff9534fd5261491e73573e5eb34"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/feraligatr/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/feraligatr/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/feraligatr/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "7b96d0b92dcfc3d4d131629f58f48cc063afb96baddd712f61b4bd4aae009d97",
+        "offsets": "3ed183ff4fbd7bbd1d03aef1bb486f532aad0f3db168c3ae85ba600949700fec",
+        "shadow": "e6f88b64b34e0824d0548fa1b98f9952b0bc614dd47ed310f859b075227f35c2"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

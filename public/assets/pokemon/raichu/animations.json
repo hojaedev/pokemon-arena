@@ -1,0 +1,743 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0026",
+    "name": "Raichu",
+    "slug": "raichu"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0026",
+    "metadata": "/assets/pokemon/raichu/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/raichu/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/raichu/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "f0f636171aab8b200c8ce47781b79e0b179325a1613f94d4667c94aaab20b903"
+    },
+    "rawCredits": "/assets/pokemon/raichu/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        40,
+        2,
+        4,
+        4,
+        4,
+        2
+      ],
+      "durationsMs": [
+        667,
+        33,
+        67,
+        67,
+        67,
+        33
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/raichu/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "1277a3583989551b251b87fbe60ad04bd01ea19b23f2ba43e7aef5b3fecdd366",
+        "offsets": "52ceae6c47e9ca73369b744d77ba033393bc91b557f2b976bc125d4d8c2e3314",
+        "shadow": "d9a485ba748e338816ce1cbcbf29405fff3507bb3bf201be85c05efd1d80f8a4"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/raichu/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "6526184cf16f5b97a1fc2d051e423f96b83843e2bf052ac9b1f1b12f90c90a70",
+        "offsets": "0ea00282d8bf337174936d13b19ff68c49b5bc7b743a808e9f2fe7fc4bbed21c",
+        "shadow": "671311df7daf3867dfc1a5f254552684d033122934178f1980684860c8477d09"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "b58a6e6f8beb0c480e250672abd0160efd38c33b4e9b3e5b5819fc19c4a0bb45",
+        "offsets": "70c04c45e7abab7c5d00907917c7b6a772c400604e095d7b4afafc865d4d45f0",
+        "shadow": "dedee8d3dd02f037544b2d75174eb0d6dbda9399b63fe32ef338fbfa96db7253"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "c570c1415cb09c914076086e4c1623d2c6d131fe5693aa2b89b8a415eae21664",
+        "offsets": "30903507ba0254dd7d439340dc9008aa26f88c6e898c35d832045d123d02c220",
+        "shadow": "0157103db8a36b8ee433520fda7d929ab58e8ded99d9ed246c3824d2af9c8a72"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 440,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        1,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "7b2436a0625813dba014dbe47bd2de4a324ca440fd26675e14e441f546141c87",
+        "offsets": "b236fe99595b28b4460626fb41cf434d312eebce2245b6089bae832d4ea44faa",
+        "shadow": "c8cb9a8b5df05f9025e9d9013d48667253d7d6cc369aa5700f71b00530c83951"
+      },
+      "hitFrame": 2,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "c4e613dc48a44fd460038ad785493b89d2ed0348abc9eb0a045ea8e04ef93724",
+        "offsets": "8a74b60f8b5103b3d87331600c11cc767425c88a1928901a92e8d6e404f73196",
+        "shadow": "c0550a6637fb29fed02db448dde04941d2c6e095b4b2b90679f18990d23f23a1"
+      }
+    },
+    "quickstrike": {
+      "name": "QuickStrike",
+      "index": 2,
+      "frameWidth": 128,
+      "frameHeight": 136,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1280,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/QuickStrike-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/QuickStrike-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/QuickStrike-Shadow.png",
+      "sha256": {
+        "image": "19ff01c0f9ca73f06b2aabcb8e0f527dc659f34670275cdea4a900f902af46ac",
+        "offsets": "aa61962047bc6c9e4996d4769efc5fc524c315eca1471017c97b2b8ee6107971",
+        "shadow": "6e4c3a1b4f541f1bc23700928b62344976fcdbfaecec449d7bad4abfdfa3fe59"
+      },
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "shock": {
+      "name": "Shock",
+      "index": 4,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 728,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        8,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "durationsMs": [
+        133,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Shock-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Shock-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Shock-Shadow.png",
+      "sha256": {
+        "image": "e7b5511b15a01037dfa3836114f042f1b6501ba9a996df46583d663e5e74450f",
+        "offsets": "869624b2166bae2ef6ccc4336a6508fed8cf48b7f9ed27bfb839817e6a443591",
+        "shadow": "27ae9e9501cd8271d3c3484c48f429577f6da8c876580f0e8b3045d5ecd223d9"
+      },
+      "hitFrame": 6,
+      "returnFrame": 10
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "35b64b1e4975e5fd494b6a73420db4f20a7049d6e26e533a2ba07ead09b1fbb6",
+        "offsets": "dfb873248f72bf1aa8f71979ce832b5a0ea4f0630e522328e5ecbe43a0a98202",
+        "shadow": "0f517329ee9ab669359c64c72eead866895ad7029bcc632aa9d9845e9b1ace5f"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "c90840f8c21b1ee696ae6ad862a784b5751b0a99d4115f0384992078a6397c39",
+        "offsets": "42a713f91e323405fbc569981241aacf7910a8379383053c065c610adcf84fc4",
+        "shadow": "0f829d365b2d7ec6948ca42b3d4a4943ea755c54bcf7f747ae267a4300ebbf87"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "8570ec85f49c239f81c240ae06c62fab95850b3935868b7c5df1f4b6d2a5d47e",
+        "offsets": "a87a0b0d2e7db65aae90cd8c28edd9d5ff449e53b92d777198f4ee2337f4eaf6",
+        "shadow": "f18885141c28cc87ed6ee036caccb62980859a415ea73fb177799e1d2c6896ea"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "47d5b30863d1a6152e090a6384210ce5245edadbb16e4a970868bd8376e133f7",
+        "offsets": "aaeb1d6877b978e152464193553c248a6af9d0cc081e11cf13e646bde7d7817f",
+        "shadow": "72eb1c649924006eaa21d379dca2b5be1c96cf4b1a5777837fb32792c005c076"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raichu/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/raichu/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/raichu/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "544121e8cf38ca5831d713c689af4813f119b0c263b6a31ba7e65c0fef2f6afe",
+        "offsets": "84a8f78e25e84ffe1016d7395038f8a97c6833927b277369bad1be4afe6cdd46",
+        "shadow": "cfa164873c1eadbb8bc5247d81d7d40b18495214f4b57e5d5dc9695b872b1f83"
+      }
+    }
+  }
+}

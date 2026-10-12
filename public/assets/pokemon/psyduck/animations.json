@@ -1,0 +1,677 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0054",
+    "name": "Psyduck",
+    "slug": "psyduck"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0054",
+    "metadata": "/assets/pokemon/psyduck/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/psyduck/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/psyduck/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "e93ed7dbb47945570b244ffc6a7319d7989450eb6915c32801436e9078324bee"
+    },
+    "rawCredits": "/assets/pokemon/psyduck/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 24,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        16,
+        20,
+        16,
+        20
+      ],
+      "durationsMs": [
+        267,
+        333,
+        267,
+        333
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/psyduck/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "890be68026823e8c9807c5978d7420665bac67db0f7f5126a30bbf4c1ce9611e",
+        "offsets": "78b2cb36a381cf474e8fb55e1834f64126382a6c9f372c42426baf9c2e1952f3",
+        "shadow": "b2032de1559f978f14a69647771f1956cd65936408006b8bbd9f36e84d1f20b3"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 24,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/psyduck/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "890be68026823e8c9807c5978d7420665bac67db0f7f5126a30bbf4c1ce9611e",
+        "offsets": "78b2cb36a381cf474e8fb55e1834f64126382a6c9f372c42426baf9c2e1952f3",
+        "shadow": "b2032de1559f978f14a69647771f1956cd65936408006b8bbd9f36e84d1f20b3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "ea03d66f893d0a8a8f5580de2f87a344c0051d373c74a4656264675634d149ca",
+        "offsets": "69036905af50b8eece94093e2da136e715a00b655cef1a3c93288c6ec03eb43d",
+        "shadow": "761261874b61b113cab1b7c7cd0def88a14342034529e08bf5e09ea465cfa93f"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "e57d8d6453a2f55fbddb47560d5169172cb45903f1edfd7bba4061cc36dd3004",
+        "offsets": "162396edca5d18465eab2b0af286fd7b07fd30dfe7aa70b09772a028e9e4d662",
+        "shadow": "c598a4c3fc9b723e5936bd5ed74086c34af796aa188d84466b4472b3fb8eb99c"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        4,
+        5,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        83,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "09077a7b230e4fb7b23f670e9e98f59ea219febfb100b5354117d3fe60cb8293",
+        "offsets": "e7bee050492ae347fdca738893b1a286efaf51cc5ec215d4400a6d81130098f2",
+        "shadow": "c9ee7537ce8d224a86499cfaf7890c2a5df271d79a1fed3d6013a3fa50f38311"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "e57d8d6453a2f55fbddb47560d5169172cb45903f1edfd7bba4061cc36dd3004",
+        "offsets": "162396edca5d18465eab2b0af286fd7b07fd30dfe7aa70b09772a028e9e4d662",
+        "shadow": "c598a4c3fc9b723e5936bd5ed74086c34af796aa188d84466b4472b3fb8eb99c"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "multiscratch": {
+      "name": "MultiScratch",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        1,
+        1,
+        6,
+        2,
+        6,
+        2,
+        4,
+        2,
+        4,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        17,
+        100,
+        33,
+        100,
+        33,
+        67,
+        33,
+        67,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/MultiScratch-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/MultiScratch-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/MultiScratch-Shadow.png",
+      "sha256": {
+        "image": "d00c48ffd8323ff30d631e18864f8b9e95d2110d6a676cb15614dffa0f6e9d46",
+        "offsets": "be017e20d1ccd8c9e1ae9b090d9a78d2477d8be50289e53047ef3068d8816bef",
+        "shadow": "6be5699db56d9346f892bde8c29e27b4cacb0ef4fc2e53792d91e63169495461"
+      },
+      "hitFrame": 2,
+      "returnFrame": 4
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 24,
+      "frameHeight": 40,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 216,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "db3b3f9f19b827e4864bf429ba49a2710ffd848331dc543561eac4c6efe812ac",
+        "offsets": "f7e91030e3c866c482ee1531bb7a08d6a299b3da6078f2a92c72ad90deb4c785",
+        "shadow": "19a75b788a4890fbed6b2e058169abca4ff84a0355222c4442fe31ef666773a1"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "2a09bb86482ad0113627ec3c0387e6bfb0269d6d5c1b73436d66c0df38dfed62",
+        "offsets": "8212f5097edac3db08ebc23fb2b97b523c343872f0c51a74e217e9db5628e054",
+        "shadow": "50815bd2f391b97044a60d5ce345c8714ded0e11195c247263f166bc73426bf4"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "138287b49157f3a9f7f3116021dafbd920af79543ff53d5ea76ffd59f449a9f9",
+        "offsets": "b8f24522c9ed7cafff9328fdf6d8802b787772d2c0c69e22f265c037421072dc",
+        "shadow": "92cc70998f4cb954b44c730295501d7a5b03d6e66de57f7894968d7930d57722"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "628cf82fdda44828bab1d41dce06f82620929039bfb98ab6a7be23339c435b1d",
+        "offsets": "0adc531567117f21f8d7e25f646713899f1a03d621fe8f0001e27970fe15bf34",
+        "shadow": "a69d4c436d7890cd1d5b77d420d95b53a786e144fd545aeb2219d6810b4947fd"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 24,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/psyduck/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/psyduck/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/psyduck/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "c6c520cd777659a2bca60d4ba9d5019dceb7c9e30de7c923bade624f828494e1",
+        "offsets": "2e3a308b86d25129c8f87afded6dcd9b72dba4bd2949f5919135155c2b7f7c36",
+        "shadow": "c5b0fdd49a0b35c0b56227ce2b07a413c0b7e420e2d7e1510085705ed293bdff"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

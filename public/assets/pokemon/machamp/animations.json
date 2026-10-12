@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0068",
+    "name": "Machamp",
+    "slug": "machamp"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0068",
+    "metadata": "/assets/pokemon/machamp/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/machamp/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/machamp/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "bb2ad88a3cc71112a627ef1c0d2e72756b04a8c3f845baf35869a3cb112b8a29"
+    },
+    "rawCredits": "/assets/pokemon/machamp/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        40,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        12
+      ],
+      "durationsMs": [
+        667,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/machamp/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "e7a664e470fca6878f114a8e87a6e394f55166467eb207a5215efb4f031d76b7",
+        "offsets": "37d94975855a2704fadfa29ada441255581e8c0642bcc7dd5f7d9a7c81b6a3ee",
+        "shadow": "68627629e56b25d33bb5cc77f3fc46e329239b0be22464ed1074859f90f99cc2"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/machamp/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "e169fb82de0226d8abfbc73e6b837af41cfb19347f71943bea804dfe5fc6120f",
+        "offsets": "9618df46f414741144914deb02d1dfa126321e282be5164e1e9749344b4964b7",
+        "shadow": "0843ac7aa314a5a302a0c1998ceb6f73720007a70ca7d3e0684e86d5e608f0c3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        17,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "26d5247e14c68ec43866d079134e52a59b9a7d761d0ac2ed4dbb804fddaeb2b2",
+        "offsets": "e7bd83490a3c71ca731ea8373f5a0dba0e646f880b0d09ea49d68e0c9bdd3717",
+        "shadow": "772a86ecc5aa90ecf3072f58f5416d2b4dd0bdabb81e481210ef1e3e30faddeb"
+      },
+      "rushFrame": 1,
+      "hitFrame": 6,
+      "returnFrame": 9
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "f9f3a887fa9030cab510fb94183e5edc392bc944aa44fa5ab22b54f62eeae37d",
+        "offsets": "9a0ad6c576457d506d98882604c8801611fbae5fbd3f5f53bbeb48dd9bf38bbf",
+        "shadow": "ac6de71c1c2d68f7b57c3628d73cabee468c84be9da37305bcf53ed6999365a5"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "c04d51a80cb9328bf32430d6a0bd9e350441e6ce9657c766e2d1379c1b85a05d",
+        "offsets": "1453a3c30cc9087f1e262fe05b8c318d36048e34e982d2a1107e6cb11d0dd276",
+        "shadow": "06fd84c70bc16cf01bf38672e5749d32214c3ee562a20c52c44ca7d6369c386d"
+      },
+      "copyOf": "Charge",
+      "sourceAnimation": "Charge",
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "f9f3a887fa9030cab510fb94183e5edc392bc944aa44fa5ab22b54f62eeae37d",
+        "offsets": "9a0ad6c576457d506d98882604c8801611fbae5fbd3f5f53bbeb48dd9bf38bbf",
+        "shadow": "ac6de71c1c2d68f7b57c3628d73cabee468c84be9da37305bcf53ed6999365a5"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "punch": {
+      "name": "Punch",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Punch-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Punch-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Punch-Shadow.png",
+      "sha256": {
+        "image": "348a7f9df9eff3e8a692595529cd87d66806d1538f111ba63c0545d290a4dbeb",
+        "offsets": "ab1030dc9cb6525fdadbe22255e3d1d34af3ddba4ad21a77071e92affbe41ec6",
+        "shadow": "11f04202feb8098b8229f310aa6bf9b0cb9eed09a7cd7fd07a021c17c0939370"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 5
+    },
+    "kick": {
+      "name": "Kick",
+      "index": 4,
+      "frameWidth": 72,
+      "frameHeight": 96,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        67,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Kick-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Kick-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Kick-Shadow.png",
+      "sha256": {
+        "image": "3ec7c92f52c689919cf3b5195854600e798897dd2dcbdff6702ba1285673d8b9",
+        "offsets": "02565f4b0bd43cf60a29541a5ff58b2dd1a727c4b0a4722d721fd64da146f74a",
+        "shadow": "08b6cf94392c28c3994d096a0e7be338449424ed72bc32e1a0c08ebd0cbaaba9"
+      },
+      "hitFrame": 3,
+      "returnFrame": 5
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "f7a10c9c83341762644f5c7ec473d48cd55284ac758ef3f36b786eff7f496bff",
+        "offsets": "f7fa7df566192e8f52bc070e6bf67ffbbde9d2252b21a0b41fc4d929f68a308a",
+        "shadow": "f697c4a99d2c188dd36cec2c6d5881c8a16c43800fdfeb48d028c74f4d5e6b80"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "6708d5087433b2a31c087389c8c6145abc4b4969acd91dfe4f799fecfe85a046",
+        "offsets": "1ef59fc67ad0cfc6649cdcfca407bc6629e8f0bfcb3b3bc1905ba3bd77dfa031",
+        "shadow": "fdd13e686bad6f5ea44b9d861357e7e45ac0d175d1c376869c9d458219e211aa"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "358fef335aab357dc0030b0d098830414993dc472c4a0e8337b2e58daefbd5dd",
+        "offsets": "f9398d8d9aa58f41cf1e2244936920096867f317009b31ad1197abf895fb2f4c",
+        "shadow": "1d7f457d1d4907215524178d32d73df60b605ff9534fd5261491e73573e5eb34"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/machamp/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/machamp/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/machamp/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "c04d51a80cb9328bf32430d6a0bd9e350441e6ce9657c766e2d1379c1b85a05d",
+        "offsets": "1453a3c30cc9087f1e262fe05b8c318d36048e34e982d2a1107e6cb11d0dd276",
+        "shadow": "06fd84c70bc16cf01bf38672e5749d32214c3ee562a20c52c44ca7d6369c386d"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

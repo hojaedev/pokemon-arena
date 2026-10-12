@@ -1,0 +1,685 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0009",
+    "name": "Blastoise",
+    "slug": "blastoise"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0009",
+    "metadata": "/assets/pokemon/blastoise/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/blastoise/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/blastoise/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "32d5f208c19f55eecb713eea1eb02e81d435ee85a46cee97c15da7f060d7fabf"
+    },
+    "rawCredits": "/assets/pokemon/blastoise/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        32,
+        12,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "durationsMs": [
+        533,
+        200,
+        67,
+        67,
+        67,
+        67,
+        67,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/blastoise/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "eb9bca8db6a6fda567302db7815bf122829a07c2fb77ab5e5fb69fb67779815e",
+        "offsets": "c0704c6b25539586ff847620a1a42245623695fe60949d3273b0688dd9b366a2",
+        "shadow": "bb1edc521886ebe78751de066605a38b72a8e89e76f00631de6341a16b5eb6a4"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        14,
+        8,
+        14
+      ],
+      "durationsMs": [
+        133,
+        233,
+        133,
+        233
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/blastoise/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "90074aa6cea5dc4fd11a5ca2bd756f71d83798e2efc346d8d609907489f70350",
+        "offsets": "0cfae0c3423d40d557e76d51137f318bc2440c836ac6dfb20e94e89f14f7dbfa",
+        "shadow": "1ec150c932f208ce21ceccbfc72b21ef85a17cd42133734ce2a2e0638c49eed7"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 832,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        17,
+        17,
+        17,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "a11c75977e2a1e8d5d41d3f441db9a8176f95102eb04bfaea7fe5e099dd1127e",
+        "offsets": "19de26a7bfbf8c011145e145d7748da153f1ba5c45c01a6f8f4e9bcdadfb4fc3",
+        "shadow": "e674a691edf4465b575602f7f76b9960a7ae50347020b6538e52beaa0df8bac1"
+      },
+      "rushFrame": 1,
+      "hitFrame": 7,
+      "returnFrame": 10
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "8f5e78a8814aa0d16a9da08c56415e6892e09ec687ca9538ccc1e8edecd9961a",
+        "offsets": "480cbe6b6ed64ce5b78f1b549922f40e7b0a4a13e20c779d7165296b4179b4bf",
+        "shadow": "83cb0e9aa2b87a9cc7d8a69d62a5f8ed88c42846d97c4338815861fcaf88f084"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        4,
+        2,
+        6,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        100,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "18ef283b80280a7f8625ddfd5b9da950d77b9eb4022875e97e8f28e320e651bf",
+        "offsets": "4cb9ed3dffd6471a248afd7a5776f59f4e11742733214e365f38999c621d4878",
+        "shadow": "f08dff112fc8619295c8b4a21426deb069a1bf00c0c3a29613d50858cc3072ad"
+      },
+      "hitFrame": 1,
+      "returnFrame": 3
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "8f5e78a8814aa0d16a9da08c56415e6892e09ec687ca9538ccc1e8edecd9961a",
+        "offsets": "480cbe6b6ed64ce5b78f1b549922f40e7b0a4a13e20c779d7165296b4179b4bf",
+        "shadow": "83cb0e9aa2b87a9cc7d8a69d62a5f8ed88c42846d97c4338815861fcaf88f084"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "ricochet": {
+      "name": "Ricochet",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 17,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1088,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        6,
+        2,
+        2,
+        4,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        100,
+        33,
+        33,
+        67,
+        50,
+        33,
+        17,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Ricochet-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Ricochet-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Ricochet-Shadow.png",
+      "sha256": {
+        "image": "4db708778f808bf5998983efb8c52aee4c51c56b03c4d9d67bf15339964938ab",
+        "offsets": "6e075451cc23112ecb2573999142dc031db5336e4106224232761e5b362923cd",
+        "shadow": "d06669912f156c0e7a0d7719e26ae0026300e5fabce8adcdd08d60595cec0aaf"
+      },
+      "hitFrame": 6,
+      "returnFrame": 10
+    },
+    "withdraw": {
+      "name": "Withdraw",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 24,
+      "frameCount": 7,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 224,
+      "sheetHeight": 192,
+      "durationsFrames": [
+        20,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "durationsMs": [
+        333,
+        33,
+        33,
+        17,
+        17,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Withdraw-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Withdraw-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Withdraw-Shadow.png",
+      "sha256": {
+        "image": "1470d0342ecfca2c338064b194e35ab5529e138ca929eeb7cde7595caf295b27",
+        "offsets": "c9e617fe70bc4e3d9414f84ee4973f9afcbde02aa8abbd837a29a7aeb23492d4",
+        "shadow": "5e497c03daac7741eeeaf58c48bc1cad6cfb74171a0334dcdadb89f94adeb1c6"
+      },
+      "hitFrame": 1
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "c34fead71e2091be25ccc5a8622c04520c166e6ff1def01a2a9193d0697918f5",
+        "offsets": "1b2c42c750e48cdde477fcc82dab01a21c12dfe89f67c13d604a084f5d01c878",
+        "shadow": "7e3deaa68c224aa9f77a463c98d2f77d1259390950ecbbc21c19aa37ec96c67a"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "1431d8e448aebf6dbb0921803f7549f74cfec21708344be3406e9aeeef846de7",
+        "offsets": "c4b4790cff0c2be69254ae1dbeb3f7ebcb22406aaec597c92465ed2c749fed97",
+        "shadow": "9d3afbc9187e43f234d6ed4bd1e1b21257c883f1e87d872d7d843a05d1402661"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "6262e4fdec774c3f951dd38550897a7790e5e893afd3aece18df1fd965c63708",
+        "offsets": "86039aba9c2317ff631382ef2d60998d267401695274b0184aa503f7e2fd61dd",
+        "shadow": "ec08187a3fa5ebc2ffa2e60fa9173d5ae2f5abbc3e1a860f6bbb1924957d5a25"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/blastoise/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/blastoise/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/blastoise/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "6bda9f5f5332e6c0639bf69dca378c4d9420eb178761bec209c32eeb0439862e",
+        "offsets": "9b344243eea7ab39cdf838d522cf49edf798a32c868dc94a549bb967f8854f49",
+        "shadow": "4a9bf0cf1eab0f9ba50098ae03c541f627d84b4ef063edf96fa97953732c1492"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

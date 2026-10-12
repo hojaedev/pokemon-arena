@@ -1,0 +1,764 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0034",
+    "name": "Nidoking",
+    "slug": "nidoking"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0034",
+    "metadata": "/assets/pokemon/nidoking/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/nidoking/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/nidoking/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "e68ab68c35fc39345b41218feb472382f41f47836ad3b9027db25fc2e38afd87"
+    },
+    "rawCredits": "/assets/pokemon/nidoking/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 64,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        35,
+        12
+      ],
+      "durationsMs": [
+        583,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/nidoking/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "7fc391919541020478125f82630ebbb7500d627e90c881896c3d28ef0c299b53",
+        "offsets": "0fc618b5bfbc5405445ec106f9650fff5abe5e3083c81935d5b4183e2215f52e",
+        "shadow": "c7b4b5a1cb381754a2bbff9a810ed9d1ce14c2474bc46b8194900bb9fc42e128"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        14,
+        8,
+        14
+      ],
+      "durationsMs": [
+        133,
+        233,
+        133,
+        233
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/nidoking/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "47e73a0dbadc870b3dba8ac816b1e43f0359aba2797bef2569883894793cef5c",
+        "offsets": "ce500351bb97d9edc1e9607ef009934d0e4f2f884f71b527c195baaa59af96af",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "c72da1f2e9d65c63a96a1bea52c8afaaf4a7cc45a85e687b82c8175ff24639c0",
+        "offsets": "10720faaac223669efdd2edcd522e6742cefbefa09d12db531db17e5a4b41eee",
+        "shadow": "7a3ba87d8fd56ab6bffc6b49e9eca14993a5feb0792f40c31e84b7132aa6bcc9"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "2c7b394b7eac41d61c26b7368ddc3b92c867f24e790d3fd7399e36eac68e82c2",
+        "offsets": "f8164468f81b8dd33496e89b9b0dbde7bf1f179ad566b3265c49097b076a174b",
+        "shadow": "59e15793497a8122091a82c72c5a51beee94f1f6d7103dfedfb2604d57a02f51"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 15,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "b96eef4504ea9e5dd6e85803c813c287abbee187213153dc5955b9f9de5e031c",
+        "offsets": "94de7b7a4b981fa3bcc96b0e6d77beaba2d7704bf3e9a7e18ffae212432a4709",
+        "shadow": "415525a7ef3ce92c01290641a0699b81c273bc9c5c48a1dbdf5b3805dbf55566"
+      },
+      "hitFrame": 6,
+      "returnFrame": 10
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "2c7b394b7eac41d61c26b7368ddc3b92c867f24e790d3fd7399e36eac68e82c2",
+        "offsets": "f8164468f81b8dd33496e89b9b0dbde7bf1f179ad566b3265c49097b076a174b",
+        "shadow": "59e15793497a8122091a82c72c5a51beee94f1f6d7103dfedfb2604d57a02f51"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "c72da1f2e9d65c63a96a1bea52c8afaaf4a7cc45a85e687b82c8175ff24639c0",
+        "offsets": "10720faaac223669efdd2edcd522e6742cefbefa09d12db531db17e5a4b41eee",
+        "shadow": "7a3ba87d8fd56ab6bffc6b49e9eca14993a5feb0792f40c31e84b7132aa6bcc9"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "rumble": {
+      "name": "Rumble",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        33,
+        33,
+        33,
+        33,
+        17,
+        33,
+        67,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "bb3528e311e98961dc955c73032d1b7be44f52c2d25dba837779463e308210a7",
+        "offsets": "2a3fa5ed30cd4a813803aca941158f4dc00999d2c7ae05fc27b977cc91fd3f04",
+        "shadow": "5c58e270c355e2fa8ca3db4aa988fe8b6cfd9655b18c125f21c7f973ce253224"
+      },
+      "copyOf": "RearUp",
+      "sourceAnimation": "RearUp",
+      "hitFrame": 11
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        33,
+        33,
+        33,
+        33,
+        17,
+        33,
+        67,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "bb3528e311e98961dc955c73032d1b7be44f52c2d25dba837779463e308210a7",
+        "offsets": "2a3fa5ed30cd4a813803aca941158f4dc00999d2c7ae05fc27b977cc91fd3f04",
+        "shadow": "5c58e270c355e2fa8ca3db4aa988fe8b6cfd9655b18c125f21c7f973ce253224"
+      },
+      "hitFrame": 11
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "24635e829d6dec0cd195d9f91efb9b4bfe1c39ebe9a94a25414b8fb37100b9be",
+        "offsets": "fcda7da61eeb19e262eee1acdb873978c9706da5cfece5a8fcc9ee620c92894f",
+        "shadow": "98d0603d5b20b79c4114ba294ad12428d0cdebfce65e15868e4ea53bcfa8b149"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "37e98ce4651a60c2e62e2e5be537c4d491560ca995e957cb035f0bafcc36e8f2",
+        "offsets": "938b71afef9344c41fd9cde3969d60eb40e33cbbd425260f341f7ccdf1d63921",
+        "shadow": "fdd13e686bad6f5ea44b9d861357e7e45ac0d175d1c376869c9d458219e211aa"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 48,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "382bb98266062b0ea02093d593bcc2a96f306aec6208abb00aca54757628a3fc",
+        "offsets": "fd905a78de41ac4a5db5cf623c5df29daa1b9238a2db6de02a79e1f3b6515cc0",
+        "shadow": "33698b4d6862224dac9d9c50be188aa90a4900f9ccf6135ca36a1b023592b913"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/nidoking/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/nidoking/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/nidoking/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "7051c999227a7033df4fcd1d46dfe44dbc148a9f417d80ec28438adae37dcf10",
+        "offsets": "bac2260ee0ff62e91af6ccddb486e33d5e25d83cd3fc9d4da0b8cc3c6a31c307",
+        "shadow": "90b40e54a62aff579b6d17b41bc726bab37c28df7ef82ebb8a4f56d9041c0333"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

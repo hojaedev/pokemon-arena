@@ -1,0 +1,702 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0142",
+    "name": "Aerodactyl",
+    "slug": "aerodactyl"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0142",
+    "metadata": "/assets/pokemon/aerodactyl/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/aerodactyl/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/aerodactyl/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "d571d9a01b48c3fed8f394cffdd6257a8d14d7603afbf6b02ee43b1a6d3c8022"
+    },
+    "rawCredits": "/assets/pokemon/aerodactyl/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "durationsMs": [
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/aerodactyl/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "09b827c98d35ab4de4707b2a953e737b3368db4b7946492fed55ab42bf581510",
+        "offsets": "b077f5447919652b653d8545362e14e5e76301eb761f7caf5b232ff26aaf9158",
+        "shadow": "43ae0a81445828a54e2ad59c55033b6e250404ce24a72388cee56fc54b230aaf"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "durationsMs": [
+        133,
+        133,
+        133,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/aerodactyl/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "7f9c0ace84f4911b6945be4c0fb765fa8127796a7cfb94e9df3698643e84eb43",
+        "offsets": "6ede9950903d2a7394f0ee017d49b6764f8ae02dc6f0d4efc75fd82fe89ecc95",
+        "shadow": "639a6c232a5f4211585700a27338e6f6ba1768d8f6bc88c5e940c034efdf5559"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 832,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "4e37d06e8a4bf2556e491473a96f1922bcd5ebee1423c6400f74e6ff7a4ef7d4",
+        "offsets": "892897e43ee5b7cae1b5fa2bf21630eb129eff4e6a1491f9ddb36038f2132c6b",
+        "shadow": "19f5ed94b8f879603e04588d6a3723fddb1c004be927e400600d26ef615be6e4"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "fd73a01b2eea792b1d0af1c042d744f214afa034e3d6fcd22782d552060fe883",
+        "offsets": "ca806f08ecf85fb971ded8df8b319cbf41a64f17459dad6888fe7f15132ce488",
+        "shadow": "20ce4ed6a229d23fb065544b3db4a5f77b92814c9c6028c1cca425c0e7233a5f"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 672,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "21d7d8a3e8f480b6b08278c54ee28be7edd38ee610ca091b2dd8d22bda16d904",
+        "offsets": "3f396b2cc762bcc3c4746524e0915edf041da5331735511558eea886c7883823",
+        "shadow": "1ce237ff463eff48d91182df136241b4c8b496f943938fc334dd2298585c43b6"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "fd73a01b2eea792b1d0af1c042d744f214afa034e3d6fcd22782d552060fe883",
+        "offsets": "ca806f08ecf85fb971ded8df8b319cbf41a64f17459dad6888fe7f15132ce488",
+        "shadow": "20ce4ed6a229d23fb065544b3db4a5f77b92814c9c6028c1cca425c0e7233a5f"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "d5ba2a9b5362c1be85199556b763efa487d03807e140cf0bb9c14fd9762dd4aa",
+        "offsets": "702f3da4dac36ff37c2e98e5825aeac7377298a56c201352bffb17c8bf42c889",
+        "shadow": "bae3af4b0df7648a6c797f39faf0dd7c53302eefc4f9de114b254fd4b128342b"
+      },
+      "rushFrame": 2,
+      "hitFrame": 3,
+      "returnFrame": 5
+    },
+    "hover": {
+      "name": "Hover",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Hover-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Hover-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Hover-Shadow.png",
+      "sha256": {
+        "image": "5b4461d6e68a569f84eb473607cbe37079da87a6af97f3e25812ab026ffec85f",
+        "offsets": "61e8ed3a92326ba883b171fe172725014d35d576279dabf818c49098f81401a4",
+        "shadow": "234be802da997f12f207e6840544e1c25435e616de0d9a97669d9fef7cd3e9be"
+      },
+      "hitFrame": 4
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 88,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "f86a6a3705575822e58f6d10333dba0babe5effd9a59666b16bd27fcfddb3978",
+        "offsets": "387d711b7f0e968bbf125b9483d397bece568f26aab8a497c69aabcd1a2cbf48",
+        "shadow": "8cb21c34820399140412ba6c169343f438f856d025ae7f0e4a2d98059c79979c"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 88,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "0b99ab416f1d853b5d46a512a02a9def00cd5cb9254f2628a9c4d262f9d61c1f",
+        "offsets": "24c449cb9ea6047a5bbad028c3e052e444ba8e3d9e8d76e5d371dd340e9e1f79",
+        "shadow": "f3a8af5f8fa09e93955a9c45b4b2f08a4e37fa8552b3a9f51384aa06b2366f72"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 104,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "c4955d790a613ff9136f260bc8c8e102ed84520b9e5e3eb035606dee86d9107a",
+        "offsets": "142b6bfeeea84db0bd4f8fdc4da6c82fb23dc20e107939059cc3a972b1413608",
+        "shadow": "9db289046134994995caf1dddfa0ed955e615eae4d4172966afa0c05d9ea0a45"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/aerodactyl/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/aerodactyl/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/aerodactyl/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "d16ac0c00c0de2bda9e3be2b3d7d41d0402b45ba102f298196e230d43ac4ee63",
+        "offsets": "5032d106c9fcda5605fbb37aec7594e659c729d99ff05c27ca860315eed042b4",
+        "shadow": "3831d551ff10e4bcd4612ea172c7546f07c2a8d96b8787164df37751930a939d"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

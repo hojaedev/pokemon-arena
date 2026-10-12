@@ -1,0 +1,682 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0248",
+    "name": "Tyranitar",
+    "slug": "tyranitar"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0248",
+    "metadata": "/assets/pokemon/tyranitar/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/tyranitar/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/tyranitar/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "998be4c22805be98844c84444853beb9d5dfd5eb82ce0fb729d1492a9958ca41"
+    },
+    "rawCredits": "/assets/pokemon/tyranitar/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        14,
+        24,
+        14,
+        24
+      ],
+      "durationsMs": [
+        233,
+        400,
+        233,
+        400
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/tyranitar/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "75d19899e0aa5bf44c9f4e8587c9c8e650ba19f9c3df430725a54a0796af6771",
+        "offsets": "e3cab2928c3fdb0c75f0a16ca3e42978707718ae93964af4866957ca40f5a95b",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        10,
+        16,
+        10,
+        16
+      ],
+      "durationsMs": [
+        167,
+        267,
+        167,
+        267
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/tyranitar/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "75d19899e0aa5bf44c9f4e8587c9c8e650ba19f9c3df430725a54a0796af6771",
+        "offsets": "e3cab2928c3fdb0c75f0a16ca3e42978707718ae93964af4866957ca40f5a95b",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 880,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "fa84c67cc50dc27065f59a058d9094ec6079d8b33bd75d2b9726d512b0cef34f",
+        "offsets": "5ffd17df00d5264ddafcf603c45878b1193c4a258dea0c117359d3921bc7b1d9",
+        "shadow": "a3eb5c576988f3f578d68cd0bda37edb3d4abca97bfba4b2c58de91fb85a8f51"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "a0b28ebc44311498ea0b5a4a6b780838d614873a8602b8b71d213b557998e5e1",
+        "offsets": "b02b94b039d4c4940f8e57061b0dc8522c2a1d928d1f14467a3a2ffe7c23268e",
+        "shadow": "df7815c9541ff2a2416b89ee31260fb0bb23e9f9c037457468f59cf976f1d0bb"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 624,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        3,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        50,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "a4ecbb2f031b227a1573eb2eb9acc58d98c8546d3e216f2f66b730fd21127917",
+        "offsets": "a79767d1d4d1dd79d8f46a2f5163cf9af061bb49095cf82b439da972842b801b",
+        "shadow": "40015797eaa71df892f4f23c5685023f70f1a5291bf094f3f622148ad8b3eed0"
+      },
+      "hitFrame": 3,
+      "returnFrame": 8
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "a0b28ebc44311498ea0b5a4a6b780838d614873a8602b8b71d213b557998e5e1",
+        "offsets": "b02b94b039d4c4940f8e57061b0dc8522c2a1d928d1f14467a3a2ffe7c23268e",
+        "shadow": "df7815c9541ff2a2416b89ee31260fb0bb23e9f9c037457468f59cf976f1d0bb"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "0d7a48ec78b81616eb51b4e4d81e85523dd01bf1788744bb7a40a3f249c3d377",
+        "offsets": "bbbafe42f022fca78fdad06c5df21162b658f5e76bfec86d89eb048215726879",
+        "shadow": "cb9ab3490de1efa4da19301d6fd4baffac1403ef97f9796b4b47097903103bf4"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 6
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 360,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "6e41c344144bc1fd40d33c11a4e641bc397bd5c69863e28e372707c0bb66ca9a",
+        "offsets": "739f9acadcf0d0a222b73ed51b4cd0157bca8ce495f59221765001e25a3d4354",
+        "shadow": "d27234b44f3c38f4fc6dc6391dc502acdaca2e7de93bd5d105f729f01837e816"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 88,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "90a5157f10559278f85ae031ba52a1d848eb285bb6639857e355f790387bb73c",
+        "offsets": "7bfb17a4d3627f5518db2b702426a59fa43ed193f2f62a65f8593a6be822223b",
+        "shadow": "0fa005ee1c0d4c3760ab32de0bc7062649cb9ffe9c847655efbccbd5dd728805"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "63c47693fe5887c2de918e8db667f95e5aa7a0119df542450909db3510215022",
+        "offsets": "cc874c73b27df60b776e752dc94ecae3938ed30aa158cfc6a921f8d842dc20cc",
+        "shadow": "92cc70998f4cb954b44c730295501d7a5b03d6e66de57f7894968d7930d57722"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "be77e3332b2af196f2567833cc044d1424a1c6dc8f600d1000c9831a79b80dca",
+        "offsets": "309372ef78ecbeffe43ce75b007ee61bc4d67f210e7b0669c59c30e54c75e762",
+        "shadow": "0673f2f705f773daa3955604e7c5c3bc7e14cba55b79f3ef5c8fbc4e8965a1fe"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/tyranitar/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/tyranitar/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/tyranitar/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "820817bfb60cd95241df63e273c5b1bdb90d8432f8c42b9d1accc6bd57c856aa",
+        "offsets": "f22f39e2b359985de693ee074249d0b6a886198461ac91b7b4236a2e0de1d75b",
+        "shadow": "4a9bf0cf1eab0f9ba50098ae03c541f627d84b4ef063edf96fa97953732c1492"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

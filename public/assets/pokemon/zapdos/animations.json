@@ -1,0 +1,752 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0145",
+    "name": "Zapdos",
+    "slug": "zapdos"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0145",
+    "metadata": "/assets/pokemon/zapdos/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/zapdos/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/zapdos/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "097f4f023c9dcd529ae7d55934f6f13b324e3af08c0b736fc295c7b27899951f"
+    },
+    "rawCredits": "/assets/pokemon/zapdos/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 56,
+      "frameHeight": 96,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 224,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/zapdos/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "6e5df7ace5c8d492de5a900c0f0963ce07763d48885e47c1731232025b5598d2",
+        "offsets": "dcb45587d4bd8e720ac3624a92217aed3338878773067f81e4b50ed802a792fa",
+        "shadow": "6fcb2efc996c36340be35ffbe024df1669da5d79ad98e0b62cc156021131fcf9"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 56,
+      "frameHeight": 96,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 224,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/zapdos/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "6e5df7ace5c8d492de5a900c0f0963ce07763d48885e47c1731232025b5598d2",
+        "offsets": "dcb45587d4bd8e720ac3624a92217aed3338878773067f81e4b50ed802a792fa",
+        "shadow": "6fcb2efc996c36340be35ffbe024df1669da5d79ad98e0b62cc156021131fcf9"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 880,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "259c1bfd19d57a1355680eaaeb7e01ed3d0182e0f791986642c8af3b72023d77",
+        "offsets": "32eeeed54831e25a69988e0686e32587cf8fb2bdca33b0cb81d26087b667d245",
+        "shadow": "035b5f39117268e94e149f4cdfbdbfcc36d4c7616c0cf3d4e4acd73e5bdb1687"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 80,
+      "frameHeight": 104,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "01d5fcb33222022642713cad3acf91a91b66c352dda1589385d4fb52fe42f1c8",
+        "offsets": "5081ec7331cb139f6837948019ded8791f38eb9fa8fd687d0e5896be16fab122",
+        "shadow": "4e35b6ccddd473e0923585609ec22d801e1931e0ff9d3d1feb70427091b44eb1"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 72,
+      "frameHeight": 112,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1008,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "865a1c2fd8c4cd05ff12bc9642e2d3470c711e4078ce0c9422984a08e7d02e90",
+        "offsets": "1555f4fe0a83761afd701b3ca12eba9d8a134ccc963eb2f671401187329be5eb",
+        "shadow": "827e3ec825a1f8fddd5dc59b0cce6bb36652b2f0f5d6adc68040354a7311cd2d"
+      },
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 80,
+      "frameHeight": 104,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "01d5fcb33222022642713cad3acf91a91b66c352dda1589385d4fb52fe42f1c8",
+        "offsets": "5081ec7331cb139f6837948019ded8791f38eb9fa8fd687d0e5896be16fab122",
+        "shadow": "4e35b6ccddd473e0923585609ec22d801e1931e0ff9d3d1feb70427091b44eb1"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 880,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "259c1bfd19d57a1355680eaaeb7e01ed3d0182e0f791986642c8af3b72023d77",
+        "offsets": "32eeeed54831e25a69988e0686e32587cf8fb2bdca33b0cb81d26087b667d245",
+        "shadow": "035b5f39117268e94e149f4cdfbdbfcc36d4c7616c0cf3d4e4acd73e5bdb1687"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 80,
+      "frameHeight": 128,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 960,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Emit-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Emit-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Emit-Shadow.png",
+      "sha256": {
+        "image": "f5a3d4f1a8d0b7c16e6b387aa2550614a76fb12aaadc7a1993ebb012a818c981",
+        "offsets": "4c33852434464e69be73a9701ad9192c31fb65a1b85f2724e8d6bcbc74e95668",
+        "shadow": "ece532f71e020c1a6cd71505bb56f9600393db8147470dcc4fadbdd3341f6e6c"
+      },
+      "copyOf": "Emit",
+      "sourceAnimation": "Emit",
+      "hitFrame": 3,
+      "returnFrame": 10
+    },
+    "emit": {
+      "name": "Emit",
+      "index": 4,
+      "frameWidth": 80,
+      "frameHeight": 128,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 960,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Emit-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Emit-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Emit-Shadow.png",
+      "sha256": {
+        "image": "f5a3d4f1a8d0b7c16e6b387aa2550614a76fb12aaadc7a1993ebb012a818c981",
+        "offsets": "4c33852434464e69be73a9701ad9192c31fb65a1b85f2724e8d6bcbc74e95668",
+        "shadow": "ece532f71e020c1a6cd71505bb56f9600393db8147470dcc4fadbdd3341f6e6c"
+      },
+      "hitFrame": 3,
+      "returnFrame": 10
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "9e90bd7fc448c62fbdbe3bd018f23c2f8eed716875c507d920b05ab272390f1f",
+        "offsets": "8d3a423e5499a7077b558d18ef2041ed76f3eb41e32c9cca2d60a9d8f3165a22",
+        "shadow": "dc8b726650567d30113ad24a2002feae051c9700cb61bc28a12417f17d090084"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 80,
+      "frameHeight": 120,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1280,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "e041e4c6b14b88f988e7e4dc80cbee815328a7f8757842074e56c83e7fe5b1f9",
+        "offsets": "2b130c34d9f138298fd00a8a808ebe3ecb4fbdf35f960ebd5ce9c1012f043b4c",
+        "shadow": "c5aef9385eac33506b8a5c86e9678e94169b871c8463b2dbc2bc320b921db46b"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 56,
+      "frameHeight": 136,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "ef1335ddebdf1ee5c4acad1a828c94f4a8bf4466a5a1a9f74eacb1415e2a70d9",
+        "offsets": "78dff2d0975460ab2c451dff4edaf55a3f9d84cd535b4254e3078b813e946270",
+        "shadow": "964cfd842f0ccee0546fe8175606a6513e767efdd5adb0ca37a2928788b27917"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 56,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/zapdos/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/zapdos/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/zapdos/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "e931037c47dcc95448de122e7de9005df3f97daea84dfa6e24e62df42fafc363",
+        "offsets": "a508c68e180ee5eced236be6ffecac03fd3a362826bf47449ec6c850ab4d5341",
+        "shadow": "344ec0ccc99c8de21c445216c1b8e47dd6c87f7fab768c278e47e621bea97153"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

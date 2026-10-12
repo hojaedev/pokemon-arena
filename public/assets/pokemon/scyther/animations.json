@@ -1,0 +1,678 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0123",
+    "name": "Scyther",
+    "slug": "scyther"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0123",
+    "metadata": "/assets/pokemon/scyther/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/scyther/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/scyther/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "b86e37ce47ef98409651413502ab0312413f81318646de141d99303e9a21049f"
+    },
+    "rawCredits": "/assets/pokemon/scyther/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        40,
+        10,
+        14,
+        10
+      ],
+      "durationsMs": [
+        667,
+        167,
+        233,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/scyther/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "19c9a0e548f5f137ec1021d9ab7b94526d2db082d06ed3f307e13acd67cbb365",
+        "offsets": "cb3449bdc9f1d099fae7542999eef66ab845cd4777774695986840b003021d4b",
+        "shadow": "0843ac7aa314a5a302a0c1998ceb6f73720007a70ca7d3e0684e86d5e608f0c3"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/scyther/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "beca8bf4fbe76c844a2120fb97da09948d06295b6196f4179e774c06b5d2cf84",
+        "offsets": "1a2a6ea4fecb40f1e2b68a145fa23cb48137b16c31f2469260d24090455efa08",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "a510bf490ff90537f1c014726468174582d5933007a2d74200901dac814b642f",
+        "offsets": "226b6d11d95a821c5cdc4b0676e55b9f935f15d571056052fb28ea2845997865",
+        "shadow": "c3d332d8ce9cc00992469a7ea5c3a892cec114a89b57570ca1ff0c4ee6f11c61"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "5da4aa285b56da702faa84648ce683b74a6b28ff5c6c7cf11aaaec61a51a513d",
+        "offsets": "0d62b82346e535df0b21757c0dbb9af3ab0975bb2ebfc6b104a9a2c9b25669c8",
+        "shadow": "4973734d088ad25a7f3a2fe09949b183bc8ba0bc0cfc627e93ef21675f194521"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "f5bb457ea22532fd81d3f2a9cb9027e06df2fb4a5d1167bc651d2bd39c36e11d",
+        "offsets": "a24da99e71e41f056b1da68406b02170bb48f857f9f776f87d1b44ff680e1a36",
+        "shadow": "cb112b1c8e1581d47ee271edd6d3d59015e1c79ec784ee0741ee55292d194885"
+      },
+      "hitFrame": 1,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "5da4aa285b56da702faa84648ce683b74a6b28ff5c6c7cf11aaaec61a51a513d",
+        "offsets": "0d62b82346e535df0b21757c0dbb9af3ab0975bb2ebfc6b104a9a2c9b25669c8",
+        "shadow": "4973734d088ad25a7f3a2fe09949b183bc8ba0bc0cfc627e93ef21675f194521"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "slice": {
+      "name": "Slice",
+      "index": 2,
+      "frameWidth": 88,
+      "frameHeight": 80,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1144,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Slice-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Slice-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Slice-Shadow.png",
+      "sha256": {
+        "image": "9b5805aea6e345559a27006f56ae06cc5fb0863c31307cf9f48669a9cbffcec2",
+        "offsets": "6a1e8893207dc6cb0be228d84c57c182de63803f16e17189750a016fab8c5e78",
+        "shadow": "82b330b72908693115035b9097fe7ae43d6ab818c9f15e5e44821696f36a2e59"
+      },
+      "rushFrame": 2,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "97473f2beed5b9c30a260f45a376b6c560cd29dc86ad756d7440e4b7a990728c",
+        "offsets": "d6fda0ed249c2029592addb448f561faf4b213a4acf915a22ba532702abb319a",
+        "shadow": "f91fed8e48c7b801b0c158228a61e93e876ba8abfd3e5c518afbea74ed0cd983"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "a91cb8c59e2210fcae8b03f2150ce95f51c29427381dc7303291ad4e6d5ca07e",
+        "offsets": "6f7a652325ac0cec580ae0ce1a85a3ca96f1b5a037efbfc2f1d25c3bed310d1b",
+        "shadow": "67a85e629849d673680f59c874fc626c873749a5c93eaeb4bb501c39670b909f"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "dea0f96cb15b2de11ac1b75c82113740ab9ea7f48a2ac6d25d81020cab935d73",
+        "offsets": "747308827174c98ab53ccf1160028d4d3177ff95f9001f07d6f6d5b6412ab1e2",
+        "shadow": "9df34caf97c3b5d15a9537bc38fc3aca3220101f2e6ab35a1a7cf083d14b2a89"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "ff33fb05308b553fa45a07c46474e1e2e6773317e66193512753764ce579425c",
+        "offsets": "779317e8aac5dd49ef5121bddba3595a7a0f6f63fde7b882f71023a243a352c6",
+        "shadow": "1d7f457d1d4907215524178d32d73df60b605ff9534fd5261491e73573e5eb34"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scyther/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/scyther/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/scyther/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "c8a9b7378d6698f4a0940a5c3c7c4e6269c8dbfde37fe1c667db49bf2027ae8b",
+        "offsets": "baebdd36a7087a228087be3948453edc523de9e4031dfb7bfebe18c8b4c9c293",
+        "shadow": "400806340f23dd13c226c3f67622be131c488391d23f6c8f4c14ae89e3531c73"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

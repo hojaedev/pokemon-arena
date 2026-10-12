@@ -1,0 +1,710 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0003",
+    "name": "Venusaur",
+    "slug": "venusaur"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0003",
+    "metadata": "/assets/pokemon/venusaur/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/venusaur/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/venusaur/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "ad837a186afb8399c9c2a1ac832dc77256709e832d71851e2ebade2497daf191"
+    },
+    "rawCredits": "/assets/pokemon/venusaur/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        30,
+        16,
+        12,
+        16
+      ],
+      "durationsMs": [
+        500,
+        267,
+        200,
+        267
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/venusaur/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "53547ad2b27a60f270a9cd698ab53fe55df8352d6ebc54fecae955362d8563c3",
+        "offsets": "e31598e204aff45ada745cd031bf82c16cd9cf88eb94fafd2e24144086d3b260",
+        "shadow": "986ed7e027135db592e146107bff26dac9ab00e787f7e4002bcca92696fc54b3"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        8,
+        16,
+        8,
+        16
+      ],
+      "durationsMs": [
+        133,
+        267,
+        133,
+        267
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/venusaur/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "53547ad2b27a60f270a9cd698ab53fe55df8352d6ebc54fecae955362d8563c3",
+        "offsets": "e31598e204aff45ada745cd031bf82c16cd9cf88eb94fafd2e24144086d3b260",
+        "shadow": "986ed7e027135db592e146107bff26dac9ab00e787f7e4002bcca92696fc54b3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "6868234db16c2d0ae6c40caaca121f81e96d7c118951ab46eb88b7bbb287a69c",
+        "offsets": "0bcc3ef8eecc652b2fcc24e4197debafea4b20e6aef99388c9dc8e1c239350b9",
+        "shadow": "f21df2403d8a411f17fba82890d5ceea06495b9244ba64845f28dc1310dc56c3"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "10876419c84fc961fc0fb2cc7caecf943b0035464b53cd956aae34c3d7e9f318",
+        "offsets": "8e1099a9ab18e6f6fed54069f479d715f0a625dab35bbdb688be89b56880787f",
+        "shadow": "cf5d7a397b79c7fcedc932af4254950ec5974ed8547c94fabd8519d97b9e68bd"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        12,
+        4,
+        4,
+        4,
+        2,
+        2
+      ],
+      "durationsMs": [
+        200,
+        67,
+        67,
+        67,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "889d71d1812d6ab574e54688a9f66f720de983b70d0e93713e8aa5a13a4cc066",
+        "offsets": "1c5e0ac5527bd8aab6e5c88a0769b3067ed497b089e65d2d5097df34270e0f03",
+        "shadow": "0f8a1d658e8c0442f915eabe1ac732abaf2faa883c39a5850eb595e16bce9e07"
+      },
+      "hitFrame": 2,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "10876419c84fc961fc0fb2cc7caecf943b0035464b53cd956aae34c3d7e9f318",
+        "offsets": "8e1099a9ab18e6f6fed54069f479d715f0a625dab35bbdb688be89b56880787f",
+        "shadow": "cf5d7a397b79c7fcedc932af4254950ec5974ed8547c94fabd8519d97b9e68bd"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "6868234db16c2d0ae6c40caaca121f81e96d7c118951ab46eb88b7bbb287a69c",
+        "offsets": "0bcc3ef8eecc652b2fcc24e4197debafea4b20e6aef99388c9dc8e1c239350b9",
+        "shadow": "f21df2403d8a411f17fba82890d5ceea06495b9244ba64845f28dc1310dc56c3"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "dance": {
+      "name": "Dance",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Shake-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Shake-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Shake-Shadow.png",
+      "sha256": {
+        "image": "a79c6d6092fed82eef6aaeea830b1687dc79fc4e9038678fb4cfe6e2f9ba740c",
+        "offsets": "d15fd097b51bff6e4b489b42597740a6c4676281142784a9d03b81c196b7a328",
+        "shadow": "0f8a1d658e8c0442f915eabe1ac732abaf2faa883c39a5850eb595e16bce9e07"
+      },
+      "copyOf": "Shake",
+      "sourceAnimation": "Shake",
+      "hitFrame": 2
+    },
+    "shake": {
+      "name": "Shake",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Shake-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Shake-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Shake-Shadow.png",
+      "sha256": {
+        "image": "a79c6d6092fed82eef6aaeea830b1687dc79fc4e9038678fb4cfe6e2f9ba740c",
+        "offsets": "d15fd097b51bff6e4b489b42597740a6c4676281142784a9d03b81c196b7a328",
+        "shadow": "0f8a1d658e8c0442f915eabe1ac732abaf2faa883c39a5850eb595e16bce9e07"
+      },
+      "hitFrame": 2
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "ec07cd8c02027649196b047a1bd22c1da1de41574a7ca97c10dc5e6c1a380730",
+        "offsets": "0ef5f75fc12e59f3bae6fe413db250e7918f3287f1814607eb380a942d67ce16",
+        "shadow": "7f8a6bc164e557f9903bb257d79da40e04204575829ad546bf4263603cbf66e5"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "e86a895d31fe082320484602879ca96f60e0bcc0c88a656576e919ec885c7aa7",
+        "offsets": "ef8d211dc1dde810fa00a1c3e91aa15b6c04dcdc0bc3b3822329d40899a21927",
+        "shadow": "92cc70998f4cb954b44c730295501d7a5b03d6e66de57f7894968d7930d57722"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "d67a0422cea50d5a9404107418ed36d1dda120122aa034e04b8ec2ae8c1c4b12",
+        "offsets": "59f96498f3ffac5c50824d4b4567476885579824c2e2b5cab72be9484cd65e43",
+        "shadow": "90cd60e8b08f9906e29031c667eae97f366364c899755fd10367abaa5610c368"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/venusaur/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/venusaur/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/venusaur/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "85073a3156a778abcada4a953a0d8061024950851d21af86626de20ae4ad08c8",
+        "offsets": "478d7e76ed3fb19d4c322809a23acd1f4afd15d389ffa33ac10ba85e8e03147a",
+        "shadow": "ba4479486af5d5a167d1bca9a422f2bcbca139e2801ea53ce05cc3c02adeb747"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

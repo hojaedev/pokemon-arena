@@ -1,0 +1,773 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0001",
+    "name": "Bulbasaur",
+    "slug": "bulbasaur"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0001",
+    "metadata": "/assets/pokemon/bulbasaur/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/bulbasaur/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/bulbasaur/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "65fa5e2a0e655aff61e6b1bac0b4d8aab3d72496a7f0609761e3e9977ab8fa96"
+    },
+    "rawCredits": "/assets/pokemon/bulbasaur/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 3,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        40,
+        6,
+        6
+      ],
+      "durationsMs": [
+        667,
+        100,
+        100
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/bulbasaur/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "bae238b6ae50dc97781a03b2210dc3ee1954c9f6207826e49091227bb9c783d1",
+        "offsets": "70509c40eb59f9e37477716f941d45a286ca27389b1cfd6785a3632a071b8d3f",
+        "shadow": "6785087105a1b704b818b35e0ed6ef94dcdf9b0b5862e4065db01b99611dc7ad"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "durationsMs": [
+        67,
+        67,
+        67,
+        67,
+        67,
+        67
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/bulbasaur/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "84e8e7a58f68204a47f990becc7e8c324e486e5127557261e8ccbe55e9e979b2",
+        "offsets": "df5b701bac6401c90ec71798aee7bba4f4658494d73461355dbbddfb08520045",
+        "shadow": "1be89652e291dea28cdb83add389792a1e58e0573a4c891eb54963b8839e630a"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "f8b6b5fc9132d9fb701741086bacfc0e80d0a8d2b45473abb425d4c6b427a252",
+        "offsets": "6d0a0c1c7c8703f449d38e699cf89dd9eb561b990ceb8c6739292fc961239e33",
+        "shadow": "b1ae42e82b7e0ce7e9252a894c5cf74122611c170bbddbc9d75d994a067bd2c5"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "cbafac2615cfa0023288e2b2d01ba8c180a54164aa49430a06acd83756880976",
+        "offsets": "f8a2969eddd6f415be51cfabcb7244571101e3f3715cb32019d525c54c11e268",
+        "shadow": "c598a4c3fc9b723e5936bd5ed74086c34af796aa188d84466b4472b3fb8eb99c"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        12,
+        4,
+        4,
+        4,
+        2,
+        2
+      ],
+      "durationsMs": [
+        200,
+        67,
+        67,
+        67,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "f929da013301ae7362d57fadc49a94593b3c908c812c1e285c35c30ccbf47c31",
+        "offsets": "dc072f30d594d25e11ba4e5175c1f44fdaca7722e6b398dc3e1e9401d062db07",
+        "shadow": "b1639bea77323f6b9aeeaa5e0854a0c43c1894c9d4798cfe390e363908c00b2b"
+      },
+      "hitFrame": 2,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 32,
+      "frameHeight": 24,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 192,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "72f32e47cdb6fd537afd328ee8a35a43f0169775fc91047840b67d210300f887",
+        "offsets": "2aed8c318b0a6941a7c4de356df7513e733d8d043570704d9dbf7cb04c6f01aa",
+        "shadow": "d0d122915822e5c39f6c439213177594f127e74d9d8c77409b269e37b2ece05f"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "f8b6b5fc9132d9fb701741086bacfc0e80d0a8d2b45473abb425d4c6b427a252",
+        "offsets": "6d0a0c1c7c8703f449d38e699cf89dd9eb561b990ceb8c6739292fc961239e33",
+        "shadow": "b1ae42e82b7e0ce7e9252a894c5cf74122611c170bbddbc9d75d994a067bd2c5"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "dance": {
+      "name": "Dance",
+      "index": 4,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 144,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Shake-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Shake-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Shake-Shadow.png",
+      "sha256": {
+        "image": "74b8489a32ac1413dc6727a62cadac23e21cf06eff1be6d7ad463748f695399f",
+        "offsets": "8c601105a1976a0074caa441fa6242bf4842ee57be67177ef6697f5aded5e4af",
+        "shadow": "6721fec4f3b179028fca4299ecc5d41390897df759d18c3645693baad623fe04"
+      },
+      "copyOf": "Shake",
+      "sourceAnimation": "Shake",
+      "hitFrame": 0,
+      "returnFrame": 4
+    },
+    "shake": {
+      "name": "Shake",
+      "index": 4,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 144,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Shake-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Shake-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Shake-Shadow.png",
+      "sha256": {
+        "image": "74b8489a32ac1413dc6727a62cadac23e21cf06eff1be6d7ad463748f695399f",
+        "offsets": "8c601105a1976a0074caa441fa6242bf4842ee57be67177ef6697f5aded5e4af",
+        "shadow": "6721fec4f3b179028fca4299ecc5d41390897df759d18c3645693baad623fe04"
+      },
+      "hitFrame": 0,
+      "returnFrame": 4
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "44d6d3ab67b22d383e72b87686c946ad37d868472c2356c20e000ab559c926d6",
+        "offsets": "1719438984d16abc8e909aa485f32c93cbfd0a14a41ecdb09c8da17967b86bdd",
+        "shadow": "7f8a6bc164e557f9903bb257d79da40e04204575829ad546bf4263603cbf66e5"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "4624db0b24d38bd513e77365b5489f850b60d24ac6c660960ee9aa1b8386d7b0",
+        "offsets": "01cddad706403da36bbee792b648a23d693c8d36affd6dc120e257ba7940e3a9",
+        "shadow": "d5cda1b97b1e2f72ce3259e2dd6ced8ad2904b29267950d7724eadb6eb2d395a"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "2ec065c3af13d095c4d9599ab475ad7aee68ed0fbe0cbaf52c92145cd28f6e5d",
+        "offsets": "f87bee9547c2853e6dfeba20da8837e5092b5f9c2a543c805d89a86ca5210321",
+        "shadow": "a69d4c436d7890cd1d5b77d420d95b53a786e144fd545aeb2219d6810b4947fd"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "029536d6637fa2973ae6ad06a02cf14cca631115aa0c787983c98e3fd787a452",
+        "offsets": "6ca2eb8d10d766cfdfe1fc41f898cf885fa718c70040e535cb4249fd321a965f",
+        "shadow": "ba4479486af5d5a167d1bca9a422f2bcbca139e2801ea53ce05cc3c02adeb747"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 24,
+      "frameHeight": 40,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/bulbasaur/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/bulbasaur/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/bulbasaur/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "040f2c279de8128e4af9008d52d8dc0b684dd88d76a9db82be8b2bb45a999fa2",
+        "offsets": "17b5d9e3be5835239a094c77810fdf3d4e5c46c16b0ba62e050906cff752213a",
+        "shadow": "17c1b8a04de22fc1e47e86591a2c588e5cd4f4c2b4bdd40c33307c7ef6ed28ac"
+      }
+    }
+  }
+}

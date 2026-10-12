@@ -1,0 +1,734 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0134",
+    "name": "Vaporeon",
+    "slug": "vaporeon"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0134",
+    "metadata": "/assets/pokemon/vaporeon/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/vaporeon/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/vaporeon/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "6487e2e12ca28e9e6017e25baa91aa9396863b058f9b29d18e831c73a7548479"
+    },
+    "rawCredits": "/assets/pokemon/vaporeon/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        60,
+        16
+      ],
+      "durationsMs": [
+        1000,
+        267
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/vaporeon/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "c4479a9ebeafce94a8741b94d68847d5232e41d025881704b4d8f4a8a396276f",
+        "offsets": "bf2d7b7ff4448928deea2f94a5d339676227d5dff96800d968efbc3ffbcdbb67",
+        "shadow": "c48156c10fd2aed1e72df211593bc6bf2a0f2e4747be3a3e351cc90872b53e71"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/vaporeon/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "7664f55b8d717981f49c88e96999686f236ad2a2f2dc9ef496d468737eced3ac",
+        "offsets": "bce10c648709330059d039a2d8efa5b2f1fd5120d150c14ab8ff97684cf50501",
+        "shadow": "0843ac7aa314a5a302a0c1998ceb6f73720007a70ca7d3e0684e86d5e608f0c3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "83de5d0017a276ea2b458cbfb874635e52f219af0888ce2042673407ad432543",
+        "offsets": "d3005c1a11a73afa01efee7c1f42cacb937d4c029b0967b29842af192f8ef6d2",
+        "shadow": "4d0f188ffd63e841e2561ecfab1607e95acf2bb3e4b112fcc38012424b299f58"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "72dcffa21f2fdf944f0f6d9b6db1950add2c9584f00837e2e3c9db2aa09dd1f7",
+        "offsets": "be2d9bceda2198e24fe81ec427793444217bdf9375bf88380b8871211f995ca3",
+        "shadow": "cf5d7a397b79c7fcedc932af4254950ec5974ed8547c94fabd8519d97b9e68bd"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 672,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "a0002fcd417147e40f8529d3104a1a5a8f75e83fb88cc73d665077d6fc8bc09b",
+        "offsets": "331f0577fb2c07521f9b81f22a2e2cbc6abe9bb15b66b07fb4b26f79f6001952",
+        "shadow": "08a485c37fef63ead13671755f862e6c6f291f8575c44499e3fea49c25f316f0"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "72dcffa21f2fdf944f0f6d9b6db1950add2c9584f00837e2e3c9db2aa09dd1f7",
+        "offsets": "be2d9bceda2198e24fe81ec427793444217bdf9375bf88380b8871211f995ca3",
+        "shadow": "cf5d7a397b79c7fcedc932af4254950ec5974ed8547c94fabd8519d97b9e68bd"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "83de5d0017a276ea2b458cbfb874635e52f219af0888ce2042673407ad432543",
+        "offsets": "d3005c1a11a73afa01efee7c1f42cacb937d4c029b0967b29842af192f8ef6d2",
+        "shadow": "4d0f188ffd63e841e2561ecfab1607e95acf2bb3e4b112fcc38012424b299f58"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 440,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "97c081efc4fd523a487324de36fbd14380a28b8246b40009c5e51b631891a964",
+        "offsets": "de7b71d4366414ead20a47a842638db8698ef14de9c38e81aced0439500d6bda",
+        "shadow": "57f358a524d2046c35937febbfeb2bcfcdd3bc27eee514f99167a22d6d34b282"
+      },
+      "copyOf": "RearUp",
+      "sourceAnimation": "RearUp",
+      "hitFrame": 3
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 440,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "97c081efc4fd523a487324de36fbd14380a28b8246b40009c5e51b631891a964",
+        "offsets": "de7b71d4366414ead20a47a842638db8698ef14de9c38e81aced0439500d6bda",
+        "shadow": "57f358a524d2046c35937febbfeb2bcfcdd3bc27eee514f99167a22d6d34b282"
+      },
+      "hitFrame": 3
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 104,
+      "frameHeight": 104,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "82bb01fe10ec28a8f2b0f3b511368629b325ca6d6ebf53777bbf6ec9ad498df2",
+        "offsets": "d131e04a855ad3c2a0ea71a9037eb4666ad03f268d17fdc5e45dab6c6143ac06",
+        "shadow": "fef6538f7b21b26f1bc8168853ce1c3fd4a4a2acd729e605191f5102df64e4f7"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "7c29c8421f0125de5e39b69f48bb10d490b5c357052aa25c79dcd00052e5b5c3",
+        "offsets": "91ff3d4bfe2562b8723f7972c75dedca17807ec318b126a4662a84249163fcf9",
+        "shadow": "20bdf21c5f9d99efed82fb5ba95e22d0e91eb0f43b205e2369fe8a2ec6233915"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 56,
+      "frameHeight": 104,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "984e77a36a140c93eeb8b073a1d6116434f4fc47bc9188074c31feda0abb6985",
+        "offsets": "cc82942d12a79d29a0186084e2753b9ee183400fd5feb2a87882a281c3a9b4c1",
+        "shadow": "74bc12de558bfa18749c6beae42410666654af36fc34f53601f9782e3f8990cb"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/vaporeon/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/vaporeon/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/vaporeon/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "f2127cd279be6df05c989bfdefe1d20cd7580d8d661716bcf76cfabd24f685a9",
+        "offsets": "7dca1a5a82183bc10942715a1f452b2de583be8eb92c419ae4c44bcf03c5ddc5",
+        "shadow": "2c5d21b45e23de405e349bbb22cdcc15dc9739c77c5f56c554a010190974bffa"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

@@ -1,0 +1,706 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0169",
+    "name": "Crobat",
+    "slug": "crobat"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0169",
+    "metadata": "/assets/pokemon/crobat/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/crobat/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/crobat/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "c06be0134ebb7360f28c79f32967cea4654ec504fb852ec950a268c54f1c1a3d"
+    },
+    "rawCredits": "/assets/pokemon/crobat/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "durationsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/crobat/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "f4f8140e8de24f19528c99151d46ff8a56110b339d1daae185f2b86de7c38848",
+        "offsets": "52f137cd912e60ca9fcd6c54b23f5eb4fd5e6114294591e91166fee476521a78",
+        "shadow": "dee1c5f1237312cb316ffb3ac5b892ef05bc9b027cfc6e120c8e68264fb5fe6f"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/crobat/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "f4f8140e8de24f19528c99151d46ff8a56110b339d1daae185f2b86de7c38848",
+        "offsets": "52f137cd912e60ca9fcd6c54b23f5eb4fd5e6114294591e91166fee476521a78",
+        "shadow": "dee1c5f1237312cb316ffb3ac5b892ef05bc9b027cfc6e120c8e68264fb5fe6f"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1008,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "ce35ae163cb4b02bbf723946db75cc8d258356975257af9be448b5d091b4f38f",
+        "offsets": "7c77e4de7674cb84ee85874e7750ed17e6d35b6f51c7175b04cd439d1ff13d58",
+        "shadow": "7f284abe4937a06c13795f4a490c5f58578c8c57665ce00adad419ee38a4dce9"
+      },
+      "rushFrame": 1,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "7f145ec39e886aebf6a831961608de5e1b252d475c59eb061ab7f42c96156320",
+        "offsets": "b3d383a15a8bf25929856428b8d61da290318f33806a3d495f47e35d61ce45cc",
+        "shadow": "36ccf0caa545929fd14ae836d96a4e73dcab35de37b30efa2c69b1b1b18cb329"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        8,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        133,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "38f9d7a4c906bacb52176e4babc4d2b411d1defe7152dc62e7dca38a0ef29856",
+        "offsets": "fcf59d2116c1088a5fcbbb370739c4b51e158111eb43ed86bc0becae3bfd4b2a",
+        "shadow": "f705710bfefa9868a4dc93cf6637bec61ab1b06fbae5785e82bed69ddf416f73"
+      },
+      "hitFrame": 2,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "7f145ec39e886aebf6a831961608de5e1b252d475c59eb061ab7f42c96156320",
+        "offsets": "b3d383a15a8bf25929856428b8d61da290318f33806a3d495f47e35d61ce45cc",
+        "shadow": "36ccf0caa545929fd14ae836d96a4e73dcab35de37b30efa2c69b1b1b18cb329"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1008,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "ce35ae163cb4b02bbf723946db75cc8d258356975257af9be448b5d091b4f38f",
+        "offsets": "7c77e4de7674cb84ee85874e7750ed17e6d35b6f51c7175b04cd439d1ff13d58",
+        "shadow": "7f284abe4937a06c13795f4a490c5f58578c8c57665ce00adad419ee38a4dce9"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 360,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "9396a68de7a5e62f7b72e7a0131cd601e1a5a10ae45a883b7203f02c58622266",
+        "offsets": "3fc8feab3f4bb1da9dec330bffea97cad13394c0a12516ece5707f74c0be049b",
+        "shadow": "d27234b44f3c38f4fc6dc6391dc502acdaca2e7de93bd5d105f729f01837e816"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 88,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "2f973798fa98a0ba105394b2d12b627939aae96ef8170cd3108ee38232e0e875",
+        "offsets": "b95ab636e0223964c8c8c682c759af7dbfc30ae6a5afdd8963dcaa361bacd76c",
+        "shadow": "f298f6ec7de5ba8620e7c2cfd029f6291362656daea8b0a215eb9ff560cb28f2"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1152,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "82ee526d960ac26b27afe99017760d812677614b87078d0260250b41cc28f858",
+        "offsets": "2cc2628038a8f6b658351cb0fa9ca26930f9128295e18c31daa6c1db77120781",
+        "shadow": "1e5d04bb6cae7b711b9bdc9bcd885e4b9bff2553f3275863cf42a75f274bd1b0"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "d13c57433d824d6362bfa4407e0689eb3792d0af553c0f3da0807b5918cd00f0",
+        "offsets": "5ac3b772dd4a7987bdeddc76bda621d16751f9252ab80eb2a60da0d6504d1b78",
+        "shadow": "1d7f457d1d4907215524178d32d73df60b605ff9534fd5261491e73573e5eb34"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/crobat/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/crobat/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/crobat/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "28f8d90da88b86d8f51ff06d3f1ce195000b00e1cddfda1653c6588f2c3e24af",
+        "offsets": "9846f057b385e774c222e3cefa4e1ecfbcfb80fad465d237e37f527d653b0f3f",
+        "shadow": "9c477d1b1acd655a7bd390da7424ab8060433703c23d68ce51b0520a58011ee4"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

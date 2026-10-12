@@ -1,0 +1,788 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0251",
+    "name": "Celebi",
+    "slug": "celebi"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0251",
+    "metadata": "/assets/pokemon/celebi/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/celebi/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/celebi/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "4165323287ff4a61109b96eeddc6e247e64fc0c6b5365f8e433b35bb03a9b743"
+    },
+    "rawCredits": "/assets/pokemon/celebi/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 24,
+      "frameHeight": 56,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 144,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        8,
+        7,
+        6,
+        6,
+        6,
+        7
+      ],
+      "durationsMs": [
+        133,
+        117,
+        100,
+        100,
+        100,
+        117
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/celebi/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "1b3e0ed9027c5556c75bbcf2dcce0495ca3e98a5987ee2aaf88346522c08b76b",
+        "offsets": "4d697f1020497b17a8f1d0b647f5e6a9b5e8532604277a4db33f98eea7b88960",
+        "shadow": "cc3dacd2ec0beb048310fbe9c094620600ce5ff328d0eddec83b6b2229912acd"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 24,
+      "frameHeight": 48,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "durationsMs": [
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/celebi/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "24393e1a801b69ddc53093853bebe784f74f12120dc077b5dba92b7c6d4c2409",
+        "offsets": "173b9554438ac1a0ee1c93d7061a9279a0f07e4280ea8b7cd03711eeafbb90f4",
+        "shadow": "89562329ff792f5ade50f272bc4c1049b97b6826eb65e9884027dafea3abf955"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1152,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "24ba83b7285edec36cbbffe05d8768bf748c53c53d009281053964511cdfc7a5",
+        "offsets": "c92d27d6fd9bb8ab6b2346e774dc5564923148626c27fb51db93e031448afabf",
+        "shadow": "54d248a17d9903122cc8c59ceaa96ed190b2c578d982d1b2bdc32ba01b6591e1"
+      },
+      "rushFrame": 1,
+      "hitFrame": 9,
+      "returnFrame": 12
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "14daad5b07238a12a1f032775effb769a87d6eeec3dfa65f5e660ce0ffe4a772",
+        "offsets": "63fb62fd4cd59f2bfc4cd72c0a6070984fea88dba11e0e04c04d1e4d5ea2eec6",
+        "shadow": "63811f8deb06158d9f428ad3097f5080770118f31ed354a0afaab471b3d2466a"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 520,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "c527aef567a7277c658d02140a74c89acb64560453ca58ce1d36070e8febf580",
+        "offsets": "b3baf026c87dcfabb66b66f5d9ff6134049f0bbe7a1c171258779b2269331b7b",
+        "shadow": "c6578e1471cc46790b54ba0e044180294888fffd147cef4e67feba9ecdec7d00"
+      },
+      "hitFrame": 4,
+      "returnFrame": 8
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "614ce2b0f3ef8839a723facaed9d9518bfe1c1f112662db1e8606f7303cda436",
+        "offsets": "cb685e70016a2d1e65ce46abf04f90f8ec5b6bc8d8b2f3660d046eb66fe4155a",
+        "shadow": "9c5dc9ecaed6efcaa8fcba93b53f57bcdb91b7bedb847aa06638d4b842c8eac1"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1152,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "24ba83b7285edec36cbbffe05d8768bf748c53c53d009281053964511cdfc7a5",
+        "offsets": "c92d27d6fd9bb8ab6b2346e774dc5564923148626c27fb51db93e031448afabf",
+        "shadow": "54d248a17d9903122cc8c59ceaa96ed190b2c578d982d1b2bdc32ba01b6591e1"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 9,
+      "returnFrame": 12
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 24,
+      "frameHeight": 56,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Twirl-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Twirl-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Twirl-Shadow.png",
+      "sha256": {
+        "image": "f8b5e34bda6aa466a8002e98a66856e5d0ac4b0f5a8c5200562ccc377060a0b3",
+        "offsets": "ccf9d5cb3634fc1938b0ed0dc2c366214a528d1a2c99ca3a174c0fd4fbaecd50",
+        "shadow": "0e9339d7f25f3ccdf1aa7d77b9dfd39e374bee9917ac6eccdc0e6b25dd714a7d"
+      },
+      "hitFrame": 7,
+      "returnFrame": 9
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "34f3f8e8da03afdd4054cc0c494b9fe53d91253b6fbcc1680e95075fdf41872f",
+        "offsets": "17d869d821af07e617c20aeb5360f8967e84709d2439474411a8cbc4e30f29d0",
+        "shadow": "11e99d8d443f0cc83ff912032a86866477f1dfee453cd9362136c20e571b9906"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "9c444ce748c1973965e468d44d1624266d367f6d675388168d460af52bfd5b15",
+        "offsets": "b5cea05caa0691caa0edf4fc47b30e80f1495b26700990801b517dc93a2fa0b9",
+        "shadow": "83071fd8be3362f753f276f38ceca5213175cd8a398fda0f8d35642bf8eb0483"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 24,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "a632e75353dbfd7b77e0df0741fb8d6e4a79728af29622559b2dd2e8e4d45847",
+        "offsets": "83b8cea84e4d578d0f768098c420805ea97a6f5164f9ca86f2a659b8159e6818",
+        "shadow": "76f5a84c823c374ee79e9f983635f5d805599a79fa54e58750f0ed75e2239e98"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 24,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "8853fc712dade4e0c489eab4b839623d6df858192bc3a0208ba1483462ca1b31",
+        "offsets": "878279fd6620a81eb03ee8edc0aab86890282ef9861ce6be350198ee976d7708",
+        "shadow": "25bbcc29d4bde9249392a08d1b58c7e6c848ca8b109f454dce8a442bd70247dd"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 24,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/celebi/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/celebi/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/celebi/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "ed7512ac79977b5948eaa614b5e0568051d9fd079d3867fea24671a336e92851",
+        "offsets": "46652c86994c084ea0e95777868e0ee15711d8ceef307cce21e090b73bebab2a",
+        "shadow": "5843269963cda7e1ccc3dbc0aa4ad52b3839e2b2fca357a06c8aca06d9d9eb65"
+      }
+    }
+  }
+}

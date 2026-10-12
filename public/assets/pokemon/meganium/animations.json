@@ -1,0 +1,691 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0154",
+    "name": "Meganium",
+    "slug": "meganium"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0154",
+    "metadata": "/assets/pokemon/meganium/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/meganium/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/meganium/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "22daf346b5823d8d06081cffb7453a78ae68db1f39ac62e76402d9b8ead7a8f0"
+    },
+    "rawCredits": "/assets/pokemon/meganium/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        40,
+        14,
+        20,
+        14
+      ],
+      "durationsMs": [
+        667,
+        233,
+        333,
+        233
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/meganium/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "5be5127c0a34f7a2c2461e8e202850f663799a1c9faf16af5ac6ef4a15fd925f",
+        "offsets": "7d34b7436d1925259955bf837689b54171b5b989bdd06461b48d534926edb8db",
+        "shadow": "bd4852e1670f77c84a8844685deb14474c14b06cb6ce41a55d0fe0014e2d4774"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        10,
+        14,
+        10,
+        14
+      ],
+      "durationsMs": [
+        167,
+        233,
+        167,
+        233
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/meganium/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "9fdd52799a4c063556a4e3eb02689e6adf0ce8c620f50d224f9ddaa8d0999d49",
+        "offsets": "cba14a3858f739bebb66c5795b0c754546131c5cb45f02acf24747b6f63bde74",
+        "shadow": "bd4852e1670f77c84a8844685deb14474c14b06cb6ce41a55d0fe0014e2d4774"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 96,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "49c760e37770719130f33f3334c1406c562321b6b87e5195c5b75730b7bf59e5",
+        "offsets": "5f78e88890202c0d14726ec4da19468badf87f05bbbdf1f01fbdbe0e129da30c",
+        "shadow": "1fb05e709097180f6bbd38618c807dff2329f6d98467dce05d8142742039733c"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "e5fd57e909018b36bd5e5f84f2fa88d338785529307441e97b27f5d93f5e197f",
+        "offsets": "80a2a6ff246f11a1caf4605ae4f6ec124d7274c9754f7891ab61ffb4339979d1",
+        "shadow": "20ce4ed6a229d23fb065544b3db4a5f77b92814c9c6028c1cca425c0e7233a5f"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "a2b4700559c2f3acba386e63f110402cd6812f56d85bf55244f84fa38d0ec702",
+        "offsets": "b906794cf516cad8d1659d7f50ba251964ee8dd36166f498d529d1d8e1247b33",
+        "shadow": "890f31b7319d08c54a7a7521330de6f7c073101d6a32283487477543bdb65d9e"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "e5fd57e909018b36bd5e5f84f2fa88d338785529307441e97b27f5d93f5e197f",
+        "offsets": "80a2a6ff246f11a1caf4605ae4f6ec124d7274c9754f7891ab61ffb4339979d1",
+        "shadow": "20ce4ed6a229d23fb065544b3db4a5f77b92814c9c6028c1cca425c0e7233a5f"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 96,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "49c760e37770719130f33f3334c1406c562321b6b87e5195c5b75730b7bf59e5",
+        "offsets": "5f78e88890202c0d14726ec4da19468badf87f05bbbdf1f01fbdbe0e129da30c",
+        "shadow": "1fb05e709097180f6bbd38618c807dff2329f6d98467dce05d8142742039733c"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "shake": {
+      "name": "Shake",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        4,
+        2,
+        4,
+        2,
+        4,
+        2
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        67,
+        33,
+        67,
+        33,
+        67,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Shake-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Shake-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Shake-Shadow.png",
+      "sha256": {
+        "image": "b0a57a7672a5f5b7d256fb5e1810bb011f06e760b9784111f8fead6cae27ff7f",
+        "offsets": "0fce41188edcb2db0537056bdf8e6f554d074f32e162ec150d2d29fa92625a08",
+        "shadow": "53cae1166b124f1001bb9ee62ed8182ad575378bf4e33ca5d8a50011f52d224c"
+      },
+      "hitFrame": 3,
+      "returnFrame": 9
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "b47327e4f537dcd50c8916916edf7473c089abd9563acabbfeb22c1e3978270c",
+        "offsets": "0a7f5d734084b6351f5476ad9226f648a919c3a4a655531bcb5eab77b0159552",
+        "shadow": "c2fd1ad6948702fb2d582783c94a5868158f29ce147f83d12f3934d820b1179c"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "e4cdc45050ce551cdfd874b3e11bac0b3e6f0ea4243443e800c1c327bce45f5f",
+        "offsets": "b825942c66b5f49a0b945347264227b5334b54d098b89eff99e53ab59bbab63f",
+        "shadow": "20bdf21c5f9d99efed82fb5ba95e22d0e91eb0f43b205e2369fe8a2ec6233915"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 48,
+      "frameHeight": 104,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "6c2f351e7e6f897bc163b1e42f00cf5fff71a013ca5ba87cfd3897fb919b922f",
+        "offsets": "fbf06475f47f3b5755b5383e5feacc69b89337885b134752230a8226f2b611af",
+        "shadow": "f17a45a3e654682d0cc6ada9a1843bd3407f365204e5feb9ded55855952cd883"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/meganium/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/meganium/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/meganium/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "3341da8d3076db8f42ef0961cf6e36ee7ac22d799aba9c1f001985029e3725b0",
+        "offsets": "f837ed99832e208249966fe916922ffeff3d6c0c1842c26d817a1dd6175b3d25",
+        "shadow": "0ce03e4ea5ce7d980afb404f2e7b318dd407a5286ddbaa3e31e82a24e169f164"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

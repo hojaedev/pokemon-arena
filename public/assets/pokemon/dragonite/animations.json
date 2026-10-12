@@ -1,0 +1,799 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0149",
+    "name": "Dragonite",
+    "slug": "dragonite"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0149",
+    "metadata": "/assets/pokemon/dragonite/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/dragonite/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/dragonite/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "6d843369c5b418bd46795cc35e33dda90390bf9a32a614273ec014be04271fc6"
+    },
+    "rawCredits": "/assets/pokemon/dragonite/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 7,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 280,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        40,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2
+      ],
+      "durationsMs": [
+        667,
+        33,
+        33,
+        50,
+        50,
+        33,
+        33
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/dragonite/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "83b0d9d108d844c8cc2db0190ca4e36e0fdd491b5014c3bf31bc36b0424ba0c2",
+        "offsets": "4ef79760a766ae72ce780bf8138d64a2fe3ef46bdf712c719562532a32489cd1",
+        "shadow": "677e11cefe9be462b2a1a9ffa432de2f7762bd1ffc80b6857ed43c8f828f5505"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/dragonite/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "04ae6ed9a69da739e09b2d8fca24905cb81c6f963865ee4e343dd82f25d06637",
+        "offsets": "5ea0a79540022eb5886451d2e55d820a9965be913a5c66dfb1f9da77692f6eae",
+        "shadow": "4090a7bc313605af4b2332d40009b8d0999eda05cd4c35879159c1805dd70b92"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "c3b2b04ae5e83faae34eb08dc2ee83a44286cbfd491b7ee9b820816ee64b002f",
+        "offsets": "4bee2adb951bf3cc3b12f87f598a333acbd60dbd1aa737a33645c148ccc9860b",
+        "shadow": "79045a1d5c43204aa09fde5048dbdb4f484f8509c96301a4e29acf9173618ea2"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "ee8e8a9a4a737d4e33347486d4677a0e23880fde92c043480dcbf734f1dd6054",
+        "offsets": "31406e18ea387938f21b34367bc02a50e886753773f5ce53da683aca3f5eeeff",
+        "shadow": "63811f8deb06158d9f428ad3097f5080770118f31ed354a0afaab471b3d2466a"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "fc5356fda5761c959d2b425f510e9088de3362283783897d7c8c68c83a454d85",
+        "offsets": "305b7d1b354eb3db5305e39da67762fc8eba1a64cb74610fb2e883900836e5a7",
+        "shadow": "b9f7c6b900bd8956b8e7e7d4a3cd407f91c5738fd2410625359057883c1ac986"
+      },
+      "hitFrame": 3,
+      "returnFrame": 7
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "ee8e8a9a4a737d4e33347486d4677a0e23880fde92c043480dcbf734f1dd6054",
+        "offsets": "31406e18ea387938f21b34367bc02a50e886753773f5ce53da683aca3f5eeeff",
+        "shadow": "63811f8deb06158d9f428ad3097f5080770118f31ed354a0afaab471b3d2466a"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "c3b2b04ae5e83faae34eb08dc2ee83a44286cbfd491b7ee9b820816ee64b002f",
+        "offsets": "4bee2adb951bf3cc3b12f87f598a333acbd60dbd1aa737a33645c148ccc9860b",
+        "shadow": "79045a1d5c43204aa09fde5048dbdb4f484f8509c96301a4e29acf9173618ea2"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "withdraw": {
+      "name": "Withdraw",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        4,
+        2,
+        4,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        33,
+        33,
+        33,
+        67,
+        33,
+        67,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Emit-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Emit-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Emit-Shadow.png",
+      "sha256": {
+        "image": "f877eae1d38dc53922270ee90a1535329b8eb2f5ee69003c0a52e9b12955786c",
+        "offsets": "5daa05c238fa5cfeecc0f6704d33988ed07338236a0ef2315576dfbf401695fc",
+        "shadow": "6b4d66c2d1f3cd16ecb4cd6d35bc0a689e438579cf75249b9831007847b1ebd2"
+      },
+      "copyOf": "Emit",
+      "sourceAnimation": "Emit",
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "emit": {
+      "name": "Emit",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        4,
+        2,
+        4,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        33,
+        33,
+        33,
+        67,
+        33,
+        67,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Emit-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Emit-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Emit-Shadow.png",
+      "sha256": {
+        "image": "f877eae1d38dc53922270ee90a1535329b8eb2f5ee69003c0a52e9b12955786c",
+        "offsets": "5daa05c238fa5cfeecc0f6704d33988ed07338236a0ef2315576dfbf401695fc",
+        "shadow": "6b4d66c2d1f3cd16ecb4cd6d35bc0a689e438579cf75249b9831007847b1ebd2"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "bc1c436f69d90ee403bcb1c998631d757815ef0e8450c8713be0045c87b558f6",
+        "offsets": "4f0c1b039dbbe35c6b0106453daf1478f416376eca8e2215a517d2f390af384a",
+        "shadow": "4b8b55f4679b73be8e2ba3c6d4cdff9785a32c0c11150f900f94aed67e86c94f"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "607db8c256999d7d35d247a50c9e8595956ca3fc5959217fecaed60a032663b1",
+        "offsets": "dc4791a7336a1e6aa9a901cb402f5b51ae89c9dd58736f88669c5912078165a7",
+        "shadow": "2d0e663e0aa18225644281563cb3ac2d2fc3f48cfa97e7f9952887cd332932f3"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 104,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "871d645a165ce5642014755f3259bfe7d45c5d63f210e29dced5da542203e776",
+        "offsets": "3d22dee57e12e921cba6fba1da19918e64db84cf6f62b91cfbe8e7d9f573cc97",
+        "shadow": "9a05ac5740f02c7e9c2f2482549e7bce0c5d74940956476000c48128902ab7c5"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "d607da36ae1cd74bdb1e006c1b1385d0888a6a54e8a457c1e3cf5755451f4e23",
+        "offsets": "8b7cead38fd086e4759e8148eb1cfd618a2c0011c7ce34ddee959c335d062d27",
+        "shadow": "fffa3b107ad63361c8caac0c5f0a4cd72dd994991af1401b1d1d154e279e1ca8"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "special0": {
+      "name": "Special0",
+      "index": 35,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        10,
+        4,
+        8,
+        10,
+        4,
+        8
+      ],
+      "durationsMs": [
+        167,
+        67,
+        133,
+        167,
+        67,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/dragonite/sprite/Special0-Anim.png",
+      "offsetsImage": "/assets/pokemon/dragonite/sprite/Special0-Offsets.png",
+      "shadowImage": "/assets/pokemon/dragonite/sprite/Special0-Shadow.png",
+      "sha256": {
+        "image": "0523a2996735895e399c5c2fdb97f75d17f6d4301d1fb27e3872185a37877c0e",
+        "offsets": "ef4f26f793c68116e1895c2cfaaa2c5f981830e464197e9f3bff594eeaad246b",
+        "shadow": "188ab29be4fc428bdd009b087a2c3b2dd17e5e4e040b3485c74a54e8eb12ffdd"
+      }
+    }
+  }
+}

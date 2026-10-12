@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0133",
+    "name": "Eevee",
+    "slug": "eevee"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0133",
+    "metadata": "/assets/pokemon/eevee/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/eevee/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/eevee/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "daa8255f13f8c2cf8abd99ebf8b54a862ba018f6fea53b754367ceb3c8d60ab5"
+    },
+    "rawCredits": "/assets/pokemon/eevee/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 48,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        16,
+        16
+      ],
+      "durationsMs": [
+        267,
+        267
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/eevee/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "1dec7d7524844f35a8f7c8c0574d9741edad6cb319a980a5097a825a58bbe4de",
+        "offsets": "32893143fd1eae79830feb224ea42e2036e30d08418ef8160430186097a633be",
+        "shadow": "011747c99b3240c8032a6db3df2589fdcf15055e0aa918e6212d9f83c1d79934"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 7,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 280,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        4,
+        4,
+        4,
+        6,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        67,
+        67,
+        67,
+        100,
+        33,
+        33
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/eevee/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "037329dca93572a20115e679f10a85d4981b7cb961b6c8f0fd9c78745ba98cc0",
+        "offsets": "11ffc19f9f4965e57f44b684857660a12dd8a0a123861421450780e9ddcbe4b0",
+        "shadow": "8af1557b7ec889e911360b32ed0344cd234e916da8897ef72eb9e1055948bd6a"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67,
+        67,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "bbb12fdef01b8c5ab3e50a036a3f2c53813691c131f4720058823338712ff0d6",
+        "offsets": "9f8c40c902c88f9c4b2eb847b53f736b09aaa59ed29bde2328c34013ae22c857",
+        "shadow": "024ea5cdcee9a4118879c0f66f34954ed1633a6e9581cda4d301a7cf88f5a94d"
+      },
+      "hitFrame": 3,
+      "returnFrame": 5
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "88acd2fcdb83a00dd529c10b350e29eecc24af9c79ae96ba2e8d5430b720ca48",
+        "offsets": "baa5f86c5d384d6a469991881d4f56aa74e5f39e6dd2370aab2858baa0aa22a7",
+        "shadow": "6006903f76b46552bd5f391130a9bc1f63407b771d4e9a57a2145e75267b9ea0"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 256,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        6,
+        4,
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "durationsMs": [
+        67,
+        100,
+        67,
+        33,
+        67,
+        67,
+        67,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "93a52e6f95ea4ecd9e5656af5a86ed6699e5911968a713f54215526d2a4f2ead",
+        "offsets": "00b7105e43f10527011c3629acc3b7aa7becd9fb7de2367f681fd51e8b6fe72e",
+        "shadow": "be2cdca8ada9816478f3213e515a9ce36a8786aec02caa9363ea333f6fccf733"
+      },
+      "hitFrame": 3,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 40,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "b77b69f828d56d269a38ce8b369e8cd15bf483ca3a2439bba49a24fdd4148493",
+        "offsets": "81f9d62d60aa574a0db79465e2df740ebca32f4c70f54d48c7fe0740e298cac4",
+        "shadow": "7f289ab56c695d594537b365085e661b6fa247ee13535d85dc62ade4d340182b"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67,
+        67,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "bbb12fdef01b8c5ab3e50a036a3f2c53813691c131f4720058823338712ff0d6",
+        "offsets": "9f8c40c902c88f9c4b2eb847b53f736b09aaa59ed29bde2328c34013ae22c857",
+        "shadow": "024ea5cdcee9a4118879c0f66f34954ed1633a6e9581cda4d301a7cf88f5a94d"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "hitFrame": 3,
+      "returnFrame": 5
+    },
+    "appeal": {
+      "name": "Appeal",
+      "index": 4,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/TailWhip-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/TailWhip-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/TailWhip-Shadow.png",
+      "sha256": {
+        "image": "4a7fd6122d18cc20ecf517252bcbaf6b89814571b2696fcc04ab434df9bb9c58",
+        "offsets": "d5ccfa5d014951506bebec60f0bb73ef63e9c594e1ff3edecaf595b86cd0e77d",
+        "shadow": "5cda811114cd671742e97aa7553b64678d9bd5691ca1600c29c9684250acd582"
+      },
+      "copyOf": "TailWhip",
+      "sourceAnimation": "TailWhip",
+      "hitFrame": 4
+    },
+    "tailwhip": {
+      "name": "TailWhip",
+      "index": 4,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/TailWhip-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/TailWhip-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/TailWhip-Shadow.png",
+      "sha256": {
+        "image": "4a7fd6122d18cc20ecf517252bcbaf6b89814571b2696fcc04ab434df9bb9c58",
+        "offsets": "d5ccfa5d014951506bebec60f0bb73ef63e9c594e1ff3edecaf595b86cd0e77d",
+        "shadow": "5cda811114cd671742e97aa7553b64678d9bd5691ca1600c29c9684250acd582"
+      },
+      "hitFrame": 4
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 72,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "1c3051f4a71a426fe9d832b97af7f5acb78b2051e1162c3c6d08a84e71e35b98",
+        "offsets": "0e93e497134b3b32f47ce12774dbc8a5520141fd28c66ae3669bb3e86fe45623",
+        "shadow": "52ab58fd46295b27d53835a8237cfb564835364750a814165ded8986632d5250"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "81d4a950d9f0b5fb68cdf4cac47bb163239856f81bac6eee8745f7135aa23741",
+        "offsets": "5448113205ee90c2027955adb763ab8c136bc887923b97a3bf0b65e82a91aeec",
+        "shadow": "4f2d4f668ee853794125658e90398025f21b691918676b71be9ec6312833a2f1"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "08bdb1e04a91dbc052b0274eb75873cafef125c625c07d63b90e3c5fbf1eb00c",
+        "offsets": "f2c220a13be5db5307249866051d4aabe2bd5859d0565a80cd557aaf78a6dc22",
+        "shadow": "a69d4c436d7890cd1d5b77d420d95b53a786e144fd545aeb2219d6810b4947fd"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 24,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "c5aeddb33cb788cae2ad80e2a1090794cf839a8c7ab17b5ea3aaa3f031cabaf5",
+        "offsets": "792facb8885c844b636ce26a858bffa38b1b3359fb6d3fdccbb8caf933297572",
+        "shadow": "c5b0fdd49a0b35c0b56227ce2b07a413c0b7e420e2d7e1510085705ed293bdff"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/eevee/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/eevee/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/eevee/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "018ec44631e0fc701bf23b8eacc782cfbf7f884707faf5e8e0f48f46b550c928",
+        "offsets": "cd0cce607bc0a4db73499327df84e175a5f431130dcf992e8d33b5df59d75733",
+        "shadow": "38cc4123d5c59560796fc410a47c46f98478e40c7bc72e4637008f539612543d"
+      }
+    }
+  }
+}

@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0065",
+    "name": "Alakazam",
+    "slug": "alakazam"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0065",
+    "metadata": "/assets/pokemon/alakazam/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/alakazam/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/alakazam/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "0d870a7276d136536a2c5f13f87b8843d7eb8520e69491081fa31f72bb78941a"
+    },
+    "rawCredits": "/assets/pokemon/alakazam/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 256,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/alakazam/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "9ffb292d6af152f830201880c5138991f3d1f0a98cdc0a2e832f6b12605d1a1e",
+        "offsets": "c92c61bc9699f45109a3fe81954e61fdd692cf9fb72a194943db33886f110f52",
+        "shadow": "97eb7083e7d9298767040ec4cad03b05637d70e68f79d7d7a0f95620c7b407a1"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/alakazam/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "472a6e8e1517ff6ddc6ae027d90d34d580cfc3acd57363c4907de959c2e37c0c",
+        "offsets": "be1a11d643724abe91e017e1c6756bfaf02906d7b90a2b48c5ad09f593be1882",
+        "shadow": "1ec150c932f208ce21ceccbfc72b21ef85a17cd42133734ce2a2e0638c49eed7"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "b0a0627a33079516055c4114da3291d2f12ec9daaa78f6d61a81908280403eb5",
+        "offsets": "2166fb8d2371d5f59eb8a002455fd79164432ded6c3fcc64543b2a494efad809",
+        "shadow": "f8ee3794364cf3074110577b7f3da023c318064ef99ad1b327104cd2519863dd"
+      },
+      "rushFrame": 1,
+      "hitFrame": 2,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "3e3fc242f39f069c1db815689bb9276107a012d3a8c7253d4c17ca9ba15c1188",
+        "offsets": "bdd99407ff07eaf6d2d6015387e4048ce9989420bced7a2d0ce9a744c5f65a32",
+        "shadow": "ac6de71c1c2d68f7b57c3628d73cabee468c84be9da37305bcf53ed6999365a5"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "575d0aed56d42b50b6db9fbae8db91650e2c832623f599429f3852bff12c0e6a",
+        "offsets": "8d17ef22f987ed6613d6b808ad4507ba351a2a06fdd2fe9557fc7fce0d3d1083",
+        "shadow": "8eeffa3bc26e4fe24826ba350c76e0f44a53cc2b3fa2ca2afd933955d8d6ce95"
+      },
+      "hitFrame": 6,
+      "returnFrame": 10
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "3e3fc242f39f069c1db815689bb9276107a012d3a8c7253d4c17ca9ba15c1188",
+        "offsets": "bdd99407ff07eaf6d2d6015387e4048ce9989420bced7a2d0ce9a744c5f65a32",
+        "shadow": "ac6de71c1c2d68f7b57c3628d73cabee468c84be9da37305bcf53ed6999365a5"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "b0a0627a33079516055c4114da3291d2f12ec9daaa78f6d61a81908280403eb5",
+        "offsets": "2166fb8d2371d5f59eb8a002455fd79164432ded6c3fcc64543b2a494efad809",
+        "shadow": "f8ee3794364cf3074110577b7f3da023c318064ef99ad1b327104cd2519863dd"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 2,
+      "returnFrame": 6
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        2,
+        4,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        33,
+        67,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/SpAttack-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/SpAttack-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/SpAttack-Shadow.png",
+      "sha256": {
+        "image": "eba0f563729e661877ee5945c6f833c4e4b6227d576e80f16b9eb3e52afb6746",
+        "offsets": "e6c55ea45efe95824894605bd0750e5287a35eac703acf7debff71971ff55d23",
+        "shadow": "f91fed8e48c7b801b0c158228a61e93e876ba8abfd3e5c518afbea74ed0cd983"
+      },
+      "hitFrame": 2
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "fc9127a63a566f9a219c948eb485007350278a4e08e6988085a66be3654c37d1",
+        "offsets": "24b0d4940150020a5064424ec16e47e50736afaca878d19bc598d61ad4685e3e",
+        "shadow": "ff79097314bde013e9b62805bbd02702097b59bc938355ca7c95722d84d15a6f"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "e0729a949c8c6de371eb059cc87f87bbada0ebb5088279fecc5d1c009c04896b",
+        "offsets": "0dcd2a495635a452777aedff9b6c72c01504d1cd77884eb258968488a6940ac1",
+        "shadow": "fdd13e686bad6f5ea44b9d861357e7e45ac0d175d1c376869c9d458219e211aa"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "50eb15618e775ca4d7baa93941d36763b0644f1fee2026e6429e91869b60cdcf",
+        "offsets": "1c44b4a20b38a12c621dc19b48d6e7278ddc129c425e2397c25fe8695876d226",
+        "shadow": "0673f2f705f773daa3955604e7c5c3bc7e14cba55b79f3ef5c8fbc4e8965a1fe"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/alakazam/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/alakazam/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/alakazam/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "7ea8621cb8a95a63f94e6342fa92ab70137ce71154e7a09a547729e0107e04fb",
+        "offsets": "e4464d142b02a2047b148b6493066dc1e08c10e99da92dd6d407e19aa2c959db",
+        "shadow": "06fd84c70bc16cf01bf38672e5749d32214c3ee562a20c52c44ca7d6369c386d"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

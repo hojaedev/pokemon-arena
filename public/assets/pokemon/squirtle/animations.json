@@ -1,0 +1,737 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0007",
+    "name": "Squirtle",
+    "slug": "squirtle"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0007",
+    "metadata": "/assets/pokemon/squirtle/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/squirtle/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/squirtle/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "3d3f7f82309d1e422b4eedf689979584d70144921fa712daa06727e70731212c"
+    },
+    "rawCredits": "/assets/pokemon/squirtle/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 256,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        30,
+        2,
+        2,
+        4,
+        4,
+        4,
+        2,
+        2
+      ],
+      "durationsMs": [
+        500,
+        33,
+        33,
+        67,
+        67,
+        67,
+        33,
+        33
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/squirtle/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "d796b3b94475e4e2a5089bf10f392559989d4104d29c2fe387cfe003bcba5447",
+        "offsets": "cb097f6680f708a232e44131828e29075913a35fd1e35d5f8006386721f134ce",
+        "shadow": "3e55af3971cd731d2afd16aecc8c4a8740bee977600cedd4b6ae689aa7e836f2"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        12,
+        8,
+        12,
+        8
+      ],
+      "durationsMs": [
+        200,
+        133,
+        200,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/squirtle/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "0e71a8bf34299cf73e59eccebc0b9fc16dfb9bd9554d8009b2323c8e3c00504f",
+        "offsets": "fbe187e0e8a00d041c380ec57f9c0ebdb6a5ad6af00f91343d8291190bb18231",
+        "shadow": "986ed7e027135db592e146107bff26dac9ab00e787f7e4002bcca92696fc54b3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "30f303366cf48558bed41d2a65fce9c9bf25d1cef57b3020e317b881af655ddb",
+        "offsets": "dfe408e27558206e010c3cb9717b4cc8a38b34275adb62f0c3539046251fb461",
+        "shadow": "7ccdab0a54973ad8dfab7f0c2d78a641291e58cba72bb71ce2d53a89aab454e6"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "b08cd8679617df5ca9d1e87ed773a8b3265eae46ef945f4bec2c9153b645eceb",
+        "offsets": "0877e1e6f038d0f484093d949873109eedf228714d1295dbcbac4c1b81a39c8a",
+        "shadow": "c598a4c3fc9b723e5936bd5ed74086c34af796aa188d84466b4472b3fb8eb99c"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 32,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 440,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "0fda6308174a800e100b56df4a197df981eba1fe98c39d36ef706bd2d8b53fba",
+        "offsets": "9f9822e2a27bb7a7c2d7fc1f0250917472a678fb1a1e6e3829242eb31a12a193",
+        "shadow": "e4f57def2375e751f81f833d4e9f96b8e8a5c9e5c283efd8c4d4803992cf9e5f"
+      },
+      "hitFrame": 4,
+      "returnFrame": 8
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 40,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "18b34aa87f97eba28370befea902fbf2ee7fe335c30febf7b34e10b93df63f57",
+        "offsets": "d8a716f51c3eacd0dee634b65d3555eec15827c340ae3702c4a91cd619a97f1f",
+        "shadow": "d9208fe7ed886f95051d7a7ed0e7ffd156c18c2ea03fc4be37fed687c9c044d6"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "30f303366cf48558bed41d2a65fce9c9bf25d1cef57b3020e317b881af655ddb",
+        "offsets": "dfe408e27558206e010c3cb9717b4cc8a38b34275adb62f0c3539046251fb461",
+        "shadow": "7ccdab0a54973ad8dfab7f0c2d78a641291e58cba72bb71ce2d53a89aab454e6"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "withdraw": {
+      "name": "Withdraw",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 16,
+      "frameCount": 7,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 224,
+      "sheetHeight": 128,
+      "durationsFrames": [
+        20,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "durationsMs": [
+        333,
+        33,
+        33,
+        17,
+        17,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Withdraw-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Withdraw-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Withdraw-Shadow.png",
+      "sha256": {
+        "image": "ff2a133047cd162fb775b1c8881889cf97afd34e1986441052432bf668754b6c",
+        "offsets": "943f3217626c87292293b7420f609b588631b1e167e73caeaf0d42c4fa904020",
+        "shadow": "39edc8b38e28b92b895fe1c5bf07d66a2acaeb3b6ecf094ffa2ab72ed6cd7de8"
+      },
+      "hitFrame": 1
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "d288affb20f9338043db0d080e01ea09eab9a732e243169ca99e41868cf25e07",
+        "offsets": "cbc114bbbd30941ae7762c5d94302b452b34842e8fb015aafa915da2ffb74551",
+        "shadow": "8565a1e99da18212ab7581b0c13d90d0f307b29505778229c64705a8e4da2cd1"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "4d223b6079ac7d44d307eba8de1807595fad516a6b9f42081cc377acf0e415aa",
+        "offsets": "984a75e15870c1eb715b00590b60c9d4c76706be7c08c632981914e948835ceb",
+        "shadow": "cf4c8c6bb33685327962c273320c644469fc67c5da252630b350053e14e14c22"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "fa00cb92c520cde4be1356b15ff91381b35f1120278b4e02bd75816ca8f540e1",
+        "offsets": "17362c52e2cbfe39d823d80920c84851346226043257bbae26e64885bb7dd9b4",
+        "shadow": "facdd8e7a623886e25ab446d5354bcd5a3a057ddaf9070526bb9df1da5e46c23"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "425ed361b57ab65936d603ef40a0db50eb0cc49169e79764e18c50a4fe7b5797",
+        "offsets": "88d3b0aa992b9ba3d32f2bfb8849b8a0afc648ee3c7aa808050a106327348e64",
+        "shadow": "1f0302f6d8c705ac278f3c4529bc7b791da3d91d177d47f9fefcf28330ddd8c8"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/squirtle/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/squirtle/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/squirtle/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "949a8f3658587e7884358afa8785d644b44d213447ddd752b3c5593320f57464",
+        "offsets": "293ad2dd18e6a8a68badb094e26c73a16c8004b88eebeb56e1206a7c8b8c2e5b",
+        "shadow": "38cc4123d5c59560796fc410a47c46f98478e40c7bc72e4637008f539612543d"
+      }
+    }
+  }
+}

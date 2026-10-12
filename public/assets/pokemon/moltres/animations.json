@@ -1,0 +1,702 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0146",
+    "name": "Moltres",
+    "slug": "moltres"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0146",
+    "metadata": "/assets/pokemon/moltres/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/moltres/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/moltres/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "8187c99f03152d94a77f218f538ab45953350405357336ebcb891df05eab5931"
+    },
+    "rawCredits": "/assets/pokemon/moltres/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 80,
+      "frameHeight": 96,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/moltres/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "1023d555131e72e4347d9d864bf1e94b209f0b99f9d1597da272aee99e79cd71",
+        "offsets": "24e157962907f0c57e5b2dfd248eb369f02b37e2505e0f31ede7f623ca51361f",
+        "shadow": "cefe468161ec2c2baa20f7435b34fbda185c41d715243f19112ebeec4f87eeab"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 80,
+      "frameHeight": 96,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/moltres/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "2ad929f43ac6509fa6f9fc2d19a6391e9fccef983e6baa2af808f444133b0dac",
+        "offsets": "c4ba52c416c9a68e962e26cad4fee33f5de22341d0ab4257faacfbadf45b88e0",
+        "shadow": "cefe468161ec2c2baa20f7435b34fbda185c41d715243f19112ebeec4f87eeab"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 104,
+      "frameHeight": 136,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1456,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "406afebeea21a5740dc1c649035461093715f5c732addb7b44bea1597877ba93",
+        "offsets": "71f7455593d0b5b2f3a0cb3309d4a847de2a179657cad0a135ba96bcd78347f2",
+        "shadow": "3dc9a6f9f5881192e50cc2ad4e6d68ccd22e99054481acbee85ba8b68ffea016"
+      },
+      "hitFrame": 6,
+      "returnFrame": 9
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 80,
+      "frameHeight": 120,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "06bcae65c0bc051c9cf40158a693c69658782fb279f736cbd277a03d6225c5fe",
+        "offsets": "a1775516cd2e4cfe5d81b26edbb30387aa5be2d666d87dda2183dd4df179347e",
+        "shadow": "8f89cdabda926a0420d446d0c750687dab50bee363a441f1c703282b178fb499"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1536,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "53358d3d01b9f89b6079c391f75d6c5fd66c0af485bada0d1033ea80fd32ed58",
+        "offsets": "f00f69edfebe43a10a42a85c09258d25677ca31eb03b01490e21f49e0e731e46",
+        "shadow": "984848cbf0773bae1ac0a58ed75d961c0774484054d8c574fe55e4366ae5c6a7"
+      },
+      "hitFrame": 6,
+      "returnFrame": 10
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 80,
+      "frameHeight": 120,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "06bcae65c0bc051c9cf40158a693c69658782fb279f736cbd277a03d6225c5fe",
+        "offsets": "a1775516cd2e4cfe5d81b26edbb30387aa5be2d666d87dda2183dd4df179347e",
+        "shadow": "8f89cdabda926a0420d446d0c750687dab50bee363a441f1c703282b178fb499"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 104,
+      "frameHeight": 104,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1456,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "b6170b70ebb353db443f3690cbe1f9bd4abc9ad5ebba59b819b3dbd26e8a172b",
+        "offsets": "d01b6f2b8ee9827461508977c1c84178333de5bbdafa78b7dc494bb5b3bb5ab0",
+        "shadow": "b03b9ecdf069eb152c5ff1298cfa0d61c02f78c22272c7ad8abaa8836077e4c5"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 8
+    },
+    "hover": {
+      "name": "Hover",
+      "index": 4,
+      "frameWidth": 80,
+      "frameHeight": 96,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 880,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        3,
+        3,
+        3
+      ],
+      "durationsMs": [
+        17,
+        50,
+        17,
+        50,
+        17,
+        50,
+        17,
+        50,
+        50,
+        50,
+        50
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Hover-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Hover-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Hover-Shadow.png",
+      "sha256": {
+        "image": "1fdedc19bc3a820106369ae381d35a7602357ce8ee2c2634e13cd2906b0bb98c",
+        "offsets": "587b880d5e461d3b8cea904bc73a15e3ff3253fe0c3aa34951853ebdbc3bdd47",
+        "shadow": "32b7a5a23cb9cccbb4a596a9dcaea111d16024df8c889e8d6a1a2ee4a80b6377"
+      },
+      "hitFrame": 3,
+      "returnFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1152,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "c89449bb5662fcdb2fc9cffdc13e37f56147cb0ae26a2b9a3cf47d266248c8ba",
+        "offsets": "1da6d9d104581509b17c99a5cf3a80b0b79d82045f1ad2d7d45313c90946ac97",
+        "shadow": "96d9a3e61c02282af23014c4309d3d1e366e122394cb5dc3cd7b009bc65e8d53"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 96,
+      "frameHeight": 120,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1536,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "a958ed667915038c1ebad50e129b61a884cf47e06d90c264ed7c2ee93e303e8c",
+        "offsets": "99d7ed0d1f06a5c979f4c25bba76c95db8a9f26db654082539fa8ffd58701acd",
+        "shadow": "1492167935a5e41169152850d026c5df99515168e6740b53f71b232138a91232"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 80,
+      "frameHeight": 152,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 800,
+      "sheetHeight": 1216,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "d58f141130c0f897bfb82cc6e37c29ce90ab8e4afd9cce006fd5d621b70a4913",
+        "offsets": "2fa72e9be9bcf53746c5afa9ce27e0158ba86f555020d3fc5a77972d6b3fe84b",
+        "shadow": "6b4235be91c07198ca28b66339b7ea4d3599c60cd40433e137afe5f5f3a89d0a"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 96,
+      "frameHeight": 104,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 960,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/moltres/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/moltres/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/moltres/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "44b3af09a6856c950c834b2a86f417c5cafda60cd10287ba94d9a0b74511a007",
+        "offsets": "dcea01f940789e44b1e65e6c6a193215146ac502d303a7ddde2265169f4050f6",
+        "shadow": "39d4f290cade70a607b0961af32f1b1c21111d363b989f18b9fcbe40dabdd0e8"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

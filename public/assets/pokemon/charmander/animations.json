@@ -1,0 +1,737 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0004",
+    "name": "Charmander",
+    "slug": "charmander"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0004",
+    "metadata": "/assets/pokemon/charmander/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/charmander/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/charmander/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "19ece460b8336a72fba5c8615ee1746bb70aa357fd3d9dd5500cbb54cf7109f5"
+    },
+    "rawCredits": "/assets/pokemon/charmander/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        12,
+        8,
+        8,
+        8
+      ],
+      "durationsMs": [
+        200,
+        133,
+        133,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/charmander/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "304a2a2d7f07e6a81bec42270b585b57d4ce0af78b20a6905a1bc704e2415350",
+        "offsets": "9e22ac2a6bf1010be3fd10d2bbdd8f830a81492e0d70232250015211be044340",
+        "shadow": "1ec150c932f208ce21ceccbfc72b21ef85a17cd42133734ce2a2e0638c49eed7"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        6,
+        8,
+        6,
+        8
+      ],
+      "durationsMs": [
+        100,
+        133,
+        100,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/charmander/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "3e120c93b743fe30d10766114d54e230e851a43e4ffc174bcb7eb424a452a05a",
+        "offsets": "ecd149974509ba0afaeb4297dce244f9db80f9f2b237e3b04957354d4edd72ae",
+        "shadow": "986ed7e027135db592e146107bff26dac9ab00e787f7e4002bcca92696fc54b3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "4f98b662bdbe7d2e91c765d521f03509bad7500caf7d4f85c8566257cda13894",
+        "offsets": "89c974114f83393a1576417e7d5d52de2f440f8bb2b011150d616a8a41b0246f",
+        "shadow": "bda8ebb413b23215d7346740eea9bc860a8dd859f084273e752110bc2d35ce2f"
+      },
+      "rushFrame": 2,
+      "hitFrame": 6,
+      "returnFrame": 8
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "86e742d76d27fede779bde33ab956799de900361cf842946086c25eac2042ad1",
+        "offsets": "71d95e578ab36bb8c2b07f4de23638ae4c546a795f4e27eb1cb53599c64ec4a2",
+        "shadow": "df7815c9541ff2a2416b89ee31260fb0bb23e9f9c037457468f59cf976f1d0bb"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "ec6c3cdc87e613e1a1cfbfa2c5dc1fbafba6406effb9400ea434cd34578bca58",
+        "offsets": "d0900e2db7a3f10ebe99c20fbfb978e6ba6aa5de16bd2a2d5ffed5892a998568",
+        "shadow": "ba4479486af5d5a167d1bca9a422f2bcbca139e2801ea53ce05cc3c02adeb747"
+      },
+      "copyOf": "Charge",
+      "sourceAnimation": "Charge",
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "ed9159e81d01f7de9f3e2574b54fe0382973ad52d4f2deb12bf634ce146665d3",
+        "offsets": "983c8532c7754faa3c55f75b3b44334cd232229f1cbde73e4e1891dccd8b5ed1",
+        "shadow": "d60018a3e3784b20802294eace9cfab679ef7c6f28aa0e7e9140e34be8a8af38"
+      }
+    },
+    "kick": {
+      "name": "Kick",
+      "index": 2,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 616,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Kick-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Kick-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Kick-Shadow.png",
+      "sha256": {
+        "image": "5a59022bacf33b0786efbcf0bf51eb2d2c3f5d92fb9e4e0a9533e313ccc6a4e2",
+        "offsets": "e093aecb63d8b793ed470e6a5c7b4873fdc330bb8636643c56586a73956cfea9",
+        "shadow": "114b302574e984007dd89fb6154433022dcc55692db78ddfc42b1e8ace4c490c"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 5
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 4,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 504,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "d6014eae7357b77d90bad62d27fb6f927352cbe7dbc5931c493ac61c408dcab9",
+        "offsets": "ec9ccc393f0df5870d9e7f032bd952c615ebc1c227596a9fd6fbb915876890fb",
+        "shadow": "2223feccace42770704e1dfcc5e6baed5e30aa364ea9f3c1a5f47e18dd8be478"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 4
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "75267490bd500a3edbf2ad3d6de2e7988b5a98c07c4b55b58b74b0005d05f2dd",
+        "offsets": "695af52139308f067d367835fa50921a79b4c6029f684ba3727ef9bd7835309c",
+        "shadow": "15220982b1b4f8742eaa87427653a869aefd6a37bb431e83b9cc17d0fa3b374e"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "e30e863a94615c26417bb58d82b12cf2cfdb7482a75320366304d7258f372aad",
+        "offsets": "fdc9a4207b8f968f2c0f2bf50785decec9e5619df847574e044bc7db3917baba",
+        "shadow": "cf4c8c6bb33685327962c273320c644469fc67c5da252630b350053e14e14c22"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "8d3ee5f46c7aee5091a7ad6ff482f6ca74be3799bf017d1e31d4a2b1b0bb17fb",
+        "offsets": "fbff52c334520d91447da864ea3a89532ea97eec3e01de318f9e2a9682112714",
+        "shadow": "ec08187a3fa5ebc2ffa2e60fa9173d5ae2f5abbc3e1a860f6bbb1924957d5a25"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "ec6c3cdc87e613e1a1cfbfa2c5dc1fbafba6406effb9400ea434cd34578bca58",
+        "offsets": "d0900e2db7a3f10ebe99c20fbfb978e6ba6aa5de16bd2a2d5ffed5892a998568",
+        "shadow": "ba4479486af5d5a167d1bca9a422f2bcbca139e2801ea53ce05cc3c02adeb747"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charmander/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/charmander/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/charmander/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "39bd3ee460a34031579b3f8b31bdcd2fd84f2da25eeac2b21f757fff3e0bf420",
+        "offsets": "0bdd38b8a7b777575669c4ac22b8ae2e1a1785671f4231a214d9fd0fb3656949",
+        "shadow": "0ad4d39b6d26ed5ba37b726d1c077e132322ab034a653922c5e34b21735bd732"
+      }
+    }
+  }
+}

@@ -1,0 +1,681 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0196",
+    "name": "Espeon",
+    "slug": "espeon"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0196",
+    "metadata": "/assets/pokemon/espeon/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/espeon/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/espeon/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "8b3ef3f2b5b388c47051d76338342370ed2298c18905363cde726852b4c7b2da"
+    },
+    "rawCredits": "/assets/pokemon/espeon/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "durationsMs": [
+        133,
+        133,
+        133,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/espeon/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "d0c2fb41f3c1b0906716d1416887256bb6f2a6612eb3f27e85a052e2ae5e63c1",
+        "offsets": "e26b6c2587f4d8f6521723cedb72485f5085de81b6046391c0ed6fd30aa03d79",
+        "shadow": "0843ac7aa314a5a302a0c1998ceb6f73720007a70ca7d3e0684e86d5e608f0c3"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/espeon/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "a092b26721bc59b495cc3f2c84cd7e7c36890644a2afd460c51706a53d9025ca",
+        "offsets": "716922288e74789633ee1b40575928375595f1d5c169aad517271d28a964c96a",
+        "shadow": "0843ac7aa314a5a302a0c1998ceb6f73720007a70ca7d3e0684e86d5e608f0c3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "90f0320a448449cfc2190d601b28bca0d87437bf6bb0408f13f42d62de115989",
+        "offsets": "c450741db43d5aacd0072341e7ea859a67102e461e10ebc4b6162fd2d7629731",
+        "shadow": "0e0c37e86ed3be723dc687d9d8c7768a3170053d28bd8c96687bbd6900f2019e"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "9ab77941d25b47ccbb752f107326e673ba38a2c28033dc102e5793f309746d66",
+        "offsets": "0f52276016e7e62d55e666e9ab9736ae833081c1d660d5752e91347005fc7455",
+        "shadow": "737198ec693340ec6a7560fcad447d3c6616b95f350dc019384301d2a450677b"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        4,
+        6,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4
+      ],
+      "durationsMs": [
+        67,
+        67,
+        100,
+        67,
+        33,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "b390a9c9d69b9485687f94b09a12005a9980b63d56bf1e3f0779dad4d417968c",
+        "offsets": "4d09d6f1e88534c303d35c730bb5049238fa9c972cedb25ab4866de9217a45a7",
+        "shadow": "b827824f3422461d23541ea843971422951329d9d3c3b3ae520b730925f9d688"
+      },
+      "hitFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "9ab77941d25b47ccbb752f107326e673ba38a2c28033dc102e5793f309746d66",
+        "offsets": "0f52276016e7e62d55e666e9ab9736ae833081c1d660d5752e91347005fc7455",
+        "shadow": "737198ec693340ec6a7560fcad447d3c6616b95f350dc019384301d2a450677b"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "90f0320a448449cfc2190d601b28bca0d87437bf6bb0408f13f42d62de115989",
+        "offsets": "c450741db43d5aacd0072341e7ea859a67102e461e10ebc4b6162fd2d7629731",
+        "shadow": "0e0c37e86ed3be723dc687d9d8c7768a3170053d28bd8c96687bbd6900f2019e"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "f849dd27b20f4c01298c218db619f116299ce4c26bb3fd8265c87f4bee62db71",
+        "offsets": "ce7794bcbac6de75b68eaa50476187ba4cbfcdab95b55a4e1157c984edb0a002",
+        "shadow": "f91fed8e48c7b801b0c158228a61e93e876ba8abfd3e5c518afbea74ed0cd983"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "a809b6d1078b234fae418733d832247319d52098904a1840b98aa5552f9ad0fd",
+        "offsets": "77cd72be9a8040e1f018204b26766c77723f1503141211cddb61ae11138d7efb",
+        "shadow": "bfee7ee1d110c90c0a4b0d421bd2789e764124dd9ec36fa228805a47f14a9ab6"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "4fb244dffa9bd6ef2e1609f8f5ed877e200d837085e0172cdf5dc7b6be0f8f1c",
+        "offsets": "6139dbf9be82124d81299e88aace6ba9efd6e39da5cc9379ac5d07f116e33c7d",
+        "shadow": "92cc70998f4cb954b44c730295501d7a5b03d6e66de57f7894968d7930d57722"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "503817bc7248a1f11876070ac83a33238baddc7b3e6dec2301bbb2a654d4000c",
+        "offsets": "217c5dab8e0b911b0b5599761e1d1a7a54936b47e7f05939523f72051f0ffb93",
+        "shadow": "ec08187a3fa5ebc2ffa2e60fa9173d5ae2f5abbc3e1a860f6bbb1924957d5a25"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/espeon/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/espeon/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/espeon/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "ee693e036b5de228243bafa6f24b092d0c23bc2e435f69507c72967d5c78d16f",
+        "offsets": "0191ec45822e93c5ec2280d85e04094ea050df57cdfe1a5bf6b539f74073d001",
+        "shadow": "ba4479486af5d5a167d1bca9a422f2bcbca139e2801ea53ce05cc3c02adeb747"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

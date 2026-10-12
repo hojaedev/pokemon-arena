@@ -1,0 +1,691 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0212",
+    "name": "Scizor",
+    "slug": "scizor"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0212",
+    "metadata": "/assets/pokemon/scizor/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/scizor/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/scizor/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "56c2643a56ed75cfba6ec3e12998be1351b6c13b6246a0e36fa91da2d674112f"
+    },
+    "rawCredits": "/assets/pokemon/scizor/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 64,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        30,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "durationsMs": [
+        500,
+        33,
+        50,
+        50,
+        50,
+        33
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/scizor/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "e8fe0570c10f952e719c8ddd15afe315450ac7d0af4efeb2c1292e00010c3b88",
+        "offsets": "7170619a5b8d6a22258309dc765f62a9c0a39ba2e3cc269757ba1f946589df79",
+        "shadow": "702fed10ab2f61c8eb41c2e6608146335661aa271ce23d4d054c8c130fac93d5"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/scizor/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "e047334a8f116d7ff06a8c006f2735dd94c4454b493cba00d3fb2d0a8c90d107",
+        "offsets": "3671e0c70367c5914bb81eb23300d68afb292306f1b44e54610719f231661100",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "eb60db06364972eb3d4b071d05d51bc1719a74d258259aa301c140bdfb0cdd69",
+        "offsets": "a8bb4a2aef23c2352ae27f39f1d6f2728a0a2058ef91a0e2194b9db93103c1a9",
+        "shadow": "b0f73b33ada92652bc01884c7079124666836d734a2581cf48146d397ed64156"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "75895265d131496daa7d9914c56477e1ee8352bad8b7c26cddb797c7db3c4437",
+        "offsets": "24a8dd355a797dfc09c07681351074d074af9e6bdeb2237599665eb79d90d920",
+        "shadow": "737198ec693340ec6a7560fcad447d3c6616b95f350dc019384301d2a450677b"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 4,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "ca63f73f3dd9f6cdfee693fd26e944c54f43a07bad637fbcb654a6d4a8c5ef4c",
+        "offsets": "5e17550df11df903b53dfe1858b27c641591b5b4864ee2719558ac0fab0ed76d",
+        "shadow": "8dcefbb6cdc37c85377de5bdb0c5f1bcfe1b5da9d83195db9211d5615778e0b6"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "75895265d131496daa7d9914c56477e1ee8352bad8b7c26cddb797c7db3c4437",
+        "offsets": "24a8dd355a797dfc09c07681351074d074af9e6bdeb2237599665eb79d90d920",
+        "shadow": "737198ec693340ec6a7560fcad447d3c6616b95f350dc019384301d2a450677b"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "multiscratch": {
+      "name": "MultiScratch",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1008,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        1,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/MultiScratch-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/MultiScratch-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/MultiScratch-Shadow.png",
+      "sha256": {
+        "image": "bb896f1b41499c1b00e854342828654b02c0ff241ebb97f4379e3cad71156505",
+        "offsets": "468061374222886c4bf32e77c40504e08751d6c9bf36e6d009a5fcbec8530f14",
+        "shadow": "a6b53bfdb765546f12cb8b256753c352f05e9fe0b86803357a77bcb108b96574"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 6
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "8b082e6e667d8c04bc15f5c230a3a89fa3d863e1a6fb50ef5cd66fe8f9623fb4",
+        "offsets": "c2af8c84523cf6aef924fb8ebf3fb4f31a85eb3afd3495e5f8a73f2f74868655",
+        "shadow": "400806340f23dd13c226c3f67622be131c488391d23f6c8f4c14ae89e3531c73"
+      },
+      "copyOf": "Charge",
+      "sourceAnimation": "Charge",
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "635aad25929c47ff3860a2c3ec29c8bb2bf7059883e902c2e758a4d2a9f15ff6",
+        "offsets": "7cabfd74c2a5c5489dfeaf0c7644e37c76891032f0ed322884f53687e1a21450",
+        "shadow": "3034c9f340bf4ae6d19c9b9110a76c36de3fdd8b1d9df9f89aceac5206122212"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "28cd0dabdeb8ba843bd5f220f5365f0d9d775e0980818e5fd2a2c0db7734a405",
+        "offsets": "2558cc7eb238c8948b87a1950a38956e3d73707ff38b8da8493adebddb3cceb8",
+        "shadow": "fdd13e686bad6f5ea44b9d861357e7e45ac0d175d1c376869c9d458219e211aa"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "90846f36737696a2cbfc7f48e760027d80040881b316714060890f16024b1c7a",
+        "offsets": "31e4b18de879001d9b295087f009b7945610f0544211a14c0f23cfc6c4493fdd",
+        "shadow": "0673f2f705f773daa3955604e7c5c3bc7e14cba55b79f3ef5c8fbc4e8965a1fe"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/scizor/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/scizor/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/scizor/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "8b082e6e667d8c04bc15f5c230a3a89fa3d863e1a6fb50ef5cd66fe8f9623fb4",
+        "offsets": "c2af8c84523cf6aef924fb8ebf3fb4f31a85eb3afd3495e5f8a73f2f74868655",
+        "shadow": "400806340f23dd13c226c3f67622be131c488391d23f6c8f4c14ae89e3531c73"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

@@ -1,0 +1,789 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0136",
+    "name": "Flareon",
+    "slug": "flareon"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0136",
+    "metadata": "/assets/pokemon/flareon/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/flareon/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/flareon/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "f013904cb043fb96e43144b4a5d233f5ea6d02eb5117f78b884bcc4006ab3297"
+    },
+    "rawCredits": "/assets/pokemon/flareon/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        12,
+        16,
+        12,
+        16
+      ],
+      "durationsMs": [
+        200,
+        267,
+        200,
+        267
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/flareon/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "7887bd324a5df3e5e92964b6523f2fa3784ae871382ca5d2f790cac7513e03ac",
+        "offsets": "3ccec7a99e52f21224700242f7ad0100ce83b5d20206c18386c973eef3f77fae",
+        "shadow": "68c83e91a9a39ef3355b8f1a3bb474180faa46ef443a58acac567a6b54127560"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "durationsMs": [
+        133,
+        133,
+        133,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/flareon/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "58b7008226aa2532baad0b463c1c8feee227ba773247b5ab9c3a63e5b0031912",
+        "offsets": "a023fdee53a9f328a49e7b3335446ec276eeb52b7fe20892bed22c514288be9e",
+        "shadow": "68c83e91a9a39ef3355b8f1a3bb474180faa46ef443a58acac567a6b54127560"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "082bab4807d320babb8b3876aaf4ced4bf2bd16bbb4779c27f1dcc393ba21564",
+        "offsets": "0a3f9b18ddd3da3a08607a8fe586238d203dcf319a7a367d9c7c5ec1282723a1",
+        "shadow": "333d81998ae9285a9b0ef2ed06ccadd35aac3470a14b51257302aa18bc67da02"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "56b5034513e1739d2d49c086c60d3229b7fbcebd3572f51802b29874e22eda5f",
+        "offsets": "48649baca48b8b61f853489e2d8d88cc5562b23988334283d083b6161bc63b75",
+        "shadow": "4b04c29b16a65336d214c5853efd6744fca874511c42a13d186aba1f96797d8d"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        6,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "durationsMs": [
+        67,
+        100,
+        33,
+        33,
+        50,
+        50,
+        50,
+        50
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "cd1c60c3882ee86f2007c3d7d18fc0cf6fdd1b72cbc1146c449995a82dec89ac",
+        "offsets": "5141afb1d515c183d4da212fcfcac2907dd3a9bf06d26b0a9be8e2e0f9ff8aea",
+        "shadow": "58c0aa1262c7767cc1ef6cbe834698edab29feb0c309d511d821c0aef12ab79b"
+      },
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "1f832b46af2e9248275b7127b890aa43c7ecf95c5083a56448ff2b5c59f6b307",
+        "offsets": "d5cd2c4840ba3b20a3d0389db768730985fc946c01b3efd4fb2833f6ce053648",
+        "shadow": "09dde251b95513457cb796eb39b901dff05ff2eaf9f656b1eb1b74efb2bb30cc"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 704,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "082bab4807d320babb8b3876aaf4ced4bf2bd16bbb4779c27f1dcc393ba21564",
+        "offsets": "0a3f9b18ddd3da3a08607a8fe586238d203dcf319a7a367d9c7c5ec1282723a1",
+        "shadow": "333d81998ae9285a9b0ef2ed06ccadd35aac3470a14b51257302aa18bc67da02"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "appeal": {
+      "name": "Appeal",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "durationsMs": [
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/TailWhip-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/TailWhip-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/TailWhip-Shadow.png",
+      "sha256": {
+        "image": "55d8bf4652205ef1067255566ba098e96f1463324225bd5d7d56e7f107f06616",
+        "offsets": "0fd15152d39f08bf3be00ba3ce42782f214f4cef0acb99ca3698e28a8e4e6f2a",
+        "shadow": "1e246a02c7f6466310a53854cc95e0004d43529cb4068311b1e59f30c8070b85"
+      },
+      "copyOf": "TailWhip",
+      "sourceAnimation": "TailWhip",
+      "hitFrame": 2
+    },
+    "tailwhip": {
+      "name": "TailWhip",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "durationsMs": [
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/TailWhip-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/TailWhip-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/TailWhip-Shadow.png",
+      "sha256": {
+        "image": "55d8bf4652205ef1067255566ba098e96f1463324225bd5d7d56e7f107f06616",
+        "offsets": "0fd15152d39f08bf3be00ba3ce42782f214f4cef0acb99ca3698e28a8e4e6f2a",
+        "shadow": "1e246a02c7f6466310a53854cc95e0004d43529cb4068311b1e59f30c8070b85"
+      },
+      "hitFrame": 2
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "f52ccb5cfee639980e2f4aa3314f75f56ababfe8608790871c765fffd82a107c",
+        "offsets": "7549b72d5b851df49d385693fc3ac80c0298c8d2d77a3daabc9319b65d4dfb0b",
+        "shadow": "4bf57ff09e2f92b4745e8f4a6e6dcd1e46da4c8245f59ed2b096be73955ef75c"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "7caa18f1b41c692eeebb54d38d307240ebbeb171f4db72a5eaf6e0d9fa2b2455",
+        "offsets": "c7ac962666e4ba3dbc6b77a185488f9eb9eb50ac1226d53695dbd9f04f0db74a",
+        "shadow": "ad47345e595468f21260a6a9638100c1dbe9b6df7ae189da9844dd8698a69d4f"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "025b4c46ff0c9655da9193ea86af47fecb7b1707dd3139b1b56e6bf7d0731e96",
+        "offsets": "501c1cb87d07b662e49168b4d4d4ebf29e5660b95ad9b20e0cce58bfd799164e",
+        "shadow": "43b8010acfe4308ff57e0f3665bc972a5fad3607d7a4870b063bd58a6850095a"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "5cb10c662b29d219d34cf1bac5853e3b1169850e522fba209144c0db57a0e7ef",
+        "offsets": "d1fd2aa7811852e985adcaae2215b900afc08a1ebc55bdc71e4208f963e22f49",
+        "shadow": "13819a5a2d9f01ae55d1719e8cbbe04d075b2bc846ababc6e7444f9ac60ed4a7"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/flareon/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/flareon/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/flareon/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "57f25acb598702c2f8feb68eb6ffe46433cc9017b20a0cbb4c8f0169a599ac05",
+        "offsets": "6c0ea3bd001ad01ae1d34557b166570227721a9962c808d198a55e2b402f5bd1",
+        "shadow": "cfa164873c1eadbb8bc5247d81d7d40b18495214f4b57e5d5dc9695b872b1f83"
+      }
+    }
+  }
+}

@@ -1,0 +1,738 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0175",
+    "name": "Togepi",
+    "slug": "togepi"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0175",
+    "metadata": "/assets/pokemon/togepi/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/togepi/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/togepi/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "cc9d3cea774519ba33e37cc58e3dcb809bc03b3980547f159c8e5cd92a16dcca"
+    },
+    "rawCredits": "/assets/pokemon/togepi/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        30,
+        8,
+        10,
+        8
+      ],
+      "durationsMs": [
+        500,
+        133,
+        167,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/togepi/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "63734bcc7f59fdc1cc7c618f3e0c58ea7a96afab8ff0bd8ffed84f2c26224a98",
+        "offsets": "d04c6bdeb786cc63241af2219e14bf9b166109e63b099e10ec8fe2a79106ce5c",
+        "shadow": "c0ba6d2d4ef8e26824dace9aca22a63c8cc4bd423ffa67d6755e5ad2ec6423d8"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 144,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        8,
+        6,
+        8,
+        8,
+        6,
+        8
+      ],
+      "durationsMs": [
+        133,
+        100,
+        133,
+        133,
+        100,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/togepi/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "e15d19d1b0f3432e2a149c30c0a11e2302ff906c23699c786182c5d67780f3b0",
+        "offsets": "1d78cc5e96f35d8b3582c1383328c5dca88ef7f425a71e923425f066451f0afa",
+        "shadow": "6721fec4f3b179028fca4299ecc5d41390897df759d18c3645693baad623fe04"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "e33305bbea7cf526c465d99244588cd9bd052fcb2de118d11fdd72203283969b",
+        "offsets": "333120947d553b934c604b6318301991b63e411af519e6c3932228ae866f4d3a",
+        "shadow": "7d56307a7dde286e907f9711cc016e857454c9f5b8bfdb9843f1db4ff26f8cd9"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "42b2093bb81ffa5df2440cdf2cce749126b45316f489e3917e266e3ff335bf78",
+        "offsets": "6d50e12c3b68b3f256b450401ae05ba60837974742090c92cf0fdaf9ee61c71c",
+        "shadow": "1c4df533ec33db4e5b5825a49b6949b3f3128f102f53a05812ee31e1d3bb402d"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "e33305bbea7cf526c465d99244588cd9bd052fcb2de118d11fdd72203283969b",
+        "offsets": "333120947d553b934c604b6318301991b63e411af519e6c3932228ae866f4d3a",
+        "shadow": "7d56307a7dde286e907f9711cc016e857454c9f5b8bfdb9843f1db4ff26f8cd9"
+      },
+      "sourceAnimation": "Attack",
+      "fallbackFor": "Shoot",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "42b2093bb81ffa5df2440cdf2cce749126b45316f489e3917e266e3ff335bf78",
+        "offsets": "6d50e12c3b68b3f256b450401ae05ba60837974742090c92cf0fdaf9ee61c71c",
+        "shadow": "1c4df533ec33db4e5b5825a49b6949b3f3128f102f53a05812ee31e1d3bb402d"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "e33305bbea7cf526c465d99244588cd9bd052fcb2de118d11fdd72203283969b",
+        "offsets": "333120947d553b934c604b6318301991b63e411af519e6c3932228ae866f4d3a",
+        "shadow": "7d56307a7dde286e907f9711cc016e857454c9f5b8bfdb9843f1db4ff26f8cd9"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "dance": {
+      "name": "Dance",
+      "index": 3,
+      "frameWidth": 24,
+      "frameHeight": 40,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "durationsMs": [
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Dance-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Dance-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Dance-Shadow.png",
+      "sha256": {
+        "image": "98ac26c5e3e4ff536795d2f53acc5634170af1222c0db1d1bacd2fc5d5a79d20",
+        "offsets": "87dc1f5775088b5ace12746ae94e13b3e41cc0d8cbece8f35582a17292b70759",
+        "shadow": "ca4f27c74ef48124f3e0c9f4564e359aa4b7307cb91d60aa9d3eec970ea84871"
+      },
+      "hitFrame": 7,
+      "returnFrame": 11
+    },
+    "appeal": {
+      "name": "Appeal",
+      "index": 4,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 216,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        4,
+        2,
+        4,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        67,
+        33,
+        67,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Appeal-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Appeal-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Appeal-Shadow.png",
+      "sha256": {
+        "image": "8e412bddc91664b7249620c71ef1b33ccd3646086015d23ce13fc90b5e281674",
+        "offsets": "e5e028ded25bfc9037269c5c78da30b67049b6cd0b57a382534be4710c0b6724",
+        "shadow": "42096db105bcf29b707f51adf3ede0219ccd2cd2cb3ab4efc53ff5da2e2bfc6b"
+      },
+      "hitFrame": 3
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "45ba25dcd5a5146554d675667911f1831085222ce9dbbe3cd84ef869f347354b",
+        "offsets": "2ad7bf784067943ef87829b3420db9b475dc8fae5213426b83b262733ab12f3a",
+        "shadow": "27c3498f291aad7ba026e3f94f3e0e5f28de7dda4fbb5333e353ece5578a5997"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "e0bb1f36d47e9a2b934e232c80fee0377a3a3035c6e528969756f5594337bc0e",
+        "offsets": "b5058f3ac70120c9e5e12a455a43afc4e61665990dc1e02e4bca79cf6437df96",
+        "shadow": "d5cda1b97b1e2f72ce3259e2dd6ced8ad2904b29267950d7724eadb6eb2d395a"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 24,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "e32b52e2f5c06254c0c14bfc5031b45ae63ace0616b9f372d2d316a1f26cabd7",
+        "offsets": "485ccc1c83afab04873d283df15e529836118e94db4cc5418bfaff46e5151eed",
+        "shadow": "98d719a8c725c2d295c6ee48cb850fb0f8158723ed34eceb657705e5c17239dc"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 24,
+      "frameHeight": 32,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/togepi/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/togepi/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/togepi/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "54f57441f9e7600052dbe4eedf870aef0dce7fbb5b7ec5119a8cb39cc6ba9097",
+        "offsets": "e1ffb43b1c8b3246cae96b30446ab1bb78fa3037b6accdbc7f37c364e5449ab1",
+        "shadow": "80b6400782e32ce1328bf5735c93edf8bfaa9f6c1679e60888ecc7bcd96e2e4a"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0006",
+    "name": "Charizard",
+    "slug": "charizard"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0006",
+    "metadata": "/assets/pokemon/charizard/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/charizard/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/charizard/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "0f35ef09a0a2fbc6d9187bcb270954b30aa2dbb51c2f13f21ed9ce648f67a591"
+    },
+    "rawCredits": "/assets/pokemon/charizard/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        15,
+        15,
+        15,
+        15
+      ],
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/charizard/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "ceeb33e0db05817c2566e964d7b2264d0fb8fdecd480f7245faeafc864bc0d9b",
+        "offsets": "19250bf33166f1796e68e212816e39678618f8bf65c9258e6924c3329dd067d6",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/charizard/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "ceeb33e0db05817c2566e964d7b2264d0fb8fdecd480f7245faeafc864bc0d9b",
+        "offsets": "19250bf33166f1796e68e212816e39678618f8bf65c9258e6924c3329dd067d6",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1120,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        4,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        67,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "af67973adf681138435e48494a7f04a80809a42b3378fea9486a18744c63f32e",
+        "offsets": "1458d09dd69cfb04330ed38e35eb26bf07118a37b707b77e2899fd7d67e782cd",
+        "shadow": "26f3b35801eb5a705337d1d05048b4576e6d124878f07546bd78c0acfb932970"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 8
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "838924d5af02c21a3c67918807d8089afd09144a54a1898fcd02d977f4ad0aec",
+        "offsets": "a5ff433b14b8514cac68d32d221611bd9095ac12079837c5e959c175d867738a",
+        "shadow": "03a44da161edeef5b8c0a9c2d20a5e11a30664b078f3c12bf256b33054429860"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 616,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        4,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "7064487ed8b43e2aa4d73872a1c40320fc883ad224c1a717057918f3eedf9a8a",
+        "offsets": "ad521283ecc9390ea621410401b74a28b54ba504ead9ba0908c843eac2b5ab3e",
+        "shadow": "71d5aa90343c68f2cb2a54b92d7f5c09f10914cfda599e2f7462b67f80dfe06e"
+      },
+      "hitFrame": 2,
+      "returnFrame": 6
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "ccc9188c9fd49735856dfb532d8a17ad6317c0e1857ed70fc1f11bf7a737c72c",
+        "offsets": "9d68d679b9a422f745f46e2d98fb18b894e0973a96d8f088d9e1fed4b54b3dc9",
+        "shadow": "6fe00d59f414cd826d25e555857104a655ee8d16cde4c1f219093dff81f8af09"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "362411eee1c8cc0a71d47a32458a5df1e1682890b490e5032f50d1f53b310054",
+        "offsets": "4faa60b09dcc9b37e9048543e9b78dab9f48abcf97d8344c7b0e4677e3636e5e",
+        "shadow": "fe65a0c6bebe41778381e99637e89fdedaa7c4ee0a50d8fc7754415fb87b345a"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 6
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 616,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        4,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "7064487ed8b43e2aa4d73872a1c40320fc883ad224c1a717057918f3eedf9a8a",
+        "offsets": "ad521283ecc9390ea621410401b74a28b54ba504ead9ba0908c843eac2b5ab3e",
+        "shadow": "71d5aa90343c68f2cb2a54b92d7f5c09f10914cfda599e2f7462b67f80dfe06e"
+      },
+      "copyOf": "Shoot",
+      "sourceAnimation": "Shoot",
+      "hitFrame": 2,
+      "returnFrame": 6
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 88,
+      "frameHeight": 96,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "bbc308d9fe93085fc5c13426e7f5c29a00f08f1edffcdff7226c87faf8d84a2a",
+        "offsets": "92495faf4027362660c9671286a53e2eaf5685508b7af20ae153d181a438f355",
+        "shadow": "5601bebca6313db48361c99e42132bec829ce205c6c922ce108bd38f3fed5f08"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "e1703d725201316e9243ee75949574468f9f10c793f65bea22bfb9c4dc00809e",
+        "offsets": "d2b583ad4032572f097ae5c7e5cbae278ad0c36be3726955ce681905279a0af0",
+        "shadow": "0f829d365b2d7ec6948ca42b3d4a4943ea755c54bcf7f747ae267a4300ebbf87"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 48,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "6bc15ac3695849339acb20a0e78847e90e2e39b48540b173f1a293d037276df2",
+        "offsets": "18a38e3c9a0dfcd2b988d95f832181caff1f5b6a4fc989b6f7dd419793f6a9e3",
+        "shadow": "30edd9679772a18769dd267a4de294ea18ecc22172a01d059fe43e2a53c774cd"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/charizard/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/charizard/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/charizard/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "71fcc9fcffde72fc677b81e0e9ac40652b816779d9f88577ad8d3f6c312fedf2",
+        "offsets": "d38f59ff470a7c0dd2ecd13ae9700c680a839e60c524e57ff868719e02168c87",
+        "shadow": "c6ad445d2e0a774f47eaed456321f1b7e41b77e5c93109c79887d3bb582c19b5"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

@@ -1,0 +1,2 @@
+# Keep third-party asset bytes and credits intact.
+public/assets/** -text linguist-vendored

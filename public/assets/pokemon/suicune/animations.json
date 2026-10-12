@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0245",
+    "name": "Suicune",
+    "slug": "suicune"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0245",
+    "metadata": "/assets/pokemon/suicune/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/suicune/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/suicune/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "b35702af3e709e20c5e20051f9f1b91014a8d1857f47c9b89b5857fa5591da37"
+    },
+    "rawCredits": "/assets/pokemon/suicune/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 48,
+      "frameHeight": 48,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 672,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        60,
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        10
+      ],
+      "durationsMs": [
+        1000,
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/suicune/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "3ff451f131dd998aa70b918d5612062a1c2f9b5c874dd92d3ee88441b39355a2",
+        "offsets": "c94e499c9060146536aa689c0bb949bacb69c22c99a1e55015993192551fcb9d",
+        "shadow": "8f80e092dca9f2bc160d0a5bd08d9b94215b6006f8fb6293f1b2d6ccd2c19b9b"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        10,
+        12,
+        10,
+        12
+      ],
+      "durationsMs": [
+        167,
+        200,
+        167,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/suicune/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "9ace8a767d7ea225ebba7e9624f1a46c456b8f4693ebaa8363e2f3656ca060a6",
+        "offsets": "34cdd89a2997a44e7e759ce67ea1b9d8114d9b611761051b72634773689a8b10",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "c31c9879cb4c9812e23cdbac8fdba45fc988edfab1d3cab5f064061293d57f8c",
+        "offsets": "14f434f4ec6e6f42a6ddab53008704bb090129fc48021eb5299bdafa3d61b7c7",
+        "shadow": "3cf21ac3095afbd2f5a27fa1c5eb5acfbceb5410c90b4b519c1c557199d1f8c3"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "dfe2eca0f54e9ba1dbba7e66ac590615a4c2c561d12dfc4576f6e9d357ae006f",
+        "offsets": "bbbba45e2ed74524c002632d7d59a4a8590db6f0e38236da4c7fd4bf85476ef2",
+        "shadow": "729142651f056899fd374824ccce32c320b15e7aac920f868ce2369dbe2da5d5"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 616,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "f1b74bd800fcd57f0758620ec9d4ab1946ecaf5175b6722b47c000e69f74696b",
+        "offsets": "bcace0c4ecaefc3265d7a9cf1e747601c51ce62a5749af3b789ddee2cb06b4b9",
+        "shadow": "4bd98e9ffa75ed93668bf0b8d77e12c6d881679e91879113c260d3d4ef7d3503"
+      },
+      "hitFrame": 1,
+      "returnFrame": 3
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "dfe2eca0f54e9ba1dbba7e66ac590615a4c2c561d12dfc4576f6e9d357ae006f",
+        "offsets": "bbbba45e2ed74524c002632d7d59a4a8590db6f0e38236da4c7fd4bf85476ef2",
+        "shadow": "729142651f056899fd374824ccce32c320b15e7aac920f868ce2369dbe2da5d5"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "c31c9879cb4c9812e23cdbac8fdba45fc988edfab1d3cab5f064061293d57f8c",
+        "offsets": "14f434f4ec6e6f42a6ddab53008704bb090129fc48021eb5299bdafa3d61b7c7",
+        "shadow": "3cf21ac3095afbd2f5a27fa1c5eb5acfbceb5410c90b4b519c1c557199d1f8c3"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/SpAttack-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/SpAttack-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/SpAttack-Shadow.png",
+      "sha256": {
+        "image": "08955a793d88d697ababb1eeb9d7eb7ff8d74119c3e34da51636182965e872ac",
+        "offsets": "70f2dae659d4e8de78e6a071887f1a6a4fa441e04ce6664e6a8c0ab36f7e6bb8",
+        "shadow": "9c9f5798134acd1337416f8b040a42df0e0ebefd05a9138dc3ecfda27ccfdc75"
+      },
+      "copyOf": "SpAttack",
+      "sourceAnimation": "SpAttack",
+      "hitFrame": 4,
+      "returnFrame": 9
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/SpAttack-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/SpAttack-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/SpAttack-Shadow.png",
+      "sha256": {
+        "image": "08955a793d88d697ababb1eeb9d7eb7ff8d74119c3e34da51636182965e872ac",
+        "offsets": "70f2dae659d4e8de78e6a071887f1a6a4fa441e04ce6664e6a8c0ab36f7e6bb8",
+        "shadow": "9c9f5798134acd1337416f8b040a42df0e0ebefd05a9138dc3ecfda27ccfdc75"
+      },
+      "hitFrame": 4,
+      "returnFrame": 9
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "5b89004096609ebee28aa8cd4d33d386c96db943a452ead8ccfa54ea23f03319",
+        "offsets": "fdf15d67c5db904a6ebcf6e6509460a0b53d1dc22d7862020e910fb989a0861f",
+        "shadow": "1ad5f2537fb88cd6bdf66aa151c3de5f320af06c8d8ab394690fcd35b92f9d0e"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "9c5727021c358a4e8cf7b5993402c5645aa9ad56765e0d8bcc5078c970821319",
+        "offsets": "9dcfad8143ce8fa316b18011fc63230e6ebb343408701c793628d9f29234a433",
+        "shadow": "fdd13e686bad6f5ea44b9d861357e7e45ac0d175d1c376869c9d458219e211aa"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "e7156a982d35efa14f7692d6a3368c7c27f9990115aebe20ec4546e27ddfbc36",
+        "offsets": "021a47df119ba86e8d2c2e7a534fc5ef6c4d5f0a930abb2f8b82dbe18a99b879",
+        "shadow": "1d7f457d1d4907215524178d32d73df60b605ff9534fd5261491e73573e5eb34"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/suicune/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/suicune/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/suicune/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "cc7a935e3da48ce50f0d7049ba04615f76caaf2d5a817da144d167dddd057e8b",
+        "offsets": "d95ba9b34b1eee779f9072ae29aaafafcc2e1da45b1738374e704e3dfb3d8bff",
+        "shadow": "69437775c23b3e4666078d0f9bbc134143bc42a939f11d58347c9924d53eaee6"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

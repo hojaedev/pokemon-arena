@@ -1,0 +1,745 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0157",
+    "name": "Typhlosion",
+    "slug": "typhlosion"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0157",
+    "metadata": "/assets/pokemon/typhlosion/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/typhlosion/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/typhlosion/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "468afba7f7c7d5b644964bf1d0b32b02c71486c6abcdd32a5e874f605d04427d"
+    },
+    "rawCredits": "/assets/pokemon/typhlosion/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        30,
+        4,
+        4,
+        4
+      ],
+      "durationsMs": [
+        500,
+        67,
+        67,
+        67
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/typhlosion/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "1a1e58c7f731d997b9596545ed02b48eda027bd375546a9da333f9c5cbc7a316",
+        "offsets": "3f3a6d2239a191a745dd6f44fed735490d515171c69ae4415ee0edde959745d1",
+        "shadow": "bd4852e1670f77c84a8844685deb14474c14b06cb6ce41a55d0fe0014e2d4774"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/typhlosion/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "f529daa8da9ea40fb4cb51cd077dc85a262cb7cbf740921ab55979be6adfc7af",
+        "offsets": "4b74dbe04dadcc444fa6985ad14d409955fd0a0fa7ccac9194c3ad43071264be",
+        "shadow": "1ec150c932f208ce21ceccbfc72b21ef85a17cd42133734ce2a2e0638c49eed7"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 88,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "3d026f49932230b3fb1ff5aec0467d5fd6731f8a9f49383260c209399f20a587",
+        "offsets": "b86767b478d949c6a4e6e52bc87c08dc482fe035d9b2627a30afb5f315d2f1fd",
+        "shadow": "283f9ad690c75843eae89b6b5724c12c900c18a68667464cee3f5e6dbe034fce"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 8
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "9d0f47836fdd7d634a68d6aaba07417060141630c72b742954256647f1ef59ad",
+        "offsets": "21cb7a029032c9028c361ba8b5f775e206156769f9eaf3be3259ef40e6bbc46c",
+        "shadow": "20ce4ed6a229d23fb065544b3db4a5f77b92814c9c6028c1cca425c0e7233a5f"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 32,
+      "frameHeight": 64,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        3,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        50,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "3689d44d69ec86944c294ba944b8967f13e2e81d675fb39fb482ca8d485c07c5",
+        "offsets": "db83a98a86723f33da44ec70d3de9d6a451b181d86614c6954608c6ddd1a3cb6",
+        "shadow": "837951ca21610fea286f9dc88b1104b4c5ddb0e01c5494ae4c6d7998357222a5"
+      },
+      "hitFrame": 3,
+      "returnFrame": 3
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "c530542cf10a83dfdbcb7388254e0cd8298ee8744aaf62b058eeed480867ff02",
+        "offsets": "528ec432d47fab7fb31ef34b4e67c7b60c5902c885cb51f348d21255f6f3488a",
+        "shadow": "699004e765ed09605ed011918a20f5e67a4dc601261daca1e677961c3a67120a"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 80,
+      "frameHeight": 72,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1040,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "c69193ffc69f5238208fd89638b39cf19c42565f51974369d78af7923b668686",
+        "offsets": "42b1017bc3379af6d24ee2726354ea8443c4e215f1661bab7345f041b1bfc794",
+        "shadow": "3ece4aa1971720e5871b3d5509fca5ecb54729e59ee8e61629637ec3e95a02ec"
+      },
+      "rushFrame": 2,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "8333902d9f5aaedab39f806900e22d702f8048d18cf8457de576c4b9488d903a",
+        "offsets": "cf654a9e39c5209dd8293b5ea27f02f7688be69ad66bb4363ca2d36c1f8800c1",
+        "shadow": "269c21eac13bbd401c92d60d5b907d3e446000839828f93ef34d0312984342d5"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "72c8b3fee868ce323a33553db7ff8424de06ac84abd7a91fd3aa1edd42acdb5e",
+        "offsets": "545771e203b0891ea37da9fe5a9e3571bbcc7193b6a9ee34f6d2ed940d5a372d",
+        "shadow": "eb0771af1c8450b90e9be736351a56b73a3812b7a13d54f359fc8e4b190d04d6"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "70750ed3118b400a17df3f52954c5b28c19917ab45efeb9d780bbd7bd8bb83f1",
+        "offsets": "14dc374e5cdc2f489468d2aec6a4aa9bed1855b18cc0c358399be566d37647a0",
+        "shadow": "d6a06a1742e5b08de2a19bf3514ab2fdcce516ef740f2c9f92ae677942e5c1e4"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "71fff7f551d7139bbbe60320737a7a86b4f02e8e921e18b54860f2b11901e51b",
+        "offsets": "a1cb4881fd265e30d16ae8cbccea9fa49a0d134e2d8e174957fde715f311e1fc",
+        "shadow": "ec08187a3fa5ebc2ffa2e60fa9173d5ae2f5abbc3e1a860f6bbb1924957d5a25"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "ce3e4d3a346fb7e299c3f48ab4063ba5abe3b36ed5f47dbd303117bc7e7072a7",
+        "offsets": "23682c67d714b9509931803e0924534f432f128a896449e26f39966854b1a6c4",
+        "shadow": "69437775c23b3e4666078d0f9bbc134143bc42a939f11d58347c9924d53eaee6"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/typhlosion/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/typhlosion/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/typhlosion/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "055ae9f5812e395823c75bacdb318df40701aa4ad17d7e69135fbc12124762b6",
+        "offsets": "0ab264db323f1c1bcbcfaed5af28e8029ea70ffce1148a39141916580dae9dde",
+        "shadow": "c69e2a3fd5c6178d847029b075e712d888c838cd55fac2c8b2598b1583768826"
+      }
+    }
+  }
+}

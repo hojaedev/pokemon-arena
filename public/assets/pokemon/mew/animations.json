@@ -1,0 +1,756 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0151",
+    "name": "Mew",
+    "slug": "mew"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0151",
+    "metadata": "/assets/pokemon/mew/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/mew/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/mew/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "ecc71d719f7cc447cde95c44948ca6d1f6a878c8dfefda8efffce3fef6348cb9"
+    },
+    "rawCredits": "/assets/pokemon/mew/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        12,
+        8,
+        12,
+        8
+      ],
+      "durationsMs": [
+        200,
+        133,
+        200,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/mew/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "ab407cf217daf4a830e2812722faa15edd6a34de84e3908a30750ffc45118f33",
+        "offsets": "7798768132a316758fbd7acc4fe252b677e43c0522d8956c4dcc1605b7d26de9",
+        "shadow": "807f9c16a124a96132e75e2eaa75648a90b9e01570fde3097817cba2b3c5c6ef"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "durationsMs": [
+        133,
+        133,
+        133,
+        133,
+        133,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/mew/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "aea7850de7a572739716f69da45c439f37a32409151ef977bff23ae9bf7fd032",
+        "offsets": "451130e5ea243ad8a491d079765f3d7a87b677a68db940cbf8fae8f6154a2458",
+        "shadow": "4719806311d13f8181c6b48e9a768a2796c8fa26607e2e2a42918fec0dc6c1f0"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 88,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        1,
+        3,
+        1,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        17,
+        50,
+        17,
+        50,
+        33,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "b03d046b5f81502c38301632e752e728dee135808ce1b967b1246c7510c9083d",
+        "offsets": "cdd033b828a214c4e28b9ab204a2ebf6777b9446ac00c6ea07ac352a6962d933",
+        "shadow": "64992e40053a26f9607b13ead312dfda64b0cfc405241703c748c71c4250f37b"
+      },
+      "rushFrame": 1,
+      "hitFrame": 7,
+      "returnFrame": 10
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "bdd7789bbe537607b5440e7451c9ab4b5c3185daae8c207ede91835751de94e0",
+        "offsets": "a2e909016f33330259ab4e3930e770677a2c52ace119e32c88ada576ef38b3c5",
+        "shadow": "a6b9f3539e19ceee47f27cc0f1fe6579fe67bba4d641a5bf8e38c330faace4e9"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "f90a30fa2162b3de13c98f46b585657253053fdfffd22475d4113fd04094d627",
+        "offsets": "d13a5817526fcdb402d68f776a19656481b6af998a062191c878a1228fb1d8c4",
+        "shadow": "fd62b2ff3e1e751fa4fa34176fd537a5bcec5d16648f79448f13c031021b4e34"
+      },
+      "hitFrame": 7
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "cda2001552e479dc86bcfbbbc1b7f039c9de2f133a7d5e12809639fd95fbab1d",
+        "offsets": "7a9ec71dede06a3bf01f78edb08a5c1c4d98074b26f68af1d0f2e1f3e64468a0",
+        "shadow": "da57f9bd890ae0987c8fdc5d1f9111db2636577efa968cd79bbdd82e28bc6867"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 88,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        1,
+        3,
+        1,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        17,
+        50,
+        17,
+        50,
+        33,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "b03d046b5f81502c38301632e752e728dee135808ce1b967b1246c7510c9083d",
+        "offsets": "cdd033b828a214c4e28b9ab204a2ebf6777b9446ac00c6ea07ac352a6962d933",
+        "shadow": "64992e40053a26f9607b13ead312dfda64b0cfc405241703c748c71c4250f37b"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 7,
+      "returnFrame": 10
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        6,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        100,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Twirl-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Twirl-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Twirl-Shadow.png",
+      "sha256": {
+        "image": "b6c68b45d2b64e52670f5da1cf0160516fb920132cc50e71adbc9f7ede0cac52",
+        "offsets": "88df796f3f05276a4cdfc099979889516fc397429dea0c296e354c6a9d772c6a",
+        "shadow": "e6b1c36dbe1ce84ea697b03ed297709c043e6eb5fef54bdb11fe978200082ae9"
+      },
+      "hitFrame": 5
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 88,
+      "frameHeight": 104,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 792,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "45551949b0ee7edf26f709a461e943b753e5863c1168523561f8d4a93dbff394",
+        "offsets": "3ec264fd36ec688fc5da1e275bff3b39b86bd9e415297ba36f3a74457b4b1d74",
+        "shadow": "322ff4b26e59c933bfcbecc5836eb902d9dc1fb1284384286c4a550133404c47"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "e55ce08f15dc1885110f63b003806bed11056ac2350ccfb1fc45e689a15ce706",
+        "offsets": "8baf98027da95ad21a4fb7c2f440501ec9fa8e431f44108b51c4f95216e6fa7c",
+        "shadow": "2d0e663e0aa18225644281563cb3ac2d2fc3f48cfa97e7f9952887cd332932f3"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 104,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "b332ff5c0a7b2144b4311c7d379501e93230f8ed678aa5425a3cace912bd1de9",
+        "offsets": "d2d281dd1835be3ceb78ff0c8863e2c991e9421b602cac8e5535c8a85a1c0c95",
+        "shadow": "9a05ac5740f02c7e9c2f2482549e7bce0c5d74940956476000c48128902ab7c5"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "bcb9877702e1de049ba517804fd6d65c589faa51907fd7e58667f5c29153314d",
+        "offsets": "dde9dd52192c7fb8ef0030f1ec105bb205673c8d9556ae0df563ebddf12b467b",
+        "shadow": "fffa3b107ad63361c8caac0c5f0a4cd72dd994991af1401b1d1d154e279e1ca8"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/mew/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/mew/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/mew/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "a1274709cd0d5f333a9025a06c1d14aad10a71cad4cf40886cf16a9b978d8301",
+        "offsets": "ac024779c444b41a7cae406b2a88d04da3be474490add1f44d3e61238bd07f2d",
+        "shadow": "9e25a119a7fdf00d6c1d9e664e663d187c75807c025e95be4699ac039bababde"
+      }
+    }
+  }
+}

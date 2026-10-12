@@ -1,0 +1,687 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0143",
+    "name": "Snorlax",
+    "slug": "snorlax"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0143",
+    "metadata": "/assets/pokemon/snorlax/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/snorlax/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/snorlax/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "386c58dfc42381f25d2e490544cea21d52116febf42e39dc409d87a79e66ccba"
+    },
+    "rawCredits": "/assets/pokemon/snorlax/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 64,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        40,
+        1,
+        3,
+        4,
+        3,
+        1
+      ],
+      "durationsMs": [
+        667,
+        17,
+        50,
+        67,
+        50,
+        17
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/snorlax/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "b692c89bc7c10a648fb6f72b0cf0ce9e0f84fec54dfa389709893323314e1b39",
+        "offsets": "c1891dc66ceb4598436287b3b774e1f45b80d174e9cc100a3808f81a4c02c7ac",
+        "shadow": "702fed10ab2f61c8eb41c2e6608146335661aa271ce23d4d054c8c130fac93d5"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/snorlax/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "304247a70ae32ee08cf1927caf71926903d7b67a3e480f15dcd76feb4be801b6",
+        "offsets": "cf87946efbe07b6c4da2b4a30fa1cd3d6eb0b1f1ec4fbef395fb8c6e43055aaa",
+        "shadow": "0843ac7aa314a5a302a0c1998ceb6f73720007a70ca7d3e0684e86d5e608f0c3"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        8,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        133,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "ee1f27acf84e66dd8d0cce5bca2f62d1492363f92f63d30381b3e6c097961d93",
+        "offsets": "17e2d3b72f95388f536a07c4119f2ab6d462dbaea6ab623f7ad3f364adcfad38",
+        "shadow": "ec4f92b6461989fab71b116fccd5e0f2d721b0955c49e6b71448dacc56bbfe4d"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "6a50b495198219fcf599a864527a6a8f56bc7fdaece0891632f406d3de70fb29",
+        "offsets": "e48b60eadc07dd7676dd991409bb780634f3e81a84109989dfd8f9354e9a15a7",
+        "shadow": "59e15793497a8122091a82c72c5a51beee94f1f6d7103dfedfb2604d57a02f51"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "3aa11f474ec70d4bc187b6a6494e96674c6ba6a15dfb13ef40531ba03402455f",
+        "offsets": "f9b1ba55d5378122fd0401afb13fb6915579e97007e1403c9b2c67490897efe4",
+        "shadow": "dd8abd93e0f70fcdf562dda1b4481b357018e75da8802d29eb995a4300115481"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "6a50b495198219fcf599a864527a6a8f56bc7fdaece0891632f406d3de70fb29",
+        "offsets": "e48b60eadc07dd7676dd991409bb780634f3e81a84109989dfd8f9354e9a15a7",
+        "shadow": "59e15793497a8122091a82c72c5a51beee94f1f6d7103dfedfb2604d57a02f51"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "stomp": {
+      "name": "Stomp",
+      "index": 2,
+      "frameWidth": 80,
+      "frameHeight": 104,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1120,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        6,
+        2,
+        2,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        100,
+        33,
+        33,
+        50,
+        33,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Stomp-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Stomp-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Stomp-Shadow.png",
+      "sha256": {
+        "image": "2242f2ed8be643626429dbdcda0480849b7b5673c003e8c90dc902d26db36f6c",
+        "offsets": "75d07529a2e78dbf7745a1d07eeeabbdd9fa1a64cf489dab463be25dd52c16ae",
+        "shadow": "a3ca2bca08b9b5a4d4dfedf49df6837f35298b22536cd33e49aa7ffd80570277"
+      },
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "twirl": {
+      "name": "Twirl",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Rotate-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Rotate-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Rotate-Shadow.png",
+      "sha256": {
+        "image": "f8cfa5894be43579e93881c240fa90efb0b9ae920064c311809612eaa8a88592",
+        "offsets": "8c2930cf748bd3af57f9996cabcf60081ac8bcb830954f3bcd89a9b9cc040523",
+        "shadow": "f91fed8e48c7b801b0c158228a61e93e876ba8abfd3e5c518afbea74ed0cd983"
+      },
+      "copyOf": "Rotate",
+      "sourceAnimation": "Rotate",
+      "hitFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "1f0e10163fc424d9162385c65517dc062420cb5d43f8d7e03b80afb1e2c881d2",
+        "offsets": "f4402dc29dc47cf71f1b1cae3d5e412fc235e5c15c263003783776312e8dc75f",
+        "shadow": "5372135b56350b089e10bc158771479e41ac05d00d04fef0e23256b19049cd3b"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "5c50211774efe4fe3a44ff9c2c3745bd870ad293b9f9f278ae91919cbe1e6539",
+        "offsets": "7ca426c62a10559b8e3fbad84a231152c630f2e26770ac1d1be743c76f6b4255",
+        "shadow": "9df34caf97c3b5d15a9537bc38fc3aca3220101f2e6ab35a1a7cf083d14b2a89"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "3627ce2f2f9470b24d615c885aae1565dae6b0e7795a8716252cba4323e42368",
+        "offsets": "478c63de170532913018091b9559415fe4e0dbba5b7103b29a84de8ed9ac3412",
+        "shadow": "4a746123bc57746067540d21cda3cbd77ef9b536a0134bba2e70a44e12f00f8b"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/snorlax/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/snorlax/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/snorlax/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "a921099ae86889b01193cbcb30d35a5e14d815cbaf51383eb80c023db06b1dfa",
+        "offsets": "e4a139d94f46e49051f827ff631b7366e6b41f159924fd03504e146e794f7858",
+        "shadow": "69437775c23b3e4666078d0f9bbc134143bc42a939f11d58347c9924d53eaee6"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

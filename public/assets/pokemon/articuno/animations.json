@@ -1,0 +1,774 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0144",
+    "name": "Articuno",
+    "slug": "articuno"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0144",
+    "metadata": "/assets/pokemon/articuno/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/articuno/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/articuno/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "29701c2a25a973600e2a7200d5c661890431179d8e857161c561dc7900c389e7"
+    },
+    "rawCredits": "/assets/pokemon/articuno/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 88,
+      "frameHeight": 88,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 352,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        16
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        267
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/articuno/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "14b0ad8cb151d32b2f0cd518b1904181fae4fa85d3058ae3f6763537025bac5e",
+        "offsets": "e7e339c8be2a1fe5f69cf65ef87a61a838d85e6e6d89d98aa1e8c64553a563fd",
+        "shadow": "0a62a31ae0de494c8abecf16ebb6700b07127f629a18da63a8daac69ad6f307f"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 88,
+      "frameHeight": 88,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 352,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/articuno/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "2f1475714c40f7c68938bf6a2c5aa86c2edbd992a687562efb759630928045fd",
+        "offsets": "e7e339c8be2a1fe5f69cf65ef87a61a838d85e6e6d89d98aa1e8c64553a563fd",
+        "shadow": "0a62a31ae0de494c8abecf16ebb6700b07127f629a18da63a8daac69ad6f307f"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 88,
+      "frameHeight": 120,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 880,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "b293e46c8a98e88a3b04ed52dd39687251f2f6177f6518202539e71d53a01703",
+        "offsets": "b9aa71698a1c48d76fdeaa183b986e7c2b5875bc0b32c3502e69b2a4bf2a778b",
+        "shadow": "b8c05fb0cb685ad6ab9aaadb1bc691ca3a16165fafd7f3f72d02f64b49b789b0"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 64,
+      "frameHeight": 120,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "d6a91e7b652d6394e168af33e0f1ef6ee6a5c146720b442d28e1e1c82e0dc10d",
+        "offsets": "5196794b9c564f8c191ca2edf483de6ade6c9cebe9f845146a4da0b6f6b9896e",
+        "shadow": "c19fcc837d3a17b02e137bfe18184d3adff1a02ed055f2d297ce76d49384487f"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 104,
+      "frameHeight": 104,
+      "frameCount": 19,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1976,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "216af7270836fb384509a8f7d06d3eddab69b1371e0b1acdfba35651e7ab8bac",
+        "offsets": "db8f623d0a83cebe2ef0dfef5eb84c619f342988a2d2530f72624e48b89d199a",
+        "shadow": "1df040df6e7b03ce9979d70e61968bb692c02ab5ae81fdeeeb1c66cef91130bc"
+      },
+      "hitFrame": 12,
+      "returnFrame": 14
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 64,
+      "frameHeight": 120,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "d6a91e7b652d6394e168af33e0f1ef6ee6a5c146720b442d28e1e1c82e0dc10d",
+        "offsets": "5196794b9c564f8c191ca2edf483de6ade6c9cebe9f845146a4da0b6f6b9896e",
+        "shadow": "c19fcc837d3a17b02e137bfe18184d3adff1a02ed055f2d297ce76d49384487f"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 88,
+      "frameHeight": 120,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 880,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "b293e46c8a98e88a3b04ed52dd39687251f2f6177f6518202539e71d53a01703",
+        "offsets": "b9aa71698a1c48d76fdeaa183b986e7c2b5875bc0b32c3502e69b2a4bf2a778b",
+        "shadow": "b8c05fb0cb685ad6ab9aaadb1bc691ca3a16165fafd7f3f72d02f64b49b789b0"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 80,
+      "frameHeight": 96,
+      "frameCount": 17,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1360,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "426b565a44442d8c1619f17d9d2dfa1233d360c6b979c145281b03700727aeda",
+        "offsets": "8d91ac1b78f55dca8d3b86e7163c271282461ef7ea8f30a6a3bf19e8a60dbd18",
+        "shadow": "9192b27d39af09d86554cd0d2a242f97ac97fc96d5f4f6bea3b3a0bb83e88707"
+      },
+      "copyOf": "RearUp",
+      "sourceAnimation": "RearUp",
+      "hitFrame": 10
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 80,
+      "frameHeight": 96,
+      "frameCount": 17,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1360,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        17,
+        33,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "426b565a44442d8c1619f17d9d2dfa1233d360c6b979c145281b03700727aeda",
+        "offsets": "8d91ac1b78f55dca8d3b86e7163c271282461ef7ea8f30a6a3bf19e8a60dbd18",
+        "shadow": "9192b27d39af09d86554cd0d2a242f97ac97fc96d5f4f6bea3b3a0bb83e88707"
+      },
+      "hitFrame": 10
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 120,
+      "frameHeight": 120,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1080,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "c1dee41787ca35db4c75cc472c128e8d474a131a814a84fb5439806b742833c0",
+        "offsets": "c505d6b58f9b2b9f5740f043aaa504af23f1d3f1208206e7d4f45280860ddd16",
+        "shadow": "c8ef7f1521bdccd5695a6473a27273f59953eef4c01b9687369ed594eccba807"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 96,
+      "frameHeight": 120,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1536,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "b00c950d0689ba90233416b90670a347206da3a3286a5e07004a97dafb868f87",
+        "offsets": "c1b03b1d00887b907bbe83db28dc4bafac8de7cb5d663d0b16222920a082716e",
+        "shadow": "1492167935a5e41169152850d026c5df99515168e6740b53f71b232138a91232"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 88,
+      "frameHeight": 144,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 880,
+      "sheetHeight": 1152,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "0046530f494a1d044bc6cf3d745207236555bd924dc9661fec471b80dd21b75e",
+        "offsets": "ad26ddba4e113861f467b355b197922417ccac0c1541a193750aa37bc9da7bdb",
+        "shadow": "8c5c92eeeeb3ac2aa22257764fa3da49538775a56352de56059b5fc94cbd9636"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 72,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/articuno/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/articuno/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/articuno/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "3123b50098e040869b2cd44d806d065f80d24ccc9598354ec525ae15ad83ac50",
+        "offsets": "864557e49b88084b4df6881b08d61c7e84220902e4c2d891f0752b02398396fa",
+        "shadow": "48db133c9fd4958ec50a49cb4ae3ef4e5e2df6a493cc0b7df4d8dc092e072a1d"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

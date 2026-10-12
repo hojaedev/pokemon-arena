@@ -1,0 +1,672 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0249",
+    "name": "Lugia",
+    "slug": "lugia"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0249",
+    "metadata": "/assets/pokemon/lugia/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/lugia/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/lugia/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "b3c0557c4de23fead94e378e264f63b299624f666a20ba30fe303c324fa3bdeb"
+    },
+    "rawCredits": "/assets/pokemon/lugia/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 72,
+      "frameHeight": 96,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 144,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        30,
+        30
+      ],
+      "durationsMs": [
+        500,
+        500
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/lugia/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "6e054b0bbba42fa28b21c51df7007746a5ec06cd57aaa5afbca88e326b2dfc63",
+        "offsets": "9389b1d8e307fe8d5d073bbbb5eedd93f5c9532a118c3d421995f8d87ce71800",
+        "shadow": "24fa92194b9858a339c8f3028871ff5a7992b0af96928431c1d6caaed6611220"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 80,
+      "frameHeight": 96,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        4,
+        4
+      ],
+      "durationsMs": [
+        67,
+        67
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/lugia/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "c7b229aa8e0d575c50062b22e44254eda9dda49e295de1fb74b34472cb4687e5",
+        "offsets": "24904efaedc01f9784a451ce9d41e4fddc0f8bc5527ec676c4de2ca81f10b46e",
+        "shadow": "7c22391714ad47104aac4cea693fa14df77d10769110f46becacfc3e27769933"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 104,
+      "frameHeight": 112,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1040,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "7db570ce07132a8d9a5a95e3c1530eccd9fca1ee913248f2b48f1cebfebcc418",
+        "offsets": "6dca2f3a776e28bb9913c89ba06acbcc85bbbe3580a9c8af84fe154c5c516de8",
+        "shadow": "808b9d06f87e2ed66321d161c96580d294d451f986b324c2a2927d7b7dc5e65d"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 88,
+      "frameHeight": 112,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 176,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "e8e1fce9deae492768b895c4f516df0620aa381056d53d34ca45321f390ff296",
+        "offsets": "72af7313c429c50d8dee99b52b71abd209ab9893732397cbbf32c191592c3744",
+        "shadow": "1cbc1344edda7ad13583c20f6b900239a60053b5211ed32a7a35d57684d1976d"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 88,
+      "frameHeight": 128,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 968,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "bbda68bc4105a760195451b417d9535ac47045b2e1b83d5579c889508dab61c9",
+        "offsets": "ed9b262fe9c930d9e60f7741b7834b0e73b7e9c087d3aa9288f780b429842da5",
+        "shadow": "a2dd4685bc35ff34e770f8b7ce0bf7090278d82c02ea68d5fdb0bd657856923a"
+      },
+      "hitFrame": 1,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 88,
+      "frameHeight": 112,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 176,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "e8e1fce9deae492768b895c4f516df0620aa381056d53d34ca45321f390ff296",
+        "offsets": "72af7313c429c50d8dee99b52b71abd209ab9893732397cbbf32c191592c3744",
+        "shadow": "1cbc1344edda7ad13583c20f6b900239a60053b5211ed32a7a35d57684d1976d"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 104,
+      "frameHeight": 112,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1040,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "7db570ce07132a8d9a5a95e3c1530eccd9fca1ee913248f2b48f1cebfebcc418",
+        "offsets": "6dca2f3a776e28bb9913c89ba06acbcc85bbbe3580a9c8af84fe154c5c516de8",
+        "shadow": "808b9d06f87e2ed66321d161c96580d294d451f986b324c2a2927d7b7dc5e65d"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hover": {
+      "name": "Hover",
+      "index": 4,
+      "frameWidth": 80,
+      "frameHeight": 96,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 960,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "durationsMs": [
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Hover-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Hover-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Hover-Shadow.png",
+      "sha256": {
+        "image": "c80eefa7ac11e53ff3a50e6bb033fc1cc8c90b8d6b1bdc82c1d876a11eadc65a",
+        "offsets": "9fa8b21d2a3dca1205409964061a6fc27b82d0cba4f4f969126f1a9e9db568e6",
+        "shadow": "bb1c1860d415623375e04f0d19bfe7bf3ef1ba896136db974d86da7dd5c716a9"
+      },
+      "hitFrame": 7
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 120,
+      "frameHeight": 104,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1080,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "1f137dfb5a6b2130e2771e8d2c178947c9191756ebec571d98cf3086b84ec26f",
+        "offsets": "ea0ab488c7b9e21554cc5a99f6f0d64745635821178d4526dd3a044f1358bcfe",
+        "shadow": "3cd88fe1348b892dd014657dc40c4486c03081224dbe292f86c18bf76e37e206"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 96,
+      "frameHeight": 112,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1536,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "9755053422850f631199474c196412ab1310613abfedf062014c112ac908d44d",
+        "offsets": "d212742b15f30b74006f12909a40f9b078668adb58bb28b1bfa2595f1b7ef0ed",
+        "shadow": "345e2f6c82c6194f60db6dde94f9d1f31d31ee3e53b2119f1654a004adf91252"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 80,
+      "frameHeight": 136,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 800,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "8e334bf5592cb9f24f0ea4ca9e28b2b04b1c7547074204bdf26ecd1fea755b5b",
+        "offsets": "9e82bd8951403ec8be23f85a93ba01997669beea95ef4e51d45b3960b8b85bfd",
+        "shadow": "fab5e1f7f597a8b9b7f7fd995e11ae97c834521886ab64c75ebc1b2a344b027c"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 72,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lugia/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/lugia/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/lugia/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "d3c00b7c2643a78aae2c122c738c689c2e4d62d74e0ff975f35f706a6feef1f1",
+        "offsets": "e58c34dfea365e17ed6d7d08a161dba8d8acd1a34e886c4c76da8e7edab5c307",
+        "shadow": "6019e618cfc424be7058e0cc43262b194be4d6a8c98975be6497b9b1453ac6f1"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

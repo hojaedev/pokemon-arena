@@ -1,0 +1,700 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0230",
+    "name": "Kingdra",
+    "slug": "kingdra"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0230",
+    "metadata": "/assets/pokemon/kingdra/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/kingdra/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/kingdra/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "57f2e34608733fc1745863775054797922b580e6a3fb2cc70caa5325895c9120"
+    },
+    "rawCredits": "/assets/pokemon/kingdra/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 72,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/kingdra/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "468e47f8739d813001522956ba73f2b86112c65956390013edd55e02221c8636",
+        "offsets": "b2f0a9b1cbe1d378b1ccd58ce175784184744d7e8c8c9f56729d555b295b7679",
+        "shadow": "1b343ccf873284e91e20be41bae207669e506ba32200ff1e13286a4000fa6f13"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/kingdra/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "64546fc857c78d335fc97438d8c6f9a6579923f08ce7ec8fb4ca3b67b4ecb37e",
+        "offsets": "6e2d86144ca1f0bb5db52d038a146e57237b3117fa171edef4d6b41d6a6c3c51",
+        "shadow": "639a6c232a5f4211585700a27338e6f6ba1768d8f6bc88c5e940c034efdf5559"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "bfea9eb1bf29dd241bad0c7e4634e2c06a4f1310eada1b4ec3641fcdb30fa401",
+        "offsets": "c554056a8d714f06c9e084b6f8dfae7d6c908f44d825ae5bfe25a805f8e06330",
+        "shadow": "cdb8b9a511a5c371a71a1b082ac2ee7612481e5414b6c964394c4dc25e472400"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "af00f1add9224a0d54cdfe65aa3e2d0f2829e1b2ecc8e3d810084a309c6f1dbb",
+        "offsets": "6114c0ecd5aebb092abd55d7db9afae0a1c250a081438f949115410c3431ac49",
+        "shadow": "db7d3db4e87983e7d724483082216d1420e2c793fda34cedf6420eb36144d721"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "e02ca18b4da701a7f24fe5b825a99b165adf62bddf0de08721a1bbafd9024e78",
+        "offsets": "43b3fe0fdd8aad10dbff593bb9928e35ae001cc4766c1f81e0112842c081dc64",
+        "shadow": "961128a4b96c58630738095e9b31d94e50ef0c1b89249861c405883b15376629"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "af00f1add9224a0d54cdfe65aa3e2d0f2829e1b2ecc8e3d810084a309c6f1dbb",
+        "offsets": "6114c0ecd5aebb092abd55d7db9afae0a1c250a081438f949115410c3431ac49",
+        "shadow": "db7d3db4e87983e7d724483082216d1420e2c793fda34cedf6420eb36144d721"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "bfea9eb1bf29dd241bad0c7e4634e2c06a4f1310eada1b4ec3641fcdb30fa401",
+        "offsets": "c554056a8d714f06c9e084b6f8dfae7d6c908f44d825ae5bfe25a805f8e06330",
+        "shadow": "cdb8b9a511a5c371a71a1b082ac2ee7612481e5414b6c964394c4dc25e472400"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 88,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 520,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        4,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "durationsMs": [
+        33,
+        17,
+        67,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        50
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "4b8574e4d703351a3c3a283afbc181e114ef23d0251f23c0ca7b4ca59dc03ac7",
+        "offsets": "730351d90e90aeba388b59d48974e88b4f5899d09b8cd3db2b9a2009a75b1d87",
+        "shadow": "d3c931f86845382462537dcd41dbfd777d9dee3ed07663e10ca89f7e9f3f4345"
+      },
+      "hitFrame": 7
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "75b92b2d44566fa1e7b26d4d6eac583a3e1893b9b60126b81198268f2d8bf46e",
+        "offsets": "f75b0581d66f21e033c3f911de443c3bb03f749e0f5bf39507e7f52a741f0d00",
+        "shadow": "e374522c60dbf33b50223b9248681cc3319e8c219ea546110130f0abc41a74b6"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 88,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "0c10ea76233c50ace5354a006c2e1d797509f1e77027b36b07b83b8a4463f876",
+        "offsets": "ad0d9e7ca9fcb3f1c44100b4e43b357ff518a2fff2cba0eba29e9327ce59bcae",
+        "shadow": "84711035a1a4450c795393542f789124c64c660d32cffd6f0748ac2ee1560c5b"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 112,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "23c28f1343d3c59301c4c3d2b843bd4a827489e123c53883debff7d69dfd6a3a",
+        "offsets": "2a16997bbe9c3752f7a43e53fab0c322a1c3c078b60cdd8dcd2136a7e6b36aa9",
+        "shadow": "b70ccf817830654ac4554b9dd5c0ecd0e0047892a63a1c2d08979384807baafc"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/kingdra/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/kingdra/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/kingdra/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "0d6d6da235b976e077c65e2da7528ac6bea0aed96c9a6fdbe8b99aeb12e1c6e4",
+        "offsets": "b168212ca05d1c38c8d3c78d70904eaec8f2b8c048aa56f850efba72cd36bc8f",
+        "shadow": "9c477d1b1acd655a7bd390da7424ab8060433703c23d68ce51b0520a58011ee4"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0214",
+    "name": "Heracross",
+    "slug": "heracross"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0214",
+    "metadata": "/assets/pokemon/heracross/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/heracross/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/heracross/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "b4a2e46d3b0838eca9b0053034ba902e252f7bb1c6880425993429f124d052ec"
+    },
+    "rawCredits": "/assets/pokemon/heracross/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        30,
+        8,
+        4,
+        8,
+        4,
+        8
+      ],
+      "durationsMs": [
+        500,
+        133,
+        67,
+        133,
+        67,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/heracross/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "d5f91bcad1d476989381602b96546530f88de1653f25ef129c67cb28d2aa45e2",
+        "offsets": "3785e6a2860c3a7837bf9f6dffffb0b26a6443f3544ea5810a1b1f0d4946da6d",
+        "shadow": "9b8ac64a8539e9770055aa7078289ab355e5695a599ce371c731114dca24e6de"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/heracross/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "9721089b7d89cb2d6c808811055cfd766a132006e9259d67a4a31d48be8f6a0c",
+        "offsets": "ea75d375379a8ab266ff597f424130280ac9e5236bfca3608d0f203a98cb7fea",
+        "shadow": "bd4852e1670f77c84a8844685deb14474c14b06cb6ce41a55d0fe0014e2d4774"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 80,
+      "frameHeight": 104,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1120,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        2,
+        4,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        33,
+        67,
+        17,
+        17,
+        33,
+        33,
+        33,
+        17,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "281c99579a456d5342f736ae703be82ea75445f5fe8a47860b201fdbd42bbcc9",
+        "offsets": "92221c27dbf1dc73fef76dc0b10df9b96fc1be3805a262102c1ea438986ce6a1",
+        "shadow": "be9a9062bc3c3d162e22a3545339332fccba5813e2ecfe222a13bf556cdb9203"
+      },
+      "rushFrame": 1,
+      "hitFrame": 5,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "af97e25b8b3d75700cf5dcf011abc17dd6098ed95411575b6e3c4616a423be86",
+        "offsets": "2b04ce0d5245e986a1e33796c388b53b98868bb37b254f1ea80a79c2afaf2cd6",
+        "shadow": "20ce4ed6a229d23fb065544b3db4a5f77b92814c9c6028c1cca425c0e7233a5f"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "ee1308bcd8a39519dcadcb4d001bd01aacb2c744080578560ae01525543be6ea",
+        "offsets": "25b44a567a9d766722017c58b73faa61f3fadd328d65211f702e223431c9e9ae",
+        "shadow": "1b29cf258f441dd5f02458b229f038f7aec87820928186af9d9806eb7b2ad92e"
+      },
+      "copyOf": "Charge",
+      "sourceAnimation": "Charge",
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 80,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "af97e25b8b3d75700cf5dcf011abc17dd6098ed95411575b6e3c4616a423be86",
+        "offsets": "2b04ce0d5245e986a1e33796c388b53b98868bb37b254f1ea80a79c2afaf2cd6",
+        "shadow": "20ce4ed6a229d23fb065544b3db4a5f77b92814c9c6028c1cca425c0e7233a5f"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Strike-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Strike-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Strike-Shadow.png",
+      "sha256": {
+        "image": "f9b7cb1a03898a4243e28c616ada46eb35bf9f75302a0a0949383ef3bda152a8",
+        "offsets": "d96cd1ab2c3104f97c865ff40d3d1e70aebe83ecfe514123875c05e0bbf2770a",
+        "shadow": "5bccca4f4c434287baca185ae8ee7d47ebd7d1779cb72ff30a91863691c5509b"
+      },
+      "rushFrame": 2,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "slam": {
+      "name": "Slam",
+      "index": 4,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 728,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Slam-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Slam-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Slam-Shadow.png",
+      "sha256": {
+        "image": "fba5e1fc392da6b66a8f399125ad3ee6945154346904c9d2e8dff03af9688de8",
+        "offsets": "c6b246a2097e90b409d413f84700661be21fc92e27dfd5160bb96f855f5c37b7",
+        "shadow": "99350c9367ea89247a873f964715184faf19b65cde63c23f18fa2ba0f3227d6f"
+      },
+      "hitFrame": 5,
+      "returnFrame": 8
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 72,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "a4822be29f445fd2dd005714a4da90cf8f9f508c09a5d14aed41b882742f23d3",
+        "offsets": "926316bbd78aa2eda551ca451c7298df228767f274ed3a59a11a69b100db43ac",
+        "shadow": "74f8b83dae916a4c8a3cf35513c6db8334cf75c9216ff67cf73e0efab5b35629"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "d7d6d039dd495b0445b0f6cffe829f80f88610c155b676e25af845b86bdb96c1",
+        "offsets": "65473012db336a01655328748a78b03858d20d3932b0e3a9c9a89db09cef227b",
+        "shadow": "9df34caf97c3b5d15a9537bc38fc3aca3220101f2e6ab35a1a7cf083d14b2a89"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 48,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "879cf369f38930277b4f7eecd4466159d7471fde1a938cd20282a1acb5ad74e2",
+        "offsets": "f585bbc08f81310fdbfc3ac609718a406561cd2e7695fb5d19d0438c8b0f3869",
+        "shadow": "33698b4d6862224dac9d9c50be188aa90a4900f9ccf6135ca36a1b023592b913"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/heracross/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/heracross/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/heracross/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "ee1308bcd8a39519dcadcb4d001bd01aacb2c744080578560ae01525543be6ea",
+        "offsets": "25b44a567a9d766722017c58b73faa61f3fadd328d65211f702e223431c9e9ae",
+        "shadow": "1b29cf258f441dd5f02458b229f038f7aec87820928186af9d9806eb7b2ad92e"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

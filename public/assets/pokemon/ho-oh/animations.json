@@ -1,0 +1,733 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0250",
+    "name": "Ho-Oh",
+    "slug": "ho-oh"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0250",
+    "metadata": "/assets/pokemon/ho-oh/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/ho-oh/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/ho-oh/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "d83a0f8f020c41a5d0563dd0eeb40d672cdf570a832532d40d95c443485599d4"
+    },
+    "rawCredits": "/assets/pokemon/ho-oh/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 72,
+      "frameHeight": 112,
+      "frameCount": 5,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 360,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        12,
+        10,
+        12,
+        10,
+        12
+      ],
+      "durationsMs": [
+        200,
+        167,
+        200,
+        167,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/ho-oh/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "893312471073c27947fd51aca7ec24ac6c78b99b2dc9bf00cd6000cb2a63a0a2",
+        "offsets": "2721458075336e7af5ba93bbd6bb10e099002c46167c87503852d03c9a2c3dd2",
+        "shadow": "5392b3d12c255b21f3ce141c0a03dfd00e35a97b98a0b8f85cd18e6d3f718e1f"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 72,
+      "frameHeight": 112,
+      "frameCount": 5,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 360,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        8,
+        6,
+        8,
+        6,
+        8
+      ],
+      "durationsMs": [
+        133,
+        100,
+        133,
+        100,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/ho-oh/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "893312471073c27947fd51aca7ec24ac6c78b99b2dc9bf00cd6000cb2a63a0a2",
+        "offsets": "2721458075336e7af5ba93bbd6bb10e099002c46167c87503852d03c9a2c3dd2",
+        "shadow": "5392b3d12c255b21f3ce141c0a03dfd00e35a97b98a0b8f85cd18e6d3f718e1f"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 88,
+      "frameHeight": 120,
+      "frameCount": 15,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1320,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "451ad93635a361806112bc28680311420df2e7b2b11b9764093ff6fc0fe13f1c",
+        "offsets": "e1457c2c4cff8a8b5d8e82255a4d5164ffb7b7c5d172ab00d8d23ce17ab24eab",
+        "shadow": "55c3174b5dd5e703401b4714ce4405530957eca5932d7d5254ed877152472f64"
+      },
+      "rushFrame": 2,
+      "hitFrame": 8,
+      "returnFrame": 11
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 96,
+      "frameHeight": 128,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "8ee27fab54970962daa6e4f12e04164fdb373036b110e7965959628500a8acda",
+        "offsets": "3cf39e946b66697f3d478f364fb3a71648ff74542c2c5f5355c6237adad7ba3d",
+        "shadow": "e5e161f3a770f820b1f66083e9040786dd9427a36a417a2cde1b1fd3843b9722"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 80,
+      "frameHeight": 120,
+      "frameCount": 18,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1440,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        4,
+        2,
+        4,
+        2,
+        1,
+        1,
+        1,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        67,
+        33,
+        67,
+        33,
+        17,
+        17,
+        17,
+        33,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "ffb1aa98518351cbb6e698594d6768fe70545d19cff865f04e68a8ab9acd65ba",
+        "offsets": "b995ad8b53f2d0ba1087ffa9bb2ade878b7d02035e4ee99a5ce5372ea557b17c",
+        "shadow": "7dfd3b1afdb77bc1ef12eddbed95272b41045f7991a49f7205dc634cbc536b28"
+      },
+      "hitFrame": 8,
+      "returnFrame": 11
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 96,
+      "frameHeight": 128,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "8ee27fab54970962daa6e4f12e04164fdb373036b110e7965959628500a8acda",
+        "offsets": "3cf39e946b66697f3d478f364fb3a71648ff74542c2c5f5355c6237adad7ba3d",
+        "shadow": "e5e161f3a770f820b1f66083e9040786dd9427a36a417a2cde1b1fd3843b9722"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "jab": {
+      "name": "Jab",
+      "index": 2,
+      "frameWidth": 88,
+      "frameHeight": 120,
+      "frameCount": 15,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1320,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Jab-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Jab-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Jab-Shadow.png",
+      "sha256": {
+        "image": "07e2106e2e4226a07948252708ab1b5dcd43ff5b0d5d42f429b61197d4d9a2b6",
+        "offsets": "ee59778e2166e6ffed15c82652c7ffd2138c6951891046ecf66b1023fe8629d0",
+        "shadow": "fe72c6ecdf5d303f7a054b64d4a5c8d7bfcb99a41b022c27644bf4c205565f35"
+      },
+      "rushFrame": 3,
+      "hitFrame": 8,
+      "returnFrame": 11
+    },
+    "hover": {
+      "name": "Hover",
+      "index": 4,
+      "frameWidth": 72,
+      "frameHeight": 112,
+      "frameCount": 20,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1440,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        17,
+        33,
+        33,
+        17,
+        33,
+        17,
+        33,
+        33,
+        17,
+        33,
+        17,
+        33,
+        33,
+        17,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Hover-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Hover-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Hover-Shadow.png",
+      "sha256": {
+        "image": "a4ff505c08e2cd25de89e4c027c8519f75b9dd32a065fd4bc0ec4ebd0b3c1534",
+        "offsets": "76753983ae2dc1eca23335eefbd13d35ed19f7df49308a860b5a6368f5db8b6d",
+        "shadow": "7437b1555a11e29e75e2f77d15846bcfa375dbd6b934ebd69502cdeb9ba0c381"
+      },
+      "hitFrame": 5,
+      "returnFrame": 15
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 96,
+      "frameHeight": 120,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 864,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "f18f0731241d7009ef2805cbb6c18e1d27dd21ea34f73a58b2e7b8cb63d888bd",
+        "offsets": "5cf11903120272507653b5ea79341d921bdb399c69dfedea14f7f1ab2692f71e",
+        "shadow": "c7632da6426172749d2e91a7c74edaf95bee31f3c315263393a7ec389268606f"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 96,
+      "frameHeight": 136,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1536,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "8736ba60d92e3a5784331c5480c0ad33365b2c40da69c736d502d412e0b923be",
+        "offsets": "90176089bb82d80a74291f3a42841ace16abd073634d84d0e3cfa3b6f33fb196",
+        "shadow": "52352ed66cf169de948560a24097253275cf35df44688217d3d5cd44bfcf1592"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 72,
+      "frameHeight": 152,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 1216,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "38a88abce2b34662ab1e4af635df0e73ec115b104a50cca90e2382580009731e",
+        "offsets": "4296e64b994f9bf989f5a346f0b7f6a631b48fb8a3aa295904926ab8d6cb079e",
+        "shadow": "3e2979a9736a9bbe8992368f226d57d165b5df9a80655c10f219488016cd9a26"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 72,
+      "frameHeight": 112,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ho-oh/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/ho-oh/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/ho-oh/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "d0f5048b33dbae1cef69721c60e35edaf55948f5139851d70fe35dcca72533d8",
+        "offsets": "be4d4d825c85f931b3dab97f15d015040af870eb42448bc14aa74c86ccfe9c73",
+        "shadow": "50bebf4dbd27707adc1024cb64f23a124b205e29ba90bb13fe5fab4e8209439b"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

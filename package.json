@@ -1,0 +1,17 @@
+{
+  "name": "mt-silver-arena",
+  "version": "3.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Korean-first real-time Pokémon 6v6 fan battle with 50 fighters and five difficulty levels",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.js",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

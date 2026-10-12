@@ -1,0 +1,699 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0181",
+    "name": "Ampharos",
+    "slug": "ampharos"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0181",
+    "metadata": "/assets/pokemon/ampharos/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/ampharos/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/ampharos/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "bf01c83cb9c4daa441015e869bcc15912592ea513197dfe2bc6cfb1b65bb3051"
+    },
+    "rawCredits": "/assets/pokemon/ampharos/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 32,
+      "frameHeight": 64,
+      "frameCount": 7,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 224,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        8,
+        8,
+        4,
+        6,
+        4,
+        8,
+        8
+      ],
+      "durationsMs": [
+        133,
+        133,
+        67,
+        100,
+        67,
+        133,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/ampharos/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "2446e1cc66e6d983feb7d69418a9cf8d3bb95dd67c48c7e65d3af09c2d3563f2",
+        "offsets": "551848494ef0caa6c6833eb29471571614fdf2cd800fc204a3482d378f4294a1",
+        "shadow": "3422479b897e0979a9e3efef1b5a1cc41365df596ffc39a17a20158b9fb2b9cb"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/ampharos/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "f0c0b901ac087471d8ffc65b863ec89f59172d7ec963160aaab729b5de37b568",
+        "offsets": "0dae3a3fd8bc16485d0313418437f579044f8621e046c14824c55f5683e51a3a",
+        "shadow": "bd4852e1670f77c84a8844685deb14474c14b06cb6ce41a55d0fe0014e2d4774"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 88,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "cecb5b2341ca648ee1b78a7892a38399f0e88ea518be8927e67237489224c057",
+        "offsets": "8c39f2c8383a92e841a6c7d6a011860273cfae43819200f2523eb9598683be45",
+        "shadow": "1f679fda6e3d1e9c8dfe277f79aeebe4f7aa9447dd42794f3de77a2ca0613e38"
+      },
+      "rushFrame": 2,
+      "hitFrame": 6,
+      "returnFrame": 8
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "490b9403d402fe8cf71b5723b13f4c6002b8b0c7f3a0064c0624cc6204b9bda6",
+        "offsets": "70975c02427f3cbba06906cbd64a47a517485acba0e1f7bfba029347c6951b03",
+        "shadow": "db7d3db4e87983e7d724483082216d1420e2c793fda34cedf6420eb36144d721"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "baa2e9a1fa40d6390505a48b58d3c428dd15123fad396771cfeb89edca036d85",
+        "offsets": "e01584fa74308a58a247e1fd1e07cb98343c8ffb4a83c43237c4322f14602ef4",
+        "shadow": "e3b2eae0d86b992cb410f131efac128ee567ca8f40875548f213409dfaf04604"
+      },
+      "hitFrame": 1,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "490b9403d402fe8cf71b5723b13f4c6002b8b0c7f3a0064c0624cc6204b9bda6",
+        "offsets": "70975c02427f3cbba06906cbd64a47a517485acba0e1f7bfba029347c6951b03",
+        "shadow": "db7d3db4e87983e7d724483082216d1420e2c793fda34cedf6420eb36144d721"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 88,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "cecb5b2341ca648ee1b78a7892a38399f0e88ea518be8927e67237489224c057",
+        "offsets": "8c39f2c8383a92e841a6c7d6a011860273cfae43819200f2523eb9598683be45",
+        "shadow": "1f679fda6e3d1e9c8dfe277f79aeebe4f7aa9447dd42794f3de77a2ca0613e38"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 6,
+      "returnFrame": 8
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "baa2e9a1fa40d6390505a48b58d3c428dd15123fad396771cfeb89edca036d85",
+        "offsets": "e01584fa74308a58a247e1fd1e07cb98343c8ffb4a83c43237c4322f14602ef4",
+        "shadow": "e3b2eae0d86b992cb410f131efac128ee567ca8f40875548f213409dfaf04604"
+      },
+      "copyOf": "Shoot",
+      "sourceAnimation": "Shoot",
+      "hitFrame": 1,
+      "returnFrame": 4
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "69f11ca6b5b71795adcdba9fda7cbe34ad48dd97be47acc5072be6d2d1c700db",
+        "offsets": "ca07e8bfb24ff80148891253b86396c8f63ac1c2244fe1029138af31ba89ee76",
+        "shadow": "f61f46d696146d892f760852395446441ddd6ce169c4437cbcee1f15c7f8b374"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 48,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "3fa5f2f1c3b510afc1d4ae7a40c80773838ed999c617ef451c826634f774f3a4",
+        "offsets": "8717580748c5578cfca6b89c5c5a087c4a8c6ed44439f228117c1c3cd904ed74",
+        "shadow": "e742f34e6a660051c882e24534218b244b809a5dbb3048b8480f6613509b3558"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "42d87fcbc89f01cd16b549c6efeabad4b1a46cc988adbd97fe84fbee3a654857",
+        "offsets": "0250db57aa4a76fb6a49692f800d62eddc691ab5abcbe2f41167efb384a6a545",
+        "shadow": "4a746123bc57746067540d21cda3cbd77ef9b536a0134bba2e70a44e12f00f8b"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ampharos/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/ampharos/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/ampharos/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "bb3d5a5843c415b5c657f67dd6ff2c3c249944e8938ec468621fc82c624f4097",
+        "offsets": "4db1d22964cf0276727fe6d1e7529e85173f1896eb7d7decc21b7ce30745ab44",
+        "shadow": "69437775c23b3e4666078d0f9bbc134143bc42a939f11d58347c9924d53eaee6"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

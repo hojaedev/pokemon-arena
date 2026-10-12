@@ -1,0 +1,690 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0229",
+    "name": "Houndoom",
+    "slug": "houndoom"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0229",
+    "metadata": "/assets/pokemon/houndoom/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/houndoom/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/houndoom/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "425ed1afb3ac83d08b9bd2c4c69e81193eebc47e7393fc9ecce141c37b2993fd"
+    },
+    "rawCredits": "/assets/pokemon/houndoom/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        60,
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        10
+      ],
+      "durationsMs": [
+        1000,
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/houndoom/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "fb67135060a46f1d161904c22e4f354f657751ba4450f5c97062910c3dc55eed",
+        "offsets": "9abfd87c8931e411e0ef6a22bc28a41fe8ed14bde6d42d70d17239a76bf8bc14",
+        "shadow": "b3be5ab65a8b70d093bd9c9a9289f2322fbce44b3a6286298bb7f6d145467c15"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        8,
+        12,
+        8,
+        12
+      ],
+      "durationsMs": [
+        133,
+        200,
+        133,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/houndoom/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "efe1518ed845ae21988fb9d6895ddc05a3fb58a30d96e73e71fb97bce565a0ed",
+        "offsets": "bc42ef431e769ccabadde1e2e9c95edb0a430dbebee8fdcd5c253f65ef980fa6",
+        "shadow": "53efc4b85c7013c48c68378b735ddffcc81d0f8598f2d4a7d23fbf8dc4d86f72"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "05d4517bb9ed1b89211193de950932bd3dda26157271785d70ee82ea01cce082",
+        "offsets": "cc60406b5539f667fe68eced0540f3491a361f60d1fec2094274bc7a6236afec",
+        "shadow": "05e558d141d8b0daf0f5243771c5376efe608c2a59a76d45923af89bfa3e7873"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "93cb3c4ef09419eaaff7c67696941e06d2a254a52d13bcb188892b613510d7ca",
+        "offsets": "830eaad5212b95ea6e77987adce4e837837882eecf0acc8f5e4cb08c599bf36c",
+        "shadow": "737198ec693340ec6a7560fcad447d3c6616b95f350dc019384301d2a450677b"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        6,
+        2,
+        6,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        100,
+        33,
+        100,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "e6bc48d2ad9e9b0b0bc33b8d328545a0d95ff82f6e01c61f00c1d8c4f6a7ca04",
+        "offsets": "cf986e1f5d79c22352ea277937af244d8121833601db2228e9b9c3823cc070a9",
+        "shadow": "c9c97ae00d3fdb080e3d0edacbe9257077915d45465fadc2b0283848f5353859"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "93cb3c4ef09419eaaff7c67696941e06d2a254a52d13bcb188892b613510d7ca",
+        "offsets": "830eaad5212b95ea6e77987adce4e837837882eecf0acc8f5e4cb08c599bf36c",
+        "shadow": "737198ec693340ec6a7560fcad447d3c6616b95f350dc019384301d2a450677b"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "05d4517bb9ed1b89211193de950932bd3dda26157271785d70ee82ea01cce082",
+        "offsets": "cc60406b5539f667fe68eced0540f3491a361f60d1fec2094274bc7a6236afec",
+        "shadow": "05e558d141d8b0daf0f5243771c5376efe608c2a59a76d45923af89bfa3e7873"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 40,
+      "frameHeight": 64,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        10,
+        6,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        167,
+        100,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "89f087d3b762eb20db979a809b5c1ffd185872c81497d1c5428e92d7627893d1",
+        "offsets": "7990152d9ed3603795f487b87b67d9cc947fe7ea0f299d047403460812c1cc56",
+        "shadow": "704b475a8c869491bec0c318247b5e8d113c6d11f90e2e711081d4999cede64d"
+      },
+      "hitFrame": 1
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "dfa92c6bb97ca6c38d98dd0f7d5ba0c20cd94f72894bc6b5e7553bb8ca68ed94",
+        "offsets": "a3a36f33ba90cbb105a377bd2e10083f5156c5604b2a0249221abfb948a59528",
+        "shadow": "6fc72c8002df4a6c5798810f93099928eaaf44028a55475062d10575623fc217"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "f2f85baecbd19178487d3543d9bfad4420e222ecca834637665b8c3788ce7687",
+        "offsets": "d2883b63ca5abd496c264f8a6aa9ec334101f2f25748570b848ee40051e6ad89",
+        "shadow": "9df34caf97c3b5d15a9537bc38fc3aca3220101f2e6ab35a1a7cf083d14b2a89"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 104,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 832,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "faeed4f6cbca1ffbe63ed4261406943e8c1182645bfa16843054e9628270d019",
+        "offsets": "bfae73c6ea5dda8c28c49a35e7b0cf93e341a7effacfb5887698b3eb33f07215",
+        "shadow": "9db289046134994995caf1dddfa0ed955e615eae4d4172966afa0c05d9ea0a45"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/houndoom/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/houndoom/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/houndoom/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "57683eb69bd5d958f9698774252835254ac91932a1149f4f583f11f6d0b33377",
+        "offsets": "e5b421b81ec7aee3d691df7bf870730155aa0aabdd55e759adff59b7f1044f1b",
+        "shadow": "e6f88b64b34e0824d0548fa1b98f9952b0bc614dd47ed310f859b075227f35c2"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

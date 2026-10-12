@@ -1,0 +1,712 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0243",
+    "name": "Raikou",
+    "slug": "raikou"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0243",
+    "metadata": "/assets/pokemon/raikou/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/raikou/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/raikou/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "36f738bfeb981a47d73f3aaa2926969acaa8b4deaff8e1fa19d8df767038ebe9"
+    },
+    "rawCredits": "/assets/pokemon/raikou/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 56,
+      "frameHeight": 48,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 784,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        60,
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        10
+      ],
+      "durationsMs": [
+        1000,
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/raikou/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "76f1cb3ed29f46d70eb32ac1d7f00871e41a42f76efdb4ffa3cdd7bf09ef9806",
+        "offsets": "3cdf1d62b3dd4da45e7d9b16b2d76ad22c3ed638f3b7241bc4d4cf36e61bc856",
+        "shadow": "34df0ea6bd9cf88f2c442e511dc017dd6c0986c86c1bcf22295d6e7ba9466ee1"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/raikou/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "817bdc410353535cd4656312596d95db2d16e3b659861adfa87fa7958c19c51a",
+        "offsets": "dc9cf8ede70617154ceb73b8fbb17086a133c5129f0742409a78ad57bea57128",
+        "shadow": "d7574bee72119c7a75aa9cc70f5c3f46f237f94053074ff14f4e981a5aa56dec"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 936,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "309ba0a016d083df6f0a9b856286ef6b67566e76a407241b8df0130ac679e284",
+        "offsets": "602322e79d80e753db03d082e1b36c8e926e0312a810ee7d3b0be324a6049c46",
+        "shadow": "80bb067ea245cdc67af69a0effeeed197e67c509a161293a6bfe3824716c2a32"
+      },
+      "rushFrame": 2,
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "f860f2b2d13ab3b51f0254b9e459083637da74f9a3c086fcfd484937f94f9894",
+        "offsets": "77fe3102bf458347562710b2f7c31ea5ed2922549100362cd403f99188daf687",
+        "shadow": "36915c786b7e12494ddfe7bc511ed0e33fb568d31fc9526ca75c3aeddc80e2e6"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 56,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 616,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "ecba6ca07a5bd576e9513e87030fa363dd9395e80e20be3ff106e345222aae2b",
+        "offsets": "fd3e5cf06b0c1eabe3e8b69feaf3b6de1fb80207e160fa1f4db2b9955bb4113e",
+        "shadow": "4bd98e9ffa75ed93668bf0b8d77e12c6d881679e91879113c260d3d4ef7d3503"
+      },
+      "hitFrame": 1,
+      "returnFrame": 3
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "f860f2b2d13ab3b51f0254b9e459083637da74f9a3c086fcfd484937f94f9894",
+        "offsets": "77fe3102bf458347562710b2f7c31ea5ed2922549100362cd403f99188daf687",
+        "shadow": "36915c786b7e12494ddfe7bc511ed0e33fb568d31fc9526ca75c3aeddc80e2e6"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "quickstrike": {
+      "name": "QuickStrike",
+      "index": 2,
+      "frameWidth": 120,
+      "frameHeight": 120,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1560,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/QuickStrike-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/QuickStrike-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/QuickStrike-Shadow.png",
+      "sha256": {
+        "image": "73715a74d3780af8698952845580fba34a95d622693a4cc441410ef25386848e",
+        "offsets": "748cdc0822a06e8e07f316e71106237c9b6e249565cbe4457eb741ee873eeeea",
+        "shadow": "ee7ac09736bed81ce12a0934c2c6200b521479d767c59042ef281867a2ed2965"
+      },
+      "hitFrame": 5,
+      "returnFrame": 7
+    },
+    "shock": {
+      "name": "Shock",
+      "index": 4,
+      "frameWidth": 64,
+      "frameHeight": 88,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 832,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        8,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "durationsMs": [
+        133,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Shock-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Shock-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Shock-Shadow.png",
+      "sha256": {
+        "image": "9db9b4c0b0291bd4d1c34f2a051b5ac5bb59901fb1983fc57be1b2a817e18085",
+        "offsets": "53dedb486f5aebdb52f456f42f3a6751de9a793dfe2f69db5835998c11a8d826",
+        "shadow": "1924ce88b3f86cebaa99757371911a605a1ceb4a1ed34a2cedae1cb7483e59f1"
+      },
+      "hitFrame": 3,
+      "returnFrame": 10
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 864,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "fead836d75c60138bb728b9c1db3c45f4df71bf3b20d2df34cdf39364219c227",
+        "offsets": "ecf19077db9c23c92b0877ea0d02e58d47d60ac6c0ba2a85f0c20849cae76529",
+        "shadow": "f490e577bae7ff70da666e779704a8a9c8e9faddea444745275ba6847cdceffa"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 80,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "5b3c2d27d6a72fc23aabd61dcaccb7587cc09e823644c0b2c9e6f2055d587769",
+        "offsets": "6cb68d7933cc43e441ed2b8b76adb05b40d7c855a7759fec0d0ce2de4cc02caa",
+        "shadow": "9df34caf97c3b5d15a9537bc38fc3aca3220101f2e6ab35a1a7cf083d14b2a89"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 56,
+      "frameHeight": 96,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "b57f8f359cc55efe1ae505154138941f0f631f3d929b0ee8f667c8e4e47b9112",
+        "offsets": "52e28cb3551e6a3fc7e0b217a526b7718826dc3bdb272999e9081e582a6bddba",
+        "shadow": "22b0c2933cab386440275a0f000ad8c207327e85e97648bc42323f44a3b19d18"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 56,
+      "frameHeight": 48,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/raikou/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/raikou/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/raikou/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "13e5df7abc5ac34b8673282c28d64b877595269d39497a09c5d801d7ea0c2769",
+        "offsets": "a5ef12ce1d517f20be88fb13572f89aa93bf89e1f15ba83ad7437a37eecde099",
+        "shadow": "7bd5a2e1b5d1805326f1e2f01d7d96c8be05def86fefe5b717cf818fc65b7e5f"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

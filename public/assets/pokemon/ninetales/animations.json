@@ -1,0 +1,887 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0038",
+    "name": "Ninetales",
+    "slug": "ninetales"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0038",
+    "metadata": "/assets/pokemon/ninetales/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/ninetales/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/ninetales/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "9ab072a10504e49714707261145341ae85176d409784d0cb4e38ad8c65e137cb"
+    },
+    "rawCredits": "/assets/pokemon/ninetales/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        60,
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        10
+      ],
+      "durationsMs": [
+        1000,
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/ninetales/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "9333449d8723ed731bfdb5bc9baebca4d98889f5042646928c6e322da9ec9b8c",
+        "offsets": "bdebc568d9ff3be16158cd6639df792cb4f2d46ae2250d630786e5e165596960",
+        "shadow": "21f6dfdb34c82766a082280d951f0485a7f1367470889981bd019731482725f9"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/ninetales/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "905e6511666f0be13efc3317d4b95653085eac09698a8d05e1e39ee989f47ea4",
+        "offsets": "b74e90ccb7ea40b9343bb76c727bd182eab35c7abecf5d5050c54468f6f3f556",
+        "shadow": "bdcaecefc615b070e595673f4c20c5f3650958a978c7d24663d61446802d96de"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "6ee131d35bb0185c8a72edde89f91baef7321ac14f83fbb0dc100595e5eb605f",
+        "offsets": "dd6e791c13c0b12077f53cf52f0b19c0cba340e4a6b6382b62616ba3b470cfaa",
+        "shadow": "8aa530706b6febac0288bfb999bee5cf5e9ca3f93949f8e48d5dcbb06599ad7b"
+      },
+      "rushFrame": 1,
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "a45ed5018ac5205e290035d94b1e0add3ff63e2ff95c99d78fb17d45e86ea299",
+        "offsets": "a5655f11eb96b99b1de2a735f52ef64c5fe98b31253490aaa2a0bfafcf50cdc5",
+        "shadow": "4b04c29b16a65336d214c5853efd6744fca874511c42a13d186aba1f96797d8d"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 48,
+      "frameHeight": 40,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 624,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "26edf82675de895a5c14c453e6eeddbc10604a60b0610853622980d042ef1562",
+        "offsets": "c40e50577ba77857a4519f2a3f2277868c543e6f220f0627f1aa67989da4af8f",
+        "shadow": "215acc80bc5600d9cb6bc0228f8c8041de24128fc26dda9172cc18e864b5a2d8"
+      },
+      "hitFrame": 3,
+      "returnFrame": 7
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 256,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "9200a17ebfae18b6500bf4313719fc8b2cc852001c1a2d7d96b42ecec993e75d",
+        "offsets": "f2671049b04a2220be7df7cf9a84fcb668277805409c6e0cfcccd2bc80614c16",
+        "shadow": "73615916beafcb8bdb5c5057b21fea60914862a96a15ec07329c3743358b5b91"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 576,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "6ee131d35bb0185c8a72edde89f91baef7321ac14f83fbb0dc100595e5eb605f",
+        "offsets": "dd6e791c13c0b12077f53cf52f0b19c0cba340e4a6b6382b62616ba3b470cfaa",
+        "shadow": "8aa530706b6febac0288bfb999bee5cf5e9ca3f93949f8e48d5dcbb06599ad7b"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "appeal": {
+      "name": "Appeal",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 416,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        50,
+        33,
+        33,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "eeb8df41456d154c5b56e27025bb8abeb5b5cbf0599a06a45bd4178cf8df4284",
+        "offsets": "9b1123ede771c89a377aadf0647a67add0c97da0df519e2fdb13130087d03967",
+        "shadow": "29e74d1452e5c64b77bcc71e94340ae7b046e689e48edca2e99b6942b6ebf5f8"
+      },
+      "copyOf": "RearUp",
+      "sourceAnimation": "RearUp",
+      "hitFrame": 6
+    },
+    "spattack": {
+      "name": "SpAttack",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 416,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        50,
+        33,
+        33,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "eeb8df41456d154c5b56e27025bb8abeb5b5cbf0599a06a45bd4178cf8df4284",
+        "offsets": "9b1123ede771c89a377aadf0647a67add0c97da0df519e2fdb13130087d03967",
+        "shadow": "29e74d1452e5c64b77bcc71e94340ae7b046e689e48edca2e99b6942b6ebf5f8"
+      },
+      "copyOf": "RearUp",
+      "sourceAnimation": "RearUp",
+      "hitFrame": 6
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 56,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 416,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        50,
+        33,
+        33,
+        33,
+        50,
+        33,
+        50,
+        33,
+        50,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "eeb8df41456d154c5b56e27025bb8abeb5b5cbf0599a06a45bd4178cf8df4284",
+        "offsets": "9b1123ede771c89a377aadf0647a67add0c97da0df519e2fdb13130087d03967",
+        "shadow": "29e74d1452e5c64b77bcc71e94340ae7b046e689e48edca2e99b6942b6ebf5f8"
+      },
+      "hitFrame": 6
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "ff2bb0e954e6143a33fe8896792ff6c70e67292ab8ea7d0546411e5299a61549",
+        "offsets": "4f21618376f0cc065f2512ffd9e7a8e36ae60d2ffd2e655dc1aacd15c92c9b5f",
+        "shadow": "d34982a876d9ad40825b960b9df97955211d1253bf40ad36bec8171f5c6e6826"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 72,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "0a40063cf29ad47f94a767a331b69b72868559eabd227a493cf3247c093cb5f4",
+        "offsets": "5d68f1044f784b75ea987e144d52f02d2d98d2b8e2266f005966a1655bc5acd4",
+        "shadow": "da72310d43bea64a3a1ab875931752b2dd86df3c87754859108adfd5312580eb"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 96,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 440,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        50,
+        50,
+        50,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "3639a7a8b8f60b1b1ad322ef734081136fc579b5a3f9fddfd5ba8624ae470ef8",
+        "offsets": "8bde8c8c3f0c3ba26878970de2e1b2515b8912b98af1f3451de952226d0a1922",
+        "shadow": "2045c3e6e5f5c55852bef1a05ebc76c414f35c44a34d5b8628f375a40c05ca8f"
+      },
+      "hitFrame": 10
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "f5fa3c7bcde50aae546d55732f2c2d45985808ccb4a7475a0b600b4ffa3c06b7",
+        "offsets": "4812e9ebee20c64df55cecba3ae47d6e8e9caca78d269074b31453898bf216c3",
+        "shadow": "e759d4928ce868907a3c4bbceccda518148f035b9a9c06ed591cdabeef0b0917"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/ninetales/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/ninetales/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/ninetales/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "2106ea0e6a0a3968f88f17921b2c2f01bc433e69fc2439a7c05fb67092b945d2",
+        "offsets": "97ed600c1c7caf0d9a26129cd9a4427c1ff34201dfab9af17ef2b5d1cadd7674",
+        "shadow": "c69e2a3fd5c6178d847029b075e712d888c838cd55fac2c8b2598b1583768826"
+      }
+    }
+  }
+}

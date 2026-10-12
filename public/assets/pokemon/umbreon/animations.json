@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0197",
+    "name": "Umbreon",
+    "slug": "umbreon"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0197",
+    "metadata": "/assets/pokemon/umbreon/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/umbreon/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/umbreon/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "9724a3dc6bc19ec8f8af7fbbaf7dfa546c0d3d08857bdbb428d319f5548e0b19"
+    },
+    "rawCredits": "/assets/pokemon/umbreon/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 24,
+      "frameHeight": 48,
+      "frameCount": 14,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 336,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        60,
+        10,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        10
+      ],
+      "durationsMs": [
+        1000,
+        167,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/umbreon/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "89dfc5652ece0eddb053c937403d245c7162d6605858497389b247a2785d09fb",
+        "offsets": "35b7183f452d98f4b0c546caa687c6c2061216c0e8d5b906fbf87b62f2e82e19",
+        "shadow": "303bd88f2107a42c602c3cc47da8265c83aebbde2159fba8b14a5fc88faff52b"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "durationsMs": [
+        133,
+        133,
+        133,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/umbreon/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "1364ba14e7e943f5ff5c167c8a1b0bff54cab7f91352a0cc940d23f68d5b64b3",
+        "offsets": "0c787980bea02ca9511e64a85c69c67c7f6247b3e2e0f4faa27c23c78f80c19b",
+        "shadow": "68c83e91a9a39ef3355b8f1a3bb474180faa46ef443a58acac567a6b54127560"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "f0a13488e48d00dc548b6c3577a49faf4c6bf19e39474726c92428e0ed86f805",
+        "offsets": "c1a069935c0dbbf8b95ee23fafe0ace97bbe245d09e057369518ec5de8605f6a",
+        "shadow": "197062802056551f0d2ccd7e6abb6c1f6f62b02f0901fe6633907d86bf13ffe6"
+      },
+      "rushFrame": 1,
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "7af6b41c34c56f1e981277b8f2e03647481def3621871cbb2bcdeaabb1ec56ac",
+        "offsets": "88c2f3a0a00472ac2bb4c804c3c3ede2df1f76a4ef379d09547cf5549e02d288",
+        "shadow": "3ad3703af4e670dab7868cc42e702619b6dd9a104d6e081ac379e3aaa3220556"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 352,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        6,
+        2,
+        6,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        100,
+        33,
+        100,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "544af145d8a01fe87df9ee755baff5f55c1aa5ada8478f6bded26906ae6805d1",
+        "offsets": "ab703bccad554c0aa95d2a56d90d84b4549c9f23e0e7a9b3017734588d000eec",
+        "shadow": "4052c201bee96cc90d02b77dbc4914b0ad0ac340ea666ed665b0e57322912740"
+      },
+      "hitFrame": 4,
+      "returnFrame": 8
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "7264e13b12d4a761b57b7ca1cf7cb92bc505f09a6605466733231fea7d1d723b",
+        "offsets": "11707de9e5273620f4fa800145c8850ea77a5441ad930d2a5f692c5f8d0d7490",
+        "shadow": "177d43d38d8746a2a5aca028481c62b4db03cdf243fe4d2826684786fa8fecad"
+      }
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "f0a13488e48d00dc548b6c3577a49faf4c6bf19e39474726c92428e0ed86f805",
+        "offsets": "c1a069935c0dbbf8b95ee23fafe0ace97bbe245d09e057369518ec5de8605f6a",
+        "shadow": "197062802056551f0d2ccd7e6abb6c1f6f62b02f0901fe6633907d86bf13ffe6"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "emit": {
+      "name": "Emit",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 256,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Withdraw-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Withdraw-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Withdraw-Shadow.png",
+      "sha256": {
+        "image": "3a1a57f4e8448a190c4730c25c5f7af57083956c3de382597348411bf4603857",
+        "offsets": "92e509fe2f44ce116206a5a96b9a06ee8a36834e20f78947f1f8bc3dae6062f6",
+        "shadow": "6879bd99765a7b959c185f676f28924669dea932c435e261baee1c95f486b3b0"
+      },
+      "copyOf": "Withdraw",
+      "sourceAnimation": "Withdraw",
+      "hitFrame": 2
+    },
+    "withdraw": {
+      "name": "Withdraw",
+      "index": 4,
+      "frameWidth": 32,
+      "frameHeight": 48,
+      "frameCount": 8,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 256,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Withdraw-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Withdraw-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Withdraw-Shadow.png",
+      "sha256": {
+        "image": "3a1a57f4e8448a190c4730c25c5f7af57083956c3de382597348411bf4603857",
+        "offsets": "92e509fe2f44ce116206a5a96b9a06ee8a36834e20f78947f1f8bc3dae6062f6",
+        "shadow": "6879bd99765a7b959c185f676f28924669dea932c435e261baee1c95f486b3b0"
+      },
+      "hitFrame": 2
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 72,
+      "frameHeight": 80,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 648,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "32a57e3860855a107c0bd9905c77a10288a950d7569e655a339384c5c60fbc2e",
+        "offsets": "aaa11bbc8ce5404b90ced03b27cfead1921b91a3cd7cf517faaa2459ef8e42fb",
+        "shadow": "e052f8d24da78970bbf635aac88da5d0ba5c6f156586d358768c3d57fb9d43f7"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 56,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 896,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "007f3def0efd0b77a6007c4fab0607b7f46feab5fcbef80773ddef8f56951085",
+        "offsets": "80d9a3f099e7f4f3b31f056f4e16b24d13be52f639b3814132e651aea519326d",
+        "shadow": "ad47345e595468f21260a6a9638100c1dbe9b6df7ae189da9844dd8698a69d4f"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 32,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "bb04033229a947d22b872d689bc6bf01e1c26203842ce332e132ce965b1c4384",
+        "offsets": "caac9b36fe165d9d332de559ca03410d2c471ff22632ebbf43ad1ffe7c65cc8a",
+        "shadow": "4057de4244f7d2b8952f0abc720e7de023e6175b517b641dbac0a8bb99095027"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 320,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "d922e5451b88b4b0d488f1f68dbee581bb15088514f6d815cabfa2eeb7c4c1dd",
+        "offsets": "b54c89407cfa16ff84f829caf083d0b097e03037890cad4572a87e23b4fd41e1",
+        "shadow": "13819a5a2d9f01ae55d1719e8cbbe04d075b2bc846ababc6e7444f9ac60ed4a7"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/umbreon/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/umbreon/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/umbreon/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "384ef8463dc69434a18431dfca4cbeec6aa6db9f0c510295aeed3c6603d8acfa",
+        "offsets": "15d8908a40373982d14a4b6a6632f019a880faeb82f2c577eb1794502d03983a",
+        "shadow": "26e2413ae9dc532698e3d82ca66abd301a5e6adb9f14216b1d9047209522159f"
+      }
+    }
+  }
+}

@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0208",
+    "name": "Steelix",
+    "slug": "steelix"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0208",
+    "metadata": "/assets/pokemon/steelix/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/steelix/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/steelix/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "695b9de06cf709d6fefdc566ac19eb0fd352ee276d547afbdf2a9c55ce04b9f5"
+    },
+    "rawCredits": "/assets/pokemon/steelix/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 64,
+      "frameHeight": 112,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 256,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        18,
+        8,
+        18,
+        8
+      ],
+      "durationsMs": [
+        300,
+        133,
+        300,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/steelix/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "7f0a0672823aab21be5c8ce358c6b2f01ba933c8424684445ce574fc24e6eac2",
+        "offsets": "2ddc7b3ab5ab94c9bada54af7a17e94bda63b0a25f09ddbf2213e5b5cab85e18",
+        "shadow": "a88231c5de50bfcdfef349d64d1b75058ea1168c93a358fbaec7525ec948b211"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 72,
+      "frameHeight": 112,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        10,
+        14,
+        10,
+        14
+      ],
+      "durationsMs": [
+        167,
+        233,
+        167,
+        233
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/steelix/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "e6969e79d4bd420048e2bfe6cd36ea5cc15730036d6d5864ba0fdadefaf2f525",
+        "offsets": "8efda7216dd2087a330c70e941341beda43eb6c3f45a2b8333c05977a321c0f1",
+        "shadow": "e1414c2499840486181922b6fd4fcc9980da56a6d14655a19e68be4ca1a7a84d"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 120,
+      "frameHeight": 152,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1320,
+      "sheetHeight": 1216,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "dc8d2a20d29abf08e84b0021456bacfe5ad3adecb614941aceac7c9e5423afe1",
+        "offsets": "ada730887737a3c37b26e68f3dd9c4ce80126bff4e29693cd513ae2ae0706b89",
+        "shadow": "9b07aafff98933bf6aa2f90ffe4cc97c27f361496d5235eac2d5f8009a863066"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 64,
+      "frameHeight": 112,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "74e32e7a2cb2805f99c2751a4b64dce024a6e5a37c8819eca8c7f9f32c0e1274",
+        "offsets": "0b8020a0781c47b8c918ca1501c14d7570c848dd159c9cdbfed4a9a3e19c3732",
+        "shadow": "1d6fa61a741017694d0065cc6a7cc0882b6f8cb17527433d067ba388c5e2a89c"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 96,
+      "frameHeight": 120,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1152,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "a9fe4e5fc8804b19297ecdef7012edf4de2e179aceb6a06ab6f579539c66d12a",
+        "offsets": "27af451e0a686ced3cc6ffc5bdc877be2120bd798dfd4a858ed6b2dfbd2e0c33",
+        "shadow": "3baacd889d3353c6cdf38dd59b675328d7d013cbaaa0d5d807788e263c86cc28"
+      },
+      "hitFrame": 2,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 64,
+      "frameHeight": 112,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "74e32e7a2cb2805f99c2751a4b64dce024a6e5a37c8819eca8c7f9f32c0e1274",
+        "offsets": "0b8020a0781c47b8c918ca1501c14d7570c848dd159c9cdbfed4a9a3e19c3732",
+        "shadow": "1d6fa61a741017694d0065cc6a7cc0882b6f8cb17527433d067ba388c5e2a89c"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 120,
+      "frameHeight": 152,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1320,
+      "sheetHeight": 1216,
+      "durationsFrames": [
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "dc8d2a20d29abf08e84b0021456bacfe5ad3adecb614941aceac7c9e5423afe1",
+        "offsets": "ada730887737a3c37b26e68f3dd9c4ce80126bff4e29693cd513ae2ae0706b89",
+        "shadow": "9b07aafff98933bf6aa2f90ffe4cc97c27f361496d5235eac2d5f8009a863066"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "dance": {
+      "name": "Dance",
+      "index": 4,
+      "frameWidth": 64,
+      "frameHeight": 112,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        8,
+        2,
+        8,
+        2,
+        8,
+        2
+      ],
+      "durationsMs": [
+        133,
+        33,
+        133,
+        33,
+        133,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Appeal-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Appeal-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Appeal-Shadow.png",
+      "sha256": {
+        "image": "3fabdfd61c191b9c7342d535013645cbede378b4782fd1b53629bf371ed7789d",
+        "offsets": "bdea423beeb507c23f5be14a32e43dc082a47427784701e37bb9e56ef06a2dad",
+        "shadow": "220b24b5e8c64b3f2c95241eaccfc0b91d927167933558aed184a237c80e1cfd"
+      },
+      "copyOf": "Appeal",
+      "sourceAnimation": "Appeal",
+      "hitFrame": 2
+    },
+    "emit": {
+      "name": "Emit",
+      "index": 4,
+      "frameWidth": 64,
+      "frameHeight": 112,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        8,
+        2,
+        8,
+        2,
+        8,
+        2
+      ],
+      "durationsMs": [
+        133,
+        33,
+        133,
+        33,
+        133,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Appeal-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Appeal-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Appeal-Shadow.png",
+      "sha256": {
+        "image": "3fabdfd61c191b9c7342d535013645cbede378b4782fd1b53629bf371ed7789d",
+        "offsets": "bdea423beeb507c23f5be14a32e43dc082a47427784701e37bb9e56ef06a2dad",
+        "shadow": "220b24b5e8c64b3f2c95241eaccfc0b91d927167933558aed184a237c80e1cfd"
+      },
+      "copyOf": "Appeal",
+      "sourceAnimation": "Appeal",
+      "hitFrame": 2
+    },
+    "appeal": {
+      "name": "Appeal",
+      "index": 4,
+      "frameWidth": 64,
+      "frameHeight": 112,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 384,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        8,
+        2,
+        8,
+        2,
+        8,
+        2
+      ],
+      "durationsMs": [
+        133,
+        33,
+        133,
+        33,
+        133,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Appeal-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Appeal-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Appeal-Shadow.png",
+      "sha256": {
+        "image": "3fabdfd61c191b9c7342d535013645cbede378b4782fd1b53629bf371ed7789d",
+        "offsets": "bdea423beeb507c23f5be14a32e43dc082a47427784701e37bb9e56ef06a2dad",
+        "shadow": "220b24b5e8c64b3f2c95241eaccfc0b91d927167933558aed184a237c80e1cfd"
+      },
+      "hitFrame": 2
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 120,
+      "frameHeight": 128,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1080,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "b7fb6d62287b2d247577b91e2d8d9c215c68e4ac4eb02c876a85958566851d74",
+        "offsets": "d153f16ce20ebba6877036f821614593f5479ed2c1705f4ef54d382750e64486",
+        "shadow": "a539e79d7f1ce73acebd126e38bd8d6fb38670b47bb9f4d4fd3a92f1b77ed0ef"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 80,
+      "frameHeight": 128,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1280,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "d110298ed191d5498184a84706af80fbd85ac8b6a81adcb5218e716ead716ce9",
+        "offsets": "fcdc185557dc0f69de6375dae3b1a2e50c9875c5415c4cc16ad56d46e845b9c3",
+        "shadow": "87eec7b3a83983754d7fbac0e01c9415860ad2eb4e46c4a77edecd4cc543ca70"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 88,
+      "frameHeight": 152,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 880,
+      "sheetHeight": 1216,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "97d0a06b510b3784c26c1c8bc769f70dae4244f3d042117df660e84fe4ddf694",
+        "offsets": "5973b9b76a26af41e26ca9de47e61e9824c6e462e7b440db697d59aaf55d8110",
+        "shadow": "9b53488157667ddaac7b34f5a1037c4dc464def061fed2b585c77a84eb13befe"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 64,
+      "frameHeight": 112,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 640,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/steelix/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/steelix/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/steelix/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "bb0020a7d569738559edaf581f5b00f61c0c831dd684875154c9fd066bec646a",
+        "offsets": "5c80610cb54ef08abab6dd687626d293474e5ad749d0c53d2469d33edb2c44ba",
+        "shadow": "61b7fca17759d1006574e9c57cc71828740098df26c6c59c74b24af45e1ff5ec"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

@@ -1,0 +1,689 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0131",
+    "name": "Lapras",
+    "slug": "lapras"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0131",
+    "metadata": "/assets/pokemon/lapras/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/lapras/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/lapras/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "379b7458b03e84d972efaf8112f02ccca6b2699d2b4cdaf9ee77984a35d74916"
+    },
+    "rawCredits": "/assets/pokemon/lapras/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        40,
+        12,
+        16,
+        12
+      ],
+      "durationsMs": [
+        667,
+        200,
+        267,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/lapras/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "ee0f45de0b35013b8e4584107fc2e83606bca65eaed067abafb10771f3f4ec48",
+        "offsets": "aee9615d7b0c56404550998fd14ff64110e39c844462594c87ac3754c39a70e4",
+        "shadow": "cd3b7a35c62a2106720c1129e742c36e83d33db7f384509b05b87431c96473b6"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 48,
+      "frameHeight": 56,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 192,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        10,
+        12,
+        10,
+        12
+      ],
+      "durationsMs": [
+        167,
+        200,
+        167,
+        200
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/lapras/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "7f2fac19960cf6ca7683329caff196e8d71e3e41f9ac027b57f38f088c8db9ca",
+        "offsets": "bd6d2067b5e321e5aee373823afa086b603c11861904ac1aac7a901dd2a4c025",
+        "shadow": "cd3b7a35c62a2106720c1129e742c36e83d33db7f384509b05b87431c96473b6"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 88,
+      "frameHeight": 88,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1056,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "2f079bd77737aeab62734b081c839c985eda48e298b07224e4a32ce340ccb7d1",
+        "offsets": "8e60cc6fdedbd0eb56171d520225d80623d9d681143a92714f3c24ce44573c6d",
+        "shadow": "5bca5f2efb8fea5e754d8b9f10fc6d485b62b9523853b541dc7e12bdf5257c5d"
+      },
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 96,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "26deafaf3bf4e451bd3ed1b8d8c5ab565a1b601e44a63cbdf89248c052bdb5a1",
+        "offsets": "79366f5a85295fd8626f18a8ed2ef68fb5f0c378b65d014358fbb8e4a3b6b746",
+        "shadow": "cd5d76eec48f7d470fffc9763f3896e1df14c3ac03344dd9282cb260be55a192"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 64,
+      "frameHeight": 72,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 768,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "42502e865e92bb99f07c0b799c6887a8bf18729d7e55f10cadc1d3993060b5f1",
+        "offsets": "fb1ae0b827a2d88dd8f3a9c5b8bf3e1939d02cf6c9f1306329a309494c8cd04b",
+        "shadow": "3bd0ecbf93caa27314a477d45015a81c2ad3a1e9f9130ceeb7c731d78388ed3e"
+      },
+      "hitFrame": 2,
+      "returnFrame": 5
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 56,
+      "frameHeight": 96,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 112,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "26deafaf3bf4e451bd3ed1b8d8c5ab565a1b601e44a63cbdf89248c052bdb5a1",
+        "offsets": "79366f5a85295fd8626f18a8ed2ef68fb5f0c378b65d014358fbb8e4a3b6b746",
+        "shadow": "cd5d76eec48f7d470fffc9763f3896e1df14c3ac03344dd9282cb260be55a192"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 88,
+      "frameHeight": 88,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1056,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "2f079bd77737aeab62734b081c839c985eda48e298b07224e4a32ce340ccb7d1",
+        "offsets": "8e60cc6fdedbd0eb56171d520225d80623d9d681143a92714f3c24ce44573c6d",
+        "shadow": "5bca5f2efb8fea5e754d8b9f10fc6d485b62b9523853b541dc7e12bdf5257c5d"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 2,
+      "hitFrame": 4,
+      "returnFrame": 7
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 528,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "c7361d1a366e5b1d9738b2911c65813d8af2c8a94af0075b0386d5af590fb64f",
+        "offsets": "43df8aed661b9715a13e1b33f404da03b416526aafccd36f74fc8407e6d59b0b",
+        "shadow": "2c1063a5085ff9598d83da0f9ede15afdb2a72521310f2828ac1a55716f0e522"
+      },
+      "hitFrame": 3,
+      "returnFrame": 9
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 88,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "79dd6801c0b5e15d1f94a0c24d54d22ed97126b553fe42f01d97ba0b6bf0e727",
+        "offsets": "caba77cb8cfea329f7e4d65fc073a08d60bebad12db4fbe5a587fdc2e344873c",
+        "shadow": "4b4aa87dd67d951584554d80bd77c0ef20fae9e5d132761f0f2dcf4a1888a4d4"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 72,
+      "frameHeight": 88,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1152,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "70e19cad8114b0a18f5983a3f872ec1d65ac92bddd36774c94a9867ff9f225e4",
+        "offsets": "f66de1bf126e3f204bc72590dd75dfac0a6be55c384d4c01c7d75931a7727c2d",
+        "shadow": "2a6141194e800a4415619c8ccbd09043eab5315a9bf4ffa2b48f8b52b3946c13"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 56,
+      "frameHeight": 112,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 560,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "1cb6e7bb29cf6770722cdc3eb6198da32470a4d9ae36cc3d39fc28b920726693",
+        "offsets": "6270e4dad9016850c923ee23327769fc8d31444241af912705129013c607745e",
+        "shadow": "012b460c4abde1d796f1158c74772b3eb1cd572f817deb2ed060357bad160c0d"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 48,
+      "frameHeight": 72,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 576,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/lapras/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/lapras/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/lapras/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "0f2b185e838a5c07586bd4d6f7028e93b0ef580fbc5e345ba95a71b31a83f8d8",
+        "offsets": "3c9dee6853a25591891d0c6ce41748aac458162c49fe4f3c4444649a6bbed6c7",
+        "shadow": "37273a82120f3c99a7c673fa38065ad744d0259d1fa6ef0ca31e8fa3b1cb2a75"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

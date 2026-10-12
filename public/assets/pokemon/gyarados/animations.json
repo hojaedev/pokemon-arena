@@ -1,0 +1,744 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0130",
+    "name": "Gyarados",
+    "slug": "gyarados"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0130",
+    "metadata": "/assets/pokemon/gyarados/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/gyarados/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 2,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/gyarados/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "27c04643260c74fb28ac53bdfa565f5d872c5aeb998294eb11fa7e70a586b3a1"
+    },
+    "rawCredits": "/assets/pokemon/gyarados/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 72,
+      "frameHeight": 128,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 288,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        18,
+        8,
+        18,
+        8
+      ],
+      "durationsMs": [
+        300,
+        133,
+        300,
+        133
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/gyarados/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "53ee10e93d4fb40741a179d84d09273232039a213b6e6226b844247a17f1f427",
+        "offsets": "7574aa21afac716dd53017afbe9756b09e5953fd8ad55ec73779ca479563531e",
+        "shadow": "2733b0d3d73a0f343f926a2240dd9df7eecbd55d752fc632e7f4bba95837a64e"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 88,
+      "frameHeight": 128,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 352,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        10,
+        14,
+        10,
+        14
+      ],
+      "durationsMs": [
+        167,
+        233,
+        167,
+        233
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/gyarados/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "7cee3a662c821e98b990151f96b5a7964b95d1a0495f3adbc90e3d1f610739a5",
+        "offsets": "95cf132d5c572ed7bb07be3996ee82f4e84b1d49151371d42158d15316d8360a",
+        "shadow": "b34b22f4cc831dae47cb67948f5bc0b46602556c24a7708da89b20577f802f07"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 104,
+      "frameHeight": 136,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1040,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        4,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "a64d5fda1bfc092f3b72a632cfaed083128af8fd39ceab5261dd5e5781720fc7",
+        "offsets": "395de8c63170096d4b55497cf26830b24c9826ddc87ea5b4bb720137c5e8bf44",
+        "shadow": "e006ea3de791cf3ed0de1f9fcc3bc0e9e094bd070dc43aeaf7452be5187161b9"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 72,
+      "frameHeight": 120,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 144,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "eab04636b3ffbb29028c4e5c6a8a847e3d5afa6e0ae0a581ad29e148f50ad6c7",
+        "offsets": "e256e4f3409b26d9975a38a707905789cb9cb8dec3ca087379a859fcc764c9e3",
+        "shadow": "cbeedc21f6a71072de3a6a4f802c21e441ee7fc2ad1797a1a22aaa06ceab01e9"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 104,
+      "frameHeight": 128,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1248,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        2,
+        4,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        67,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "8575c8ed7051d048ac915382008bf972b9715b1dc94155711a23c6e030968330",
+        "offsets": "81e0e4b37d47182a5dba1debcece402102fa4857e326fb1b6fca4dbac58cc9a6",
+        "shadow": "f6b830685263994b202192686321806a7a73e5e65412d5bfe828905e69d9eeae"
+      },
+      "hitFrame": 2,
+      "returnFrame": 6
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 6,
+      "frameWidth": 72,
+      "frameHeight": 120,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 144,
+      "sheetHeight": 960,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "eab04636b3ffbb29028c4e5c6a8a847e3d5afa6e0ae0a581ad29e148f50ad6c7",
+        "offsets": "e256e4f3409b26d9975a38a707905789cb9cb8dec3ca087379a859fcc764c9e3",
+        "shadow": "cbeedc21f6a71072de3a6a4f802c21e441ee7fc2ad1797a1a22aaa06ceab01e9"
+      },
+      "sourceAnimation": "Hurt",
+      "fallbackFor": "Faint"
+    },
+    "strike": {
+      "name": "Strike",
+      "index": 2,
+      "frameWidth": 104,
+      "frameHeight": 136,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1040,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        4,
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        100,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "a64d5fda1bfc092f3b72a632cfaed083128af8fd39ceab5261dd5e5781720fc7",
+        "offsets": "395de8c63170096d4b55497cf26830b24c9826ddc87ea5b4bb720137c5e8bf44",
+        "shadow": "e006ea3de791cf3ed0de1f9fcc3bc0e9e094bd070dc43aeaf7452be5187161b9"
+      },
+      "copyOf": "Attack",
+      "sourceAnimation": "Attack",
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "rumble": {
+      "name": "Rumble",
+      "index": 4,
+      "frameWidth": 88,
+      "frameHeight": 160,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1056,
+      "sheetHeight": 1280,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "9a03e3f0051fbd00f2702decef449fd2f572784dba891d21b149dfb80f81f8fe",
+        "offsets": "6ae5920a9d083bf8aa72f776226f9ade28d830c3d90ad699cb696b1de185ddbd",
+        "shadow": "119ef771060b72f32d8b73e44a32d6d9085854e8cba4836ac93fa6a57024b0c1"
+      },
+      "copyOf": "RearUp",
+      "sourceAnimation": "RearUp",
+      "hitFrame": 3,
+      "returnFrame": 7
+    },
+    "rearup": {
+      "name": "RearUp",
+      "index": 4,
+      "frameWidth": 88,
+      "frameHeight": 160,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1056,
+      "sheetHeight": 1280,
+      "durationsFrames": [
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/RearUp-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/RearUp-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/RearUp-Shadow.png",
+      "sha256": {
+        "image": "9a03e3f0051fbd00f2702decef449fd2f572784dba891d21b149dfb80f81f8fe",
+        "offsets": "6ae5920a9d083bf8aa72f776226f9ade28d830c3d90ad699cb696b1de185ddbd",
+        "shadow": "119ef771060b72f32d8b73e44a32d6d9085854e8cba4836ac93fa6a57024b0c1"
+      },
+      "hitFrame": 3,
+      "returnFrame": 7
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 136,
+      "frameHeight": 128,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1224,
+      "sheetHeight": 1024,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "e2864d320257c08961e9451748052dd7e222e0be08db47e6a82d084e124ed94c",
+        "offsets": "bd293a6dcc6f17f2593118c8e76176eba39f806b31d5d5d9d74342858d43461b",
+        "shadow": "d3b21a8fcff1beb5b16a5e32b7a07d463cce4279504ce94d816ccaeabb5feb59"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 80,
+      "frameHeight": 152,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1280,
+      "sheetHeight": 1216,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "10867585b82f0fc40f085a387916e9b2c167064349b4557a4b2659c458af3066",
+        "offsets": "2b5fa8816bc9be666d1c9c3424ab3afd9c06784b61a821b6b8097d4d5927325b",
+        "shadow": "385e76ac8de8e857ab899e59292ff9fc1cba0764953041f54b3bd31fac0ed5f2"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 96,
+      "frameHeight": 168,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 960,
+      "sheetHeight": 1344,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "f673608f3c9236199f070aa5f6f0593241a083c709eb4e548ad29b9e2c649ed9",
+        "offsets": "848bf4553f1133c7de5b09feb9dde990e3bfbbbcbe7f4b31f84b9da2b3d4a1a1",
+        "shadow": "198a69ca24e0ed7a68d7dcb6301c540afda81382343afb1f92f7211653ac5d24"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 96,
+      "frameHeight": 112,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 960,
+      "sheetHeight": 896,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/gyarados/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/gyarados/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/gyarados/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "4e917580b94f50328c43c96dc5ad4eedba6141cf54780dbc5e888265c4c19bbf",
+        "offsets": "f8a61fd0b00950c717df41b0ca363aa7bef26272149281d1fa0378d6be034906",
+        "shadow": "1d354a35f785eedd1074a58b257068a056d0d9fddcb27b6befa4bb7236b5cf43"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    }
+  }
+}

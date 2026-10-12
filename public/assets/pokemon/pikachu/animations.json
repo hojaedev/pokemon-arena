@@ -1,0 +1,743 @@
+{
+  "schemaVersion": 1,
+  "pokemon": {
+    "dex": "0025",
+    "name": "Pikachu",
+    "slug": "pikachu"
+  },
+  "source": {
+    "name": "PMD SpriteCollab",
+    "repository": "https://github.com/PMDCollab/SpriteCollab",
+    "revision": "cd566fffbcd8e1001cee8ec511f42c07e8d65457",
+    "sourceDirectory": "sprite/0025",
+    "metadata": "/assets/pokemon/pikachu/sprite/AnimData.xml",
+    "rawCredits": "/assets/pokemon/pikachu/sprite/credits.txt"
+  },
+  "timing": {
+    "unit": "frames",
+    "framesPerSecond": 60,
+    "note": "Each duration value is 1/60 second."
+  },
+  "layout": {
+    "frameOrder": "left-to-right",
+    "directionOrder": "top-to-bottom",
+    "directions": [
+      "down",
+      "downRight",
+      "right",
+      "upRight",
+      "up",
+      "upLeft",
+      "left",
+      "downLeft"
+    ],
+    "transparentBackground": true
+  },
+  "rendering": {
+    "nativeScale": 1,
+    "preferredScale": 2,
+    "preferredCanvasSize": {
+      "width": 1280,
+      "height": 720
+    },
+    "interpolation": "nearest-neighbor",
+    "cssImageRendering": "pixelated",
+    "note": "Keep integer scaling."
+  },
+  "shadow": {
+    "repositoryShadowSize": 1,
+    "note": "Shadow PNG uses white anchor pixels; RGB channels may also encode shadow areas."
+  },
+  "offsets": {
+    "note": "Offsets PNG markers: green body center, red left hand, blue right hand, black head; colors combine when markers overlap."
+  },
+  "portrait": {
+    "normal": {
+      "url": "/assets/pokemon/pikachu/portrait/Normal.png",
+      "width": 40,
+      "height": 40,
+      "preferredHudScale": 2,
+      "sha256": "d8b4b0ca1243cc868cf628a4b3bda9f57b99d05dbf5be372c17c1f3a5c255eba"
+    },
+    "rawCredits": "/assets/pokemon/pikachu/portrait/credits.txt"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle",
+      "index": 7,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 6,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 240,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        40,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "durationsMs": [
+        667,
+        33,
+        50,
+        50,
+        50,
+        33
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/pikachu/sprite/Idle-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Idle-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Idle-Shadow.png",
+      "sha256": {
+        "image": "f1021ac60879698076fdb80705f893d0646d2b9ddf2bdb8c81803fbb7e87ad86",
+        "offsets": "c2369b0b4f0e2b1882f58cc4ef65345780890228bfd7631be8156267d8474c53",
+        "shadow": "9b8ac64a8539e9770055aa7078289ab355e5695a599ce371c731114dca24e6de"
+      }
+    },
+    "walk": {
+      "name": "Walk",
+      "index": 0,
+      "frameWidth": 32,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 128,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        10,
+        8,
+        10
+      ],
+      "durationsMs": [
+        133,
+        167,
+        133,
+        167
+      ],
+      "loop": true,
+      "image": "/assets/pokemon/pikachu/sprite/Walk-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Walk-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Walk-Shadow.png",
+      "sha256": {
+        "image": "5cfc2c775708c28c11f98e027e883261ab3ae4276e51621eec11c979598651f9",
+        "offsets": "386f0d396c736312a871bb04604bf63f8b70b0decee8c146cc363ba1f09df836",
+        "shadow": "1ec150c932f208ce21ceccbfc72b21ef85a17cd42133734ce2a2e0638c49eed7"
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "index": 1,
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 800,
+      "sheetHeight": 640,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        67
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Attack-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Attack-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Attack-Shadow.png",
+      "sha256": {
+        "image": "06822d01f15ebb2c4f2cff9e94bb4ee615b8d25b41527c9297b80d81576be857",
+        "offsets": "2bbe49b2c846f3cfb84693a177ed30791340d636197b3e3cc7a295e5cbf888ba",
+        "shadow": "8462e499f657df2640738a69cb624b5bca246a17854dd17731fdffedb81e3255"
+      },
+      "rushFrame": 1,
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "hurt": {
+      "name": "Hurt",
+      "index": 6,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 2,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 96,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        8
+      ],
+      "durationsMs": [
+        33,
+        133
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Hurt-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Hurt-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Hurt-Shadow.png",
+      "sha256": {
+        "image": "4f096cee94aab6e2c444e6e5a9e77680858d81ad90ddaded05f7e2fea69e3776",
+        "offsets": "618547de1ce2dc5d696787c8731b3c30222728f6c4ae87a91223b3c325648a8e",
+        "shadow": "ac6de71c1c2d68f7b57c3628d73cabee468c84be9da37305bcf53ed6999365a5"
+      }
+    },
+    "shoot": {
+      "name": "Shoot",
+      "index": 3,
+      "frameWidth": 40,
+      "frameHeight": 56,
+      "frameCount": 11,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 440,
+      "sheetHeight": 448,
+      "durationsFrames": [
+        1,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        17,
+        33,
+        100,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Shoot-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Shoot-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Shoot-Shadow.png",
+      "sha256": {
+        "image": "3c8167cd86262fc6a81382836574b083afd2958ffe41861555c51789c974c0d0",
+        "offsets": "ecdb35dd72076d16d6b889f831961bbca4ad97b6cb962bc0e64851c346328b1a",
+        "shadow": "ac5ccb48fe5ca7b74db037fc6556b67bd7ddb84ecf8807181af78dac0aea5af7"
+      },
+      "hitFrame": 2,
+      "returnFrame": 4
+    },
+    "faint": {
+      "name": "Faint",
+      "index": 33,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 4,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 160,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        8,
+        12,
+        4,
+        10
+      ],
+      "durationsMs": [
+        133,
+        200,
+        67,
+        167
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Faint-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Faint-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Faint-Shadow.png",
+      "sha256": {
+        "image": "3e407e736cdb50f003ea12b4e0aa0f1b4c4f48086ac8f54cffdb1ec82b250f87",
+        "offsets": "69bd5ea3e4df0af82876edcae168d0ed5c9384af1aab1c5c43852257218a663b",
+        "shadow": "940097e40e65a053aff2944c0810a3f6cea651b5a631020e3bcb531ca9f5b46a"
+      }
+    },
+    "quickstrike": {
+      "name": "QuickStrike",
+      "index": 2,
+      "frameWidth": 120,
+      "frameHeight": 136,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1200,
+      "sheetHeight": 1088,
+      "durationsFrames": [
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        67,
+        17,
+        17,
+        17,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/QuickStrike-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/QuickStrike-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/QuickStrike-Shadow.png",
+      "sha256": {
+        "image": "1a0033fd13e868e9ab9afbb92bbaa87d8deed4aa5d874be8997f38b266d7ff24",
+        "offsets": "f0ad8170791ae5ca7a24f55aeffb651e5c6c14d39386b840a6ace9da2e754bf6",
+        "shadow": "307a646b142e332aac50d29192d753dde8a779c9806c9ea7d92ebe651cf7973e"
+      },
+      "hitFrame": 3,
+      "returnFrame": 6
+    },
+    "shock": {
+      "name": "Shock",
+      "index": 4,
+      "frameWidth": 48,
+      "frameHeight": 64,
+      "frameCount": 13,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 624,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        8,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "durationsMs": [
+        133,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Shock-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Shock-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Shock-Shadow.png",
+      "sha256": {
+        "image": "fa84f62367baf2fc34cf05479c71157298551faa003ce4d88a95c8b732d13f55",
+        "offsets": "e9ac92b3f38998c0ba90e0919473735b9004793dd1f0c259c08afb33d2cae869",
+        "shadow": "cf156d423328b068c1897e2d7f40ef6ef7b21b56d63756bad74e05bb566d69a4"
+      },
+      "hitFrame": 6,
+      "returnFrame": 10
+    },
+    "swing": {
+      "name": "Swing",
+      "index": 8,
+      "frameWidth": 80,
+      "frameHeight": 96,
+      "frameCount": 9,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 720,
+      "sheetHeight": 768,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        33,
+        50,
+        33,
+        33,
+        17,
+        17
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Swing-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Swing-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Swing-Shadow.png",
+      "sha256": {
+        "image": "dd76ec9c3749800e4c14f1de5b6e01310526f5833f317662328592bc8d38e7a0",
+        "offsets": "1b0d648226b4154572c25b78c4574bb0e53a4ded45b6551db4eb5cfef4c6c444",
+        "shadow": "bdfcf3f1e49e33ae1d85428720393e2ff14324343f4cffe9d1dd77ce6febeed1"
+      },
+      "hitFrame": 5,
+      "returnFrame": 5
+    },
+    "double": {
+      "name": "Double",
+      "index": 9,
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frameCount": 16,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 1024,
+      "sheetHeight": 512,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        50,
+        50,
+        50,
+        33,
+        50,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Double-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Double-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Double-Shadow.png",
+      "sha256": {
+        "image": "3cdb3a1f67f1f4cf6baa12a90b82f189aa4f71b0b43b62b8cd09f677f12201fc",
+        "offsets": "13d90a0ab65b49bc8908f914c4e88c61a2dcb5eaecf48ac5c74769972666baf1",
+        "shadow": "9d3afbc9187e43f234d6ed4bd1e1b21257c883f1e87d872d7d843a05d1402661"
+      }
+    },
+    "hop": {
+      "name": "Hop",
+      "index": 10,
+      "frameWidth": 40,
+      "frameHeight": 88,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 704,
+      "durationsFrames": [
+        2,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "durationsMs": [
+        33,
+        17,
+        33,
+        50,
+        67,
+        67,
+        50,
+        33,
+        17,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Hop-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Hop-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Hop-Shadow.png",
+      "sha256": {
+        "image": "351bfe5341b9251731b886016f39f338a113e485388f0e1058e6958da36a727c",
+        "offsets": "92993077847efcb8f0cb55d188ef53b3cccf1414d181c354e8a0822f7fc5a8c8",
+        "shadow": "0673f2f705f773daa3955604e7c5c3bc7e14cba55b79f3ef5c8fbc4e8965a1fe"
+      },
+      "hitFrame": 9
+    },
+    "charge": {
+      "name": "Charge",
+      "index": 11,
+      "frameWidth": 40,
+      "frameHeight": 40,
+      "frameCount": 10,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 400,
+      "sheetHeight": 320,
+      "durationsFrames": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Charge-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Charge-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Charge-Shadow.png",
+      "sha256": {
+        "image": "8d27d7ee1cde3338181a143c521a97cd45125c2e2465830d1a11f562c4725e03",
+        "offsets": "e4c13200435404d9b483dd5c623929e6434d0d687a2e4ae0d8170319ceab78fe",
+        "shadow": "4a9bf0cf1eab0f9ba50098ae03c541f627d84b4ef063edf96fa97953732c1492"
+      },
+      "hitFrame": 5,
+      "returnFrame": 9
+    },
+    "pain": {
+      "name": "Pain",
+      "index": 19,
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frameCount": 12,
+      "directionCount": 8,
+      "directions": [
+        "down",
+        "downRight",
+        "right",
+        "upRight",
+        "up",
+        "upLeft",
+        "left",
+        "downLeft"
+      ],
+      "sheetWidth": 480,
+      "sheetHeight": 384,
+      "durationsFrames": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "durationsMs": [
+        67,
+        17,
+        17,
+        17,
+        33,
+        17,
+        67,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "loop": false,
+      "image": "/assets/pokemon/pikachu/sprite/Pain-Anim.png",
+      "offsetsImage": "/assets/pokemon/pikachu/sprite/Pain-Offsets.png",
+      "shadowImage": "/assets/pokemon/pikachu/sprite/Pain-Shadow.png",
+      "sha256": {
+        "image": "340d94ecb753c20b6d8c84eed7692b3445ba9ec5d6736b7cf562fbcca09d6384",
+        "offsets": "af60f09a3e41152d9acf43a0c6eee49054d5b444de8eb0c849ccadec0b269e31",
+        "shadow": "1b8161b57fb72784d3811fd7d818b0a85db2647fccbecabd5b80038c51534fee"
+      }
+    }
+  }
+}
