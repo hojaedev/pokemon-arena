@@ -1,0 +1,457 @@
+{
+  "source": "PokeAPI cries",
+  "repository": "https://github.com/PokeAPI/cries",
+  "rights": "Pokémon cries are original game audio owned by Nintendo, Creatures, Game Freak, and The Pokémon Company. PokeAPI availability is not a separate redistribution or commercial-use license. Noncommercial fan demo.",
+  "assets": [
+    {
+      "id": "bulbasaur",
+      "dex": 1,
+      "name": "이상해씨",
+      "file": "/assets/audio/cries/1.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/1.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/1",
+      "variant": "legacy"
+    },
+    {
+      "id": "venusaur",
+      "dex": 3,
+      "name": "이상해꽃",
+      "file": "/assets/audio/cries/3.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/3.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/3",
+      "variant": "legacy"
+    },
+    {
+      "id": "charmander",
+      "dex": 4,
+      "name": "파이리",
+      "file": "/assets/audio/cries/4.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/4.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/4",
+      "variant": "legacy"
+    },
+    {
+      "id": "charizard",
+      "dex": 6,
+      "name": "리자몽",
+      "file": "/assets/audio/cries/6.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/6.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/6",
+      "variant": "legacy"
+    },
+    {
+      "id": "squirtle",
+      "dex": 7,
+      "name": "꼬부기",
+      "file": "/assets/audio/cries/7.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/7.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/7",
+      "variant": "legacy"
+    },
+    {
+      "id": "blastoise",
+      "dex": 9,
+      "name": "거북왕",
+      "file": "/assets/audio/cries/9.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/9.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/9",
+      "variant": "legacy"
+    },
+    {
+      "id": "pikachu",
+      "dex": 25,
+      "name": "피카츄",
+      "file": "/assets/audio/cries/25.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/25.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/25",
+      "variant": "legacy"
+    },
+    {
+      "id": "raichu",
+      "dex": 26,
+      "name": "라이츄",
+      "file": "/assets/audio/cries/26.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/26.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/26",
+      "variant": "legacy"
+    },
+    {
+      "id": "nidoking",
+      "dex": 34,
+      "name": "니드킹",
+      "file": "/assets/audio/cries/34.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/34.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/34",
+      "variant": "legacy"
+    },
+    {
+      "id": "ninetales",
+      "dex": 38,
+      "name": "나인테일",
+      "file": "/assets/audio/cries/38.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/38.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/38",
+      "variant": "legacy"
+    },
+    {
+      "id": "psyduck",
+      "dex": 54,
+      "name": "고라파덕",
+      "file": "/assets/audio/cries/54.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/54.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/54",
+      "variant": "legacy"
+    },
+    {
+      "id": "arcanine",
+      "dex": 59,
+      "name": "윈디",
+      "file": "/assets/audio/cries/59.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/59.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/59",
+      "variant": "legacy"
+    },
+    {
+      "id": "alakazam",
+      "dex": 65,
+      "name": "후딘",
+      "file": "/assets/audio/cries/65.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/65.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/65",
+      "variant": "legacy"
+    },
+    {
+      "id": "machamp",
+      "dex": 68,
+      "name": "괴력몬",
+      "file": "/assets/audio/cries/68.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/68.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/68",
+      "variant": "legacy"
+    },
+    {
+      "id": "gengar",
+      "dex": 94,
+      "name": "팬텀",
+      "file": "/assets/audio/cries/94.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/94.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/94",
+      "variant": "legacy"
+    },
+    {
+      "id": "scyther",
+      "dex": 123,
+      "name": "스라크",
+      "file": "/assets/audio/cries/123.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/123.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/123",
+      "variant": "legacy"
+    },
+    {
+      "id": "gyarados",
+      "dex": 130,
+      "name": "갸라도스",
+      "file": "/assets/audio/cries/130.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/130.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/130",
+      "variant": "legacy"
+    },
+    {
+      "id": "lapras",
+      "dex": 131,
+      "name": "라프라스",
+      "file": "/assets/audio/cries/131.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/131.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/131",
+      "variant": "legacy"
+    },
+    {
+      "id": "eevee",
+      "dex": 133,
+      "name": "이브이",
+      "file": "/assets/audio/cries/133.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/133.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/133",
+      "variant": "legacy"
+    },
+    {
+      "id": "vaporeon",
+      "dex": 134,
+      "name": "샤미드",
+      "file": "/assets/audio/cries/134.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/134.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/134",
+      "variant": "legacy"
+    },
+    {
+      "id": "jolteon",
+      "dex": 135,
+      "name": "쥬피썬더",
+      "file": "/assets/audio/cries/135.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/135.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/135",
+      "variant": "legacy"
+    },
+    {
+      "id": "flareon",
+      "dex": 136,
+      "name": "부스터",
+      "file": "/assets/audio/cries/136.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/136.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/136",
+      "variant": "legacy"
+    },
+    {
+      "id": "aerodactyl",
+      "dex": 142,
+      "name": "프테라",
+      "file": "/assets/audio/cries/142.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/142.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/142",
+      "variant": "legacy"
+    },
+    {
+      "id": "snorlax",
+      "dex": 143,
+      "name": "잠만보",
+      "file": "/assets/audio/cries/143.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/143.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/143",
+      "variant": "legacy"
+    },
+    {
+      "id": "articuno",
+      "dex": 144,
+      "name": "프리져",
+      "file": "/assets/audio/cries/144.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/144.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/144",
+      "variant": "legacy"
+    },
+    {
+      "id": "zapdos",
+      "dex": 145,
+      "name": "썬더",
+      "file": "/assets/audio/cries/145.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/145.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/145",
+      "variant": "legacy"
+    },
+    {
+      "id": "moltres",
+      "dex": 146,
+      "name": "파이어",
+      "file": "/assets/audio/cries/146.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/146.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/146",
+      "variant": "legacy"
+    },
+    {
+      "id": "dragonite",
+      "dex": 149,
+      "name": "망나뇽",
+      "file": "/assets/audio/cries/149.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/149.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/149",
+      "variant": "legacy"
+    },
+    {
+      "id": "mewtwo",
+      "dex": 150,
+      "name": "뮤츠",
+      "file": "/assets/audio/cries/150.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/150.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/150",
+      "variant": "legacy"
+    },
+    {
+      "id": "mew",
+      "dex": 151,
+      "name": "뮤",
+      "file": "/assets/audio/cries/151.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/151.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/151",
+      "variant": "legacy"
+    },
+    {
+      "id": "meganium",
+      "dex": 154,
+      "name": "메가니움",
+      "file": "/assets/audio/cries/154.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/154.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/154",
+      "variant": "legacy"
+    },
+    {
+      "id": "typhlosion",
+      "dex": 157,
+      "name": "블레이범",
+      "file": "/assets/audio/cries/157.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/157.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/157",
+      "variant": "legacy"
+    },
+    {
+      "id": "feraligatr",
+      "dex": 160,
+      "name": "장크로다일",
+      "file": "/assets/audio/cries/160.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/160.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/160",
+      "variant": "legacy"
+    },
+    {
+      "id": "crobat",
+      "dex": 169,
+      "name": "크로뱃",
+      "file": "/assets/audio/cries/169.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/169.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/169",
+      "variant": "legacy"
+    },
+    {
+      "id": "togepi",
+      "dex": 175,
+      "name": "토게피",
+      "file": "/assets/audio/cries/175.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/175.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/175",
+      "variant": "legacy"
+    },
+    {
+      "id": "ampharos",
+      "dex": 181,
+      "name": "전룡",
+      "file": "/assets/audio/cries/181.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/181.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/181",
+      "variant": "legacy"
+    },
+    {
+      "id": "espeon",
+      "dex": 196,
+      "name": "에브이",
+      "file": "/assets/audio/cries/196.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/196.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/196",
+      "variant": "legacy"
+    },
+    {
+      "id": "umbreon",
+      "dex": 197,
+      "name": "블래키",
+      "file": "/assets/audio/cries/197.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/197.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/197",
+      "variant": "legacy"
+    },
+    {
+      "id": "steelix",
+      "dex": 208,
+      "name": "강철톤",
+      "file": "/assets/audio/cries/208.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/208.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/208",
+      "variant": "legacy"
+    },
+    {
+      "id": "scizor",
+      "dex": 212,
+      "name": "핫삼",
+      "file": "/assets/audio/cries/212.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/212.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/212",
+      "variant": "legacy"
+    },
+    {
+      "id": "heracross",
+      "dex": 214,
+      "name": "헤라크로스",
+      "file": "/assets/audio/cries/214.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/214.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/214",
+      "variant": "legacy"
+    },
+    {
+      "id": "houndoom",
+      "dex": 229,
+      "name": "헬가",
+      "file": "/assets/audio/cries/229.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/229.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/229",
+      "variant": "legacy"
+    },
+    {
+      "id": "kingdra",
+      "dex": 230,
+      "name": "킹드라",
+      "file": "/assets/audio/cries/230.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/230.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/230",
+      "variant": "legacy"
+    },
+    {
+      "id": "raikou",
+      "dex": 243,
+      "name": "라이코",
+      "file": "/assets/audio/cries/243.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/243.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/243",
+      "variant": "legacy"
+    },
+    {
+      "id": "entei",
+      "dex": 244,
+      "name": "앤테이",
+      "file": "/assets/audio/cries/244.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/244.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/244",
+      "variant": "legacy"
+    },
+    {
+      "id": "suicune",
+      "dex": 245,
+      "name": "스이쿤",
+      "file": "/assets/audio/cries/245.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/245.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/245",
+      "variant": "legacy"
+    },
+    {
+      "id": "tyranitar",
+      "dex": 248,
+      "name": "마기라스",
+      "file": "/assets/audio/cries/248.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/248.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/248",
+      "variant": "legacy"
+    },
+    {
+      "id": "lugia",
+      "dex": 249,
+      "name": "루기아",
+      "file": "/assets/audio/cries/249.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/249.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/249",
+      "variant": "legacy"
+    },
+    {
+      "id": "ho-oh",
+      "dex": 250,
+      "name": "칠색조",
+      "file": "/assets/audio/cries/250.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/250.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/250",
+      "variant": "legacy"
+    },
+    {
+      "id": "celebi",
+      "dex": 251,
+      "name": "세레비",
+      "file": "/assets/audio/cries/251.ogg",
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/251.ogg",
+      "metadataUrl": "https://pokeapi.co/api/v2/pokemon/251",
+      "variant": "legacy"
+    }
+  ]
+}

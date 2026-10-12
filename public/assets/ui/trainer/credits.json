@@ -1,0 +1,30 @@
+{
+  "description": "Original trainer-skill pixel-art illustrations created for Mt. Silver Arena.",
+  "method": "Original image-generation artwork, not Riot Games assets.",
+  "icons": [
+    {
+      "id": "haste",
+      "path": "/assets/ui/trainer/haste.png"
+    },
+    {
+      "id": "exhaust",
+      "path": "/assets/ui/trainer/exhaust.png"
+    },
+    {
+      "id": "barrier",
+      "path": "/assets/ui/trainer/barrier.png"
+    },
+    {
+      "id": "heal",
+      "path": "/assets/ui/trainer/heal.png"
+    },
+    {
+      "id": "cleanse",
+      "path": "/assets/ui/trainer/cleanse.png"
+    },
+    {
+      "id": "ignite",
+      "path": "/assets/ui/trainer/ignite.png"
+    }
+  ]
+}

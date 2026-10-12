@@ -46,6 +46,7 @@ export class Battle {
     this.player=this.teams.player[0];this.enemy=this.teams.enemy[0];this.cooldowns=this.player.cooldowns;
     this.projectiles=[];this.hazards=[];this.windups=[];this.tasks=[];this.events=[];
     this.stats={damageDealt:0,damageTaken:0,movesUsed:0,hitsLanded:0,basicsFired:0,basicHits:0,dodges:0,avoidedDamage:0,trackingBreaks:0,knockouts:0,losses:0,switches:0};
+    this.masterAI={history:[],observed:null,nextSample:0,seen:new WeakMap(),threats:[],dodgeUntil:0,wasDodging:false};
     this.enraged=false;this.input={x:0,y:0};this.aiDecision=.75;this.aiDodgeTimer=1.5;this.aiComboTimer=0;this.groupId=0;this.hitGroups=new Map();this.lastHint=-10;this.emit('reset');
   }
   clearOutgoing(f){
@@ -70,7 +71,7 @@ export class Battle {
     incoming.px=incoming.x;incoming.py=incoming.y;incoming.vx=0;incoming.vy=0;incoming.basicWindup=null;incoming.action=null;incoming.dash=null;incoming.dodgeGuard=null;incoming.pose=null;incoming.stun=0;incoming.castRoot=0;incoming.castLock=.35;incoming.invul=.6;incoming.moving=false;incoming.basicTimer=Math.max(incoming.basicTimer,.35);
     this.animate(incoming,'idle',.35);this.hitStop=0;this.lastStepDt=0;this.switchCooldowns[team]=8;
     if(team==='player'){this.cooldowns=incoming.cooldowns;if(!forced)this.stats.switches++;}
-    else {this.aiDecision=.7;this.aiDodgeTimer=1.5;this.aiComboTimer=.4;this.enraged=incoming.hp/incoming.maxHp<.32;}
+    else {this.masterAI={history:[],observed:null,nextSample:0,seen:new WeakMap(),threats:[],dodgeUntil:0,wasDodging:false};this.aiDecision=.7;this.aiDodgeTimer=1.5;this.aiComboTimer=.4;this.enraged=incoming.hp/incoming.maxHp<.32;}
     this.emit('switch',{team,fromId:outgoing.id,toId:incoming.id,fromIndex,index,x:incoming.x,y:incoming.y,forced});
   }
   faint(f){
@@ -124,7 +125,7 @@ export class Battle {
       this.commitEnemyAction(f,'basic','basic',windup,{flight:basic.melee?0:this.projectileFlight(f,basic.projectileSpeed,aim),aim});
       this.windups.push({createdAt:this.time,type:basic.melee?'melee':'aim',basic:true,team:f.team,element:basic.element,color:basic.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y,angle:f.facing,length:distance(f,aim),range:basic.range,radius:basic.range,life:windup,maxLife:windup});
     }
-    this.emit('basicWindup',{team:f.team,x:f.x,y:f.y,angle:f.facing,duration:windup,color:basic.color});return true;
+    this.emit('basicWindup',{team:f.team,x:f.x,y:f.y,angle:f.facing,duration:windup,color:basic.color,element:basic.element||f.def.type});return true;
   }
   fireBasic(f){
     const t=this.target(f.team),m=f.def.basic,pending=f.basicWindup,aim=f.team==='enemy'?(pending?.aim||{x:t.x,y:t.y}):t;f.basicWindup=null;f.animTime=Math.max(f.animTime,pending?.duration||m.windup);
@@ -150,7 +151,7 @@ export class Battle {
     f.cooldowns[key]=m.cooldown*(ai&&['q','w','e'].includes(key)?this.difficulty.skillRate:1);f.mp-=m.cost;f.castLock=key==='r'?.55:.23;f.basicWindup=null;
     if(f.team==='player')this.stats.movesUsed++;
     f.facing=angle;this.animate(f,m.animation||'shoot',key==='r'?1:.42,key==='r'?.55:.15);this.pose(f,'cast',key==='r'?.65:.3,angle,key==='r'?1.5:1);
-    this.emit('cast',{team:f.team,key,id:f.id,name:m.name,ko:m.ko,element:m.element||f.def.type,color:m.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y});
+    this.emit('cast',{team:f.team,key,id:f.id,name:m.name,ko:m.ko,kind:m.kind,ultimate:key==='r',damage:m.damage||0,element:m.element||f.def.type,color:m.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y});
     if(ai)this.emit('enemyCast',{name:m.name,ko:m.ko,color:m.color,x:f.x,y:f.y});
     const delay=ai?(key==='r'?this.difficulty.ultimateWindup:this.difficulty.reaction):.12;
     if(m.trainer){
@@ -233,7 +234,7 @@ export class Battle {
     else if(m.kind==='ignite'){target.ignite={remaining:m.duration,tick:.5,ticks:8,damage:m.damage/8,team:f.team};}
     this.emit('trainer',{team:f.team,id:m.id,name:m.ko,color:m.color,x:f.x,y:f.y,targetX:target.x,targetY:target.y});return true;
   }
-  aim(f,m){const target=this.target(f.team);let lead=0;if(f.team==='enemy'){const timing=this.difficulty,speed=this.projectileSpeed(f,m.speed||650),warning=m.kind==='field'?timing.fieldWindup:['storm','beam','nova'].includes(m.kind)?timing.ultimateWindup:['dash','slash','pulse'].includes(m.kind)?timing.meleeWindup:m.kind?timing.reaction:timing.basicWindup;lead=clamp((warning*.65+distance(f,target)/Math.max(1,speed)*.55)*timing.lead,0,1.0);if(['storm','field','nova'].includes(m.kind))lead=warning*.8*timing.lead;}
+  aim(f,m){if(f.team==='enemy'&&this.options.difficulty==='master'&&this.masterAI.observed)return this.masterAim(m);const target=this.target(f.team);let lead=0;if(f.team==='enemy'){const timing=this.difficulty,speed=this.projectileSpeed(f,m.speed||650),warning=m.kind==='field'?timing.fieldWindup:['storm','beam','nova'].includes(m.kind)?timing.ultimateWindup:['dash','slash','pulse'].includes(m.kind)?timing.meleeWindup:m.kind?timing.reaction:timing.basicWindup;lead=clamp((warning*.65+distance(f,target)/Math.max(1,speed)*.55)*timing.lead,0,1.0);if(['storm','field','nova'].includes(m.kind))lead=warning*.8*timing.lead;}
     return {x:clamp(target.x+target.vx*lead,BOUNDS.left+target.radius,BOUNDS.right-target.radius),y:clamp(target.y+target.vy*lead,BOUNDS.top+target.radius,BOUNDS.bottom-target.radius)};
   }
   addProjectile({type='orb',element='normal',color, x,y,dir,speed,damage,team,radius=11,life=1.8,homing=0,basic=false,burn=0,slow=0,group=null,maxHits=1,trackingBroken=false}){
@@ -242,7 +243,7 @@ export class Battle {
   resolveTask(task){if(this.state!=='playing')return;const f=this.source(task.team),target=this.target(task.team),m=task.m;if(f.hp<=0)return;
     if(f.stun>0){this.emit('interrupted',{x:f.x,y:f.y});return;}
     if(task.kind==='trainer'){if(!task.trackingBroken)this.applyTrainer(f,m);return;}
-    const common={team:f.team,element:m.element,color:m.color,damage:m.damage,burn:m.burn||0,slow:m.slow||0};
+    const common={team:f.team,id:f.id,name:m.name,ko:m.ko,kind:m.kind,ultimate:!!m.ultimate,element:m.element,color:m.color,damage:m.damage,burn:m.burn||0,slow:m.slow||0};
     if(task.kind==='dash'){
       f.dash={dx:task.dx,dy:task.dy,time:m.distance/m.dashSpeed,speed:m.dashSpeed,damage:m.damage,hit:false,element:m.element,color:m.color,burn:m.burn||0};f.invul=m.phase?.2:.1;f.facing=Math.atan2(task.dy,task.dx);this.animate(f,m.animation||'charge',f.dash.time+.15,.08);this.pose(f,'strike',f.dash.time+.12,f.facing,1.1);return;
     }
@@ -261,7 +262,7 @@ export class Battle {
       const group=++this.groupId,count=m.count||5;
       for(let i=0;i<count;i++){const a=angle+(i-(count-1)/2)*(m.spread||.13),dir={x:Math.cos(a),y:Math.sin(a)};this.addProjectile({...common,type:m.element==='fire'?'fire':m.element==='grass'?'leaf':'orb',x:f.x+dir.x*24,y:f.y+dir.y*24,dir,speed,damage:m.damage,radius:12,life:1.6,group,maxHits:3});}
     }else{const dir={x:Math.cos(angle),y:Math.sin(angle)};this.addProjectile({...common,type:m.element==='rock'?'rock':m.element==='electric'?'bolt':'orb',x:f.x+dir.x*23,y:f.y+dir.y*23,dir,speed,damage:m.damage,radius:m.kind==='bolt'?15:12,life:1.7,homing:task.trackingBroken?0:m.homing||0,trackingBroken:!!task.trackingBroken});}
-    this.emit('fieldAttack',{team:f.team,element:m.element,color:m.color,x:f.x,y:f.y,r:20});
+    this.emit('fieldAttack',{...common,x:f.x,y:f.y,r:20,angle});
   }
   damage(who,amount,team,{stun=0,burn=0,slow=0,basic=false,element='normal',color,lifesteal=0,periodic=false,fixed=false}={}){
     if(this.state!=='playing'||who.hp<=0)return false;
@@ -357,7 +358,7 @@ export class Battle {
     for(const p of active){if(this.state!=='playing')break;p.px=p.x;p.py=p.y;p.life-=dt;p.age+=dt;const target=this.target(p.team);
       if(p.homing>0){const dir=unit(target.x-p.x,target.y-p.y),mix=1-Math.exp(-p.homing*dt);const heading=unit(p.vx*(1-mix)+dir.x*p.speed*mix,p.vy*(1-mix)+dir.y*p.speed*mix);p.vx=heading.x*p.speed;p.vy=heading.y*p.speed;}
       p.x+=p.vx*dt;p.y+=p.vy*dt;
-      if(segmentDistance(target.x,target.y,p.px,p.py,p.x,p.y)<target.radius+p.radius){const hits=p.group?this.hitGroups.get(p.group)||0:0;if(!p.group||hits<p.maxHits){if(this.damage(target,p.damage,p.team,{basic:p.basic,burn:p.burn,slow:p.slow,element:p.element,color:p.color})&&p.group)this.hitGroups.set(p.group,hits+1);}p.life=0;this.emit('impact',{x:p.x,y:p.y,projectileType:p.type,element:p.element,color:p.color});}
+      if(segmentDistance(target.x,target.y,p.px,p.py,p.x,p.y)<target.radius+p.radius){const hits=p.group?this.hitGroups.get(p.group)||0:0;if(!p.group||hits<p.maxHits){if(this.damage(target,p.damage,p.team,{basic:p.basic,burn:p.burn,slow:p.slow,element:p.element,color:p.color})&&p.group)this.hitGroups.set(p.group,hits+1);}p.life=0;this.emit('impact',{x:p.x,y:p.y,team:p.team,basic:p.basic,angle:Math.atan2(p.vy,p.vx),projectileType:p.type,element:p.element,color:p.color});}
     }
     if(this.state==='playing')this.projectiles=active.filter(p=>p.life>0&&p.x>20&&p.x<1260&&p.y>145&&p.y<650);
   }
@@ -372,7 +373,130 @@ export class Battle {
     }
     if(this.state==='playing')this.hazards=active.filter(h=>h.delay>0||h.life>0);
   }
-  updateAI(dt){const e=this.enemy,p=this.player,d=distance(e,p);if(e.hp<=0)return;
+  // Master reads delayed visible state, never input, queued player tasks or private cooldowns.
+  observeMaster(){
+    const a=this.masterAI,p=this.player,t=this.time;
+    if(t>=a.nextSample){
+      a.nextSample=t+.06;
+      const speed=Math.hypot(p.vx,p.vy),cap=p.speed*1.6,scale=speed>cap?cap/speed:1;
+      a.history.push({time:t,x:p.x,y:p.y,vx:p.vx*scale,vy:p.vy*scale,radius:p.radius,dodging:p.dash?.kind==='dodge'});
+    }
+    while(a.history.length&&a.history[0].time<=t-.18){
+      const next=a.history.shift(),prev=a.observed,step=prev?next.time-prev.time:0;
+      let turn=0;
+      if(prev&&step>0&&Math.hypot(prev.vx,prev.vy)>40&&Math.hypot(next.vx,next.vy)>40&&!prev.dodging&&!next.dodging)
+        turn=clamp(Math.atan2(prev.vx*next.vy-prev.vy*next.vx,prev.vx*next.vx+prev.vy*next.vy)/step,-2.4,2.4);
+      next.turn=prev?(prev.turn||0)*.65+turn*.35:0;a.observed=next;
+      if(next.dodging&&!a.wasDodging)a.dodgeUntil=next.time+p.def.moves.d.cooldown;
+      a.wasDodging=next.dodging;
+    }
+    const visible=[...this.hazards,...this.windups,...this.projectiles].filter(h=>h.team==='player');
+    if(p.basicWindup)visible.push(p.basicWindup);
+    a.threats=[];
+    for(const h of visible){if(!a.seen.has(h))a.seen.set(h,t);if(t-a.seen.get(h)>=.20)a.threats.push(h);}
+  }
+  masterPredict(seconds=0){
+    const p=this.masterAI.observed||this.player,t=clamp(seconds+(p.time===undefined?0:this.time-p.time),0,1.65),turn=p.turn||0;
+    let dx=p.vx*t,dy=p.vy*t;
+    if(Math.abs(turn)>.12&&!p.dodging){const sn=Math.sin(turn*t)/turn,cs=(1-Math.cos(turn*t))/turn;dx=p.vx*sn-p.vy*cs;dy=p.vx*cs+p.vy*sn;}
+    return {x:clamp(p.x+dx,BOUNDS.left+p.radius,BOUNDS.right-p.radius),y:clamp(p.y+dy,BOUNDS.top+p.radius,BOUNDS.bottom-p.radius)};
+  }
+  masterAim(m){
+    const e=this.enemy,t=this.difficulty;
+    const warning=m.kind==='field'?t.fieldWindup:['storm','nova'].includes(m.kind)?t.ultimateWindup:m.kind==='beam'?Math.max(t.ultimateWindup,m.charge||.6):['dash','slash','pulse'].includes(m.kind)?t.meleeWindup:m.kind?t.reaction:Math.max(e.def.basic.windup,t.basicWindup);
+    let horizon=warning;
+    if(!m.kind||['bolt','volley','fan'].includes(m.kind)){
+      const speed=this.projectileSpeed(e,m.speed||e.def.basic.projectileSpeed||650);
+      horizon+=distance(e,this.masterPredict(warning))/speed;
+    }else if(m.kind==='dash')horizon+=Math.min(m.distance,distance(e,this.masterPredict()))/m.dashSpeed;
+    return this.masterPredict(horizon*t.lead);
+  }
+  masterDanger(pos,horizon=.35){
+    let risk=0;
+    for(const h of this.masterAI.threats){
+      if(h.r!==undefined){
+        if(h.delay<=horizon&&(!h.triggered||h.dot)&&this.insideHazard({...h,r:h.r+12},pos))risk+=1+(h.ultimate?2:0);
+      }else if(h.speed!==undefined){
+        const flight=clamp(((pos.x-h.x)*h.vx+(pos.y-h.y)*h.vy)/(h.speed*h.speed||1),0,horizon);
+        if(Math.hypot(pos.x-h.x-h.vx*flight,pos.y-h.y-h.vy*flight)<pos.radius+h.radius+18)risk+=h.basic?.6:1;
+      }else if(h.type==='beam'&&h.life<=horizon){
+        if(segmentDistance(pos.x,pos.y,h.x,h.y,h.x+Math.cos(h.angle)*h.length,h.y+Math.sin(h.angle)*h.length)<(h.width||72)/2+pos.radius)risk+=3;
+      }else if(h===this.player.basicWindup&&this.player.def.basic.melee&&h.time<=horizon&&distance(pos,this.player)<this.player.def.basic.range+pos.radius)risk+=.7;
+    }
+    return risk;
+  }
+  masterRoute(ideal,travel=65,dodging=false){
+    const e=this.enemy,p=this.masterPredict(),d=distance(e,p),melee=e.def.basic.melee;
+    const intercept=this.masterPredict(clamp(d/(e.speed||1)*.5*this.difficulty.aggression,.12,1.15));
+    let best=null,bestScore=Infinity;
+    for(let i=0;i<16;i++){
+      const angle=i*Math.PI/8,dir={x:Math.cos(angle),y:Math.sin(angle)},point={x:clamp(e.x+dir.x*travel,BOUNDS.left+e.radius,BOUNDS.right-e.radius),y:clamp(e.y+dir.y*travel,BOUNDS.top+e.radius,BOUNDS.bottom-e.radius),radius:e.radius};
+      const middle={x:(point.x+e.x)/2,y:(point.y+e.y)/2,radius:e.radius};
+      const range=distance(point,p),edge=Math.max(0,28-Math.min(point.x-BOUNDS.left-e.radius,BOUNDS.right-e.radius-point.x,point.y-BOUNDS.top-e.radius,BOUNDS.bottom-e.radius-point.y));
+      const space=melee?distance(point,intercept):Math.abs(range-ideal)+(d>ideal+60?distance(point,intercept)*.6:0);
+      const risk=this.masterDanger(point,dodging?.65:.5)+this.masterDanger(middle,dodging?.25:.3)*(dodging?.15:.7);
+      const score=space+edge*.8+risk*1200+(travel-distance(e,point))*2;
+      if(score<bestScore){bestScore=score;best=dir;}
+    }
+    return best;
+  }
+  masterDefend(ideal){
+    const e=this.enemy;if(e.action||e.basicWindup||e.castRoot>0||e.dash)return false;
+    const risk=this.masterDanger({...e},.38);if(risk<=0)return false;
+    // A real D, with the exact player contract. No cancelling committed attacks to evade.
+    if(e.cooldowns.d===0&&this.castFor(e,'d',{ai:true,direction:this.masterRoute(ideal,e.def.moves.d.distance,true)}))return true;
+    const guard=Object.entries(e.def.moves).find(([key,m])=>m.kind==='guard'&&e.cooldowns[key]===0&&e.mp>=m.cost);
+    if(guard&&e.shield<30&&this.castFor(e,guard[0],{ai:true}))return true;
+    if(this.getTrainerSkill('enemy').kind==='barrier'&&e.cooldowns.s===0&&e.shield<30)return this.castFor(e,'s',{ai:true});
+    return false;
+  }
+  masterChooseMove(){
+    const e=this.enemy,p=this.masterPredict(),d=distance(e,p),t=this.difficulty,a=this.masterAI,spent=a.dodgeUntil-this.time;
+    const punish=spent>.55;let best=null,score=0;
+    for(const key of ['r','e','q','w']){
+      const m=e.def.moves[key];if(e.cooldowns[key]>.01||e.mp<m.cost)continue;
+      const aim=this.masterAim(m),future=distance(e,aim);let value=0;
+      if(m.kind==='guard')continue; // shields answer observed danger instead of blocking pressure
+      if(m.kind==='boost'){if(e.attackBoost===0&&d<e.def.basic.range+80&&e.mp>=m.cost+15)value=28;}
+      else if(m.kind==='dash'){
+        if(d>e.def.basic.range*.75&&future<m.distance+e.def.basic.range*.8&&future>m.distance*.48){
+          const dir=unit(aim.x-e.x,aim.y-e.y),end={x:clamp(e.x+dir.x*m.distance,BOUNDS.left+e.radius,BOUNDS.right-e.radius),y:clamp(e.y+dir.y*m.distance,BOUNDS.top+e.radius,BOUNDS.bottom-e.radius),radius:e.radius};
+          if(this.masterDanger(end,.65)===0)value=(e.def.basic.melee?90:42)+(punish?25:0);
+        }
+      }else if(['slash','pulse'].includes(m.kind)){if(future<m.range+this.player.radius*.2)value=70+(punish?30:0);}
+      else if(m.kind==='nova'&&e.def.basic.melee){if(Math.hypot(aim.x-e.x,(aim.y-e.y)/.7)<m.radius*.88)value=145+(punish?30:0);}
+      else if(['field','storm','nova'].includes(m.kind)){if(d<690)value=(key==='r'?135:75)+(punish?35:0);}
+      else if(m.kind==='beam'){if(future<(m.range||820))value=125+(punish?30:0);}
+      else if(d<Math.min(760,(m.speed||650)*t.projectileSpeed*1.15))value=55+(punish?25:0)+(m.slow?12:0);
+      // Prefer landing after the observed 0.5s invulnerability, not dumping into D.
+      if(value&&a.wasDodging&&!['field','storm','nova','boost'].includes(m.kind))value*=.2;
+      if(value>score){best=key;score=value;}
+    }
+    return best;
+  }
+  updateMasterAI(dt){
+    const e=this.enemy;if(e.hp<=0)return;this.observeMaster();
+    if(!this.enraged&&e.hp/e.maxHp<.32){this.enraged=true;this.emit('enrage',{name:e.def.ko});}
+    this.aiDecision-=dt;this.aiComboTimer=Math.max(0,this.aiComboTimer-dt);
+    if(e.dash){this.moveDash(e,dt,this.player);return;}
+    const p=this.masterPredict(),d=distance(e,p),spent=this.masterAI.dodgeUntil-this.time>.55;
+    const ideal=e.def.basic.melee?e.def.basic.range*.60:e.def.basic.range*(spent?.58:.72);
+    if(e.stun>0){if(!e.action&&e.cooldowns.s===0&&this.getTrainerSkill('enemy').kind==='cleanse')this.castFor(e,'s',{ai:true});return;}
+    e.facing=e.action?.aim?Math.atan2(e.action.aim.y-e.y,e.action.aim.x-e.x):Math.atan2(p.y-e.y,p.x-e.x);
+    if(this.masterDefend(ideal))return;
+    if(e.castRoot===0&&!e.basicWindup){
+      const motion=this.masterRoute(ideal),recovering=e.action&&e.action.elapsed>=e.action.attackEnd;
+      if(motion)this.move(e,motion,dt,(this.enraged?1.08:1)*(recovering?.85:1));
+    }
+    if(this.aiDecision<=0&&e.castRoot===0&&e.castLock===0&&!e.basicWindup&&!e.action&&this.masterAI.observed){
+      this.aiDecision=.10;const special=this.getTrainerSkill('enemy');
+      const useSpecial=e.cooldowns.s===0&&(special.kind==='haste'&&d>(e.def.basic.melee?160:320)||special.kind==='exhaust'&&d<special.range||special.kind==='ignite'&&d<special.range&&spent||special.kind==='trainerHeal'&&e.hp<e.maxHp*.75||special.kind==='cleanse'&&(e.burn>0||e.slow>0||e.ignite));
+      if(useSpecial&&this.castFor(e,'s',{ai:true}))return;
+      const key=this.masterChooseMove();if(key&&this.castFor(e,key,{ai:true})){this.aiComboTimer=.10;return;}
+    }
+    if(e.castRoot===0&&this.aiComboTimer===0&&!e.action)this.tryBasic(e);
+  }
+  updateAI(dt){if(this.options.difficulty==='master')return this.updateMasterAI(dt);const e=this.enemy,p=this.player,d=distance(e,p);if(e.hp<=0)return;
     if(!this.enraged&&e.hp/e.maxHp<.32){this.enraged=true;this.emit('enrage',{name:e.def.ko});}
     this.aiDecision-=dt;this.aiDodgeTimer-=dt;this.aiComboTimer=Math.max(0,this.aiComboTimer-dt);
     if(e.dash){this.moveDash(e,dt,p);return;}if(e.stun>0){if(!e.action&&e.cooldowns.s===0&&this.getTrainerSkill('enemy').kind==='cleanse')this.castFor(e,'s',{ai:true});return;}

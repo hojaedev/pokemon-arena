@@ -97,5 +97,5 @@ export const DIFFICULTIES={
  easy:{name:'쉬움',description:'여유로운 공격 예고 · 완만한 추적 · 느린 연계',reaction:.85,basicWindup:.60,meleeWindup:.76,fieldWindup:1.15,ultimateWindup:1.30,recovery:1.08,volleyInterval:.33,projectileSpeed:.72,basicHoming:6,skillRate:1.12,damage:.95,lead:.68,aggression:.86},
  standard:{name:'도전',description:'확실한 공격 예고 · 회피 후 반격',reaction:.70,basicWindup:.48,meleeWindup:.60,fieldWindup:.95,ultimateWindup:1.10,recovery:.90,volleyInterval:.28,projectileSpeed:.80,basicHoming:8,skillRate:1,damage:1,lead:.83,aggression:1},
  expert:{name:'챔피언',description:'짧은 공격 예고 · 빠른 탄속 · 적극적 추격',reaction:.48,basicWindup:.36,meleeWindup:.44,fieldWindup:.78,ultimateWindup:.90,recovery:.65,volleyInterval:.21,projectileSpeed:.95,basicHoming:10,skillRate:.90,damage:1.12,lead:.96,aggression:1.18},
- master:{name:'마스터',description:'매우 짧은 공격 예고 · 정밀 예측 · 끊임없는 연계',reaction:.38,basicWindup:.30,meleeWindup:.36,fieldWindup:.66,ultimateWindup:.84,recovery:.50,volleyInterval:.17,projectileSpeed:1.08,basicHoming:12,skillRate:.82,damage:1.18,lead:1.08,aggression:1.32},
+ master:{name:'마스터',description:'매우 짧은 공격 예고 · 정밀 예측 · 끊임없는 연계',reaction:.28,basicWindup:.25,meleeWindup:.28,fieldWindup:.52,ultimateWindup:.84,recovery:.40,volleyInterval:.15,projectileSpeed:1.13,basicHoming:12,skillRate:.75,damage:1.18,lead:1.08,aggression:1.5},
 };
