@@ -403,7 +403,7 @@ function drawFog(ctx, time) {
 }
 
 /**
- * Draw the complete 1280x720 Mt. Silver arena.
+ * Draw the complete 1280x720 snowy battle arena.
  * Static terrain is cached at 640x360 and nearest-neighbor scaled for crisp pixels.
  * @param {CanvasRenderingContext2D} ctx
  * @param {number} [time=0] animation time in milliseconds

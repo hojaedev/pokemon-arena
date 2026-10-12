@@ -16,4 +16,4 @@ const server=http.createServer(async(req,res)=>{
   }catch{res.writeHead(404);res.end('Not found');}
 });
 const port=Number(process.env.PORT||5173);
-server.listen(port,'127.0.0.1',()=>console.log(`Mt. Silver Arena ready at http://localhost:${port}`));
+server.listen(port,'127.0.0.1',()=>console.log(`Pokémon Arena ready at http://localhost:${port}`));
