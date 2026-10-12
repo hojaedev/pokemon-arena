@@ -7,3 +7,4 @@
 - Put full move descriptions, advanced opponent customization, and long credits behind intentional details/disclosures, while keeping the main actions visible.
 - Preserve existing saved settings when renaming UI. The `mt-silver-*` storage keys are legacy compatibility keys, not visible branding.
 - Keep the GitHub repository private and publish only the isolated `dist/` build.
+- Mobile battles are a two-thumb interface, not a scaled-down keyboard UI: large draggable movement on the lower left, immediate-touch skills on the right, independent multitouch, safe-area-aware portrait/landscape layouts, and no page scrolling during battle. Do not duplicate keyboard diagrams on the phone HUD.
