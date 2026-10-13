@@ -1,5 +1,6 @@
 import {ROSTER_BY_ID, getMoves, DIFFICULTIES, ELEMENTS} from './roster.js';
 import {getTrainerSkill as findTrainerSkill} from './trainer-skills.js';
+import {t,getLocale} from './i18n/i18n.js';
 const teamIds=(ids,fallback)=>{const valid=[...new Set((Array.isArray(ids)?ids:[ids]).filter(id=>ROSTER_BY_ID[id]))].slice(0,6);return valid.length?valid:[fallback];};
 export const BOUNDS = Object.freeze({left:132,right:1148,top:218,bottom:570});
 export const MOVES = getMoves('pikachu');
@@ -61,8 +62,8 @@ export class Battle {
   }
   requestSwitch(){
     if(this.state!=='playing')return false;
-    if(this.switchCooldowns.player>0){this.hint('교체 대기 중 · '+Math.ceil(this.switchCooldowns.player)+'초');return false;}
-    if(!this.teams.player.some((f,i)=>i!==this.activeIndices.player&&f.hp>0)){this.hint('교체할 수 있는 포켓몬이 없습니다.');return false;}
+    if(this.switchCooldowns.player>0){this.hint(t('hints.switchCooldown',{sec:Math.ceil(this.switchCooldowns.player)}));return false;}
+    if(!this.teams.player.some((f,i)=>i!==this.activeIndices.player&&f.hp>0)){this.hint(t('hints.noSwitchable'));return false;}
     this.state='switching';this.switchReason='manual';this.input={x:0,y:0};this.lastStepDt=0;this.emit('partyOpen',{forced:false});return true;
   }
   cancelSwitch(){if(this.state!=='switching'||this.switchReason!=='manual')return false;this.state='playing';this.switchReason=null;this.input={x:0,y:0};return true;}
@@ -88,7 +89,7 @@ export class Battle {
   faint(f){
     if(f.fainted)return;f.fainted=true;f.hp=0;this.clearOutgoing(f);f.stun=0;f.burn=0;f.ignite=null;f.shield=0;this.animate(f,'faint',99);
     if(f.team==='enemy'){this.stats.knockouts++;this.rivalStats.losses++;}else{this.stats.losses++;this.rivalStats.knockouts++;}
-    const living=this.teams[f.team].filter(member=>member.hp>0);this.emit('faint',{team:f.team,index:f.index,id:f.id,name:f.def.ko,x:f.x,y:f.y,remaining:living.length});
+    const living=this.teams[f.team].filter(member=>member.hp>0);this.emit('faint',{team:f.team,index:f.index,id:f.id,name:f.def.ko,displayName:f.def.displayName||(getLocale()==='ko'?f.def.ko:f.def.name),x:f.x,y:f.y,remaining:living.length});
     if(!living.length){this.finish(f.team==='enemy');return;}
     if(f!==this.source(f.team))return;
     if(this.options.mode==='pvp'){this.pendingSwitch[f.team]=8;this.emit('partyOpen',{team:f.team,forced:true});return;}
@@ -154,17 +155,18 @@ export class Battle {
   castFor(f,key,{ai=false,direction=null}={}){
     ai=this.options.mode==='pvp'?false:(ai||f.team==='enemy');
     const m=key==='s'?this.getTrainerSkill(f.team):f.def.moves[key],target=this.target(f.team);if(!m||this.state!=='playing'||f!==this.source(f.team)||f.hp<=0||(f.stun>0&&!['dodge','cleanse'].includes(m.kind))||(ai&&f.action))return false;
-    if(f.cooldowns[key]>.01){if(!ai)this.hint(key==='r'?`궁극기 충전 중 · ${Math.ceil(f.cooldowns[key])}초`:`${m.ko} 재사용 대기 중`);return false;}
-    if(f.mp<m.cost){if(!ai)this.hint('에너지가 부족합니다. 잠깐 회복하세요.');return false;}
+    if(f.cooldowns[key]>.01){if(!ai)this.hint(key==='r'?t('hints.switchCooldown',{sec:Math.ceil(f.cooldowns[key])}):t('battle.reuse',{sec:Math.ceil(f.cooldowns[key])}));return false;}
+    if(f.mp<m.cost){if(!ai)this.hint(t('hints.noEnergy'));return false;}
     if(f.castLock>0&&['q','w','e','r'].includes(key))return false;
-    if(m.kind==='trainerHeal'&&f.hp>=f.maxHp){if(!ai)this.hint('이미 최대 체력입니다.');return false;}
-    if(m.trainer&&m.range&&distance(f,target)>m.range){if(!ai)this.hint('상대가 스킬 사거리 밖에 있습니다.');return false;}
+    if(m.kind==='trainerHeal'&&f.hp>=f.maxHp){if(!ai)this.hint(t('hints.fullHp'));return false;}
+    if(m.trainer&&m.range&&distance(f,target)>m.range){if(!ai)this.hint(t('hints.outOfRange'));return false;}
     const aim=this.aim(f,m),angle=Math.atan2(aim.y-f.y,aim.x-f.x),dir={x:Math.cos(angle),y:Math.sin(angle)};
     f.cooldowns[key]=m.cooldown*(ai&&['q','w','e'].includes(key)?this.difficulty.skillRate:1);f.mp-=m.cost;f.castLock=key==='r'?.55:.23;f.basicWindup=null;
     if(f.team==='player')this.stats.movesUsed++;else this.rivalStats.movesUsed++;
     f.facing=angle;this.animate(f,m.animation||'shoot',key==='r'?1:.42,key==='r'?.55:.15);this.pose(f,'cast',key==='r'?.65:.3,angle,key==='r'?1.5:1);
-    this.emit('cast',{team:f.team,key,id:f.id,name:m.name,ko:m.ko,kind:m.kind,ultimate:key==='r',damage:m.damage||0,element:m.element||f.def.type,color:m.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y});
-    if(ai)this.emit('enemyCast',{name:m.name,ko:m.ko,color:m.color,x:f.x,y:f.y});
+    const displayName=m.displayName||(getLocale()==='ko'?m.ko:m.name)||m.name||m.ko;
+    this.emit('cast',{team:f.team,key,id:f.id,name:m.name,ko:m.ko,displayName,kind:m.kind,ultimate:key==='r',damage:m.damage||0,element:m.element||f.def.type,color:m.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y});
+    if(ai)this.emit('enemyCast',{name:m.name,ko:m.ko,displayName,color:m.color,x:f.x,y:f.y});
     const delay=ai?(key==='r'?this.difficulty.ultimateWindup:this.difficulty.reaction):.12;
     if(m.trainer){
       if(ai&&m.range){
@@ -244,7 +246,8 @@ export class Battle {
     else if(m.kind==='trainerHeal'){const healed=Math.min(f.maxHp-f.hp,Math.round(f.maxHp*m.healPercent));f.hp+=healed;this.emit('heal',{x:f.x,y:f.y,value:healed,color:m.color});}
     else if(m.kind==='cleanse'){f.stun=0;f.burn=0;f.burnTick=.7;f.slow=0;f.weakened=0;f.ignite=null;f.cleanseGuard=m.duration;}
     else if(m.kind==='ignite'){target.ignite={remaining:m.duration,tick:.5,ticks:8,damage:m.damage/8,team:f.team};}
-    this.emit('trainer',{team:f.team,id:m.id,name:m.ko,color:m.color,x:f.x,y:f.y,targetX:target.x,targetY:target.y});return true;
+    const ts=this.getTrainerSkill(f.team);
+    this.emit('trainer',{team:f.team,id:m.id,name:m.ko,displayName:ts.displayName,color:m.color,x:f.x,y:f.y,targetX:target.x,targetY:target.y});return true;
   }
   aim(f,m){if(this.isCPU(f)&&this.options.difficulty==='master'&&this.masterAI.observed)return this.masterAim(m);const target=this.target(f.team);let lead=0;if(this.isCPU(f)){const timing=this.difficulty,speed=this.projectileSpeed(f,m.speed||650),warning=m.kind==='field'?timing.fieldWindup:['storm','beam','nova'].includes(m.kind)?timing.ultimateWindup:['dash','slash','pulse'].includes(m.kind)?timing.meleeWindup:m.kind?timing.reaction:timing.basicWindup;lead=clamp((warning*.65+distance(f,target)/Math.max(1,speed)*.55)*timing.lead,0,1.0);if(['storm','field','nova'].includes(m.kind))lead=warning*.8*timing.lead;}
     return {x:clamp(target.x+target.vx*lead,BOUNDS.left+target.radius,BOUNDS.right-target.radius),y:clamp(target.y+target.vy*lead,BOUNDS.top+target.radius,BOUNDS.bottom-target.radius)};
