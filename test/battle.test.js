@@ -468,7 +468,7 @@ test('out-of-range always-auto state exposes the exact HUD snapshot without atta
     enemy: { id: 'pikachu', name: '피카츄', x: 700, y: 400, hp: 1020, maxHp: 1020, mp: 100, shield: 0, anim: 'idle', basicCooldown: 0.7, basicRange: 360, basicWindup: 0, inBasicRange: true, distanceToTarget: 300, dodging: false, invulnerable: false, dodgeProtected: false, actionPhase: null, actionRemaining: 0, warningRemaining: 0, pose: null },
     cooldowns: { q: 0, w: 0, e: 0, r: 30, s: 0, d: 0 },
     enemyCooldowns: { q: 0, w: 0, e: 0, r: 30, s: 0, d: 0 },
-    stats: { damageDealt: 0, damageTaken: 0, movesUsed: 0, hitsLanded: 0, basicsFired: 0, basicHits: 0, dodges: 0, avoidedDamage: 0, trackingBreaks: 0, knockouts: 0, losses: 0, switches: 0 },
+    stats: { damageDealt: 0, damageTaken: 0, movesUsed: 0, hitsLanded: 0, basicsFired: 0, basicHits: 0, dodges: 0, avoidedDamage: 0, trackingBreaks: 0, knockouts: 0, losses: 0, switches: 0, byPokemon: {} },
     projectiles: 0, hazards: 0, enraged: false, autoAttack: true, hitStop: 0, difficulty: 'standard',
   });
 });
@@ -1288,7 +1288,7 @@ test('lethal damage stops combat, clears transient state, and a rematch starts c
     assert.equal(battle.enemy.hp, battle.enemy.maxHp);
     assert.equal(battle.player.action, null);
     assert.equal(battle.enemy.action, null);
-    assert.deepEqual(battle.stats, { damageDealt: 0, damageTaken: 0, movesUsed: 0, hitsLanded: 0, basicsFired: 0, basicHits: 0, dodges: 0, avoidedDamage: 0, trackingBreaks: 0, knockouts: 0, losses: 0, switches: 0 });
+    assert.deepEqual(battle.stats, { damageDealt: 0, damageTaken: 0, movesUsed: 0, hitsLanded: 0, basicsFired: 0, basicHits: 0, dodges: 0, avoidedDamage: 0, trackingBreaks: 0, knockouts: 0, losses: 0, switches: 0, byPokemon: {} });
   }
 });
 

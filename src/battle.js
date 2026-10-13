@@ -51,7 +51,7 @@ export class Battle {
     this.player=this.teams.player[0];this.enemy=this.teams.enemy[0];this.cooldowns=this.player.cooldowns;
     this.projectiles=[];this.hazards=[];this.windups=[];this.tasks=[];this.events=[];
     this.stats={damageDealt:0,damageTaken:0,movesUsed:0,hitsLanded:0,basicsFired:0,basicHits:0,dodges:0,avoidedDamage:0,trackingBreaks:0,knockouts:0,losses:0,switches:0};
-    this.rivalStats={...this.stats};
+    this.rivalStats={...this.stats,byPokemon:{}};this.stats.byPokemon={};
     this.masterAI={history:[],observed:null,nextSample:0,seen:new WeakMap(),threats:[],dodgeUntil:0,wasDodging:false};
     this.enraged=false;this.input={x:0,y:0};this.aiDecision=.75;this.aiDodgeTimer=1.5;this.aiComboTimer=0;this.groupId=0;this.hitGroups=new Map();this.lastHint=-10;this.emit('reset');
   }
@@ -245,7 +245,7 @@ export class Battle {
     else if(m.kind==='barrier'){const shield=Math.round(f.maxHp*m.shieldPercent);f.shield=Math.max(f.shield,shield);f.shieldTime=Math.max(f.shieldTime,m.duration);this.emit('shield',{team:f.team,x:f.x,y:f.y,value:shield,color:m.color});}
     else if(m.kind==='trainerHeal'){const healed=Math.min(f.maxHp-f.hp,Math.round(f.maxHp*m.healPercent));f.hp+=healed;this.emit('heal',{x:f.x,y:f.y,value:healed,color:m.color});}
     else if(m.kind==='cleanse'){f.stun=0;f.burn=0;f.burnTick=.7;f.slow=0;f.weakened=0;f.ignite=null;f.cleanseGuard=m.duration;}
-    else if(m.kind==='ignite'){target.ignite={remaining:m.duration,tick:.5,ticks:8,damage:m.damage/8,team:f.team};}
+    else if(m.kind==='ignite'){target.ignite={remaining:m.duration,tick:.5,ticks:8,damage:m.damage/8,team:f.team,sourceId:f.id};}
     const ts=this.getTrainerSkill(f.team);
     this.emit('trainer',{team:f.team,id:m.id,name:m.ko,displayName:ts.displayName,color:m.color,x:f.x,y:f.y,targetX:target.x,targetY:target.y});return true;
   }
@@ -279,7 +279,7 @@ export class Battle {
     }else{const dir={x:Math.cos(angle),y:Math.sin(angle)};this.addProjectile({...common,type:m.element==='rock'?'rock':m.element==='electric'?'bolt':'orb',x:f.x+dir.x*23,y:f.y+dir.y*23,dir,speed,damage:m.damage,radius:m.kind==='bolt'?15:12,life:1.7,homing:task.trackingBroken?0:m.homing||0,trackingBroken:!!task.trackingBroken});}
     this.emit('fieldAttack',{...common,x:f.x,y:f.y,r:20,angle});
   }
-  damage(who,amount,team,{stun=0,burn=0,slow=0,basic=false,element='normal',color,lifesteal=0,periodic=false,fixed=false}={}){
+  damage(who,amount,team,{stun=0,burn=0,slow=0,basic=false,element='normal',color,lifesteal=0,periodic=false,fixed=false,sourceId=null}={}){
     if(this.state!=='playing'||who.hp<=0)return false;
     if(who.invul>0||who.dodgeGuard){
       if(who.dodgeGuard&&!periodic){if(who.team==='player'){this.stats.avoidedDamage+=Math.round(amount);if(!who.dodgeGuard.evaded)this.stats.dodges++;}if(!who.dodgeGuard.evaded)this.emit('evade',{team:who.team,x:who.x,y:who.y,amount,kind:'dodge',color:'#b2efff'});who.dodgeGuard.evaded=true;}
@@ -287,13 +287,14 @@ export class Battle {
     }
     const source=this.source(team);amount=Math.max(0,Math.round(amount*(fixed?1:(this.isCPU(this.source(team))?this.difficulty.damage:1)*(source.attackBoost>0?source.attackMultiplier:1)*(source.weakened>0?.65:1))));
     const absorbed=Math.min(who.shield,amount);who.shield-=absorbed;const dealt=Math.min(who.hp,amount-absorbed);who.hp=Math.max(0,who.hp-dealt);
-    who.hurt=periodic?.04:.13;if(who.cleanseGuard<=0){who.stun=Math.max(who.stun,stun);if(burn>0&&who.burn<=0)who.burnTick=.7;who.burn=Math.max(who.burn,burn);who.slow=Math.max(who.slow,slow);}
+    who.hurt=periodic?.04:.13;if(who.cleanseGuard<=0){who.stun=Math.max(who.stun,stun);if(burn>0&&who.burn<=0)who.burnTick=.7;if(burn>0)who.burnSourceId=sourceId||source.id;who.burn=Math.max(who.burn,burn);who.slow=Math.max(who.slow,slow);}
     // Hit flashes do not grant free immunity. Only mobility abilities grant invulnerability.
     const attacker=this.source(team),hitAngle=Math.atan2(who.y-attacker.y,who.x-attacker.x);
     if(!periodic){if(this.options.mode!=='pvp')this.hitStop=Math.max(this.hitStop,basic?.028:amount>=100?.062:.042);this.pose(who,'recoil',basic?.14:.22,hitAngle,basic?.65:amount>=100?1.6:1);if(who.castRoot<=0&&!who.basicWindup&&!who.dash)this.animate(who,'hurt',.18,.025);}
     if(team==='player'){this.stats.damageDealt+=dealt;this.stats.hitsLanded++;if(basic)this.stats.basicHits++;}else this.stats.damageTaken+=dealt;
     if(team==='enemy'){this.rivalStats.damageDealt+=dealt;this.rivalStats.hitsLanded++;if(basic)this.rivalStats.basicHits++;}else this.rivalStats.damageTaken+=dealt;
-    this.emit('hit',{x:who.x,y:who.y,amount:dealt||absorbed,absorbed,team,critical:amount>=75,basic,periodic,victimTeam:who.team,angle:hitAngle,element,color:color||ELEMENTS[element]?.color});
+    const credited=this.teams[team].find(f=>f.id===sourceId)||source,totals=team==='player'?this.stats:this.rivalStats;totals.byPokemon||={};const contribution=totals.byPokemon[credited.id]||={damage:0,knockouts:0};contribution.damage+=dealt;if(who.hp<=0)contribution.knockouts++;
+    this.emit('hit',{sourceId:credited.id,x:who.x,y:who.y,amount:dealt||absorbed,absorbed,team,critical:amount>=75,basic,periodic,victimTeam:who.team,angle:hitAngle,element,color:color||ELEMENTS[element]?.color});
     if(lifesteal){const source=this.source(team),gain=Math.min(source.maxHp-source.hp,Math.round(dealt*lifesteal));source.hp+=gain;if(gain)this.emit('heal',{x:source.x,y:source.y,value:gain});}
     if(who.hp<=0)this.faint(who);return true;
   }
@@ -332,8 +333,8 @@ export class Battle {
       f.px=f.x;f.py=f.y;f.animTime+=dt;f.moving=false;if(f.pose){f.pose.elapsed+=dt;if(f.pose.elapsed>=f.pose.duration)f.pose=null;}
       for(const key of ['animLock','castLock','castRoot','invul','hurt','stun','boost','slow','haste','weakened','cleanseGuard','attackBoost','basicTimer','dodgeRecovery']){const remaining=f[key]-dt;f[key]=remaining<.000001?0:remaining;}
       if(f.shieldTime>0){f.shieldTime-=dt;if(f.shieldTime<=0)f.shield=0;}
-      if(f.burn>0){f.burn-=dt;f.burnTick-=dt;if(f.burnTick<=0){f.burnTick=.75;this.damage(f,4,f.team==='player'?'enemy':'player',{element:'fire',periodic:true});}}
-      if(f.ignite&&f.hp>0){const mark=f.ignite;mark.remaining-=dt;mark.tick-=dt;while(mark.tick<=.000001&&mark.ticks>0&&this.state==='playing'){mark.tick+=.5;mark.ticks--;this.damage(f,mark.damage,mark.team,{element:'fire',periodic:true,fixed:true});}if(mark.ticks<=0||mark.remaining<-.00001||f.hp<=0)f.ignite=null;}
+      if(f.burn>0){f.burn-=dt;f.burnTick-=dt;if(f.burnTick<=0){f.burnTick=.75;this.damage(f,4,f.team==='player'?'enemy':'player',{element:'fire',periodic:true,sourceId:f.burnSourceId});}}
+      if(f.ignite&&f.hp>0){const mark=f.ignite;mark.remaining-=dt;mark.tick-=dt;while(mark.tick<=.000001&&mark.ticks>0&&this.state==='playing'){mark.tick+=.5;mark.ticks--;this.damage(f,mark.damage,mark.team,{element:'fire',periodic:true,fixed:true,sourceId:mark.sourceId});}if(mark.ticks<=0||mark.remaining<-.00001||f.hp<=0)f.ignite=null;}
     }
     if(this.state!=='playing')return;
     const p=this.player,e=this.enemy,moving=this.input.x||this.input.y;

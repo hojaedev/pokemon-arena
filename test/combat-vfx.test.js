@@ -88,3 +88,13 @@ test('renderer integrates cast phases, capped impact feedback, recoil, and motio
   assert.equal(after.cameraImpulse,0);
   assert.equal(renderer.recoils.size,0);
 });
+
+test('all roster moves render layered cast, release and contact effects within mobile budgets',()=>{
+ const {renderer}=mockRenderer();renderer.setViewport(400,570,{mobile:true,dpr:2,insets:{top:100}});
+ for(const mon of ROSTER)for(const [key,move] of Object.entries(mon.moves)){
+  renderer.event({type:'cast',id:mon.id,team:'player',key,kind:move.kind,element:move.element||mon.type,x:360,y:410,targetX:780,targetY:410});
+  renderer.event({type:'hit',team:'player',victimTeam:'enemy',amount:move.damage||30,element:move.element||mon.type,x:780,y:410});
+  for(const effect of renderer.effects)renderer.drawEffect(effect);
+ }
+ assert.ok(renderer.effects.some(e=>e.type==='skillSigil'));assert.ok(renderer.effects.some(e=>e.type==='impactBloom'));assert.ok(renderer.particles.length<=360);assert.ok(renderer.effects.length<=120);
+});

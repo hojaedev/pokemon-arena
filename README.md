@@ -184,3 +184,5 @@ S와 D 재사용 시간은 팀 전체가 공유합니다. 포켓몬 교체로 �
 - 아레나, 인터페이스, 전투 엔진, 입자 효과와 합성 액션 효과음은 이 팬 프로젝트용으로 제작되었습니다.
 
 **권리 고지:** Pokémon 및 원작 게임 에셋·음악의 권리는 Nintendo, Creatures, Game Freak, The Pokémon Company 및 각 제작자에게 있습니다. 공식/제휴 프로젝트가 아닙니다. SpriteCollab의 커뮤니티 정책은 비상업 재사용을 안내하지만, CHUNSOFT 공식 파일의 개별 라이선스는 `Unspecified`일 수 있으므로 CC BY-NC로 재표기하지 않습니다. 공개 다운로드 가능 여부는 음악의 출판·재배포·동기화·상업 이용 허가가 아닙니다. **비상업 팬 데모이며, GitHub/Vercel의 사용이나 검색 차단은 에셋 이용 허가를 부여하지 않습니다. 공유·재배포·상업 이용에 필요한 권리를 확보하거나 제한된 에셋을 교체하세요.**
+
+- 결과 음악: `arena-victory.wav`, `arena-defeat.wav`는 이 게임용으로 만든 오리지널 8비트 테마입니다. `python3 scripts/generate-result-music.py`로 재생성합니다.

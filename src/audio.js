@@ -12,10 +12,11 @@ export class AudioManager {
     this._now=options.now||(()=>globalThis.performance?.now?.()??Date.now());
     this.music=this._createMedia('/assets/audio/pokemon-hgss-battle-champion.mp3');
     this.music.loop=true;this.music.preload='auto';
+    this.resultTracks={won:this._createMedia('/assets/audio/arena-victory.wav'),lost:this._createMedia('/assets/audio/arena-defeat.wav')};for(const track of Object.values(this.resultTracks))track.preload='auto';this.resultMusic=null;this.resultOutcome=null;
     this.muted=false;this.started=false;this.ctx=null;this.volume=.32;this.sfxVolume=.86;this.music.volume=this.volume;
     this.failed=false;this.blocked=false;this.feedbackPaused=false;this.hapticsEnabled=true;this.reducedMotion=!!this._window?.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
     this.sfxGain=null;this.compressor=null;this.emittedSoundCount=0;this.hapticRequestCount=0;this.hapticEmissionCount=0;this.lastCue=null;this.lastHaptic=null;this.lastCryDex=null;
-    this._cueTimes=new Map();this._pendingUltimates=new Map();this._hapticAt=-Infinity;this._musicDucked=false;this._duckTimer=null;this._tabInactive=!!this._window?.document?.hidden;this._cry=null;this._cryToken=0;
+    this._cueTimes=new Map();this._pendingUltimates=new Map();this._hapticAt=-Infinity;this._hapticPriority=0;this._hapticUntil=0;this._musicDucked=false;this._duckTimer=null;this._tabInactive=!!this._window?.document?.hidden;this._cry=null;this._cryToken=0;
     this.music.addEventListener?.('error',()=>{this.failed=true;});
     this._onBlur=()=>{this._tabInactive=true;this.stopHaptics();};
     this._onFocus=()=>{this._tabInactive=!!this._window?.document?.hidden;};
@@ -49,23 +50,29 @@ export class AudioManager {
     }catch{this.blocked=true;return false;}
   }
   async start(){
+    this.stopResultMusic();
     this.started=true;this.feedbackPaused=false;
     const unlocked=await this.unlock();
     if(!this.muted){try{await this.music.play();}catch{this.blocked=true;}}
     return unlocked;
   }
   toggle(){
-    this.muted=!this.muted;this.music.muted=this.muted;if(this.sfxGain)this.sfxGain.gain.value=this.muted?0:this.sfxVolume;
+    this.muted=!this.muted;this.music.muted=this.muted;if(this.resultMusic)this.resultMusic.muted=this.muted;if(this.sfxGain)this.sfxGain.gain.value=this.muted?0:this.sfxVolume;
     if(this._cry)this._cry.muted=this.muted;
-    if(this.muted){this.stopHaptics();this._stopCry(false);}else if(this.started&&!this.feedbackPaused)this.music.play().catch(()=>{this.blocked=true;});
+    if(this.muted){this.stopHaptics();this._stopCry(false);}else if(this.resultMusic)this.resultMusic.play().catch(()=>{this.blocked=true;});else if(this.started&&!this.feedbackPaused)this.music.play().catch(()=>{this.blocked=true;});
     return this.muted;
   }
   setVolume(v){this.volume=clamp01(v);this._applyMusicVolume();return this.volume;}
   setSfxVolume(v){this.sfxVolume=clamp01(v);if(this.sfxGain)this.sfxGain.gain.value=this.muted?0:this.sfxVolume;if(this._cry)this._cry.volume=this._cryVolume();return this.sfxVolume;}
   setHapticsEnabled(enabled){this.hapticsEnabled=!!enabled;if(!this.hapticsEnabled)this.stopHaptics();return this.hapticsEnabled;}
-  pause(){this.feedbackPaused=true;this.music.pause();this.stopHaptics();this._stopCry(true);}
-  resume(){this.feedbackPaused=false;this._tabInactive=!!this._window?.document?.hidden;if(this.started&&!this.muted)this.music.play().catch(()=>{this.blocked=true;});}
-  _applyMusicVolume(){this.music.volume=clamp01(this.volume*(this._musicDucked?.36:1));}
+  pause(){this.resultMusic?.pause();this.feedbackPaused=true;this.music.pause();this.stopHaptics();this._stopCry(true);}
+  resume(){if(this.resultMusic)return;this.feedbackPaused=false;this._tabInactive=!!this._window?.document?.hidden;if(this.started&&!this.muted)this.music.play().catch(()=>{this.blocked=true;});}
+  _applyMusicVolume(){for(const track of Object.values(this.resultTracks))track.volume=this.volume;this.music.volume=clamp01(this.volume*(this._musicDucked?.36:1));}
+  stopResultMusic(){for(const track of Object.values(this.resultTracks)){track.pause();track.currentTime=0;}this.resultMusic=null;this.resultOutcome=null;}
+  playResult(won){
+    this.stopResultMusic();this.music.pause();this._stopCry(false);this.resultOutcome=won?'won':'lost';const track=this.resultMusic=this.resultTracks[this.resultOutcome];track.currentTime=0;track.loop=false;track.volume=this.volume;track.muted=this.muted;
+    if(!this.muted)track.play().catch(()=>{this.blocked=true;});
+  }
   _duckMusic(duration=900){
     if(!this.started||this.muted)return;this._musicDucked=true;this._applyMusicVolume();
     if(this._duckTimer)clearTimeout(this._duckTimer);
@@ -155,8 +162,8 @@ export class AudioManager {
     else if(['fight','shield','heal','switch','faint','enrage','trackingBreak','interrupted'].includes(type))cue=type;
     else if(type==='pause'){this.feedbackPaused=true;this.stopHaptics();return false;}
     else if(type==='resume'){this.feedbackPaused=false;return false;}
-    else if(type==='reset'){this.stopHaptics();this._pendingUltimates.clear();this._clearDuck();return false;}
-    else if(type==='end'){this.feedbackPaused=true;this.stopHaptics();this._pendingUltimates.clear();this._clearDuck();return false;}
+    else if(type==='reset'){this.stopResultMusic();this.stopHaptics();this._pendingUltimates.clear();this._clearDuck();return false;}
+    else if(type==='end'){this.feedbackPaused=true;this.stopHaptics();this._pendingUltimates.clear();this._clearDuck();this.playResult(!!event.won);return false;}
     else if(type==='start'){this.feedbackPaused=false;return false;}
     else return false;
     const emitted=this._emitCue(cue,hapticDetails,throttle);
@@ -171,19 +178,20 @@ export class AudioManager {
   _capabilities(){const vibrationSupported=typeof this._navigator?.vibrate==='function',gamepadHapticsSupported=this._gamepadActuators().some(a=>typeof a.playEffect==='function'||typeof a.pulse==='function');return {vibrationSupported,gamepadHapticsSupported,hapticsSupported:vibrationSupported||gamepadHapticsSupported};}
   _requestHaptic(spec,cue){
     if(!spec||!this.hapticsEnabled||this.reducedMotion||this.feedbackPaused||this._tabInactive)return false;const capabilities=this._capabilities();if(!capabilities.hapticsSupported)return false;
-    const now=this._now();if(now-this._hapticAt<(spec.throttle||45))return false;const pattern=normalizeVibrationPattern(spec.pattern);let requested=false,successful=false;
+    const now=this._now(),priority=spec.priority||1;if(priority<=this._hapticPriority&&now-this._hapticAt<(spec.throttle||45))return false;if(priority<this._hapticPriority&&now<this._hapticUntil)return false;const pattern=normalizeVibrationPattern(spec.pattern);let requested=false,successful=false;
     if(capabilities.vibrationSupported){requested=true;try{successful=this._navigator.vibrate(pattern)===true||successful;}catch{}}
     const duration=pattern.reduce((sum,value)=>sum+value,0),trackResult=result=>{if(result&&typeof result.then==='function')result.then(value=>{if(value===true||value==='complete')this.hapticEmissionCount++;}).catch(()=>{});else if(result===true||result==='complete')successful=true;};
     for(const actuator of this._gamepadActuators()){
       try{if(typeof actuator.playEffect==='function'){requested=true;trackResult(actuator.playEffect('dual-rumble',{startDelay:0,duration,strongMagnitude:clamp01(spec.strong),weakMagnitude:clamp01(spec.weak)}));}else if(typeof actuator.pulse==='function'){requested=true;trackResult(actuator.pulse(Math.max(clamp01(spec.strong),clamp01(spec.weak)),duration));}}catch{}
     }
-    if(requested){this.hapticRequestCount++;this._hapticAt=now;this.lastHaptic={cue,pattern:[...pattern],at:now};}if(successful)this.hapticEmissionCount++;return successful;
+    if(requested){this.hapticRequestCount++;this._hapticAt=now;this._hapticPriority=priority;this._hapticUntil=now+duration;this.lastHaptic={cue,pattern:[...pattern],at:now};}if(successful)this.hapticEmissionCount++;return successful;
   }
   stopHaptics(){
+    this._hapticPriority=0;this._hapticUntil=0;this._hapticAt=-Infinity;
     try{if(typeof this._navigator?.vibrate==='function')this._navigator.vibrate(0);}catch{}
     for(const actuator of this._gamepadActuators())try{if(typeof actuator.reset==='function')actuator.reset();else if(typeof actuator.playEffect==='function')actuator.playEffect('dual-rumble',{startDelay:0,duration:0,strongMagnitude:0,weakMagnitude:0})?.catch?.(()=>{});else actuator.pulse?.(0,0)?.catch?.(()=>{});}catch{}
   }
   getFeedbackState(){
-    const capabilities=this._capabilities();return {...capabilities,audioSupported:!!(this.ctx||this._audioContextFactory||this._contextConstructor()),unlocked:this.ctx?.state==='running',contextState:this.ctx?.state||'uninitialized',cryPlaying:!!this._cry&&!this._cry.paused,cryReadyState:this._cry?.readyState||0,cryTime:Number((this._cry?.currentTime||0).toFixed(3)),started:this.started,paused:this.feedbackPaused,muted:this.muted,musicVolume:this.volume,sfxVolume:this.sfxVolume,hapticsEnabled:this.hapticsEnabled,effectiveHapticsEnabled:this.hapticsEnabled&&!this.reducedMotion&&!this.feedbackPaused&&!this._tabInactive&&capabilities.hapticsSupported,reducedMotion:this.reducedMotion,tabInactive:this._tabInactive,musicDucked:this._musicDucked,emittedSoundCount:this.emittedSoundCount,hapticRequestCount:this.hapticRequestCount,hapticEmissionCount:this.hapticEmissionCount,lastCue:this.lastCue,lastHaptic:this.lastHaptic,lastCryDex:this.lastCryDex};
+    const capabilities=this._capabilities();return {...capabilities,audioSupported:!!(this.ctx||this._audioContextFactory||this._contextConstructor()),unlocked:this.ctx?.state==='running',contextState:this.ctx?.state||'uninitialized',cryPlaying:!!this._cry&&!this._cry.paused,cryReadyState:this._cry?.readyState||0,cryTime:Number((this._cry?.currentTime||0).toFixed(3)),started:this.started,paused:this.feedbackPaused,muted:this.muted,musicVolume:this.volume,sfxVolume:this.sfxVolume,hapticsEnabled:this.hapticsEnabled,effectiveHapticsEnabled:this.hapticsEnabled&&!this.reducedMotion&&!this.feedbackPaused&&!this._tabInactive&&capabilities.hapticsSupported,reducedMotion:this.reducedMotion,tabInactive:this._tabInactive,musicDucked:this._musicDucked,emittedSoundCount:this.emittedSoundCount,hapticRequestCount:this.hapticRequestCount,hapticEmissionCount:this.hapticEmissionCount,lastCue:this.lastCue,lastHaptic:this.lastHaptic,lastCryDex:this.lastCryDex,resultOutcome:this.resultOutcome,resultMusicPlaying:!!this.resultMusic&&!this.resultMusic.paused};
   }
 }

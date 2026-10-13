@@ -123,3 +123,10 @@ test('failed or preempted gamepad effects do not count as successful hardware fe
 test('suspended audio contexts are not reported as unlocked',async()=>{
   const audio=makeManager();await audio.unlock();audio.ctx.state='suspended';assert.equal(audio.getFeedbackState().unlocked,false);assert.equal(audio.getFeedbackState().contextState,'suspended');
 });
+
+test('confirmed skill contact preempts cast rumble and is not cut short by release or periodic damage',async()=>{
+ let now=1000;const calls=[],audio=makeManager({navigator:{vibrate:p=>{calls.push(p);return true;}},now:()=>now});await audio.unlock();audio.handleBattleEvent({type:'cast',team:'player',key:'q',kind:'slash'},{});now+=20;audio.handleBattleEvent({type:'hit',team:'player',victimTeam:'enemy',amount:90,critical:true},{});assert.equal(calls.length,2);assert.equal(audio.lastHaptic.cue,'hit');now+=20;audio.handleBattleEvent({type:'slash',team:'player'},{});audio.handleBattleEvent({type:'hit',team:'player',periodic:true},{});audio.handleBattleEvent({type:'hit',team:'player',basic:true},{});assert.equal(calls.length,2);now+=100;audio.handleBattleEvent({type:'hit',team:'player',amount:40},{});assert.equal(calls.length,3);
+});
+test('victory and defeat replace battle music, honor volume and mute, and stop on rematch',async()=>{
+ const audio=makeManager();await audio.start();audio.setVolume(.4);audio.handleBattleEvent({type:'end',won:true},{});assert.equal(audio.music.paused,true);assert.match(audio.resultMusic.src,/arena-victory.wav$/);assert.equal(audio.resultMusic.volume,.4);assert.equal(audio.resultMusic.paused,false);audio.toggle();assert.equal(audio.resultMusic.muted,true);audio.toggle();const victory=audio.resultMusic;await audio.start();assert.equal(victory.paused,true);assert.equal(audio.resultMusic,null);assert.equal(audio.music.paused,false);audio.handleBattleEvent({type:'end',won:false},{});assert.match(audio.resultMusic.src,/arena-defeat.wav$/);audio.handleBattleEvent({type:'reset'},{});assert.equal(audio.resultMusic,null);
+});

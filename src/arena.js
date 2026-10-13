@@ -408,13 +408,24 @@ function drawFog(ctx, time) {
  * @param {CanvasRenderingContext2D} ctx
  * @param {number} [time=0] animation time in milliseconds
  */
-export function drawArena(ctx, time = 0) {
+export function drawArena(ctx, time = 0, {preserveTransform=false,bounds=null} = {}) {
   if (!ctx) return;
   ctx.save();
-  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  if (!preserveTransform) ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.imageSmoothingEnabled = false;
 
   const cache = getTerrainCache();
+  if (bounds) {
+    const left=Math.min(-24,bounds.left-24),top=Math.min(-24,bounds.top-24),right=Math.max(LOGICAL_WIDTH+24,bounds.right+24),bottom=Math.max(LOGICAL_HEIGHT+24,bounds.bottom+24);
+    // Extend the scenery for tall phones without stretching the actual battlefield.
+    ctx.fillStyle='#c3d0cf';ctx.fillRect(left,top,right-left,bottom-top);
+    if(cache){
+      ctx.drawImage(cache,0,0,640,1,0,top,LOGICAL_WIDTH,-top+1);
+      ctx.drawImage(cache,0,359,640,1,0,LOGICAL_HEIGHT-1,LOGICAL_WIDTH,bottom-LOGICAL_HEIGHT+1);
+      ctx.drawImage(cache,0,0,1,360,left,0,-left+1,LOGICAL_HEIGHT);
+      ctx.drawImage(cache,639,0,1,360,LOGICAL_WIDTH-1,0,right-LOGICAL_WIDTH+1,LOGICAL_HEIGHT);
+    }
+  }
   if (cache) {
     ctx.drawImage(cache, 0, 0, LOGICAL_WIDTH, LOGICAL_HEIGHT);
   } else {
@@ -434,13 +445,13 @@ export function drawArena(ctx, time = 0) {
  * @param {CanvasRenderingContext2D} ctx
  * @param {number} [time=0] animation time in milliseconds
  */
-export function drawSnow(ctx, time = 0) {
+export function drawSnow(ctx, time = 0, {preserveTransform=false} = {}) {
   if (!ctx) return;
   const t = Number.isFinite(time) ? time : 0;
   const random = rng(0x534e4f57);
 
   ctx.save();
-  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  if (!preserveTransform) ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.imageSmoothingEnabled = false;
 
   for (let i = 0; i < 92; i += 1) {

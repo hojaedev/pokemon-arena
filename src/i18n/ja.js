@@ -167,6 +167,7 @@ export default {
 
   // ─── Result ─────────────────────────────────────────────────
   result: {
+    mvpRecord: '{ko} KO · {damage} ダメージ',
     victory: '勝利',
     defeat: '敗北',
     victoryKicker: 'VICTORY',

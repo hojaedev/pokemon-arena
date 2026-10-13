@@ -85,7 +85,12 @@ export function hapticForCue(cue,details={}){
   if(cue==='ultimate:release'||cue==='detonate')return {pattern:[95,25,120],strong:1,weak:.7,throttle:90};
   if(cue==='dodge')return {pattern:[24,18,38],strong:.45,weak:.7,throttle:55};
   if(cue==='evade')return {pattern:[18,12,26],strong:.3,weak:.75,throttle:55};
-  if(cue==='hit')return details.critical?{pattern:[70,25,80],strong:.9,weak:.55,throttle:65}:{pattern:[28],strong:.45,weak:.3,throttle:45};
+  if(cue==='hit'){
+    // Auto attacks and damage-over-time should not mask deliberate skill contact.
+    if(details.periodic||details.basic)return null;
+    const dealt=details.team==='player';
+    return {pattern:details.critical?[24,18,72]:dealt?[16,14,38]:[28],strong:details.critical?.85:.5,weak:.65,throttle:85,priority:dealt?3:2};
+  }
   if(cue.startsWith('trainer:'))return {pattern:[32,22,48],strong:.5,weak:.45,throttle:75};
   if(cue==='ui:confirm')return {pattern:[22],strong:.25,weak:.35,throttle:80};
   if(cue==='ui:error')return {pattern:[45,35,45],strong:.5,weak:.35,throttle:120};

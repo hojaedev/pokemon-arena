@@ -4,7 +4,7 @@ export const PROTOCOL = 1;
 export const STEP = 1 / 60;
 export const SNAPSHOT_MS = 50;
 export const SIDES = ['player', 'enemy'];
-const FIELDS = ('id x y px py vx vy hp maxHp mp maxMp speed radius facing anim animTime animLock animDuration animHitAt pose dodgeRecovery dodgeGuard action castRoot castLock invul hurt stun burn burnTick slow boost haste hasteMultiplier weakened cleanseGuard ignite attackBoost attackMultiplier fainted shield shieldTime moving dash basicTimer basicWindup cooldowns index').split(' ');
+const FIELDS = ('id x y px py vx vy hp maxHp mp maxMp speed radius facing anim animTime animLock animDuration animHitAt pose dodgeRecovery dodgeGuard action castRoot castLock invul hurt stun burn burnTick slow boost haste hasteMultiplier weakened cleanseGuard ignite attackBoost attackMultiplier fainted shield shieldTime moving dash basicTimer basicWindup cooldowns index burnSourceId').split(' ');
 const round = n => Math.round(n * 1000) / 1000;
 const clean = value => typeof value === 'number' ? round(value) : value;
 export const opposite = side => side === 'player' ? 'enemy' : 'player';
@@ -14,7 +14,7 @@ export function encodeBattle(battle) {
   return {
     v: PROTOCOL, options: battle.options, s: battle.state, t: round(battle.time), c: round(battle.countdown),
     a: {...battle.activeIndices}, u: structuredClone(battle.utilityCooldowns), sw: {...battle.switchCooldowns},
-    pending: {...battle.pendingSwitch}, stats: [battle.stats, battle.rivalStats].map(s => ({...s})),
+    pending: {...battle.pendingSwitch}, stats: [battle.stats, battle.rivalStats].map(s => structuredClone(s)),
     teams: SIDES.map(side => battle.teams[side].map(f => FIELDS.map(k => clean(f[k])))),
     p: battle.projectiles.map(e => ({...e})), h: battle.hazards.map(e => ({...e})), w: battle.windups.map(e => ({...e})),
   };
