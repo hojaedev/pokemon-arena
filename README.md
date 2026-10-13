@@ -55,6 +55,10 @@ node scripts/test-multiplayer.mjs http://127.0.0.1:8787 --load
 - `npm run build`: 외부 빌드 의존성 없이 `dist/`에 게임을 생성합니다. `public/assets`는 배포 시 `/assets`에서 제공됩니다.
 - `npm run preview`: 완성된 정적 빌드를 **http://localhost:5174** 에서 확인합니다.
 - Vercel: Framework **Other**, Build Command **npm run build**, Output Directory **dist**. `vercel.json`에 설정되어 있으며 별도 서버/환경 변수는 필요하지 않습니다.
+- 자동 배포: `.github/workflows/deploy-vercel.yml`이 `main` push(PR 병합 포함) 시 빌드를 검증하고 Vercel production에 배포합니다. Actions에서 수동 실행할 때도 `main`을 선택해야 합니다. 원본 저장소에서만 실행되며, 동시 배포는 순서대로 처리합니다.
+- 최초 설정: 원본 GitHub 저장소의 **Settings → Secrets and variables → Actions**에 `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`를 등록합니다. 토큰은 대상 Vercel 프로젝트에 배포 권한이 있는 계정에서 발급하고, 두 ID는 해당 프로젝트를 `vercel link`로 연결한 뒤 `.vercel/project.json`에서 확인합니다. 이 파일과 토큰은 커밋하지 않습니다.
+- Vercel 프로젝트의 Root Directory는 저장소 루트로 설정합니다. 기존 Git 연동 자동 배포도 켜져 있다면 중복 배포가 생기므로, 이 워크플로로 전환할 때 Vercel 쪽 Git 자동 배포를 끕니다. 워크플로는 `vercel build --prod` 후 `vercel deploy --prebuilt --prod`로 정적 빌드 결과만 업로드합니다.
+- 배포 URL은 Actions 실행 요약에 표시됩니다. 세 가지 secret이 준비되어야 실제 배포를 실행할 수 있습니다. 자세한 설정은 [Vercel GitHub Actions 안내](https://vercel.com/kb/guide/how-can-i-use-github-actions-with-vercel)를 참고하세요.
 - GitHub 저장소는 private로 유지합니다. `dist`, `node_modules`, `.vercel`, 환경 변수 파일과 개인 키는 Git에서 제외합니다.
 - 배포 결과에는 게임의 브라우저 코드와 에셋만 포함합니다. 저장소 관리 파일·테스트·서버·인증 정보는 포함하지 않습니다.
 - 검색 노출을 줄이기 위해 `robots.txt`와 `X-Robots-Tag: noindex, nofollow`를 제공합니다. **검색 차단이나 private GitHub 저장소는 배포 URL의 접근 제어가 아닙니다.** 비공개 접속이 필요하면 Vercel 배포 보호를 별도로 설정해야 합니다.
