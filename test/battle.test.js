@@ -34,6 +34,23 @@ function liveBattle(options = {}) {
   return battle;
 }
 
+test('casting keeps the facing, sprite animation, and cast pose in solo and PvP', () => {
+  for (const mode of ['cpu', 'pvp']) {
+    const battle = isolatedBattle({mode});
+    for (const fighter of [battle.player, battle.enemy]) {
+      fighter.facing = Math.PI / 2;
+      const target = battle.target(fighter.team);
+      const expectedAngle = Math.atan2(target.y - fighter.y, target.x - fighter.x);
+      assert.equal(battle.castFor(fighter, 'q'), true);
+      closeTo(fighter.facing, expectedAngle);
+      assert.equal(fighter.anim, fighter.def.moves.q.animation);
+      assert.ok(fighter.animLock > 0);
+      assert.equal(fighter.pose.kind, 'cast');
+      closeTo(fighter.pose.angle, expectedAngle);
+    }
+  }
+});
+
 function advance(battle, seconds, input = { x: 0, y: 0 }) {
   let elapsed = 0;
   while (elapsed < seconds - EPSILON) {

@@ -163,6 +163,7 @@ export class Battle {
     const aim=this.aim(f,m),angle=Math.atan2(aim.y-f.y,aim.x-f.x),dir={x:Math.cos(angle),y:Math.sin(angle)};
     f.cooldowns[key]=m.cooldown*(ai&&['q','w','e'].includes(key)?this.difficulty.skillRate:1);f.mp-=m.cost;f.castLock=key==='r'?.55:.23;f.basicWindup=null;
     if(f.team==='player')this.stats.movesUsed++;else this.rivalStats.movesUsed++;
+    f.facing=angle;this.animate(f,m.animation||'shoot',key==='r'?1:.42,key==='r'?.55:.15);this.pose(f,'cast',key==='r'?.65:.3,angle,key==='r'?1.5:1);
     const displayName=m.displayName||(getLocale()==='ko'?m.ko:m.name)||m.name||m.ko;
     this.emit('cast',{team:f.team,key,id:f.id,name:m.name,ko:m.ko,displayName,kind:m.kind,ultimate:key==='r',damage:m.damage||0,element:m.element||f.def.type,color:m.color,x:f.x,y:f.y,targetX:aim.x,targetY:aim.y});
     if(ai)this.emit('enemyCast',{name:m.name,ko:m.ko,displayName,color:m.color,x:f.x,y:f.y});
