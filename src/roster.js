@@ -1,4 +1,5 @@
 import {getTrainerSkill} from './trainer-skills.js';
+import {t,getLocale} from './i18n/i18n.js';
 
 // Arena-tuned moves and stats, not a reproduction of the turn-based RPG formulas.
 export const ELEMENTS={
@@ -15,7 +16,11 @@ export const ELEMENTS={
 const move=(name,ko,kind,damage,cooldown,cost,extra={})=>({name,ko,kind,damage,cooldown,cost,animation:'shoot',...extra});
 export const SPECIALS={
  s:{...getTrainerSkill('haste')},
- d:move('Dodge','회피','dodge',0,2,0,{color:'#9ee8ff',description:'즉시 0.5초 무적과 함께 적 유도탄의 추적을 끊습니다. 이동 방향으로 피하며, 정지 중에는 적 반대 방향으로 회피합니다. 피격 경직 중에도 사용 가능. 재사용 2초, 회복 없음.',animation:'charge',distance:175,duration:.28,invulStart:0,invulEnd:.5}),
+ d:{
+  ...move('Dodge','회피','dodge',0,2,0,{color:'#9ee8ff',description:'즉시 0.5초 무적과 함께 적 유도탄의 추적을 끊습니다. 이동 방향으로 피하며, 정지 중에는 적 반대 방향으로 회피합니다. 피격 경직 중에도 사용 가능. 재사용 2초, 회복 없음.',animation:'charge',distance:175,duration:.28,invulStart:0,invulEnd:.5}),
+  get displayName(){return t('renderer.evade')||(getLocale()==='ko'?'회피':'Dodge');},
+  get description(){return getLocale()==='ko'?'즉시 0.5초 무적과 함께 적 유도탄의 추적을 끊습니다. 이동 방향으로 피하며, 정지 중에는 적 반대 방향으로 회피합니다. 피격 경직 중에도 사용 가능. 재사용 2초, 회복 없음.':'Immediately grants 0.5s invulnerability and breaks homing missile tracking. Dodges in movement direction, or away from enemy if still. Usable during hitstun. 2s cooldown.';}
+ },
 };
 const definitions=[
  {id:'pikachu',name:'Pikachu',ko:'피카츄',dex:25,gen:1,type:'electric',role:'원거리 캐리',tagline:'빠른 평타와 전격으로 끊임없이 압박합니다.',hp:680,speed:212,radius:18,scale:2,basic:{name:'전기쇼크',damage:24,range:360,cooldown:.76,projectileSpeed:730,windup:.16},moves:{q:move('Thunderbolt','10만볼트','bolt',52,3.2,15,{speed:820,homing:1.6}),w:move('Quick Attack','전광석화','dash',55,6.5,20,{distance:205,dashSpeed:930,animation:'quickstrike'}),e:move('Iron Tail','아이언테일','slash',82,8,24,{range:152,stun:.65,element:'steel',animation:'attack'}),r:move('Thunder','번개','storm',260,60,45,{radius:160,strikes:3,animation:'shock'})}},
@@ -87,15 +92,45 @@ const descriptions={
 };
 export const ROSTER=definitions.map(mon=>{
  const color=ELEMENTS[mon.type].color;
- const moves=Object.fromEntries(Object.entries(mon.moves).map(([key,m])=>{const scaled={...m,damage:key==='r'?Math.round(m.damage*1.3):m.damage,color:ELEMENTS[m.element||mon.type].color,element:m.element||mon.type,initialCooldown:key==='r'?30:0,ultimate:key==='r'};return [key,{...scaled,description:descriptions[scaled.kind](scaled,mon)}];}));
- return {...mon,hp:Math.round(mon.hp*1.5),color,basic:{...mon.basic,color,element:mon.type},moves:{...moves,...Object.fromEntries(Object.entries(SPECIALS).map(([key,m])=>[key,{...m}]))},portrait:`/assets/pokemon/${mon.id}/portrait/Normal.png`};
+ const moves=Object.fromEntries(Object.entries(mon.moves).map(([key,m])=>{
+  const scaled={...m,damage:key==='r'?Math.round(m.damage*1.3):m.damage,color:ELEMENTS[m.element||mon.type].color,element:m.element||mon.type,initialCooldown:key==='r'?30:0,ultimate:key==='r'};
+  return [key,{
+   ...scaled,
+   get displayName(){const l=getLocale();return (l==='ko'?scaled.ko:scaled.name)||scaled.name||scaled.ko;},
+   get description(){
+    const fn=t('moveDesc.'+scaled.kind);
+    if(typeof fn==='function')return fn(scaled,mon);
+    return descriptions[scaled.kind](scaled,mon);
+   }
+  }];
+ }));
+ return {
+  ...mon,
+  get displayName(){return t('pokemon.'+mon.id)||(getLocale()==='ko'?mon.ko:mon.name);},
+  get displayRole(){return t('roles.'+mon.id)||mon.role;},
+  get displayTagline(){return t('taglines.'+mon.id)||mon.tagline;},
+  hp:Math.round(mon.hp*1.5),
+  color,
+  basic:{
+   ...mon.basic,
+   color,
+   element:mon.type,
+   get displayName(){return t('basics.'+mon.id)||mon.basic.name;}
+  },
+  moves:{
+   ...moves,
+   s:{...SPECIALS.s,get displayName(){return getTrainerSkill(SPECIALS.s.id||'haste').displayName;}},
+   d:{...SPECIALS.d,get displayName(){return t('renderer.evade')||(getLocale()==='ko'?'회피':'Dodge');},get description(){return getLocale()==='ko'?'즉시 0.5초 무적과 함께 적 유도탄의 추적을 끊습니다. 이동 방향으로 피하며, 정지 중에는 적 반대 방향으로 회피합니다. 피격 경직 중에도 사용 가능. 재사용 2초, 회복 없음.':'Immediately grants 0.5s invulnerability and breaks homing missile tracking. Dodges in movement direction, or away from enemy if still. Usable during hitstun. 2s cooldown.';}}
+  },
+  portrait:`/assets/pokemon/${mon.id}/portrait/Normal.png`
+ };
 });
 export const ROSTER_BY_ID=Object.fromEntries(ROSTER.map(m=>[m.id,m]));
 export const getMoves=(id='pikachu')=>(ROSTER_BY_ID[id]||ROSTER_BY_ID.pikachu).moves;
 export const DIFFICULTIES={
- beginner:{name:'입문',description:'긴 공격 예고 · 느린 탄속 · 넉넉한 반격 시간',reaction:1.05,basicWindup:.72,meleeWindup:.92,fieldWindup:1.35,ultimateWindup:1.50,recovery:1.25,volleyInterval:.38,projectileSpeed:.65,basicHoming:4,skillRate:1.25,damage:.90,lead:.50,aggression:.72},
- easy:{name:'쉬움',description:'여유로운 공격 예고 · 완만한 추적 · 느린 연계',reaction:.85,basicWindup:.60,meleeWindup:.76,fieldWindup:1.15,ultimateWindup:1.30,recovery:1.08,volleyInterval:.33,projectileSpeed:.72,basicHoming:6,skillRate:1.12,damage:.95,lead:.68,aggression:.86},
- standard:{name:'도전',description:'확실한 공격 예고 · 회피 후 반격',reaction:.70,basicWindup:.48,meleeWindup:.60,fieldWindup:.95,ultimateWindup:1.10,recovery:.90,volleyInterval:.28,projectileSpeed:.80,basicHoming:8,skillRate:1,damage:1,lead:.83,aggression:1},
- expert:{name:'챔피언',description:'짧은 공격 예고 · 빠른 탄속 · 적극적 추격',reaction:.48,basicWindup:.36,meleeWindup:.44,fieldWindup:.78,ultimateWindup:.90,recovery:.65,volleyInterval:.21,projectileSpeed:.95,basicHoming:10,skillRate:.90,damage:1.12,lead:.96,aggression:1.18},
- master:{name:'마스터',description:'매우 짧은 공격 예고 · 정밀 예측 · 끊임없는 연계',reaction:.28,basicWindup:.25,meleeWindup:.28,fieldWindup:.52,ultimateWindup:.84,recovery:.40,volleyInterval:.15,projectileSpeed:1.13,basicHoming:12,skillRate:.75,damage:1.18,lead:1.08,aggression:1.5},
+ beginner:{get name(){return t('diff.beginner.name');},get description(){return t('diff.beginner.desc');},reaction:1.05,basicWindup:.72,meleeWindup:.92,fieldWindup:1.35,ultimateWindup:1.50,recovery:1.25,volleyInterval:.38,projectileSpeed:.65,basicHoming:4,skillRate:1.25,damage:.90,lead:.50,aggression:.72},
+ easy:{get name(){return t('diff.easy.name');},get description(){return t('diff.easy.desc');},reaction:.85,basicWindup:.60,meleeWindup:.76,fieldWindup:1.15,ultimateWindup:1.30,recovery:1.08,volleyInterval:.33,projectileSpeed:.72,basicHoming:6,skillRate:1.12,damage:.95,lead:.68,aggression:.86},
+ standard:{get name(){return t('diff.standard.name');},get description(){return t('diff.standard.desc');},reaction:.70,basicWindup:.48,meleeWindup:.60,fieldWindup:.95,ultimateWindup:1.10,recovery:.90,volleyInterval:.28,projectileSpeed:.80,basicHoming:8,skillRate:1,damage:1,lead:.83,aggression:1},
+ expert:{get name(){return t('diff.expert.name');},get description(){return t('diff.expert.desc');},reaction:.48,basicWindup:.36,meleeWindup:.44,fieldWindup:.78,ultimateWindup:.90,recovery:.65,volleyInterval:.21,projectileSpeed:.95,basicHoming:10,skillRate:.90,damage:1.12,lead:.96,aggression:1.18},
+ master:{get name(){return t('diff.master.name');},get description(){return t('diff.master.desc');},reaction:.28,basicWindup:.25,meleeWindup:.28,fieldWindup:.52,ultimateWindup:.84,recovery:.40,volleyInterval:.15,projectileSpeed:1.13,basicHoming:12,skillRate:.75,damage:1.18,lead:1.08,aggression:1.5},
 };

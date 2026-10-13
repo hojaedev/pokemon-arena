@@ -1,6 +1,7 @@
 import {Battle} from './battle.js';
 import {PROTOCOL,applyBattleState,localEvent,predictMotion} from './net-state.js';
 import {MULTIPLAYER_URL} from './network-config.js';
+import {t} from './i18n/i18n.js';
 
 const SESSION_KEY='mt-silver-online-v1';
 const now=()=>performance.now();
@@ -18,16 +19,16 @@ export class Multiplayer {
   get endpoint(){return ['localhost','127.0.0.1'].includes(location.hostname)?'http://127.0.0.1:8787':MULTIPLAYER_URL;}
   status(text){this.handlers.status?.(text);}
   async create(team,special){
-    if(!this.endpoint)throw new Error('멀티플레이어 서버를 준비 중입니다.');
+    if(!this.endpoint)throw new Error(t('online.serverPreparing'));
     const response=await fetch(this.endpoint+'/rooms',{method:'POST',signal:AbortSignal.timeout(10000)});
-    const body=await response.json();if(!response.ok)throw new Error(body.error||'방을 만들지 못했습니다.');
+    const body=await response.json();if(!response.ok)throw new Error(body.error||t('online.createFailed'));
     await this.join(body.code,team,special);return body.code;
   }
   async join(code,team,special,resume=null){
-    code=code.trim().toUpperCase();if(!/^[A-HJ-NP-Z2-9]{6}$/.test(code))throw new Error('방 코드 6자리를 입력해 주세요.');
-    if(!this.endpoint)throw new Error('멀티플레이어 서버를 준비 중입니다.');
+    code=code.trim().toUpperCase();if(!/^[A-HJ-NP-Z2-9]{6}$/.test(code))throw new Error(t('online.invalidCode'));
+    if(!this.endpoint)throw new Error(t('online.serverPreparing'));
     this.leave(false);this.session={code,team:[...team],special,token:resume};this.lastEvent=0;this.startedGame=-1;
-    this.generation++;this.retries=0;this.fatal=false;this.status('연결 중…');
+    this.generation++;this.retries=0;this.fatal=false;this.status(t('online.connecting'));
     try{await this.open(this.generation);}catch(error){this.leave(false);throw error;}
   }
   savedSession(){try{return JSON.parse(sessionStorage.getItem(SESSION_KEY)||'null');}catch{return null;}}
@@ -36,7 +37,7 @@ export class Multiplayer {
     return new Promise((resolve,reject)=>{
       const url=this.endpoint.replace(/^http/,'ws')+'/rooms/'+this.session.code+'/socket';
       const socket=new WebSocket(url);this.socket=socket;let welcomed=false;
-      const timeout=setTimeout(()=>{reject(new Error('서버 연결 시간이 초과됐습니다.'));socket.close();},10000);
+      const timeout=setTimeout(()=>{reject(new Error(t('online.serverTimeout')));socket.close();},10000);
       socket.addEventListener('open',()=>{
         if(generation!==this.generation){socket.close();return;}
         this.send({type:'hello',v:PROTOCOL,team:this.session.team,special:this.session.special,token:this.session.token});
@@ -48,7 +49,7 @@ export class Multiplayer {
           welcomed=true;clearTimeout(timeout);this.connected=true;this.retries=0;this.seat=data.seat;this.game=data.game;
           this.seq=0;this.commandId=0;this.commands=[];this.session.token=data.token;this.history=[];
           try{sessionStorage.setItem(SESSION_KEY,JSON.stringify(this.session));}catch{}
-          this.send({type:'ping',at:now()});this.lastPing=now();this.status('연결됨');resolve();
+          this.send({type:'ping',at:now()});this.lastPing=now();this.status(t('online.connected'));resolve();
         }else if(data.type==='error'){
           this.status(data.message);this.handlers.error?.(data.message);
           if(data.fatal){this.fatal=true;clearTimeout(timeout);if(!welcomed)reject(new Error(data.message));this.handlers.fatal?.(data.message);socket.close();}
@@ -57,9 +58,9 @@ export class Multiplayer {
         }else if(data.type==='lobby'){
           this.phase=data.phase;this.game=data.game;this.lobby=data;this.handlers.lobby?.(data);
         }else if(data.type==='prepare'){
-          this.game=data.game;this.seq=0;this.commandId=0;this.commands=[];this.history=[];this.samples=[];this.predictedEvents.clear();this.status('포켓몬 준비 중…');
+          this.game=data.game;this.seq=0;this.commandId=0;this.commands=[];this.history=[];this.samples=[];this.predictedEvents.clear();this.status(t('online.preparingPokemon'));
           try{await this.handlers.prepare?.(data);if(generation===this.generation){this.assetsGame=data.game;this.send({type:'loaded',game:data.game});}}
-          catch{this.status('포켓몬을 불러오지 못했습니다. 방에 다시 참가해 주세요.');}
+          catch{this.status(t('online.loadFailed'));}
         }else if(data.type==='state'){
           // A page reload resumes an existing battle without the original prepare event.
           if(this.assetsGame===data.game){this.acceptState(data);return;}
@@ -67,14 +68,14 @@ export class Multiplayer {
           try{
             await this.handlers.prepare?.({players:[{team:data.state.options.playerTeam},{team:data.state.options.enemyTeam}]});
             if(generation===this.generation){this.assetsGame=data.game;this.preparingState=false;this.acceptState(this.pendingState);}
-          }catch{if(generation===this.generation){this.preparingState=false;this.status('리소스 불러오는 중…');}}
+          }catch{if(generation===this.generation){this.preparingState=false;this.status(t('online.loadingResources'));}}
         }
       });
       socket.addEventListener('close',()=>{
         clearTimeout(timeout);if(generation!==this.generation)return;this.connected=false;this.handlers.metrics?.({ping:this.ping,stale:true});this.control={x:0,y:0};
-        if(!welcomed)reject(new Error('서버에 연결하지 못했습니다.'));
+        if(!welcomed)reject(new Error(t('online.connectionFailed')));
         if(!this.fatal&&this.session?.token){
-          this.status('재접속 중…');const delay=Math.min(4000,500*2**this.retries++);
+          this.status(t('online.reconnecting'));const delay=Math.min(4000,500*2**this.retries++);
           clearTimeout(this.retryTimer);this.retryTimer=setTimeout(()=>{if(generation===this.generation)this.open(generation).catch(()=>{});},delay);
         }
       });
